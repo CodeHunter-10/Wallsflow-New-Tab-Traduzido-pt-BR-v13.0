@@ -1,0 +1,36 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 3,
+  "name": "__MSG_extname__",
+  "short_name": "wallsflow",
+  "version": "13.0",
+  "description": "__MSG_extdescription__",
+  "author": "Caen",
+  "default_locale": "en",
+  "minimum_chrome_version": "105",
+  "chrome_url_overrides": {
+    "newtab": "src/html/newtabpage.html"
+  },
+  "action": {
+    "default_title": "__MSG_action_title__",
+    "default_popup": "src/html/popup.html"
+  },
+  "icons": {
+    "16": "src/images/icon16.png",
+    "48": "src/images/icon48.png",
+    "128": "src/images/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "search",
+    "bookmarks"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self'; font-src 'self'"
+  }
+}

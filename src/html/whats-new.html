@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="i18n-pending">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title data-i18n="whatsnew_page_wallsflow_new_tab_what_s">Wallsflow New Tab: what's new</title>
+<link rel="stylesheet" href="../css/fonts.css" />
+<link rel="stylesheet" href="../css/whats-new.css" />
+</head>
+<body>
+<div class="wrap">
+
+    <header class="head">
+        <div class="brand">
+            <img class="logo" src="../images/logo.svg" alt="Wallsflow" />
+            <span id="version-meta" class="meta" translate="no">v</span>
+        </div>
+    </header>
+
+    <div class="greet" data-i18n="whatsnew_hey_there">Hey there 👋</div>
+
+    <h1 data-i18n="whatsnew_wallsflow_new_tab_has_a">Wallsflow New Tab has a new release.</h1>
+
+    <p data-i18n="whatsnew_the_four_biggest_changes_are">The five biggest changes are below, and you can try each one right here on this page. Nothing you do here touches your settings.</p>
+
+    <!-- Demo 0: the interface language. A small new tab redrawn in each
+         shipped language from its real catalogue: the time in that language's
+         hour cycle, the date, the greeting and the search box. -->
+    <section class="feature">
+        <h2 data-i18n="whatsnew_your_language_title">Wallsflow New Tab speaks your language</h2>
+        <p data-i18n-html="whatsnew_your_language_text_html">Everything in the extension is now in English, German, French, Spanish and Romanian. It starts in the first of these in your browser's list of preferred languages, and you can pick another in <strong>Settings</strong>, under <strong>Language</strong>. Try it: pick a language below.</p>
+
+        <div class="demo">
+            <div class="demo-row demo-row-center demo-row-flush">
+                <div class="seg lang-seg" id="demo-lang-seg" role="group" aria-label="Language of the example" data-i18n-attr="aria-label:whatsnew_demo_language_aria"></div>
+            </div>
+            <div class="lang-preview" id="demo-lang-preview">
+                <span class="lang-time" id="demo-lang-time" translate="no"></span>
+                <span class="lang-date" id="demo-lang-date" translate="no"></span>
+                <span class="lang-greet" id="demo-lang-greet" data-i18n="greet_headline_morning">Good Morning</span>
+                <span class="lang-search" id="demo-lang-search" data-i18n="search_search_the_web_placeholder">Search the Web</span>
+            </div>
+        </div>
+
+        <p class="feature-note" data-i18n-html="whatsnew_your_language_note_html">The clock starts in the hours your language uses, 24 or 12, until you pick a format under <strong>Clock</strong>. A settings backup now carries your language and your tasks too.</p>
+    </section>
+
+    <!-- Demo 1: tasks in a focus session. The stage switches between a focus
+         session, with the list beside the timer, and the break after it, where
+         the timer asks about the task. -->
+    <section class="feature">
+        <h2 data-i18n="whatsnew_tasks_for_your_focus_sessions">Tasks for your focus sessions</h2>
+        <p data-i18n="whatsnew_start_a_pomodoro_and_your">Start a Pomodoro and your task list opens beside the timer, so what you set out to do stays in front of you and nothing else does. The task you are on is written under the timer, and ticking it there brings up the next one. When the session ends, the timer asks whether you finished it. Try it: tick a task or add one, then end the session.</p>
+
+        <div class="demo">
+            <div class="fx-stage is-focus" id="demo-fx">
+                <section class="tk fx-tasks" aria-label="Tasks" data-i18n-attr="aria-label:tasks_tasks_aria">
+                    <div class="tk-title" data-i18n="tasks_tasks_aria">Tasks</div>
+                    <ul class="tk-list" id="demo-tk-list"></ul>
+                    <input class="tk-add" id="demo-tk-add" type="text" maxlength="120" placeholder="Add a task" autocomplete="off" spellcheck="false" aria-label="Add a task" data-i18n-attr="placeholder:tasks_add_a_task_placeholder;aria-label:tasks_add_a_task_placeholder" />
+                    <div class="tk-foot" id="demo-tk-foot" hidden>
+                        <span id="demo-tk-count"></span>
+                        <button class="tk-clear" id="demo-tk-clear" type="button" data-i18n="common_clear">Clear</button>
+                    </div>
+                </section>
+                <div class="fx-timer">
+                    <div class="fx-ring">
+                        <span class="fx-time" id="demo-fx-time">24:59</span>
+                        <span class="fx-phase" id="demo-fx-phase" data-i18n="pomo_focus">Focus</span>
+                    </div>
+                    <button class="fx-now" id="demo-fx-now" type="button" hidden>
+                        <span class="fx-now-check" aria-hidden="true"></span>
+                        <span id="demo-fx-now-text"></span>
+                    </button>
+                    <div class="fx-ask" id="demo-fx-ask" hidden>
+                        <span id="demo-fx-ask-text" aria-live="polite"></span>
+                        <div class="fx-ask-actions">
+                            <button class="fx-ask-btn is-yes" id="demo-fx-yes" type="button" data-i18n="pomo_yes">Yes</button>
+                            <button class="fx-ask-btn" id="demo-fx-no" type="button" data-i18n="pomo_not_yet">Not yet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-row demo-row-center">
+                <button class="demo-btn demo-btn-primary" type="button" id="demo-fx-toggle" data-i18n="whatsnew_demo_end_the_session">End the session</button>
+            </div>
+        </div>
+
+        <p class="feature-note" data-i18n-html="whatsnew_outside_a_focus_session_the_html">Outside a focus session the list stays out of sight. In the extension, clicking a task's text edits it, and the arrow that appears when you point at a task moves it to the top. You can turn the list off, or delete every task, in <strong>Widgets</strong>, under <strong>Pomodoro</strong>.</p>
+    </section>
+
+    <!-- Demo 2: the rotation timer and the per-wallpaper duration. The controls
+         are rebuilt in plain markup rather than screenshotted: no image files,
+         crisp on any screen, and the reader can actually press them. -->
+    <section class="feature">
+        <h2 data-i18n="whatsnew_your_wallpapers_can_change_while">Your wallpapers can change while you work</h2>
+        <p data-i18n="whatsnew_until_now_an_uploaded_wallpaper">Until now an uploaded wallpaper only changed when you opened a new tab. If you keep one tab open all day, it never changed at all. Pick a time and watch the list below.</p>
+
+        <div class="demo">
+            <div class="demo-row">
+                <span class="demo-label" data-i18n="widget_background_change_every">Change every</span>
+                <div class="seg" id="demo-seg" role="group" aria-label="How often the wallpaper changes" data-i18n-attr="aria-label:whatsnew_demo_how_often_the_wallpaper_changes_aria">
+                    <button class="seg-btn is-on" type="button" data-min="0" data-i18n="opt_off">Off</button>
+                    <button class="seg-btn" type="button" data-min="5" data-i18n="widget_background_5m">5m</button>
+                    <button class="seg-btn" type="button" data-min="15" data-i18n="widget_background_15m">15m</button>
+                    <button class="seg-btn" type="button" data-min="30" data-i18n="widget_background_30m">30m</button>
+                    <button class="seg-btn" type="button" data-min="60" data-i18n="widget_background_1h">1h</button>
+                </div>
+            </div>
+
+            <div class="demo-cards" id="demo-cards">
+                <div class="demo-card is-showing" data-name="Forest" data-i18n-attr="data-name:whatsnew_demo_forest">
+                    <span class="demo-thumb thumb-a"></span>
+                    <button class="demo-chip" type="button" aria-label="How long Forest stays on screen" data-i18n-attr="aria-label:whatsnew_demo_how_long_forest_stays_on_aria"></button>
+                    <span class="demo-actions" aria-hidden="true"><i></i><i></i><i></i></span>
+                </div>
+                <div class="demo-card" data-name="Harbour" data-i18n-attr="data-name:whatsnew_demo_harbour">
+                    <span class="demo-thumb thumb-b"></span>
+                    <button class="demo-chip" type="button" aria-label="How long Harbour stays on screen" data-i18n-attr="aria-label:whatsnew_demo_how_long_harbour_stays_on_aria"></button>
+                    <span class="demo-actions" aria-hidden="true"><i></i><i></i><i></i></span>
+                </div>
+                <div class="demo-card" data-name="Dunes" data-i18n-attr="data-name:whatsnew_demo_dunes">
+                    <span class="demo-thumb thumb-c"></span>
+                    <button class="demo-chip" type="button" aria-label="How long Dunes stays on screen" data-i18n-attr="aria-label:whatsnew_demo_how_long_dunes_stays_on_aria"></button>
+                    <span class="demo-actions" aria-hidden="true"><i></i><i></i><i></i></span>
+                </div>
+            </div>
+
+            <p class="demo-hint" id="demo-hint" aria-live="polite" data-i18n="whatsnew_demo_pick_a_time_above_to">Pick a time above to start.</p>
+        </div>
+
+        <p class="feature-note" data-i18n-html="whatsnew_in_the_extension_this_control_html">In the extension this control lives in <strong>Widgets</strong>, under <strong>Background</strong>. The wallpapers it moves between are the ones you marked as Random, or your Day and Night sets if you use those. A pinned wallpaper always wins, so nothing changes while one is pinned.</p>
+    </section>
+
+    <!-- Demo 3: the bookmarks search box, filtering a small fixed list. -->
+    <section class="feature">
+        <h2 data-i18n="whatsnew_find_a_bookmark_by_typing">Find a bookmark by typing</h2>
+        <p data-i18n-html="whatsnew_the_bookmarks_panel_was_a_html">The bookmarks panel was a list you had to scroll. It now opens with the cursor already in a search box, and filters as you type on either the name or the address. Try typing <strong>git</strong>, or <strong>mail</strong>.</p>
+
+        <div class="demo">
+            <div class="bm">
+                <div class="bm-head">
+                    <span class="bm-title" data-i18n="common_bookmarks">Bookmarks</span>
+                    <input class="bm-search" id="demo-bm-input" type="text" placeholder="Search bookmarks" autocomplete="off" spellcheck="false" aria-label="Search bookmarks" data-i18n-attr="placeholder:bookmarks_search_bookmarks_placeholder;aria-label:bookmarks_search_bookmarks_placeholder" />
+                </div>
+                <div class="bm-list" id="demo-bm-list" aria-live="polite"></div>
+            </div>
+        </div>
+
+        <p class="feature-note" data-i18n="whatsnew_escape_clears_what_you_typed">Escape clears what you typed, and pressing it again closes the panel.</p>
+    </section>
+
+    <!-- Demo 4: the crossfade, which is otherwise invisible until you compare. -->
+    <section class="feature">
+        <h2 data-i18n="whatsnew_wallpapers_change_without_a_flash">Wallpapers change without a flash of black</h2>
+        <p data-i18n="whatsnew_swapping_a_wallpaper_used_to">Swapping a wallpaper used to fade the old one away before the new one was ready, so the empty page showed through the gap. The new wallpaper now loads behind the old one and only takes over once it is ready. Press both to compare.</p>
+
+        <div class="demo">
+            <div class="fade-stage" id="demo-fade-stage">
+                <span class="fade-layer fade-old"></span>
+                <span class="fade-layer fade-new"></span>
+            </div>
+            <div class="demo-row demo-row-center">
+                <button class="demo-btn" type="button" id="demo-fade-before" data-i18n="whatsnew_demo_how_it_used_to_look">How it used to look</button>
+                <button class="demo-btn demo-btn-primary" type="button" id="demo-fade-after" data-i18n="whatsnew_demo_how_it_looks_now">How it looks now</button>
+            </div>
+        </div>
+    </section>
+
+    <p data-i18n="whatsnew_everything_else_in_this_release">Everything else in this release:</p>
+
+    <div class="changes">
+        <ul>
+            <li data-i18n-html="whatsnew_change_music_stopped_following_you_between_html">
+                <b>Music stopped following you between tabs</b>
+                Pressing Stop could start the music again in another tab about ten seconds later, and stopping the last ambient sound could move it somewhere else instead of ending it. Taking over playback from a second tab could also erase what you had just chosen to play. The way tabs agree on who is playing was rebuilt, and 21 tests now cover it.
+            </li>
+            <li data-i18n-html="whatsnew_change_uploading_no_longer_stops_the_html">
+                <b>Uploading no longer stops the rotation</b>
+                Every upload used to pin itself, and a pinned wallpaper pauses the timer, so adding a picture quietly stopped your wallpapers from changing. An upload now shows straight away without being pinned, and the rotation carries on.
+            </li>
+            <li data-i18n-html="whatsnew_change_day_and_night_now_switches_html">
+                <b>Day and Night now switches in a tab you leave open</b>
+                The time of day was only checked when a tab opened, so a tab left open past 7 PM kept its daytime wallpaper. It now changes over on its own.
+            </li>
+            <li data-i18n-html="whatsnew_change_a_dropped_file_that_is_html">
+                <b>A dropped file that is not a picture no longer empties the list</b>
+                Dragging in the wrong kind of file used to clear every wallpaper card until the next reload. It now just says the format is not supported.
+            </li>
+            <li data-i18n-html="whatsnew_change_the_weather_stopped_refetching_on_html">
+                <b>The weather stopped refetching on every new tab</b>
+                It was ignoring its own cache, which quietly undid a fix from the previous release.
+            </li>
+            <li data-i18n-html="whatsnew_change_a_focus_session_could_count_html">
+                <b>A focus session could count twice</b>
+                With two tabs open, one Pomodoro could add two sessions to the day's count. The other tab now follows along instead of counting again, including when you start a timer somewhere else.
+            </li>
+            <li data-i18n-html="whatsnew_change_the_wallpaper_list_is_quieter_html">
+                <b>The wallpaper list is quieter</b>
+                Labels that repeated what the buttons already showed are gone, and nothing is written over the artwork any more. The file size and the duration appear when you point at a card.
+            </li>
+            <li data-i18n-html="whatsnew_change_city_list_html">
+                <b>The city list in Weather works again</b>
+                Picking a city by hand showed the search box, but the matches under it could not be seen or clicked. They can now.
+            </li>
+            <li data-i18n-html="whatsnew_change_bookmarks_open_where_you_tell_html">
+                <b>Bookmarks open where you tell them to</b>
+                Bookmarks have their own choice of opening in a new tab or the same one, separate from your shortcuts. Until you pick something there, they keep following the shortcut setting.
+            </li>
+            <li data-i18n-html="whatsnew_change_smaller_fixes_a_saved_playlist_html">
+                <b>Smaller fixes</b>
+                A saved playlist could appear twice in your library. Turning the clock off no longer hides the weather with it. Text colour and shadow now reach the Pomodoro labels. Ambient presets can go above 100 percent like the sliders always could. And anything that says <strong>Saved</strong> now checks that it really was. The clock and the greeting now fade with the rest of the page while you drag a wallpaper onto it.
+            </li>
+        </ul>
+    </div>
+
+    <div class="sign">
+        <span data-i18n="whatsnew_sincerely">Sincerely,</span>
+        <span class="sign-name" translate="no">Caen</span>
+        <p class="donate-ask" data-i18n-html="whatsnew_love_using_wallsflow_new_tab_html">Love using Wallsflow New Tab?<br>A small donation helps support future updates and improvements ✨</p>
+        <a id="donate-btn" class="donate-btn" href="https://www.paypal.com/donate/?hosted_button_id=TGFVY7LWG5DEW" target="_blank" rel="noopener" data-i18n="common_donate">Donate</a>
+    </div>
+
+</div>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/whats-new.js"></script>
+</body>
+</html>

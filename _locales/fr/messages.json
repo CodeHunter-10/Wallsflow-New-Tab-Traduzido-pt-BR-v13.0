@@ -1,0 +1,2294 @@
+{
+  "extname": {
+    "message": "Wallsflow Nouvel Onglet: Fonds Animés, Widgets & Musique de Concentration"
+  },
+  "extdescription": {
+    "message": "Faites de votre nouvel onglet un espace calme et personnel avec fonds animés, widgets, sons d’ambiance et musique de concentration."
+  },
+  "action_title": {
+    "message": "Nouvel onglet"
+  },
+  "locale_code": {
+    "message": "fr"
+  },
+  "locale_native_name": {
+    "message": "Français"
+  },
+  "page_new_tab": {
+    "message": "Nouvel onglet"
+  },
+  "brand_name": {
+    "message": "Wallsflow Nouvel Onglet"
+  },
+  "drop_drop_to_add_wallpaper": {
+    "message": "Déposez pour ajouter le fond d’écran"
+  },
+  "drop_videos_and_images_supported_drop": {
+    "message": "Vidéos et images acceptées · déposez n’importe où"
+  },
+  "toast_update": {
+    "message": "Info"
+  },
+  "panel_manage_wallpapers_title": {
+    "message": "Gérer les fonds d’écran"
+  },
+  "panel_wallpapers": {
+    "message": "Fonds d’écran"
+  },
+  "panel_widget_settings_title": {
+    "message": "Réglages des widgets"
+  },
+  "panel_widgets": {
+    "message": "Widgets"
+  },
+  "panel_backup_and_reset_title": {
+    "message": "Sauvegarde et réinitialisation"
+  },
+  "panel_settings": {
+    "message": "Réglages"
+  },
+  "wallpapers_upload_wallpaper": {
+    "message": "Importer un fond d’écran"
+  },
+  "wallpapers_wallpaper_filter_aria": {
+    "message": "Filtre des fonds d’écran"
+  },
+  "wallpapers_all": {
+    "message": "Tous"
+  },
+  "wallpapers_primary": {
+    "message": "Principal"
+  },
+  "wallpapers_random": {
+    "message": "Aléatoire"
+  },
+  "wallpapers_day": {
+    "message": "Jour"
+  },
+  "wallpapers_night": {
+    "message": "Nuit"
+  },
+  "wallpapers_show_wallpaper_filter_help_aria": {
+    "message": "Afficher l’aide des filtres de fonds d’écran"
+  },
+  "wallpapers_random_wallpapers_are_paused_while": {
+    "message": "Les fonds aléatoires sont en pause tant qu’un fond d’écran épinglé est actif."
+  },
+  "wallpapers_no_wallpapers_in_this_filter": {
+    "message": "Aucun fond d’écran dans ce filtre pour l’instant."
+  },
+  "wallpapers_wallpapers_stored": {
+    "message": "Fonds d’écran enregistrés"
+  },
+  "common_delete_all": {
+    "message": "Tout supprimer"
+  },
+  "wallpapers_restore_default_wallpaper": {
+    "message": "Rétablir le fond d’écran par défaut"
+  },
+  "wallpapers_restore": {
+    "message": "Rétablir"
+  },
+  "widgets_widget_filter_aria": {
+    "message": "Filtre des widgets"
+  },
+  "widgets_all": {
+    "message": "Tous"
+  },
+  "widgets_enabled": {
+    "message": "Activés"
+  },
+  "widgets_disabled": {
+    "message": "Désactivés"
+  },
+  "widgets_show_filter_help_aria": {
+    "message": "Afficher l’aide du filtre"
+  },
+  "widgets_all_shows_every_widget_html": {
+    "message": "<strong>Tous</strong> : affiche tous les widgets."
+  },
+  "widgets_enabled_shows_only_widgets_that_html": {
+    "message": "<strong>Activés</strong> : affiche seulement les widgets allumés."
+  },
+  "widgets_disabled_shows_only_widgets_that_html": {
+    "message": "<strong>Désactivés</strong> : affiche seulement les widgets éteints."
+  },
+  "widgets_no_widgets_match_this_filter": {
+    "message": "Aucun widget ne correspond à ce filtre."
+  },
+  "widgets_on_your_page": {
+    "message": "Sur votre page"
+  },
+  "widgets_shown_on_the_new_tab": {
+    "message": "Affichés dans le nouvel onglet"
+  },
+  "widget_search_search_bar": {
+    "message": "Barre de recherche"
+  },
+  "widget_search_show_search_bar_options_aria": {
+    "message": "Afficher les options de la barre de recherche"
+  },
+  "widget_search_show_help_for_search_bar_aria": {
+    "message": "Afficher l’aide de la barre de recherche"
+  },
+  "widget_search_displays_a_search_bar_for": {
+    "message": "Affiche une barre de recherche pour chercher rapidement sur le web depuis votre nouvel onglet."
+  },
+  "opt_open_by_default": {
+    "message": "Ouvrir par défaut"
+  },
+  "widget_search_search_default_open_mode_aria": {
+    "message": "Ouverture par défaut de la recherche"
+  },
+  "opt_new_tab": {
+    "message": "Nouvel onglet"
+  },
+  "opt_same_tab": {
+    "message": "Même onglet"
+  },
+  "opt_while_music_plays": {
+    "message": "Pendant la musique"
+  },
+  "widget_search_search_open_mode_when_music_aria": {
+    "message": "Ouverture de la recherche pendant la musique"
+  },
+  "widget_shortcuts_shortcuts": {
+    "message": "Raccourcis"
+  },
+  "widget_shortcuts_show_shortcuts_options_aria": {
+    "message": "Afficher les options des raccourcis"
+  },
+  "widget_shortcuts_show_help_for_shortcuts_aria": {
+    "message": "Afficher l’aide des raccourcis"
+  },
+  "widget_shortcuts_displays_your_favorite_shortcuts_for": {
+    "message": "Affiche vos raccourcis favoris pour un accès rapide."
+  },
+  "widget_shortcuts_shortcuts_default_open_mode_aria": {
+    "message": "Ouverture par défaut des raccourcis"
+  },
+  "widget_shortcuts_shortcuts_open_mode_when_music_aria": {
+    "message": "Ouverture des raccourcis pendant la musique"
+  },
+  "widget_clock_clock": {
+    "message": "Horloge"
+  },
+  "widget_clock_show_clock_options_aria": {
+    "message": "Afficher les options de l’horloge"
+  },
+  "widget_clock_show_help_for_clock_aria": {
+    "message": "Afficher l’aide de l’horloge"
+  },
+  "widget_clock_displays_the_current_time_on": {
+    "message": "Affiche l’heure actuelle dans votre nouvel onglet."
+  },
+  "widget_clock_format": {
+    "message": "Format"
+  },
+  "widget_clock_clock_format_aria": {
+    "message": "Format de l’horloge"
+  },
+  "widget_clock_12h": {
+    "message": "12 h"
+  },
+  "widget_clock_24h": {
+    "message": "24 h"
+  },
+  "widget_clock_show_seconds": {
+    "message": "Afficher les secondes"
+  },
+  "opt_on": {
+    "message": "Oui"
+  },
+  "opt_off": {
+    "message": "Non"
+  },
+  "widget_clock_show_date": {
+    "message": "Afficher la date"
+  },
+  "widget_clock_size": {
+    "message": "Taille"
+  },
+  "widget_clock_clock_size_aria": {
+    "message": "Taille de l’horloge"
+  },
+  "widget_clock_font": {
+    "message": "Police"
+  },
+  "widget_clock_clock_font_aria": {
+    "message": "Police de l’horloge"
+  },
+  "widget_clock_modern": {
+    "message": "Moderne"
+  },
+  "widget_clock_rounded": {
+    "message": "Arrondie"
+  },
+  "widget_clock_hand": {
+    "message": "Manuscrite"
+  },
+  "widget_weather_weather": {
+    "message": "Météo"
+  },
+  "widget_weather_show_weather_options_aria": {
+    "message": "Afficher les options de la météo"
+  },
+  "widget_weather_show_help_for_weather_aria": {
+    "message": "Afficher l’aide de la météo"
+  },
+  "widget_weather_displays_the_current_weather_for": {
+    "message": "Affiche la météo actuelle de votre position. La détection automatique utilise votre fuseau horaire, qu’un VPN peut fausser ; le mode Manuel vous laisse choisir n’importe quelle ville du monde."
+  },
+  "widget_weather_location": {
+    "message": "Position"
+  },
+  "widget_weather_weather_location_mode_aria": {
+    "message": "Mode de position de la météo"
+  },
+  "opt_auto": {
+    "message": "Auto"
+  },
+  "opt_manual": {
+    "message": "Manuel"
+  },
+  "widget_weather_detected": {
+    "message": "Détectée"
+  },
+  "widget_weather_city": {
+    "message": "Ville"
+  },
+  "widget_weather_search_a_city_placeholder": {
+    "message": "Rechercher une ville..."
+  },
+  "widget_weather_units": {
+    "message": "Unités"
+  },
+  "widget_weather_temperature_units_aria": {
+    "message": "Unités de température"
+  },
+  "widget_weather_show_city": {
+    "message": "Afficher la ville"
+  },
+  "widget_weather_show_weather_city_aria": {
+    "message": "Afficher la ville de la météo"
+  },
+  "widget_greeting_daily_message": {
+    "message": "Message du jour"
+  },
+  "widget_greeting_show_daily_message_options_aria": {
+    "message": "Afficher les options du message du jour"
+  },
+  "widget_greeting_show_help_for_daily_message_aria": {
+    "message": "Afficher l’aide du message du jour"
+  },
+  "widget_greeting_shows_a_greeting_message_based": {
+    "message": "Affiche un message d’accueil selon l’heure. Saisissez votre prénom pour le personnaliser, ou laissez le champ vide pour garder le message par défaut."
+  },
+  "widget_greeting_name": {
+    "message": "Prénom"
+  },
+  "widget_greeting_enter_your_name_placeholder": {
+    "message": "Saisissez votre prénom"
+  },
+  "common_bookmarks": {
+    "message": "Favoris"
+  },
+  "widget_bookmarks_show_bookmarks_options_aria": {
+    "message": "Afficher les options des favoris"
+  },
+  "widget_bookmarks_show_help_for_bookmarks_aria": {
+    "message": "Afficher l’aide des favoris"
+  },
+  "widget_bookmarks_quick_access_to_your_chrome": {
+    "message": "Accès rapide à vos favoris Chrome grâce à un bouton en haut à droite de la page."
+  },
+  "widget_bookmarks_bookmarks_default_open_mode_aria": {
+    "message": "Ouverture par défaut des favoris"
+  },
+  "widget_bookmarks_bookmarks_open_mode_when_music_aria": {
+    "message": "Ouverture des favoris pendant la musique"
+  },
+  "widgets_focus": {
+    "message": "Concentration"
+  },
+  "widgets_tools_you_open_and_use": {
+    "message": "Des outils à ouvrir et à utiliser"
+  },
+  "common_sounds_and_music": {
+    "message": "Sons et musique"
+  },
+  "widget_music_show_help_for_sounds_and_aria": {
+    "message": "Afficher l’aide de Sons et musique"
+  },
+  "widget_music_displays_ambient_sounds_and_music": {
+    "message": "Propose des sons d’ambiance et des playlists pour vous aider à vous concentrer."
+  },
+  "widget_pomodoro_pomodoro": {
+    "message": "Pomodoro"
+  },
+  "widget_pomodoro_show_pomodoro_options_aria": {
+    "message": "Afficher les options du Pomodoro"
+  },
+  "widget_pomodoro_show_help_for_pomodoro_aria": {
+    "message": "Afficher l’aide du Pomodoro"
+  },
+  "widget_pomodoro_a_focus_timer_with_work": {
+    "message": "Un minuteur de concentration avec des périodes de travail et de pause, qui compte vos sessions chaque jour. En mode concentration, votre liste de tâches s’ouvre à côté du minuteur, et à la fin d’une session le minuteur vous demande si vous avez terminé votre tâche."
+  },
+  "widget_pomodoro_focus_min": {
+    "message": "Concentration (min)"
+  },
+  "widget_pomodoro_focus_duration_aria": {
+    "message": "Durée de concentration"
+  },
+  "widget_pomodoro_short_break_min": {
+    "message": "Pause courte (min)"
+  },
+  "widget_pomodoro_short_break_duration_aria": {
+    "message": "Durée de la pause courte"
+  },
+  "widget_pomodoro_long_break_min": {
+    "message": "Pause longue (min)"
+  },
+  "widget_pomodoro_long_break_duration_aria": {
+    "message": "Durée de la pause longue"
+  },
+  "widget_pomodoro_auto_start_next": {
+    "message": "Enchaîner"
+  },
+  "widget_pomodoro_auto_start_next_phase_aria": {
+    "message": "Lancer automatiquement la phase suivante"
+  },
+  "widget_pomodoro_focus_mode": {
+    "message": "Mode concentration"
+  },
+  "widget_pomodoro_focus_mode_during_timer_aria": {
+    "message": "Mode concentration pendant le minuteur"
+  },
+  "widget_pomodoro_tasks_in_focus": {
+    "message": "Tâches en concentration"
+  },
+  "widget_pomodoro_task_list_beside_the_focus_aria": {
+    "message": "Liste de tâches à côté du minuteur"
+  },
+  "widget_pomodoro_delete_all_tasks": {
+    "message": "Supprimer toutes les tâches"
+  },
+  "common_delete": {
+    "message": "Supprimer"
+  },
+  "widgets_wallpaper": {
+    "message": "Fond d’écran"
+  },
+  "widgets_how_the_background_looks_and": {
+    "message": "L’apparence et le comportement du fond"
+  },
+  "widget_video_playback_animations": {
+    "message": "Animations"
+  },
+  "widget_video_playback_show_help_for_animations_aria": {
+    "message": "Afficher l’aide des animations"
+  },
+  "widget_video_playback_controls_live_wallpaper_animation_when": {
+    "message": "Contrôle l’animation du fond d’écran animé. Désactivée, le fond d’écran devient fixe."
+  },
+  "widget_wallpaper_schedule_day_night": {
+    "message": "Jour/Nuit"
+  },
+  "widget_wallpaper_schedule_show_help_for_day_night_aria": {
+    "message": "Afficher l’aide de Jour/Nuit"
+  },
+  "widget_wallpaper_schedule_automatically_switches_wallpapers_based_on": {
+    "message": "Change automatiquement de fond d’écran selon le moment de la journée."
+  },
+  "widget_background_background": {
+    "message": "Arrière-plan"
+  },
+  "widget_background_show_background_options_aria": {
+    "message": "Afficher les options de l’arrière-plan"
+  },
+  "widget_background_show_help_for_background_aria": {
+    "message": "Afficher l’aide de l’arrière-plan"
+  },
+  "widget_background_make_the_page_readable_over": {
+    "message": "Rendez la page lisible sur votre propre fond d’écran. Adoucissez ou assombrissez l’image, ou laissez-la telle quelle et modifiez plutôt le texte. Une photo claire peut effacer un texte blanc, et une ombre plus forte ou une couleur plus foncée règle le problème sans toucher à l’image."
+  },
+  "widget_background_change_every": {
+    "message": "Changer toutes les"
+  },
+  "widget_background_5m": {
+    "message": "5m"
+  },
+  "widget_background_15m": {
+    "message": "15m"
+  },
+  "widget_background_30m": {
+    "message": "30m"
+  },
+  "widget_background_1h": {
+    "message": "1h"
+  },
+  "widget_background_blur_intensity": {
+    "message": "Flou"
+  },
+  "widget_background_background_blur_aria": {
+    "message": "Flou de l’arrière-plan"
+  },
+  "widget_background_brightness": {
+    "message": "Luminosité"
+  },
+  "widget_background_background_brightness_aria": {
+    "message": "Luminosité de l’arrière-plan"
+  },
+  "widget_background_text_shadow": {
+    "message": "Ombre du texte"
+  },
+  "widget_background_text_shadow_strength_aria": {
+    "message": "Intensité de l’ombre du texte"
+  },
+  "widget_background_text_color": {
+    "message": "Couleur du texte"
+  },
+  "settings_backup": {
+    "message": "Sauvegarde"
+  },
+  "settings_your_settings_shortcuts_and_saved": {
+    "message": "Vos réglages, raccourcis et playlists enregistrées. Pas vos fonds d’écran, trop lourds pour tenir dans un fichier"
+  },
+  "settings_save_a_copy_to_a": {
+    "message": "Enregistrer une copie dans un fichier"
+  },
+  "settings_export": {
+    "message": "Exporter"
+  },
+  "settings_restore_from_a_file": {
+    "message": "Restaurer depuis un fichier"
+  },
+  "settings_import": {
+    "message": "Importer"
+  },
+  "settings_reset": {
+    "message": "Réinitialisation"
+  },
+  "settings_clock_format_timer_lengths_location": {
+    "message": "Format de l’horloge, durées du minuteur, position et filtres de l’arrière-plan"
+  },
+  "settings_clear_every_widget_s_options": {
+    "message": "Effacer les options de tous les widgets"
+  },
+  "common_clear": {
+    "message": "Effacer"
+  },
+  "modal_delete_wallpapers_delete_all_wallpapers": {
+    "message": "Supprimer tous les fonds d’écran ?"
+  },
+  "modal_delete_wallpapers_this_permanently_removes_every_wallpaper": {
+    "message": "Cela supprime définitivement tous les fonds d’écran que vous avez importés. C’est irréversible, et les fichiers ne peuvent pas être récupérés d’ici."
+  },
+  "common_cancel": {
+    "message": "Annuler"
+  },
+  "modal_delete_tasks_delete_all_tasks": {
+    "message": "Supprimer toutes les tâches ?"
+  },
+  "modal_delete_tasks_this_removes_every_task_in": {
+    "message": "Cela supprime toutes les tâches de la liste, terminées ou non. C’est irréversible."
+  },
+  "modal_reset_clear_widget_options": {
+    "message": "Effacer les options des widgets ?"
+  },
+  "modal_reset_clock_pomodoro_weather_background_search": {
+    "message": "Les options de l’horloge, du Pomodoro, de la météo, de l’arrière-plan, de la recherche et des raccourcis reviennent à leurs valeurs par défaut. Les widgets affichés ne changent pas."
+  },
+  "panel_download_more_wallpapers": {
+    "message": "Télécharger d’autres fonds d’écran"
+  },
+  "modal_rename_rename_playlist": {
+    "message": "Renommer la playlist"
+  },
+  "modal_rename_close_rename_modal_aria": {
+    "message": "Fermer le renommage"
+  },
+  "modal_rename_playlist_name_placeholder": {
+    "message": "Nom de la playlist"
+  },
+  "common_save": {
+    "message": "Enregistrer"
+  },
+  "modal_playlist_delete_delete_playlist": {
+    "message": "Supprimer la playlist"
+  },
+  "modal_playlist_delete_close_delete_modal_aria": {
+    "message": "Fermer la suppression"
+  },
+  "modal_playlist_delete_delete_this_playlist_from_my": {
+    "message": "Supprimer cette playlist de Ma bibliothèque ?"
+  },
+  "modal_takeover_already_playing": {
+    "message": "Déjà en lecture"
+  },
+  "common_close": {
+    "message": "Fermer"
+  },
+  "modal_takeover_music_is_already_playing_in": {
+    "message": "De la musique est déjà en lecture dans un autre onglet. La lancer ici l’arrêtera là-bas."
+  },
+  "modal_takeover_keep_it_there": {
+    "message": "La laisser là-bas"
+  },
+  "modal_takeover_play_here": {
+    "message": "Lire ici"
+  },
+  "search_search_the_web_placeholder": {
+    "message": "Rechercher sur le web"
+  },
+  "search_search_the_web_aria": {
+    "message": "Rechercher sur le web"
+  },
+  "search_search_aria": {
+    "message": "Rechercher"
+  },
+  "bookmarks_search_bookmarks_placeholder": {
+    "message": "Rechercher dans les favoris"
+  },
+  "music_ambient_sounds_and_your_saved": {
+    "message": "Les sons d’ambiance et vos playlists enregistrées, au même endroit."
+  },
+  "music_close_sounds_and_music_aria": {
+    "message": "Fermer Sons et musique"
+  },
+  "music_music_sections_aria": {
+    "message": "Sections de musique"
+  },
+  "music_sounds": {
+    "message": "Sons"
+  },
+  "music_playlists": {
+    "message": "Playlists"
+  },
+  "music_no_sounds_active": {
+    "message": "Aucun son actif"
+  },
+  "music_start_a_sound_to_build": {
+    "message": "Lancez un son pour composer votre ambiance de concentration."
+  },
+  "music_mute_all": {
+    "message": "Tout couper"
+  },
+  "music_stop_all": {
+    "message": "Tout arrêter"
+  },
+  "music_tap_a_sound_card_to": {
+    "message": "Touchez une carte pour lancer ou arrêter un son, puis réglez le volume avec le curseur."
+  },
+  "music_filter_sounds": {
+    "message": "Filtrer les sons"
+  },
+  "music_quick_mixes": {
+    "message": "Ambiances prêtes"
+  },
+  "sound_rain": {
+    "message": "Pluie"
+  },
+  "sound_ocean_waves": {
+    "message": "Vagues"
+  },
+  "sound_thunderstorm": {
+    "message": "Orage"
+  },
+  "sound_forest_birds": {
+    "message": "Oiseaux de la forêt"
+  },
+  "sound_deep_forest": {
+    "message": "Forêt profonde"
+  },
+  "sound_forest_ambience": {
+    "message": "Ambiance forêt"
+  },
+  "sound_river_flow": {
+    "message": "Rivière"
+  },
+  "sound_waterfall": {
+    "message": "Cascade"
+  },
+  "sound_desert_wind": {
+    "message": "Vent du désert"
+  },
+  "sound_swamp_sounds": {
+    "message": "Marais"
+  },
+  "sound_campfire": {
+    "message": "Feu de camp"
+  },
+  "sound_city_ambience": {
+    "message": "Ambiance urbaine"
+  },
+  "sound_city_night": {
+    "message": "Ville la nuit"
+  },
+  "sound_airplane_cabin": {
+    "message": "Cabine d’avion"
+  },
+  "sound_train_journey": {
+    "message": "Voyage en train"
+  },
+  "sound_submarine": {
+    "message": "Sous-marin"
+  },
+  "sound_playground": {
+    "message": "Aire de jeux"
+  },
+  "sound_vinyl_crackle": {
+    "message": "Craquements de vinyle"
+  },
+  "sound_night_sounds": {
+    "message": "Bruits de la nuit"
+  },
+  "sound_wind_chimes": {
+    "message": "Carillon à vent"
+  },
+  "sound_temple_bells": {
+    "message": "Cloches de temple"
+  },
+  "sound_white_noise": {
+    "message": "Bruit blanc"
+  },
+  "sound_coffee_shop": {
+    "message": "Café"
+  },
+  "sound_meditation_bell": {
+    "message": "Cloche de méditation"
+  },
+  "common_playlist": {
+    "message": "Playlist"
+  },
+  "music_relaxing_beats_for_focus": {
+    "message": "Des rythmes apaisants pour se concentrer"
+  },
+  "music_calming_rainy_day_vibes": {
+    "message": "L’ambiance calme d’un jour de pluie"
+  },
+  "music_festive_relaxing_music": {
+    "message": "Musique festive et relaxante"
+  },
+  "music_chill_gaming_songs": {
+    "message": "Musiques de jeux vidéo tranquilles"
+  },
+  "music_1_paste_link": {
+    "message": "1. Collez le lien"
+  },
+  "music_2_play_preview": {
+    "message": "2. Écoutez l’aperçu"
+  },
+  "music_3_save_to_library": {
+    "message": "3. Enregistrez dans la bibliothèque"
+  },
+  "music_my_library": {
+    "message": "Ma bibliothèque"
+  },
+  "music_add": {
+    "message": "+ Ajouter"
+  },
+  "music_add_new_playlist": {
+    "message": "Ajouter une playlist"
+  },
+  "music_close_add_playlist_panel_aria": {
+    "message": "Fermer l’ajout de playlist"
+  },
+  "music_paste_spotify_soundcloud_or_youtube_placeholder": {
+    "message": "Collez le lien d’une playlist ou d’un titre Spotify, SoundCloud ou YouTube..."
+  },
+  "music_paste": {
+    "message": "Coller"
+  },
+  "music_paste_from_clipboard_aria": {
+    "message": "Coller depuis le presse-papiers"
+  },
+  "music_clear_music_link_aria": {
+    "message": "Effacer le lien"
+  },
+  "music_tip_use_paste_preview_with": {
+    "message": "Astuce : utilisez Coller, écoutez avec Lire maintenant, puis enregistrez dans votre bibliothèque."
+  },
+  "music_preview": {
+    "message": "Aperçu"
+  },
+  "music_waiting_for_a_link": {
+    "message": "En attente d’un lien"
+  },
+  "music_paste_a_playlist_or_track": {
+    "message": "Collez le lien d’une playlist ou d’un titre pour voir l’aperçu"
+  },
+  "music_we_auto_detect_the_platform": {
+    "message": "Nous détectons la plateforme et préparons une carte pour lire et enregistrer en un geste."
+  },
+  "music_play_now": {
+    "message": "Lire maintenant"
+  },
+  "music_instant_preview": {
+    "message": "Aperçu immédiat"
+  },
+  "music_save_this_playlist_to_your_title": {
+    "message": "Enregistrer cette playlist dans votre bibliothèque"
+  },
+  "music_add_to_library": {
+    "message": "Ajouter à la bibliothèque"
+  },
+  "music_keep_it_for_later": {
+    "message": "À garder pour plus tard"
+  },
+  "music_your_library_is_empty": {
+    "message": "Votre bibliothèque est vide"
+  },
+  "music_save_playlists_from_spotify_youtube": {
+    "message": "Enregistrez des playlists Spotify, YouTube ou SoundCloud pour les retrouver ici rapidement."
+  },
+  "music_add_your_first_playlist": {
+    "message": "Ajouter votre première playlist"
+  },
+  "music_playback": {
+    "message": "Lecture"
+  },
+  "common_no_playlist_playing": {
+    "message": "Aucune playlist en lecture"
+  },
+  "music_playback_continues_while_you_browse": {
+    "message": "La lecture continue pendant que vous naviguez. Utilisez Arrêter quand vous voulez le silence."
+  },
+  "music_prev": {
+    "message": "Préc."
+  },
+  "common_previous_track_aria": {
+    "message": "Titre précédent de la playlist"
+  },
+  "music_next": {
+    "message": "Suiv."
+  },
+  "common_next_track_aria": {
+    "message": "Titre suivant de la playlist"
+  },
+  "music_volume": {
+    "message": "Volume"
+  },
+  "common_youtube_volume_aria": {
+    "message": "Volume YouTube"
+  },
+  "common_mute": {
+    "message": "Couper le son"
+  },
+  "common_pause": {
+    "message": "Pause"
+  },
+  "common_stop": {
+    "message": "Arrêter"
+  },
+  "greet_headline_evening": {
+    "message": "Bonsoir"
+  },
+  "greet_hope_you_re_having_a": {
+    "message": "Passez une excellente journée !"
+  },
+  "pomo_focus": {
+    "message": "Concentration"
+  },
+  "pomo_start_title": {
+    "message": "Démarrer"
+  },
+  "pomo_reset_title": {
+    "message": "Réinitialiser"
+  },
+  "pomo_reset_timer_aria": {
+    "message": "Réinitialiser le minuteur"
+  },
+  "pomo_skip_to_next_phase_title": {
+    "message": "Passer à la phase suivante"
+  },
+  "pomo_yes": {
+    "message": "Oui"
+  },
+  "pomo_not_yet": {
+    "message": "Pas encore"
+  },
+  "pomo_open_ambient_sounds_title": {
+    "message": "Ouvrir les sons d’ambiance"
+  },
+  "pomo_sounds": {
+    "message": "Sons"
+  },
+  "tasks_tasks_aria": {
+    "message": "Tâches"
+  },
+  "tasks_add_a_task_placeholder": {
+    "message": "Ajouter une tâche"
+  },
+  "pomo_sounds_ambient_sounds": {
+    "message": "Sons d’ambiance"
+  },
+  "pomo_sounds_mute_all_title": {
+    "message": "Tout couper"
+  },
+  "pomo_sounds_stop_all_title": {
+    "message": "Tout arrêter"
+  },
+  "dock_idle": {
+    "message": "En attente"
+  },
+  "dock_playing_in_another_tab": {
+    "message": "En lecture dans un autre onglet"
+  },
+  "dock_open_sounds_and_music_title": {
+    "message": "Ouvrir Sons et musique"
+  },
+  "dock_toggle_loop_title": {
+    "message": "Activer ou désactiver la répétition"
+  },
+  "dock_pause_music_title": {
+    "message": "Mettre la musique en pause"
+  },
+  "dock_stop_music_title": {
+    "message": "Arrêter la musique"
+  },
+  "dock_live": {
+    "message": "DIRECT"
+  },
+  "dock_now_playing": {
+    "message": "En cours de lecture"
+  },
+  "shortcuts_add_shortcut": {
+    "message": "Ajouter un raccourci"
+  },
+  "shortcuts_website_name": {
+    "message": "Nom du site"
+  },
+  "shortcuts_website_url": {
+    "message": "Adresse du site"
+  },
+  "review_enjoying_wallsflow": {
+    "message": "Vous aimez Wallsflow ?"
+  },
+  "review_a_quick_review_helps_improve": {
+    "message": "Un petit avis aide à améliorer l’extension."
+  },
+  "review_rate_this_extension_aria": {
+    "message": "Noter cette extension"
+  },
+  "review_rate_1_star_aria": {
+    "message": "Donner 1 étoile"
+  },
+  "review_rate_2_stars_aria": {
+    "message": "Donner 2 étoiles"
+  },
+  "review_rate_3_stars_aria": {
+    "message": "Donner 3 étoiles"
+  },
+  "review_rate_4_stars_aria": {
+    "message": "Donner 4 étoiles"
+  },
+  "review_rate_5_stars_aria": {
+    "message": "Donner 5 étoiles"
+  },
+  "review_leave_a_review": {
+    "message": "Laisser un avis"
+  },
+  "review_maybe_later": {
+    "message": "Plus tard"
+  },
+  "toast_tag_saved": {
+    "message": "Enregistré"
+  },
+  "toast_tag_heads_up": {
+    "message": "Attention"
+  },
+  "toast_tag_enabled": {
+    "message": "Activé"
+  },
+  "toast_tag_disabled": {
+    "message": "Désactivé"
+  },
+  "toast_setting_saved_plain": {
+    "message": "Réglage enregistré"
+  },
+  "toast_setting_value": {
+    "message": "{subject} : {value}"
+  },
+  "toast_setting_saved": {
+    "message": "Enregistré : {subject}"
+  },
+  "widgets_toast_options_tip": {
+    "message": "Astuce : cliquez sur un widget pour ouvrir ses options."
+  },
+  "tasks_confirm_delete_all": {
+    "message": "Supprimer toutes les tâches ? C’est irréversible."
+  },
+  "tasks_toast_all_deleted": {
+    "message": "Toutes les tâches ont été supprimées"
+  },
+  "widget_weather_unknown_city": {
+    "message": "Inconnue"
+  },
+  "widget_weather_clear_city_title": {
+    "message": "Effacer et utiliser la détection automatique"
+  },
+  "widget_weather_no_cities": {
+    "message": "Aucune ville trouvée."
+  },
+  "widget_weather_toast_location_set": {
+    "message": "Position de la météo réglée sur {city}"
+  },
+  "settings_toast_nothing_to_export": {
+    "message": "Rien à exporter pour l’instant."
+  },
+  "settings_toast_exported_one": {
+    "message": "{count} réglage exporté"
+  },
+  "settings_toast_exported_other": {
+    "message": "{count} réglages exportés"
+  },
+  "settings_toast_export_failed": {
+    "message": "Impossible d’exporter vos réglages."
+  },
+  "settings_toast_import_too_large": {
+    "message": "Ce fichier est trop lourd pour être une sauvegarde de réglages."
+  },
+  "settings_toast_import_not_json": {
+    "message": "Ce fichier n’est pas un JSON valide."
+  },
+  "settings_toast_import_not_backup": {
+    "message": "Cela ne ressemble pas à une sauvegarde Wallsflow."
+  },
+  "settings_toast_import_nothing_applied": {
+    "message": "Aucun réglage de ce fichier n’a pu être appliqué."
+  },
+  "settings_toast_imported_one": {
+    "message": "{count} réglage importé."
+  },
+  "settings_toast_imported_other": {
+    "message": "{count} réglages importés."
+  },
+  "settings_toast_import_ignored_one": {
+    "message": "{count} a été ignoré."
+  },
+  "settings_toast_import_ignored_other": {
+    "message": "{count} ont été ignorés."
+  },
+  "common_reloading": {
+    "message": "Rechargement…"
+  },
+  "settings_toast_reset_done": {
+    "message": "Réglages remis par défaut"
+  },
+  "modal_reset_confirm_fallback": {
+    "message": "Effacer les options de tous les widgets et revenir aux valeurs par défaut ?"
+  },
+  "widget_wallpaper_schedule_toast_enabled": {
+    "message": "Jour/Nuit activé"
+  },
+  "widget_wallpaper_schedule_toast_disabled": {
+    "message": "Jour/Nuit désactivé"
+  },
+  "widget_background_toast_enabled": {
+    "message": "Effets d’arrière-plan activés"
+  },
+  "widget_background_toast_disabled": {
+    "message": "Effets d’arrière-plan désactivés"
+  },
+  "widget_search_toast_enabled": {
+    "message": "Barre de recherche activée"
+  },
+  "widget_search_toast_disabled": {
+    "message": "Barre de recherche désactivée"
+  },
+  "widget_shortcuts_toast_enabled": {
+    "message": "Raccourcis activés"
+  },
+  "widget_shortcuts_toast_disabled": {
+    "message": "Raccourcis désactivés"
+  },
+  "widget_music_toast_enabled": {
+    "message": "Lecteur de musique activé"
+  },
+  "widget_music_toast_disabled": {
+    "message": "Lecteur de musique désactivé"
+  },
+  "widget_greeting_toast_enabled": {
+    "message": "Message du jour activé"
+  },
+  "widget_greeting_toast_disabled": {
+    "message": "Message du jour désactivé"
+  },
+  "widget_clock_toast_enabled": {
+    "message": "Horloge activée"
+  },
+  "widget_clock_toast_disabled": {
+    "message": "Horloge désactivée"
+  },
+  "widget_weather_toast_enabled": {
+    "message": "Météo activée"
+  },
+  "widget_weather_toast_disabled": {
+    "message": "Météo désactivée"
+  },
+  "widget_pomodoro_toast_enabled": {
+    "message": "Pomodoro activé"
+  },
+  "widget_pomodoro_toast_disabled": {
+    "message": "Pomodoro désactivé"
+  },
+  "widget_bookmarks_toast_enabled": {
+    "message": "Favoris activés"
+  },
+  "widget_bookmarks_toast_disabled": {
+    "message": "Favoris désactivés"
+  },
+  "modal_delete_wallpapers_text_count_one": {
+    "message": "Cela supprime définitivement le fond d’écran que vous avez importé. C’est irréversible, et il ne peut pas être récupéré d’ici."
+  },
+  "modal_delete_wallpapers_text_count_other": {
+    "message": "Cela supprime définitivement les {count} fonds d’écran que vous avez importés. C’est irréversible, et ils ne peuvent pas être récupérés d’ici."
+  },
+  "modal_delete_wallpapers_confirm_fallback_one": {
+    "message": "Supprimer le fond d’écran importé ? C’est irréversible."
+  },
+  "modal_delete_wallpapers_confirm_fallback_other": {
+    "message": "Supprimer les {count} fonds d’écran importés ? C’est irréversible."
+  },
+  "wallpapers_toast_deleted_all_one": {
+    "message": "{count} fond d’écran supprimé"
+  },
+  "wallpapers_toast_deleted_all_other": {
+    "message": "{count} fonds d’écran supprimés"
+  },
+  "wallpapers_toast_delete_all_failed": {
+    "message": "Impossible de supprimer les fonds d’écran."
+  },
+  "unit_size_b": {
+    "message": "{size} o"
+  },
+  "unit_size_kb": {
+    "message": "{size} Ko"
+  },
+  "unit_size_mb": {
+    "message": "{size} Mo"
+  },
+  "unit_size_gb": {
+    "message": "{size} Go"
+  },
+  "wallpapers_storage_none": {
+    "message": "Aucun pour l’instant"
+  },
+  "wallpapers_storage_summary_one": {
+    "message": "{count} fichier · {size}"
+  },
+  "wallpapers_storage_summary_other": {
+    "message": "{count} fichiers · {size}"
+  },
+  "wallpapers_storage_unavailable": {
+    "message": "Indisponible"
+  },
+  "wallpapers_toast_missing_uploads": {
+    "message": "Vos fonds d’écran importés ne sont plus disponibles. Le navigateur les a peut-être effacés pour libérer de l’espace. Veuillez les importer à nouveau."
+  },
+  "wallpapers_toast_storage_nearly_full": {
+    "message": "Le stockage est presque plein. Supprimez quelques fonds d’écran pour faire de la place."
+  },
+  "wallpapers_toast_format_unsupported": {
+    "message": "{file} : format non pris en charge."
+  },
+  "wallpapers_toast_duplicate": {
+    "message": "{file} : déjà dans votre bibliothèque."
+  },
+  "wallpapers_toast_added": {
+    "message": "{file} : ajouté."
+  },
+  "wallpapers_toast_storage_full": {
+    "message": "Le stockage est plein. Supprimez quelques fonds d’écran et réessayez."
+  },
+  "wallpapers_toast_add_failed": {
+    "message": "Impossible d’ajouter {file}."
+  },
+  "wallpapers_toast_pinned_auto": {
+    "message": "Fond d’écran épinglé automatiquement."
+  },
+  "wallpapers_toast_added_showing": {
+    "message": "Ajouté et affiché. Vos fonds d’écran continuent de changer."
+  },
+  "wallpapers_toast_added_outside_rotation": {
+    "message": "Ajouté et affiché. Ajoutez-le à la rotation pour le revoir."
+  },
+  "wallpapers_toast_wallpaper_deleted": {
+    "message": "Fond d’écran supprimé"
+  },
+  "wallpapers_toast_delete_failed": {
+    "message": "Impossible de supprimer ce fond d’écran. Veuillez réessayer."
+  },
+  "wallpapers_unpin_title": {
+    "message": "Désépingler et reprendre le mode aléatoire"
+  },
+  "wallpapers_pin_title": {
+    "message": "Épingler pour le garder toujours visible"
+  },
+  "wallpapers_random_add_title": {
+    "message": "Ajouter aux fonds aléatoires"
+  },
+  "wallpapers_random_remove_title": {
+    "message": "Retirer des fonds aléatoires"
+  },
+  "wallpapers_toast_random_unavailable_daynight": {
+    "message": "Le mode aléatoire est indisponible tant que Jour/Nuit est activé."
+  },
+  "wallpapers_toast_random_blocked_default": {
+    "message": "Impossible d’utiliser les fonds aléatoires tant que le fond par défaut est épinglé. Désépinglez-le d’abord !"
+  },
+  "wallpapers_toast_random_blocked_pinned": {
+    "message": "Impossible d’utiliser les fonds aléatoires tant qu’un fond d’écran est épinglé. Désépinglez-le d’abord !"
+  },
+  "wallpapers_toast_random_removed": {
+    "message": "Retiré des fonds aléatoires"
+  },
+  "wallpapers_toast_random_added": {
+    "message": "Ajouté aux fonds aléatoires"
+  },
+  "unit_hours_one": {
+    "message": "{count} h"
+  },
+  "unit_hours_other": {
+    "message": "{count} h"
+  },
+  "unit_minutes_one": {
+    "message": "{count} min"
+  },
+  "unit_minutes_other": {
+    "message": "{count} min"
+  },
+  "unit_hours_compact_one": {
+    "message": "{count}h"
+  },
+  "unit_hours_compact_other": {
+    "message": "{count}h"
+  },
+  "unit_minutes_compact_one": {
+    "message": "{count}min"
+  },
+  "unit_minutes_compact_other": {
+    "message": "{count}min"
+  },
+  "wallpapers_duration_chip_title": {
+    "message": "Combien de temps ce fond d’écran reste affiché. Il suit le minuteur, sauf si vous choisissez une durée ici."
+  },
+  "common_save_failed_retry": {
+    "message": "Impossible d’enregistrer. Veuillez réessayer."
+  },
+  "wallpapers_toast_duration_follows_timer": {
+    "message": "Suit le minuteur"
+  },
+  "wallpapers_toast_duration_set": {
+    "message": "Affiché pendant {duration}"
+  },
+  "wallpapers_toast_default_restored": {
+    "message": "Fond d’écran par défaut rétabli"
+  },
+  "wallpapers_toast_pin_removed": {
+    "message": "Fond d’écran désépinglé"
+  },
+  "wallpapers_toast_default_pinned": {
+    "message": "Fond d’écran par défaut épinglé"
+  },
+  "wallpapers_default_hide_title": {
+    "message": "Masquer le fond d’écran par défaut"
+  },
+  "wallpapers_confirm_hide_title": {
+    "message": "Le masquer ?"
+  },
+  "wallpapers_confirm_hide_subtitle": {
+    "message": "Rétablissez-le en bas de cet onglet."
+  },
+  "wallpapers_toast_default_hidden": {
+    "message": "Fond d’écran par défaut masqué"
+  },
+  "wallpapers_toast_pin_removed_random_active": {
+    "message": "Fond d’écran désépinglé. Les fonds aléatoires sont de nouveau actifs."
+  },
+  "wallpapers_toast_pinned": {
+    "message": "Fond d’écran épinglé"
+  },
+  "wallpapers_delete_title": {
+    "message": "Supprimer ce fond d’écran"
+  },
+  "wallpapers_delete_aria": {
+    "message": "Retirer le fond d’écran"
+  },
+  "wallpapers_confirm_delete_title": {
+    "message": "Le supprimer ?"
+  },
+  "wallpapers_confirm_delete_subtitle": {
+    "message": "C’est irréversible."
+  },
+  "wallpapers_confirm_delete_fallback": {
+    "message": "Voulez-vous vraiment supprimer ce fond d’écran ?"
+  },
+  "wallpapers_toast_random_filter_unavailable": {
+    "message": "Le filtre Aléatoire est indisponible tant que Jour/Nuit est activé."
+  },
+  "wallpapers_toast_daynight_inactive": {
+    "message": "Jour/Nuit n’est pas actif. Activez-le dans Widgets."
+  },
+  "wallpapers_toast_rotation_every": {
+    "message": "Le fond d’écran change toutes les {duration}"
+  },
+  "wallpapers_toast_rotation_new_tab_only": {
+    "message": "Le fond d’écran change seulement à l’ouverture d’un onglet"
+  },
+  "wallpapers_help_pin": {
+    "message": "Épingler"
+  },
+  "wallpapers_help_pin_desc": {
+    "message": "Définit un fond d’écran comme principal (toujours visible)."
+  },
+  "wallpapers_help_random": {
+    "message": "Aléatoire"
+  },
+  "wallpapers_help_random_desc": {
+    "message": "Ajoute le fond d’écran à la rotation aléatoire."
+  },
+  "wallpapers_help_day": {
+    "message": "Jour"
+  },
+  "wallpapers_help_day_desc": {
+    "message": "Ajoute des fonds d’écran à la rotation de jour ({start}–{end})."
+  },
+  "wallpapers_help_night": {
+    "message": "Nuit"
+  },
+  "wallpapers_help_night_desc": {
+    "message": "Ajoute des fonds d’écran à la rotation de nuit ({start}–{end})."
+  },
+  "wallpapers_help_delete": {
+    "message": "Supprimer"
+  },
+  "wallpapers_help_delete_desc": {
+    "message": "Retire un fond d’écran de votre bibliothèque."
+  },
+  "wallpapers_help_timer": {
+    "message": "Minuteur"
+  },
+  "wallpapers_help_timer_desc": {
+    "message": "Change le fond d’écran selon un horaire. Cliquez sur la durée d’une carte pour lui donner sa propre durée. Faire tourner des fonds vidéo consomme plus de batterie."
+  },
+  "wallpapers_help_row_html": {
+    "message": "<strong>{label}</strong> : {description}"
+  },
+  "wallpapers_help_note_daynight_html": {
+    "message": "Les fonds d’écran tournent selon vos choix Jour et Nuit.<br>Si rien n’est choisi, tous les fonds d’écran tournent au hasard."
+  },
+  "wallpapers_help_note_random_html": {
+    "message": "Les fonds d’écran tournent selon votre choix Aléatoire.<br>Si aucun fond n’est choisi pour Aléatoire, tous les fonds d’écran tournent au hasard."
+  },
+  "wallpapers_on_screen_now_title": {
+    "message": "À l’écran en ce moment"
+  },
+  "wallpapers_hint_primary_daynight_timer": {
+    "message": "Un fond principal est actif, donc les règles Jour/Nuit et le minuteur sont en pause."
+  },
+  "wallpapers_hint_primary_daynight": {
+    "message": "Un fond principal est actif, donc les règles Jour/Nuit sont en pause."
+  },
+  "wallpapers_hint_primary_random_timer": {
+    "message": "Un fond principal est actif, donc les règles aléatoires et le minuteur sont en pause."
+  },
+  "wallpapers_hint_primary_random": {
+    "message": "Un fond principal est actif, donc les règles aléatoires sont en pause."
+  },
+  "wallpapers_hint_add_second": {
+    "message": "Ajoutez un deuxième fond d’écran à la liste pour qu’ils tournent."
+  },
+  "wallpapers_day_slot_aria": {
+    "message": "Afficher ce fond d’écran le jour"
+  },
+  "wallpapers_day_slot_title": {
+    "message": "Afficher le jour"
+  },
+  "wallpapers_toast_day_save_failed": {
+    "message": "Erreur lors de l’enregistrement du fond de jour"
+  },
+  "wallpapers_night_slot_aria": {
+    "message": "Afficher ce fond d’écran la nuit"
+  },
+  "wallpapers_night_slot_title": {
+    "message": "Afficher la nuit"
+  },
+  "wallpapers_toast_night_save_failed": {
+    "message": "Erreur lors de l’enregistrement du fond de nuit"
+  },
+  "wallpapers_toast_day_removed": {
+    "message": "Attribution de jour retirée"
+  },
+  "wallpapers_toast_day_saved": {
+    "message": "Fond de jour enregistré"
+  },
+  "wallpapers_toast_night_removed": {
+    "message": "Attribution de nuit retirée"
+  },
+  "wallpapers_toast_night_saved": {
+    "message": "Fond de nuit enregistré"
+  },
+  "widget_video_playback_toast_static": {
+    "message": "Le fond d’écran actuel est une image fixe, l’interrupteur d’animation n’a donc aucun effet."
+  },
+  "widget_video_playback_toast_enabled": {
+    "message": "Animation du fond d’écran activée"
+  },
+  "widget_video_playback_toast_disabled": {
+    "message": "Animation du fond d’écran désactivée"
+  },
+  "music_title_spotify_playlist": {
+    "message": "Playlist Spotify"
+  },
+  "music_title_spotify_album": {
+    "message": "Album Spotify"
+  },
+  "music_title_spotify_track": {
+    "message": "Titre Spotify"
+  },
+  "music_title_spotify_link": {
+    "message": "Lien Spotify"
+  },
+  "music_title_soundcloud_mix": {
+    "message": "Mix SoundCloud"
+  },
+  "music_title_youtube_playlist_mix": {
+    "message": "Mix de playlist YouTube"
+  },
+  "music_title_youtube_playlist": {
+    "message": "Playlist YouTube"
+  },
+  "music_title_youtube_live": {
+    "message": "Direct YouTube"
+  },
+  "music_title_youtube_video": {
+    "message": "Vidéo YouTube"
+  },
+  "music_library_limit_title": {
+    "message": "Bibliothèque pleine ({max}/{max})"
+  },
+  "music_open_add_playlist_title": {
+    "message": "Ajouter une playlist"
+  },
+  "music_untitled_playlist": {
+    "message": "Playlist sans titre"
+  },
+  "music_untitled": {
+    "message": "Sans titre"
+  },
+  "music_source_platform": {
+    "message": "Plateforme"
+  },
+  "music_type_playlist": {
+    "message": "Playlist"
+  },
+  "music_type_album": {
+    "message": "Album"
+  },
+  "music_type_track": {
+    "message": "Titre"
+  },
+  "music_type_song": {
+    "message": "Morceau"
+  },
+  "music_type_video": {
+    "message": "Vidéo"
+  },
+  "music_type_live": {
+    "message": "Direct"
+  },
+  "music_type_link": {
+    "message": "Lien"
+  },
+  "music_type_mix": {
+    "message": "Mix"
+  },
+  "music_type_unavailable": {
+    "message": "Indisponible"
+  },
+  "music_more_options_aria": {
+    "message": "Plus d’options"
+  },
+  "music_rename": {
+    "message": "Renommer"
+  },
+  "music_youtube_channel": {
+    "message": "Chaîne YouTube"
+  },
+  "music_ready_to_play": {
+    "message": "Prêt à lire"
+  },
+  "music_saved_playlist_default": {
+    "message": "Playlist enregistrée"
+  },
+  "music_toast_player_not_ready": {
+    "message": "Le lecteur de musique n’est pas prêt. Veuillez actualiser la page."
+  },
+  "music_toast_name_empty": {
+    "message": "Le nom ne peut pas être vide."
+  },
+  "music_toast_name_updated": {
+    "message": "Nom mis à jour."
+  },
+  "modal_playlist_delete_text_named": {
+    "message": "Supprimer « {name} » de Ma bibliothèque ?"
+  },
+  "music_toast_source_deleted": {
+    "message": "Source supprimée."
+  },
+  "modal_takeover_text_named": {
+    "message": "« {name} » est déjà en lecture dans un autre onglet. Le lancer ici l’arrêtera là-bas."
+  },
+  "modal_takeover_text_source": {
+    "message": "{source} est déjà en lecture dans un autre onglet. Le lancer ici l’arrêtera là-bas."
+  },
+  "music_source_generic": {
+    "message": "Musique"
+  },
+  "music_play_named_aria": {
+    "message": "Lire {name}"
+  },
+  "music_play_saved_aria": {
+    "message": "Lire la playlist enregistrée"
+  },
+  "dock_resume_music_title": {
+    "message": "Reprendre la musique"
+  },
+  "common_resume": {
+    "message": "Reprendre"
+  },
+  "music_source_is_playing": {
+    "message": "{source} en lecture"
+  },
+  "music_ambient_sounds_active": {
+    "message": "Sons d’ambiance actifs"
+  },
+  "dock_loop_on_title": {
+    "message": "Répétition activée"
+  },
+  "dock_loop_off_title": {
+    "message": "Répétition désactivée"
+  },
+  "music_toast_moved_here": {
+    "message": "La musique continue dans cet onglet."
+  },
+  "music_toast_moved_here_click": {
+    "message": "La musique est ici. Cliquez n’importe où pour la lancer."
+  },
+  "music_toast_ambient_moved_here": {
+    "message": "Les sons d’ambiance continuent dans cet onglet."
+  },
+  "music_toast_ambient_moved_here_click": {
+    "message": "Les sons d’ambiance sont ici. Cliquez n’importe où pour les lancer."
+  },
+  "music_playing": {
+    "message": "En lecture"
+  },
+  "dock_stop_music_other_tab_title": {
+    "message": "Arrêter la musique dans l’autre onglet"
+  },
+  "common_unmute": {
+    "message": "Réactiver le son"
+  },
+  "music_youtube_mix": {
+    "message": "Mix YouTube"
+  },
+  "dock_open_author_page_aria": {
+    "message": "Ouvrir la page de {author}"
+  },
+  "dock_author_page_unavailable_aria": {
+    "message": "Page de la chaîne indisponible"
+  },
+  "music_stream_subtitle_youtube": {
+    "message": "Vous pouvez régler le volume YouTube directement ici. La lecture continue sans interruption."
+  },
+  "music_stream_subtitle_generic": {
+    "message": "La musique continue pendant que vous naviguez."
+  },
+  "music_source_ambient": {
+    "message": "Ambiance"
+  },
+  "music_ready_to_save_or_play": {
+    "message": "Prêt à enregistrer ou à lire"
+  },
+  "music_feedback_youtube_detected": {
+    "message": "Lien YouTube détecté. La miniature, le titre et la chaîne s’affichent, et le son se règle depuis la barre du lecteur."
+  },
+  "music_feedback_detected": {
+    "message": "Lien {source} détecté. Écoutez l’aperçu, puis enregistrez ou lancez la lecture."
+  },
+  "music_feedback_invalid": {
+    "message": "Collez un lien valide vers une playlist ou un titre Spotify, SoundCloud ou YouTube."
+  },
+  "music_toast_dock_hint": {
+    "message": "La lecture continue dans la barre du bas"
+  },
+  "music_toast_smart_resume": {
+    "message": "Reprise intelligente active"
+  },
+  "music_toast_paused_by_browser": {
+    "message": "Le navigateur a mis la musique en pause. Cliquez n’importe où pour reprendre."
+  },
+  "music_toast_remote_cannot_pause": {
+    "message": "{source} ne peut pas être mis en pause depuis un autre onglet."
+  },
+  "music_toast_remote_stopped": {
+    "message": "Lecture arrêtée dans l’autre onglet."
+  },
+  "music_toast_paste_valid_link": {
+    "message": "Collez un lien vers une playlist ou un titre Spotify, SoundCloud ou YouTube"
+  },
+  "music_toast_clipboard_empty": {
+    "message": "Le presse-papiers est vide."
+  },
+  "music_toast_clipboard_blocked": {
+    "message": "L’accès au presse-papiers a été bloqué. Collez le lien vous-même."
+  },
+  "music_toast_paste_valid_first": {
+    "message": "Collez d’abord un lien valide vers une playlist ou un titre"
+  },
+  "music_toast_library_full_one": {
+    "message": "Bibliothèque pleine ({count} élément). Retirez-en un pour en ajouter d’autres."
+  },
+  "music_toast_library_full_other": {
+    "message": "Bibliothèque pleine ({count} éléments). Retirez-en un pour en ajouter d’autres."
+  },
+  "music_toast_already_in_library": {
+    "message": "Déjà dans votre bibliothèque ! Essayez un autre lien."
+  },
+  "music_toast_save_failed": {
+    "message": "Impossible d’enregistrer dans Ma bibliothèque. Le stockage du navigateur est peut-être plein."
+  },
+  "music_toast_saved": {
+    "message": "Enregistré dans Ma bibliothèque."
+  },
+  "music_player_frame_title": {
+    "message": "Lecteur de musique"
+  },
+  "music_toast_unsupported_url": {
+    "message": "Seuls les liens Spotify, SoundCloud et YouTube sont pris en charge"
+  },
+  "music_toast_invalid_spotify": {
+    "message": "Lien Spotify invalide ou non pris en charge"
+  },
+  "music_player_spotify_frame_title": {
+    "message": "Lecteur Spotify"
+  },
+  "music_toast_spotify_loaded_panel": {
+    "message": "Lecteur Spotify chargé dans Sons et musique"
+  },
+  "music_toast_spotify_ready_dock": {
+    "message": "Lecteur Spotify prêt dans la barre"
+  },
+  "music_player_soundcloud_frame_title": {
+    "message": "Lecteur SoundCloud"
+  },
+  "music_toast_soundcloud_ready": {
+    "message": "Lecteur SoundCloud prêt"
+  },
+  "music_toast_invalid_youtube": {
+    "message": "Adresse YouTube invalide"
+  },
+  "music_player_youtube_frame_title": {
+    "message": "Passerelle audio YouTube"
+  },
+  "music_toast_youtube_container_missing": {
+    "message": "Le lecteur YouTube est indisponible"
+  },
+  "music_toast_youtube_playlist_started": {
+    "message": "Playlist YouTube lancée"
+  },
+  "music_toast_youtube_started": {
+    "message": "YouTube lancé"
+  },
+  "music_toast_youtube_direct_embed": {
+    "message": "YouTube lancé en intégration directe"
+  },
+  "music_category_all": {
+    "message": "Tous"
+  },
+  "music_category_nature": {
+    "message": "Nature"
+  },
+  "music_category_water": {
+    "message": "Eau"
+  },
+  "music_category_travel": {
+    "message": "Voyage"
+  },
+  "music_category_city": {
+    "message": "Ville"
+  },
+  "music_category_cozy": {
+    "message": "Cocooning"
+  },
+  "music_category_night": {
+    "message": "Nuit"
+  },
+  "music_category_focus": {
+    "message": "Concentration"
+  },
+  "ambient_preset_deep_focus": {
+    "message": "Concentration profonde"
+  },
+  "ambient_preset_night_lofi": {
+    "message": "Lo-fi de nuit"
+  },
+  "ambient_preset_cafe_study": {
+    "message": "Étude au café"
+  },
+  "ambient_preset_nature_calm": {
+    "message": "Calme de la nature"
+  },
+  "music_toast_preset_active": {
+    "message": "Ambiance active : {preset}"
+  },
+  "music_badge_starting": {
+    "message": "Lancement"
+  },
+  "music_badge_playing": {
+    "message": "En lecture"
+  },
+  "music_badge_muted": {
+    "message": "Muet"
+  },
+  "music_badge_off": {
+    "message": "Arrêt"
+  },
+  "music_toast_ambient_save_failed": {
+    "message": "Impossible d’enregistrer votre ambiance. Le stockage du navigateur est peut-être plein."
+  },
+  "music_toast_sound_stopped": {
+    "message": "Son arrêté : {sound}"
+  },
+  "music_ambient_active_count_one": {
+    "message": "{count} son actif"
+  },
+  "music_ambient_active_count_other": {
+    "message": "{count} sons actifs"
+  },
+  "music_ambient_muted_subtitle": {
+    "message": "Votre ambiance est coupée pour le moment."
+  },
+  "music_ambient_tune_subtitle": {
+    "message": "Ajustez chaque couche avec les cartes ci-dessous."
+  },
+  "music_chip_stop_title": {
+    "message": "Arrêter {sound}"
+  },
+  "music_toast_ambient_other_tab": {
+    "message": "Les sons d’ambiance sont déjà actifs dans un autre onglet."
+  },
+  "music_toast_audio_not_found": {
+    "message": "Fichier audio introuvable"
+  },
+  "music_toast_sound_playing": {
+    "message": "{sound} en lecture"
+  },
+  "music_toast_sound_load_failed": {
+    "message": "Impossible de charger {sound}"
+  },
+  "music_toast_sound_play_failed": {
+    "message": "Impossible de lire {sound}"
+  },
+  "pomo_phase_short": {
+    "message": "Pause courte"
+  },
+  "pomo_phase_long": {
+    "message": "Pause longue"
+  },
+  "pomo_title_focus": {
+    "message": "Concentration"
+  },
+  "pomo_title_short": {
+    "message": "Pause"
+  },
+  "pomo_title_long": {
+    "message": "Pause longue"
+  },
+  "pomo_toast_focus_done": {
+    "message": "Session de concentration terminée !"
+  },
+  "pomo_toast_short_done": {
+    "message": "Pause courte terminée !"
+  },
+  "pomo_toast_long_done": {
+    "message": "Pause longue terminée !"
+  },
+  "pomo_exit_focus_aria": {
+    "message": "Quitter le mode concentration"
+  },
+  "pomo_exit_focus_title": {
+    "message": "Quitter le mode concentration (Échap)"
+  },
+  "pomo_sounds_volume_aria": {
+    "message": "Volume de {sound}"
+  },
+  "tasks_toast_save_failed": {
+    "message": "Impossible d’enregistrer vos tâches. Le stockage du navigateur est peut-être plein."
+  },
+  "tasks_announce_added": {
+    "message": "Ajoutée"
+  },
+  "tasks_announce_moved_top": {
+    "message": "Placée en haut"
+  },
+  "tasks_announce_deleted": {
+    "message": "Supprimée"
+  },
+  "tasks_announce_cleared_one": {
+    "message": "{count} tâche terminée retirée"
+  },
+  "tasks_announce_cleared_other": {
+    "message": "{count} tâches terminées retirées"
+  },
+  "tasks_ask_done": {
+    "message": "Avez-vous terminé « {task} » ?"
+  },
+  "tasks_now_aria": {
+    "message": "Marquer « {task} » comme terminée"
+  },
+  "tasks_now_title": {
+    "message": "Marquer comme terminée"
+  },
+  "tasks_announce_done": {
+    "message": "Terminée : {task}"
+  },
+  "tasks_row_current_aria": {
+    "message": "{task}, tâche en cours"
+  },
+  "tasks_promote_title": {
+    "message": "Faire ceci en premier"
+  },
+  "tasks_delete_aria": {
+    "message": "Supprimer la tâche"
+  },
+  "tasks_empty": {
+    "message": "Ajoutez ce sur quoi vous travaillez"
+  },
+  "tasks_done_count_one": {
+    "message": "{count} terminée"
+  },
+  "tasks_done_count_other": {
+    "message": "{count} terminées"
+  },
+  "tasks_list_full_placeholder_one": {
+    "message": "Liste pleine ({count} tâche)"
+  },
+  "tasks_list_full_placeholder_other": {
+    "message": "Liste pleine ({count} tâches)"
+  },
+  "tasks_edit_aria": {
+    "message": "Modifier la tâche"
+  },
+  "bookmarks_api_unavailable": {
+    "message": "API des favoris indisponible"
+  },
+  "bookmarks_unreadable": {
+    "message": "Impossible de lire les favoris"
+  },
+  "bookmarks_empty": {
+    "message": "Aucun favori pour l’instant"
+  },
+  "bookmarks_no_match": {
+    "message": "Aucun favori ne correspond"
+  },
+  "bookmarks_open_manager": {
+    "message": "Ouvrir le gestionnaire de favoris de Chrome"
+  },
+  "bookmarks_firefox_library_hint": {
+    "message": "Ouvrez la bibliothèque des marque-pages de Firefox avec Ctrl+Maj+O (Cmd+Maj+O sur Mac)."
+  },
+  "bookmarks_untitled_folder": {
+    "message": "Dossier sans nom"
+  },
+  "search_empty_hint_placeholder": {
+    "message": "Saisissez quelque chose à rechercher"
+  },
+  "review_toast_thanks": {
+    "message": "Merci pour votre avis !"
+  },
+  "weather_windy": {
+    "message": "Vent {speed}"
+  },
+  "weather_storm": {
+    "message": "Orage"
+  },
+  "weather_snow": {
+    "message": "Neige"
+  },
+  "weather_rain": {
+    "message": "Pluie"
+  },
+  "weather_fog": {
+    "message": "Brouillard"
+  },
+  "weather_cloudy": {
+    "message": "Nuageux"
+  },
+  "weather_partly_cloudy": {
+    "message": "Partiellement nuageux"
+  },
+  "weather_clear": {
+    "message": "Dégagé"
+  },
+  "weather_mild": {
+    "message": "Doux"
+  },
+  "weather_unavailable": {
+    "message": "Indisponible"
+  },
+  "shortcuts_toast_save_failed": {
+    "message": "Impossible d’enregistrer vos raccourcis. Le stockage du navigateur est peut-être plein."
+  },
+  "shortcuts_options_aria": {
+    "message": "Options du raccourci"
+  },
+  "shortcuts_edit_shortcut": {
+    "message": "Modifier le raccourci"
+  },
+  "shortcuts_invalid_url_placeholder": {
+    "message": "Adresse invalide ! Exemple : wallsflow.com"
+  },
+  "shortcuts_toast_duplicate_url": {
+    "message": "Cette adresse est déjà dans vos raccourcis."
+  },
+  "shortcuts_toast_reorder_tip": {
+    "message": "Astuce : faites glisser les raccourcis pour les réorganiser."
+  },
+  "greet_headline_morning": {
+    "message": "Bonjour"
+  },
+  "greet_headline_afternoon": {
+    "message": "Bon après-midi"
+  },
+  "greet_headline_night": {
+    "message": "Bonne nuit"
+  },
+  "greet_with_name": {
+    "message": "{line}, {name}{end}"
+  },
+  "greet_with_name_default_end": {
+    "message": "."
+  },
+  "greet_morning_clear_1": {
+    "message": "Une belle matinée s’annonce."
+  },
+  "greet_morning_clear_2": {
+    "message": "Le soleil est levé. Profitez-en."
+  },
+  "greet_morning_clear_3": {
+    "message": "Café et soleil."
+  },
+  "greet_morning_partly_cloudy_1": {
+    "message": "Douce lumière du matin."
+  },
+  "greet_morning_partly_cloudy_2": {
+    "message": "Un début de journée tranquille."
+  },
+  "greet_morning_cloudy_1": {
+    "message": "Une matinée doucement couverte."
+  },
+  "greet_morning_cloudy_2": {
+    "message": "Un début de journée paisible."
+  },
+  "greet_morning_rain_1": {
+    "message": "Matinée pluvieuse. Prenez votre temps."
+  },
+  "greet_morning_rain_2": {
+    "message": "Un temps parfait pour un thé."
+  },
+  "greet_morning_rain_3": {
+    "message": "Écoutez la pluie."
+  },
+  "greet_morning_snow_1": {
+    "message": "Matinée enneigée. Couvrez-vous bien."
+  },
+  "greet_morning_snow_2": {
+    "message": "La neige tombe en silence."
+  },
+  "greet_morning_storm_1": {
+    "message": "L’orage arrive. Restez au chaud."
+  },
+  "greet_morning_storm_2": {
+    "message": "Une matinée bruyante. Restez au chaud."
+  },
+  "greet_morning_fog_1": {
+    "message": "Matinée brumeuse, douce et calme."
+  },
+  "greet_morning_fog_2": {
+    "message": "De la brume tout autour."
+  },
+  "greet_morning_windy_1": {
+    "message": "Matinée venteuse. Tenez bon."
+  },
+  "greet_morning_windy_2": {
+    "message": "Un début vivifiant."
+  },
+  "greet_morning_default_1": {
+    "message": "Prenez la matinée en douceur."
+  },
+  "greet_morning_default_2": {
+    "message": "Belle matinée."
+  },
+  "greet_afternoon_clear_1": {
+    "message": "Bel après-midi."
+  },
+  "greet_afternoon_clear_2": {
+    "message": "Ciel lumineux. Profitez-en."
+  },
+  "greet_afternoon_partly_cloudy_1": {
+    "message": "Douce lumière d’après-midi."
+  },
+  "greet_afternoon_partly_cloudy_2": {
+    "message": "Tout en douceur."
+  },
+  "greet_afternoon_cloudy_1": {
+    "message": "Un après-midi paisible."
+  },
+  "greet_afternoon_cloudy_2": {
+    "message": "Lumière douce, rythme doux."
+  },
+  "greet_afternoon_rain_1": {
+    "message": "Un après-midi parfait pour rester à l’intérieur."
+  },
+  "greet_afternoon_rain_2": {
+    "message": "La pluie a la parole."
+  },
+  "greet_afternoon_snow_1": {
+    "message": "La neige continue de tomber."
+  },
+  "greet_afternoon_snow_2": {
+    "message": "Restez au chaud."
+  },
+  "greet_afternoon_storm_1": {
+    "message": "L’orage bat son plein."
+  },
+  "greet_afternoon_storm_2": {
+    "message": "Trouvez un coin douillet."
+  },
+  "greet_afternoon_fog_1": {
+    "message": "Après-midi brumeux, heures calmes."
+  },
+  "greet_afternoon_fog_2": {
+    "message": "Le monde paraît plus petit dans la brume."
+  },
+  "greet_afternoon_windy_1": {
+    "message": "Le vent se lève."
+  },
+  "greet_afternoon_windy_2": {
+    "message": "Un après-midi venteux."
+  },
+  "greet_afternoon_default_1": {
+    "message": "J’espère que votre journée se passe bien."
+  },
+  "greet_afternoon_default_2": {
+    "message": "Excellent après-midi."
+  },
+  "greet_evening_clear_1": {
+    "message": "Une soirée calme s’annonce."
+  },
+  "greet_evening_clear_2": {
+    "message": "Ciel dégagé. Détendez-vous."
+  },
+  "greet_evening_clear_3": {
+    "message": "Le coucher de soleil approche."
+  },
+  "greet_evening_partly_cloudy_1": {
+    "message": "Soirée tranquille."
+  },
+  "greet_evening_partly_cloudy_2": {
+    "message": "Ciel doux."
+  },
+  "greet_evening_cloudy_1": {
+    "message": "Nuages doux, rythme doux."
+  },
+  "greet_evening_cloudy_2": {
+    "message": "Une soirée paisible."
+  },
+  "greet_evening_rain_1": {
+    "message": "Soirée douillette, parfaite pour un thé."
+  },
+  "greet_evening_rain_2": {
+    "message": "La pluie donne le ton."
+  },
+  "greet_evening_rain_3": {
+    "message": "Le bruit de la pluie fait une belle soirée."
+  },
+  "greet_evening_snow_1": {
+    "message": "La neige tombe. Installez-vous."
+  },
+  "greet_evening_snow_2": {
+    "message": "Un temps à prendre une couverture en plus."
+  },
+  "greet_evening_storm_1": {
+    "message": "Orage ce soir. Restez à l’abri."
+  },
+  "greet_evening_storm_2": {
+    "message": "Un spectacle d’éclairs dans le ciel."
+  },
+  "greet_evening_fog_1": {
+    "message": "Soirée brumeuse, douce et paisible."
+  },
+  "greet_evening_fog_2": {
+    "message": "La brume adoucit tout."
+  },
+  "greet_evening_windy_1": {
+    "message": "Soirée venteuse. Couvrez-vous bien."
+  },
+  "greet_evening_windy_2": {
+    "message": "Le vent souffle fort ce soir."
+  },
+  "greet_evening_default_1": {
+    "message": "L’heure de se détendre."
+  },
+  "greet_evening_default_2": {
+    "message": "Belle soirée."
+  },
+  "greet_night_clear_1": {
+    "message": "Ciel de nuit dégagé."
+  },
+  "greet_night_clear_2": {
+    "message": "Les étoiles sont là."
+  },
+  "greet_night_clear_3": {
+    "message": "Heures tardives paisibles."
+  },
+  "greet_night_partly_cloudy_1": {
+    "message": "Nuit calme."
+  },
+  "greet_night_partly_cloudy_2": {
+    "message": "Heures tardives et calmes."
+  },
+  "greet_night_cloudy_1": {
+    "message": "Nuit nuageuse."
+  },
+  "greet_night_cloudy_2": {
+    "message": "Ciel doucement couvert."
+  },
+  "greet_night_rain_1": {
+    "message": "La pluie vous tient compagnie."
+  },
+  "greet_night_rain_2": {
+    "message": "Pluie tardive, encore plus douillette."
+  },
+  "greet_night_snow_1": {
+    "message": "La neige tombe dans le noir."
+  },
+  "greet_night_snow_2": {
+    "message": "Nuit calme et enneigée."
+  },
+  "greet_night_storm_1": {
+    "message": "Orage dans la nuit. Restez au chaud."
+  },
+  "greet_night_storm_2": {
+    "message": "Les éclairs illuminent la nuit."
+  },
+  "greet_night_fog_1": {
+    "message": "Nuit brumeuse, monde silencieux."
+  },
+  "greet_night_fog_2": {
+    "message": "De la brume partout."
+  },
+  "greet_night_windy_1": {
+    "message": "Heures tardives venteuses."
+  },
+  "greet_night_windy_2": {
+    "message": "Le vent souffle toute la nuit."
+  },
+  "greet_night_default_1": {
+    "message": "Il est tard. Allez-y doucement."
+  },
+  "greet_night_default_2": {
+    "message": "J’espère que vous vous détendez."
+  },
+  "whatsnew_page_wallsflow_new_tab_what_s": {
+    "message": "Wallsflow Nouvel Onglet : nouveautés"
+  },
+  "whatsnew_hey_there": {
+    "message": "Bonjour 👋"
+  },
+  "whatsnew_wallsflow_new_tab_has_a": {
+    "message": "Wallsflow Nouvel Onglet a été mis à jour."
+  },
+  "whatsnew_the_four_biggest_changes_are": {
+    "message": "Les cinq plus grands changements sont ci-dessous, et vous pouvez essayer chacun directement sur cette page. Rien de ce que vous faites ici ne touche à vos réglages."
+  },
+  "whatsnew_tasks_for_your_focus_sessions": {
+    "message": "Des tâches pour vos sessions de concentration"
+  },
+  "whatsnew_start_a_pomodoro_and_your": {
+    "message": "Lancez un Pomodoro et votre liste de tâches s’ouvre à côté du minuteur, pour que ce que vous voulez faire reste devant vous, et rien d’autre. La tâche en cours est écrite sous le minuteur, et la cocher là fait apparaître la suivante. À la fin de la session, le minuteur vous demande si vous l’avez terminée. Essayez : cochez une tâche ou ajoutez-en une, puis terminez la session."
+  },
+  "whatsnew_demo_end_the_session": {
+    "message": "Terminer la session"
+  },
+  "whatsnew_outside_a_focus_session_the_html": {
+    "message": "En dehors d’une session de concentration, la liste reste cachée. Dans l’extension, cliquer sur le texte d’une tâche permet de la modifier, et la flèche qui apparaît au survol d’une tâche la place en haut. Vous pouvez désactiver la liste ou supprimer toutes les tâches dans <strong>Widgets</strong>, sous <strong>Pomodoro</strong>."
+  },
+  "whatsnew_your_wallpapers_can_change_while": {
+    "message": "Vos fonds d’écran peuvent changer pendant que vous travaillez"
+  },
+  "whatsnew_until_now_an_uploaded_wallpaper": {
+    "message": "Jusqu’ici, un fond d’écran importé ne changeait qu’à l’ouverture d’un nouvel onglet. Si vous gardiez un onglet ouvert toute la journée, il ne changeait jamais. Choisissez une durée et regardez la liste ci-dessous."
+  },
+  "whatsnew_demo_how_often_the_wallpaper_changes_aria": {
+    "message": "À quelle fréquence le fond d’écran change"
+  },
+  "whatsnew_demo_forest": {
+    "message": "Forêt"
+  },
+  "whatsnew_demo_how_long_forest_stays_on_aria": {
+    "message": "Combien de temps Forêt reste affiché"
+  },
+  "whatsnew_demo_harbour": {
+    "message": "Port"
+  },
+  "whatsnew_demo_how_long_harbour_stays_on_aria": {
+    "message": "Combien de temps Port reste affiché"
+  },
+  "whatsnew_demo_dunes": {
+    "message": "Dunes"
+  },
+  "whatsnew_demo_how_long_dunes_stays_on_aria": {
+    "message": "Combien de temps Dunes reste affiché"
+  },
+  "whatsnew_demo_pick_a_time_above_to": {
+    "message": "Choisissez une durée ci-dessus pour commencer."
+  },
+  "whatsnew_in_the_extension_this_control_html": {
+    "message": "Dans l’extension, ce réglage se trouve dans <strong>Widgets</strong>, sous <strong>Arrière-plan</strong>. Les fonds d’écran qui tournent sont ceux marqués Aléatoire, ou vos ensembles Jour et Nuit si vous les utilisez. Un fond d’écran épinglé passe toujours en premier, donc rien ne change tant qu’il est épinglé."
+  },
+  "whatsnew_find_a_bookmark_by_typing": {
+    "message": "Trouvez un favori en tapant"
+  },
+  "whatsnew_the_bookmarks_panel_was_a_html": {
+    "message": "Le panneau des favoris était une liste à faire défiler. Il s’ouvre maintenant avec le curseur déjà dans une zone de recherche, et filtre au fil de la saisie sur le nom ou l’adresse. Essayez de taper <strong>git</strong> ou <strong>mail</strong>."
+  },
+  "whatsnew_escape_clears_what_you_typed": {
+    "message": "Échap efface ce que vous avez tapé, et un deuxième appui ferme le panneau."
+  },
+  "whatsnew_wallpapers_change_without_a_flash": {
+    "message": "Les fonds d’écran changent sans flash noir"
+  },
+  "whatsnew_swapping_a_wallpaper_used_to": {
+    "message": "Changer de fond d’écran faisait disparaître l’ancien avant que le nouveau soit prêt, et la page vide apparaissait dans l’intervalle. Le nouveau fond se charge maintenant derrière l’ancien et ne prend le relais qu’une fois prêt. Appuyez sur les deux boutons pour comparer."
+  },
+  "whatsnew_demo_how_it_used_to_look": {
+    "message": "L’ancien rendu"
+  },
+  "whatsnew_demo_how_it_looks_now": {
+    "message": "Le nouveau rendu"
+  },
+  "whatsnew_everything_else_in_this_release": {
+    "message": "Tout le reste de cette version :"
+  },
+  "whatsnew_change_music_stopped_following_you_between_html": {
+    "message": "<b>La musique ne vous suit plus d’un onglet à l’autre</b> Appuyer sur Arrêter pouvait relancer la musique dans un autre onglet une dizaine de secondes plus tard, et arrêter le dernier son d’ambiance pouvait le déplacer ailleurs au lieu de l’arrêter. Reprendre la lecture depuis un deuxième onglet pouvait aussi effacer ce que vous veniez de choisir. La façon dont les onglets s’accordent sur qui joue a été reconstruite, et 21 tests la vérifient désormais."
+  },
+  "whatsnew_change_uploading_no_longer_stops_the_html": {
+    "message": "<b>Importer n’arrête plus la rotation</b> Chaque import s’épinglait tout seul, et un fond épinglé met le minuteur en pause, donc ajouter une image arrêtait discrètement le changement de vos fonds. Un import s’affiche maintenant tout de suite sans être épinglé, et la rotation continue."
+  },
+  "whatsnew_change_day_and_night_now_switches_html": {
+    "message": "<b>Jour et Nuit change maintenant dans un onglet resté ouvert</b> Le moment de la journée n’était vérifié qu’à l’ouverture d’un onglet, donc un onglet ouvert après 19 h gardait son fond de jour. Il change maintenant tout seul."
+  },
+  "whatsnew_change_a_dropped_file_that_is_html": {
+    "message": "<b>Déposer un fichier qui n’est pas une image ne vide plus la liste</b> Glisser le mauvais type de fichier effaçait toutes les cartes de fonds jusqu’au prochain rechargement. Un message indique maintenant simplement que le format n’est pas pris en charge."
+  },
+  "whatsnew_change_the_weather_stopped_refetching_on_html": {
+    "message": "<b>La météo ne se recharge plus à chaque nouvel onglet</b> Elle ignorait son propre cache, ce qui annulait discrètement une correction de la version précédente."
+  },
+  "whatsnew_change_a_focus_session_could_count_html": {
+    "message": "<b>Une session de concentration pouvait compter double</b> Avec deux onglets ouverts, un Pomodoro pouvait ajouter deux sessions au total du jour. L’autre onglet suit maintenant sans compter à nouveau, y compris quand vous lancez un minuteur ailleurs."
+  },
+  "whatsnew_change_the_wallpaper_list_is_quieter_html": {
+    "message": "<b>La liste des fonds d’écran est plus sobre</b> Les étiquettes qui répétaient ce que montraient déjà les boutons ont disparu, et plus rien n’est écrit sur les images. La taille du fichier et la durée apparaissent au survol d’une carte."
+  },
+  "whatsnew_change_bookmarks_open_where_you_tell_html": {
+    "message": "<b>Les favoris s’ouvrent où vous le voulez</b> Les favoris ont leur propre choix d’ouverture, dans un nouvel onglet ou le même, séparé de celui des raccourcis. Tant que vous n’avez rien choisi, ils suivent le réglage des raccourcis."
+  },
+  "whatsnew_change_smaller_fixes_a_saved_playlist_html": {
+    "message": "<b>Petites corrections</b> Une playlist enregistrée pouvait apparaître deux fois dans votre bibliothèque. Désactiver l’horloge ne masque plus la météo avec elle. La couleur et l’ombre du texte s’appliquent maintenant aux libellés du Pomodoro. Les ambiances prêtes peuvent dépasser 100 %, comme les curseurs l’ont toujours pu. Et tout ce qui affiche <strong>Enregistré</strong> vérifie désormais que c’est vraiment le cas. L’horloge et le message d’accueil s’estompent désormais avec le reste de la page quand vous y faites glisser un fond d’écran."
+  },
+  "whatsnew_sincerely": {
+    "message": "Bien à vous,"
+  },
+  "whatsnew_love_using_wallsflow_new_tab_html": {
+    "message": "Vous aimez Wallsflow Nouvel Onglet ?<br>Un petit don aide à financer les prochaines mises à jour et améliorations ✨"
+  },
+  "common_donate": {
+    "message": "Faire un don"
+  },
+  "popup_open_a_new_tab_to": {
+    "message": "Ouvrez un nouvel onglet pour voir votre fond d’écran animé, la musique de concentration et les widgets. Cliquez sur la petite flèche en bas à droite de n’importe quel nouvel onglet pour ouvrir le menu."
+  },
+  "whatsnew_demo_task_1": {
+    "message": "Répondre au propriétaire"
+  },
+  "whatsnew_demo_task_2": {
+    "message": "Finir les diapos pour lundi"
+  },
+  "whatsnew_demo_task_3": {
+    "message": "Prendre rendez-vous chez le dentiste"
+  },
+  "whatsnew_demo_tasks_enough": {
+    "message": "Ça suffit pour un exemple"
+  },
+  "whatsnew_demo_start_next_session": {
+    "message": "Lancer la session suivante"
+  },
+  "whatsnew_demo_no_task": {
+    "message": "Aucune tâche"
+  },
+  "duration_hours_one": {
+    "message": "une heure"
+  },
+  "duration_hours_other": {
+    "message": "{count} heures"
+  },
+  "duration_minutes_one": {
+    "message": "{count} minute"
+  },
+  "duration_minutes_other": {
+    "message": "{count} minutes"
+  },
+  "whatsnew_demo_hint_off": {
+    "message": "Sans minuteur, rien ne change : le fond d’écran change seulement quand vous ouvrez un nouvel onglet."
+  },
+  "whatsnew_demo_hint_own_html": {
+    "message": "<b>{name}</b> est à l’écran. Vous lui avez donné sa propre durée ({duration}), ce fond d’écran ignore donc le réglage ci-dessus."
+  },
+  "whatsnew_demo_hint_timer_html": {
+    "message": "<b>{name}</b> est à l’écran. Après {duration}, le suivant prend le relais. Cliquez sur la durée d’une carte pour donner à ce fond d’écran sa propre durée."
+  },
+  "settings_language_title": {
+    "message": "Langue"
+  },
+  "settings_language_sub": {
+    "message": "Démarre dans la langue préférée de votre navigateur"
+  },
+  "settings_language_label": {
+    "message": "Langue de l’interface"
+  },
+  "settings_language_failed": {
+    "message": "Impossible de changer de langue. Le stockage du navigateur est peut-être plein."
+  },
+  "whatsnew_your_language_title": {
+    "message": "Wallsflow Nouvel Onglet parle votre langue"
+  },
+  "whatsnew_your_language_text_html": {
+    "message": "Toute l’extension est désormais en anglais, allemand, français, espagnol et roumain. Elle démarre dans la première de ces langues figurant dans la liste des langues préférées de votre navigateur, et vous pouvez en choisir une autre dans <strong>Réglages</strong>, sous <strong>Langue</strong>. Essayez : choisissez une langue ci-dessous."
+  },
+  "whatsnew_your_language_note_html": {
+    "message": "L’horloge démarre au format horaire de votre langue, 24 ou 12 heures, tant que vous n’en choisissez pas un sous <strong>Horloge</strong>. Une sauvegarde de vos réglages inclut désormais aussi votre langue et vos tâches."
+  },
+  "whatsnew_demo_language_aria": {
+    "message": "Langue de l’exemple"
+  },
+  "whatsnew_change_city_list_html": {
+    "message": "<b>La liste des villes de la météo fonctionne à nouveau</b> En choisissant une ville à la main, le champ de recherche s’affichait, mais les résultats en dessous étaient invisibles et impossibles à cliquer. Ce n’est plus le cas."
+  }
+}

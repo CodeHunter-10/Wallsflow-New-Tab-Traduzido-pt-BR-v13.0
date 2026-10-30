@@ -1,0 +1,1040 @@
+/* ============================================================
+   WHATS-NEW PAGE — release notes shown on extension auto-update.
+   ============================================================
+   Pulled out of the inline <style> block in whats-new.html so the
+   CSP can drop 'unsafe-inline' from style-src. Self-contained:
+   uses Poppins / Caveat from fonts.css (linked in the same page).
+   ============================================================ */
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    /* The same plain ground as the extension's side panel (--bg-elevated in
+       style.css). The glows that used to sit here read as decoration. */
+    background: #1e1e1e;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 24px 80px;
+    min-height: 100vh;
+}
+
+.wrap { width: 100%; max-width: 620px; }
+
+/* HEADER — same brand mark style as the side menu */
+.head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 44px;
+}
+
+.head .brand {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head .logo {
+    display: block;
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.95;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.2));
+}
+
+.head .meta {
+    position: absolute;
+    right: -38px;
+    bottom: -2px;
+    padding: 2px 7px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.34);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.greet {
+    font-family: 'Caveat', cursive;
+    font-size: 32px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.92);
+    margin: 0 0 18px;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.018em;
+    margin: 0 0 22px;
+    color: #fff;
+}
+
+p {
+    margin: 0 0 18px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+p strong { color: rgba(255, 255, 255, 0.95); font-weight: 600; }
+
+.changes {
+    margin: 28px 0 32px;
+    padding: 22px 26px;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+}
+
+.changes ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.changes li {
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.changes li b {
+    color: rgba(255, 255, 255, 0.96);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.changes li span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13.5px;
+}
+
+/* Inline emphasis used inside the changelog body — settings paths
+   ("Settings → Background"), example greeting snippets. Browser defaults
+   would render <strong> at 700 weight, heavier than the item title (600);
+   pulling it back to 600 keeps the visual hierarchy intact while still
+   reading as emphasised. <em> uses Poppins' 400 italic variant. */
+.changes li strong {
+    color: rgba(255, 255, 255, 0.92);
+    font-weight: 600;
+}
+
+.changes li em {
+    color: rgba(255, 255, 255, 0.86);
+    font-style: italic;
+}
+
+/* Soft support ask — sits between the signed name and the Donate
+   button. Small, conversational, with the angel emoji to keep it from
+   reading as a hard sell. */
+.donate-ask {
+    margin: 22px 0 0;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.78);
+    max-width: 520px;
+}
+
+/* Donate button — lives inside the .sign block now, sitting just under
+   the soft ask so the personal note + support copy + button read as one
+   closing gesture instead of a separate floating callout. The previous
+   .donate-block wrapper (gradient card + border) was kept around with
+   only the button inside it once the "honest ask" copy was removed,
+   leaving an empty padded box that looked off. Dropped the wrapper;
+   button is solid brand teal so it still reads as a clear CTA. */
+.donate-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 10px 22px;
+    background: rgba(20, 184, 166, 0.95);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.18s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.donate-btn:hover {
+    background: rgba(20, 184, 166, 1);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(20, 184, 166, 0.35);
+}
+
+.sign {
+    margin: 36px 0 0;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 14px;
+}
+
+.sign-name {
+    font-family: 'Caveat', cursive;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.92);
+    display: block;
+    margin-top: 4px;
+}
+
+@media (max-width: 540px) {
+    body { padding: 50px 18px 60px; }
+    h1 { font-size: 24px; }
+    .greet { font-size: 28px; }
+    .changes { padding: 18px 16px; }
+}
+
+/* ============================================================
+   LIVE DEMOS
+   ============================================================
+   The release notes used to be a wall of sentences about controls
+   the reader could not see. These rebuild the real controls in
+   plain markup: no screenshots to ship, go stale or blur on a
+   large screen, and the reader can press them. Styles are copied
+   in rather than imported, because this page is deliberately
+   self-contained and the extension's stylesheet is 8000 lines.
+   ============================================================ */
+
+.feature {
+    margin: 30px 0;
+}
+
+.feature h2 {
+    margin: 0 0 6px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.feature p {
+    margin: 0 0 14px;
+}
+
+.feature-note {
+    margin: 12px 0 0;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.demo {
+    padding: 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.demo-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.demo-row-center {
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.demo-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* The segmented control, as it appears in Widgets under Background. */
+.seg {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 3px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-left: auto;
+}
+
+.seg-btn {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.seg-btn:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.seg-btn.is-on {
+    background: #14B8A6;
+    color: #fff;
+}
+
+/* The language demo: a row of language names above a small new tab. The
+   names never wrap, so the row scrolls sideways on a narrow screen instead. */
+.demo-row-flush {
+    margin-top: 0;
+}
+
+.lang-seg {
+    margin-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.lang-seg .seg-btn {
+    white-space: nowrap;
+}
+
+/* On a phone all five names fit once the buttons are tighter; the sideways
+   scroll above stays only as a fallback for a longer list. */
+@media (max-width: 420px) {
+    .lang-seg .seg-btn {
+        padding: 5px 7px;
+        font-size: 10.5px;
+    }
+}
+
+.lang-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-top: 14px;
+    padding: 24px 16px 22px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #1b2730 var(--wf-demo-wallpaper, none) center / cover no-repeat;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.lang-preview::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.38);
+}
+
+.lang-preview > * {
+    position: relative;
+}
+
+.lang-time {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    min-height: 44px;
+}
+
+.lang-date {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+    min-height: 20px;
+}
+
+.lang-greet {
+    margin-top: 8px;
+    font-family: 'Caveat', cursive;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.lang-search {
+    margin-top: 14px;
+    width: min(320px, 100%);
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+    text-shadow: none;
+}
+
+/* A wallpaper card, cut down to the parts this page is about. */
+.demo-cards {
+    display: grid;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.demo-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    transition: border-color 0.2s ease;
+}
+
+.demo-card.is-showing {
+    border-color: #14B8A6;
+}
+
+.demo-thumb {
+    position: relative;
+    width: 84px;
+    height: 50px;
+    border-radius: 9px;
+    flex: 0 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+/* Three wallpapers need three different pictures, and the extension ships
+   only one, so the cards stand for them with three plain, muted colours. */
+.thumb-a { background: #3d5a52; }
+.thumb-b { background: #3f4f63; }
+.thumb-c { background: #6b5646; }
+
+/* A focus session and the break after it. The dim layer stands in for focus
+   mode's overlay; the rows are bare text with a shadow, as they are over the
+   real blurred wallpaper. */
+.fx-stage {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 24px;
+    min-height: 250px;
+    padding: 22px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #1b2730 var(--wf-demo-wallpaper, none) center / cover no-repeat;
+}
+
+/* A light dim during the break, the full focus-mode dim during a session, so
+   the timer reads over any part of the wallpaper. */
+.fx-stage::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0.55;
+    transition: opacity 0.4s ease;
+}
+
+.fx-stage.is-focus::before {
+    opacity: 1;
+}
+
+.fx-stage > * {
+    position: relative;
+}
+
+.fx-tasks {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.fx-stage:not(.is-focus) .fx-tasks {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fx-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 200px;
+}
+
+.fx-ring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.85);
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease;
+}
+
+.fx-stage.is-focus .fx-ring {
+    border-color: #14B8A6;
+}
+
+.fx-time {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.fx-phase {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.75;
+}
+
+.fx-ask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    font-size: 12.5px;
+    line-height: 1.4;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    overflow-wrap: anywhere;
+}
+
+.fx-ask[hidden] {
+    display: none;
+}
+
+.fx-ask-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.fx-ask-btn {
+    appearance: none;
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fx-ask-btn:hover {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.fx-ask-btn.is-yes {
+    background: #14B8A6;
+    border-color: #14B8A6;
+}
+
+/* The task being worked on, under the timer. */
+.fx-now {
+    appearance: none;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+    max-width: 200px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    color: #fff;
+    font-family: inherit;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 1.35;
+    text-align: left;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.fx-now[hidden] {
+    display: none;
+}
+
+.fx-now:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.fx-now-check {
+    position: relative;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    border: 1.5px solid #14B8A6;
+    border-radius: 50%;
+}
+
+.fx-now:hover .fx-now-check::after {
+    content: '';
+    position: absolute;
+    inset: 2.5px;
+    border-radius: 50%;
+    background: #14B8A6;
+    opacity: 0.6;
+}
+
+.tk {
+    width: min(260px, 100%);
+}
+
+.tk-title {
+    margin: 0 6px 6px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.tk-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tk-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.35;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 2px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    outline: none;
+    transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+.tk-row:hover,
+.tk-row:focus-visible {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tk-row:focus-visible {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.tk-row.is-done {
+    opacity: 0.45;
+}
+
+.tk-check {
+    position: relative;
+    flex: 0 0 auto;
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    border: 1.5px solid currentColor;
+    border-radius: 50%;
+    opacity: 0.85;
+}
+
+.tk-row.is-done .tk-check::after {
+    content: '';
+    position: absolute;
+    inset: 2.5px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.tk-text {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.tk-row.is-done .tk-text {
+    text-decoration: line-through;
+}
+
+.tk-add {
+    display: block;
+    width: calc(100% - 12px);
+    margin: 6px 6px 0;
+    padding: 6px 0;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    background: transparent;
+    color: #fff;
+    font-family: inherit;
+    font-size: 13px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.tk-add::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.tk-add:focus {
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.tk-add:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.tk-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 6px 0;
+    font-size: 11.5px;
+    color: rgba(255, 255, 255, 0.65);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.tk-foot[hidden] {
+    display: none;
+}
+
+.tk-clear {
+    appearance: none;
+    padding: 2px 4px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tk-clear:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tk-row.is-current .tk-text {
+    font-weight: 600;
+}
+
+.tk-row.is-current .tk-check {
+    border-color: #14B8A6;
+    opacity: 1;
+}
+
+.tk-promote {
+    appearance: none;
+    flex: 0 0 auto;
+    padding: 0 2px;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+
+.tk-row:hover .tk-promote,
+.tk-row:focus-visible .tk-promote {
+    opacity: 0.7;
+}
+
+.tk-promote:hover {
+    opacity: 1;
+}
+
+@media (max-width: 560px) {
+    .fx-stage { grid-template-columns: 1fr; }
+    .fx-timer { width: auto; order: -1; }
+}
+
+/* The duration chip. Hidden while the timer is off, exactly as in the
+   extension, where it also stays out of the way until you point at a card. */
+.demo-chip {
+    appearance: none;
+    position: absolute;
+    left: 16px;
+    bottom: 14px;
+    padding: 1px 5px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.5;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+}
+
+.demo-timer-on .demo-chip {
+    opacity: 0.85;
+    pointer-events: auto;
+}
+
+.demo-timer-on .demo-chip:hover {
+    opacity: 1;
+}
+
+.demo-chip.is-own {
+    background: #14B8A6;
+    border-color: #14B8A6;
+    opacity: 1;
+}
+
+/* Three grey stand-ins for the pin, day, night and delete buttons. */
+.demo-actions {
+    display: flex;
+    gap: 6px;
+    margin-left: auto;
+}
+
+.demo-actions i {
+    width: 26px;
+    height: 26px;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.demo-hint {
+    margin: 14px 0 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.62);
+    min-height: 20px;
+}
+
+.demo-hint b {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+/* The bookmarks panel. */
+.bm {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(20, 20, 20, 0.6);
+    overflow: hidden;
+}
+
+.bm-head {
+    padding: 12px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.bm-title {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.bm-search {
+    width: 100%;
+    margin-top: 9px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+}
+
+.bm-search::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.bm-search:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.bm-list {
+    padding: 6px 0;
+    min-height: 132px;
+}
+
+.bm-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 7px 14px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.bm-row .bm-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.28);
+    flex: 0 0 auto;
+}
+
+.bm-row .bm-url {
+    margin-left: auto;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.38);
+}
+
+.bm-empty {
+    padding: 22px 14px;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+/* The crossfade. Two stacked layers over the page's own background, so the
+   gap the old swap left really does show through as a dark hole. */
+.fade-stage {
+    position: relative;
+    height: 132px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #0f0f0f;
+}
+
+.fade-layer {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+/* The old wallpaper and the new one, as two plain colours from the cards
+   above, so the dark gap between them is the only thing to look at. */
+.fade-old {
+    background: #3d5a52;
+    opacity: 1;
+}
+
+.fade-new {
+    background: #6b5646;
+}
+
+/* Before: the outgoing layer fades out on its own, and for most of a second
+   there is nothing behind it. */
+.fade-stage.play-before .fade-old {
+    transition: opacity 0.6s ease;
+    opacity: 0;
+}
+
+/* The delay is the whole point: for most of a second there is nothing on
+   either layer, and the dark page shows through. Slowed down from what the
+   old code actually did so the gap is long enough to notice. */
+.fade-stage.play-before .fade-new {
+    transition: opacity 0.6s ease 1s;
+    opacity: 1;
+}
+
+/* Now: the incoming layer is already underneath at full strength, so the one
+   on top can fade away without ever revealing the page. */
+.fade-stage.play-after .fade-new {
+    opacity: 1;
+}
+
+.fade-stage.play-after .fade-old {
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+.demo-btn {
+    appearance: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.88);
+    font-family: inherit;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.demo-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.22);
+}
+
+.demo-btn-primary {
+    background: #14B8A6;
+    border-color: #14B8A6;
+    color: #fff;
+}
+
+.demo-btn-primary:hover {
+    background: #0D9488;
+    border-color: #0D9488;
+}
+
+@media (max-width: 560px) {
+    .seg { margin-left: 0; }
+    .demo-thumb { width: 64px; height: 40px; }
+    .demo-chip { left: 14px; bottom: 12px; }
+}
+
+/* Someone who asked the system for less movement gets the demos as plain
+   controls: they still work, they just do not move on their own. */
+@media (prefers-reduced-motion: reduce) {
+    .fade-stage.play-before .fade-old,
+    .fade-stage.play-before .fade-new,
+    .fade-stage.play-after .fade-old {
+        transition-duration: 0.01ms;
+    }
+}
+
+
+/* Translations: the page stays invisible for the moment between parsing and
+   i18n.js putting the reader's language in place, so English never flashes.
+   The animation is the failsafe: if the script never runs, the page appears
+   anyway after 0.6 s. */
+html.i18n-pending {
+    visibility: hidden;
+    animation: wf-i18n-failsafe 0s linear 0.6s forwards;
+}
+
+@keyframes wf-i18n-failsafe {
+    to { visibility: visible; }
+}

@@ -1,0 +1,2348 @@
+{
+  "extname": {
+    "message": "Wallsflow Filă Nouă: fundaluri animate, widgeturi și muzică de concentrare"
+  },
+  "extdescription": {
+    "message": "Fă din fila nouă un spațiu calm și personal, cu fundaluri animate, widgeturi și muzică ambientală pentru concentrare."
+  },
+  "action_title": {
+    "message": "Filă nouă"
+  },
+  "locale_code": {
+    "message": "ro"
+  },
+  "locale_native_name": {
+    "message": "Română"
+  },
+  "page_new_tab": {
+    "message": "Filă nouă"
+  },
+  "brand_name": {
+    "message": "Wallsflow Filă Nouă"
+  },
+  "drop_drop_to_add_wallpaper": {
+    "message": "Plasează aici ca să adaugi un fundal"
+  },
+  "drop_videos_and_images_supported_drop": {
+    "message": "Sunt acceptate videoclipuri și imagini · plasează oriunde"
+  },
+  "toast_update": {
+    "message": "Actualizare"
+  },
+  "panel_manage_wallpapers_title": {
+    "message": "Gestionează fundalurile"
+  },
+  "panel_wallpapers": {
+    "message": "Fundaluri"
+  },
+  "panel_widget_settings_title": {
+    "message": "Setări widgeturi"
+  },
+  "panel_widgets": {
+    "message": "Widgeturi"
+  },
+  "panel_backup_and_reset_title": {
+    "message": "Backup și resetare"
+  },
+  "panel_settings": {
+    "message": "Setări"
+  },
+  "wallpapers_upload_wallpaper": {
+    "message": "Încarcă un fundal"
+  },
+  "wallpapers_wallpaper_filter_aria": {
+    "message": "Filtru fundaluri"
+  },
+  "wallpapers_all": {
+    "message": "Toate"
+  },
+  "wallpapers_primary": {
+    "message": "Principal"
+  },
+  "wallpapers_random": {
+    "message": "Aleatoriu"
+  },
+  "wallpapers_day": {
+    "message": "Zi"
+  },
+  "wallpapers_night": {
+    "message": "Noapte"
+  },
+  "wallpapers_show_wallpaper_filter_help_aria": {
+    "message": "Arată ajutorul pentru filtrul de fundaluri"
+  },
+  "wallpapers_random_wallpapers_are_paused_while": {
+    "message": "Fundalurile aleatorii sunt în pauză cât timp un fundal fixat este activ."
+  },
+  "wallpapers_no_wallpapers_in_this_filter": {
+    "message": "Încă nu există fundaluri în acest filtru."
+  },
+  "wallpapers_wallpapers_stored": {
+    "message": "Fundaluri stocate"
+  },
+  "common_delete_all": {
+    "message": "Șterge tot"
+  },
+  "wallpapers_restore_default_wallpaper": {
+    "message": "Restabilește fundalul implicit"
+  },
+  "wallpapers_restore": {
+    "message": "Restabilește"
+  },
+  "widgets_widget_filter_aria": {
+    "message": "Filtru widgeturi"
+  },
+  "widgets_all": {
+    "message": "Toate"
+  },
+  "widgets_enabled": {
+    "message": "Activate"
+  },
+  "widgets_disabled": {
+    "message": "Dezactivate"
+  },
+  "widgets_show_filter_help_aria": {
+    "message": "Arată ajutorul pentru filtru"
+  },
+  "widgets_all_shows_every_widget_html": {
+    "message": "<strong>Toate</strong>: arată toate widgeturile."
+  },
+  "widgets_enabled_shows_only_widgets_that_html": {
+    "message": "<strong>Activate</strong>: arată doar widgeturile pornite acum."
+  },
+  "widgets_disabled_shows_only_widgets_that_html": {
+    "message": "<strong>Dezactivate</strong>: arată doar widgeturile oprite acum."
+  },
+  "widgets_no_widgets_match_this_filter": {
+    "message": "Niciun widget nu corespunde acestui filtru."
+  },
+  "widgets_on_your_page": {
+    "message": "Pe pagina ta"
+  },
+  "widgets_shown_on_the_new_tab": {
+    "message": "Afișate direct pe fila nouă"
+  },
+  "widget_search_search_bar": {
+    "message": "Bara de căutare"
+  },
+  "widget_search_show_search_bar_options_aria": {
+    "message": "Arată opțiunile pentru Bara de căutare"
+  },
+  "widget_search_show_help_for_search_bar_aria": {
+    "message": "Arată ajutorul pentru Bara de căutare"
+  },
+  "widget_search_displays_a_search_bar_for": {
+    "message": "Afișează o bară pentru căutări rapide pe web direct din fila nouă."
+  },
+  "opt_open_by_default": {
+    "message": "Deschidere implicită"
+  },
+  "widget_search_search_default_open_mode_aria": {
+    "message": "Unde se deschide implicit căutarea"
+  },
+  "opt_new_tab": {
+    "message": "Filă nouă"
+  },
+  "opt_same_tab": {
+    "message": "Aceeași filă"
+  },
+  "opt_while_music_plays": {
+    "message": "Când se aude muzică"
+  },
+  "widget_search_search_open_mode_when_music_aria": {
+    "message": "Unde se deschide căutarea când se aude muzică"
+  },
+  "widget_shortcuts_shortcuts": {
+    "message": "Scurtături"
+  },
+  "widget_shortcuts_show_shortcuts_options_aria": {
+    "message": "Arată opțiunile pentru Scurtături"
+  },
+  "widget_shortcuts_show_help_for_shortcuts_aria": {
+    "message": "Arată ajutorul pentru Scurtături"
+  },
+  "widget_shortcuts_displays_your_favorite_shortcuts_for": {
+    "message": "Afișează scurtăturile preferate pentru acces rapid."
+  },
+  "widget_shortcuts_shortcuts_default_open_mode_aria": {
+    "message": "Unde se deschid implicit scurtăturile"
+  },
+  "widget_shortcuts_shortcuts_open_mode_when_music_aria": {
+    "message": "Unde se deschid scurtăturile când se aude muzică"
+  },
+  "widget_clock_clock": {
+    "message": "Ceas"
+  },
+  "widget_clock_show_clock_options_aria": {
+    "message": "Arată opțiunile pentru Ceas"
+  },
+  "widget_clock_show_help_for_clock_aria": {
+    "message": "Arată ajutorul pentru Ceas"
+  },
+  "widget_clock_displays_the_current_time_on": {
+    "message": "Afișează ora curentă pe fila nouă."
+  },
+  "widget_clock_format": {
+    "message": "Format"
+  },
+  "widget_clock_clock_format_aria": {
+    "message": "Formatul ceasului"
+  },
+  "widget_clock_12h": {
+    "message": "12 h"
+  },
+  "widget_clock_24h": {
+    "message": "24 h"
+  },
+  "widget_clock_show_seconds": {
+    "message": "Arată secundele"
+  },
+  "opt_on": {
+    "message": "Da"
+  },
+  "opt_off": {
+    "message": "Nu"
+  },
+  "widget_clock_show_date": {
+    "message": "Arată data"
+  },
+  "widget_clock_size": {
+    "message": "Mărime"
+  },
+  "widget_clock_clock_size_aria": {
+    "message": "Mărimea ceasului"
+  },
+  "widget_clock_font": {
+    "message": "Font"
+  },
+  "widget_clock_clock_font_aria": {
+    "message": "Fontul ceasului"
+  },
+  "widget_clock_modern": {
+    "message": "Modern"
+  },
+  "widget_clock_rounded": {
+    "message": "Rotunjit"
+  },
+  "widget_clock_hand": {
+    "message": "De mână"
+  },
+  "widget_weather_weather": {
+    "message": "Vremea"
+  },
+  "widget_weather_show_weather_options_aria": {
+    "message": "Arată opțiunile pentru Vremea"
+  },
+  "widget_weather_show_help_for_weather_aria": {
+    "message": "Arată ajutorul pentru Vremea"
+  },
+  "widget_weather_displays_the_current_weather_for": {
+    "message": "Afișează vremea curentă pentru locația ta. Detectarea automată folosește fusul orar, pe care un VPN îl poate încurca; cu Manual poți alege orice oraș din lume."
+  },
+  "widget_weather_location": {
+    "message": "Locație"
+  },
+  "widget_weather_weather_location_mode_aria": {
+    "message": "Modul de locație pentru vreme"
+  },
+  "opt_auto": {
+    "message": "Auto"
+  },
+  "opt_manual": {
+    "message": "Manual"
+  },
+  "widget_weather_detected": {
+    "message": "Detectată"
+  },
+  "widget_weather_city": {
+    "message": "Oraș"
+  },
+  "widget_weather_search_a_city_placeholder": {
+    "message": "Caută un oraș..."
+  },
+  "widget_weather_units": {
+    "message": "Unități"
+  },
+  "widget_weather_temperature_units_aria": {
+    "message": "Unități de temperatură"
+  },
+  "widget_weather_show_city": {
+    "message": "Arată orașul"
+  },
+  "widget_weather_show_weather_city_aria": {
+    "message": "Arată orașul la vreme"
+  },
+  "widget_greeting_daily_message": {
+    "message": "Mesajul zilei"
+  },
+  "widget_greeting_show_daily_message_options_aria": {
+    "message": "Arată opțiunile pentru Mesajul zilei"
+  },
+  "widget_greeting_show_help_for_daily_message_aria": {
+    "message": "Arată ajutorul pentru Mesajul zilei"
+  },
+  "widget_greeting_shows_a_greeting_message_based": {
+    "message": "Afișează un salut potrivit orei din zi. Scrie-ți numele ca să-l personalizezi sau lasă câmpul gol pentru salutul implicit."
+  },
+  "widget_greeting_name": {
+    "message": "Nume"
+  },
+  "widget_greeting_enter_your_name_placeholder": {
+    "message": "Scrie-ți numele"
+  },
+  "common_bookmarks": {
+    "message": "Marcaje"
+  },
+  "widget_bookmarks_show_bookmarks_options_aria": {
+    "message": "Arată opțiunile pentru Marcaje"
+  },
+  "widget_bookmarks_show_help_for_bookmarks_aria": {
+    "message": "Arată ajutorul pentru Marcaje"
+  },
+  "widget_bookmarks_quick_access_to_your_chrome": {
+    "message": "Acces rapid la marcajele din Chrome printr-un buton din colțul din dreapta sus al paginii."
+  },
+  "widget_bookmarks_bookmarks_default_open_mode_aria": {
+    "message": "Unde se deschid implicit marcajele"
+  },
+  "widget_bookmarks_bookmarks_open_mode_when_music_aria": {
+    "message": "Unde se deschid marcajele când se aude muzică"
+  },
+  "widgets_focus": {
+    "message": "Concentrare"
+  },
+  "widgets_tools_you_open_and_use": {
+    "message": "Instrumente pe care le deschizi și le folosești"
+  },
+  "common_sounds_and_music": {
+    "message": "Sunete și muzică"
+  },
+  "widget_music_show_help_for_sounds_and_aria": {
+    "message": "Arată ajutorul pentru Sunete și muzică"
+  },
+  "widget_music_displays_ambient_sounds_and_music": {
+    "message": "Afișează sunete ambientale și playlisturi muzicale care te ajută să te concentrezi."
+  },
+  "widget_pomodoro_pomodoro": {
+    "message": "Pomodoro"
+  },
+  "widget_pomodoro_show_pomodoro_options_aria": {
+    "message": "Arată opțiunile pentru Pomodoro"
+  },
+  "widget_pomodoro_show_help_for_pomodoro_aria": {
+    "message": "Arată ajutorul pentru Pomodoro"
+  },
+  "widget_pomodoro_a_focus_timer_with_work": {
+    "message": "Un cronometru de concentrare cu intervale de lucru și de pauză, care îți numără sesiunile din fiecare zi. În modul concentrare, lista de sarcini se deschide lângă cronometru, iar la finalul unei sesiuni cronometrul te întreabă dacă ai terminat sarcina la care lucrai."
+  },
+  "widget_pomodoro_focus_min": {
+    "message": "Concentrare (min)"
+  },
+  "widget_pomodoro_focus_duration_aria": {
+    "message": "Durata concentrării"
+  },
+  "widget_pomodoro_short_break_min": {
+    "message": "Pauză scurtă (min)"
+  },
+  "widget_pomodoro_short_break_duration_aria": {
+    "message": "Durata pauzei scurte"
+  },
+  "widget_pomodoro_long_break_min": {
+    "message": "Pauză lungă (min)"
+  },
+  "widget_pomodoro_long_break_duration_aria": {
+    "message": "Durata pauzei lungi"
+  },
+  "widget_pomodoro_auto_start_next": {
+    "message": "Pornește următoarea"
+  },
+  "widget_pomodoro_auto_start_next_phase_aria": {
+    "message": "Pornește automat faza următoare"
+  },
+  "widget_pomodoro_focus_mode": {
+    "message": "Mod concentrare"
+  },
+  "widget_pomodoro_focus_mode_during_timer_aria": {
+    "message": "Mod concentrare în timpul cronometrului"
+  },
+  "widget_pomodoro_tasks_in_focus": {
+    "message": "Sarcini în concentrare"
+  },
+  "widget_pomodoro_task_list_beside_the_focus_aria": {
+    "message": "Lista de sarcini lângă cronometrul de concentrare"
+  },
+  "widget_pomodoro_delete_all_tasks": {
+    "message": "Șterge toate sarcinile"
+  },
+  "common_delete": {
+    "message": "Șterge"
+  },
+  "widgets_wallpaper": {
+    "message": "Fundal"
+  },
+  "widgets_how_the_background_looks_and": {
+    "message": "Cum arată și cum se comportă fundalul"
+  },
+  "widget_video_playback_animations": {
+    "message": "Animații"
+  },
+  "widget_video_playback_show_help_for_animations_aria": {
+    "message": "Arată ajutorul pentru Animații"
+  },
+  "widget_video_playback_controls_live_wallpaper_animation_when": {
+    "message": "Controlează animația fundalurilor animate. Când e dezactivată, fundalul devine static."
+  },
+  "widget_wallpaper_schedule_day_night": {
+    "message": "Zi/Noapte"
+  },
+  "widget_wallpaper_schedule_show_help_for_day_night_aria": {
+    "message": "Arată ajutorul pentru Zi/Noapte"
+  },
+  "widget_wallpaper_schedule_automatically_switches_wallpapers_based_on": {
+    "message": "Schimbă automat fundalurile în funcție de ora din zi."
+  },
+  "widget_background_background": {
+    "message": "Fundal"
+  },
+  "widget_background_show_background_options_aria": {
+    "message": "Arată opțiunile pentru Fundal"
+  },
+  "widget_background_show_help_for_background_aria": {
+    "message": "Arată ajutorul pentru Fundal"
+  },
+  "widget_background_make_the_page_readable_over": {
+    "message": "Fă pagina ușor de citit peste propriul fundal. Estompează sau întunecă imaginea, ori las-o așa și schimbă textul. O fotografie luminoasă poate înghiți textul alb, iar o umbră mai puternică sau o culoare mai închisă rezolvă asta fără să atingă imaginea."
+  },
+  "widget_background_change_every": {
+    "message": "Schimbă la fiecare"
+  },
+  "widget_background_5m": {
+    "message": "5m"
+  },
+  "widget_background_15m": {
+    "message": "15m"
+  },
+  "widget_background_30m": {
+    "message": "30m"
+  },
+  "widget_background_1h": {
+    "message": "1h"
+  },
+  "widget_background_blur_intensity": {
+    "message": "Intensitatea estompării"
+  },
+  "widget_background_background_blur_aria": {
+    "message": "Estomparea fundalului"
+  },
+  "widget_background_brightness": {
+    "message": "Luminozitate"
+  },
+  "widget_background_background_brightness_aria": {
+    "message": "Luminozitatea fundalului"
+  },
+  "widget_background_text_shadow": {
+    "message": "Umbra textului"
+  },
+  "widget_background_text_shadow_strength_aria": {
+    "message": "Intensitatea umbrei textului"
+  },
+  "widget_background_text_color": {
+    "message": "Culoarea textului"
+  },
+  "settings_backup": {
+    "message": "Backup"
+  },
+  "settings_your_settings_shortcuts_and_saved": {
+    "message": "Setările, scurtăturile și playlisturile salvate. Nu și fundalurile, care sunt prea mari ca să încapă într-un fișier"
+  },
+  "settings_save_a_copy_to_a": {
+    "message": "Salvează o copie într-un fișier"
+  },
+  "settings_export": {
+    "message": "Exportă"
+  },
+  "settings_restore_from_a_file": {
+    "message": "Restabilește dintr-un fișier"
+  },
+  "settings_import": {
+    "message": "Importă"
+  },
+  "settings_reset": {
+    "message": "Resetare"
+  },
+  "settings_clock_format_timer_lengths_location": {
+    "message": "Formatul ceasului, duratele cronometrului, locația și filtrele de fundal"
+  },
+  "settings_clear_every_widget_s_options": {
+    "message": "Șterge opțiunile tuturor widgeturilor"
+  },
+  "common_clear": {
+    "message": "Șterge"
+  },
+  "modal_delete_wallpapers_delete_all_wallpapers": {
+    "message": "Ștergi toate fundalurile?"
+  },
+  "modal_delete_wallpapers_this_permanently_removes_every_wallpaper": {
+    "message": "Asta elimină definitiv fiecare fundal încărcat de tine. Nu se poate anula, iar fișierele nu pot fi recuperate de aici."
+  },
+  "common_cancel": {
+    "message": "Anulează"
+  },
+  "modal_delete_tasks_delete_all_tasks": {
+    "message": "Ștergi toate sarcinile?"
+  },
+  "modal_delete_tasks_this_removes_every_task_in": {
+    "message": "Asta elimină fiecare sarcină din listă, terminată sau nu. Nu se poate anula."
+  },
+  "modal_reset_clear_widget_options": {
+    "message": "Ștergi opțiunile widgeturilor?"
+  },
+  "modal_reset_clock_pomodoro_weather_background_search": {
+    "message": "Opțiunile pentru ceas, Pomodoro, vreme, fundal, căutare și scurtături revin la valorile implicite. Widgeturile afișate rămân aceleași."
+  },
+  "panel_download_more_wallpapers": {
+    "message": "Descarcă mai multe fundaluri"
+  },
+  "modal_rename_rename_playlist": {
+    "message": "Redenumește playlistul"
+  },
+  "modal_rename_close_rename_modal_aria": {
+    "message": "Închide fereastra de redenumire"
+  },
+  "modal_rename_playlist_name_placeholder": {
+    "message": "Numele playlistului"
+  },
+  "common_save": {
+    "message": "Salvează"
+  },
+  "modal_playlist_delete_delete_playlist": {
+    "message": "Șterge playlistul"
+  },
+  "modal_playlist_delete_close_delete_modal_aria": {
+    "message": "Închide fereastra de ștergere"
+  },
+  "modal_playlist_delete_delete_this_playlist_from_my": {
+    "message": "Ștergi acest playlist din Biblioteca mea?"
+  },
+  "modal_takeover_already_playing": {
+    "message": "Se redă deja"
+  },
+  "common_close": {
+    "message": "Închide"
+  },
+  "modal_takeover_music_is_already_playing_in": {
+    "message": "Muzica se redă deja în altă filă. Dacă o pornești aici, se va opri acolo."
+  },
+  "modal_takeover_keep_it_there": {
+    "message": "Las-o acolo"
+  },
+  "modal_takeover_play_here": {
+    "message": "Redă aici"
+  },
+  "search_search_the_web_placeholder": {
+    "message": "Caută pe web"
+  },
+  "search_search_the_web_aria": {
+    "message": "Caută pe web"
+  },
+  "search_search_aria": {
+    "message": "Caută"
+  },
+  "bookmarks_search_bookmarks_placeholder": {
+    "message": "Caută în marcaje"
+  },
+  "music_ambient_sounds_and_your_saved": {
+    "message": "Sunete ambientale și playlisturile tale salvate, într-un singur loc."
+  },
+  "music_close_sounds_and_music_aria": {
+    "message": "Închide Sunete și muzică"
+  },
+  "music_music_sections_aria": {
+    "message": "Secțiuni muzică"
+  },
+  "music_sounds": {
+    "message": "Sunete"
+  },
+  "music_playlists": {
+    "message": "Playlisturi"
+  },
+  "music_no_sounds_active": {
+    "message": "Niciun sunet activ"
+  },
+  "music_start_a_sound_to_build": {
+    "message": "Pornește un sunet ca să-ți creezi mixul de concentrare."
+  },
+  "music_mute_all": {
+    "message": "Fără sonor"
+  },
+  "music_stop_all": {
+    "message": "Oprește tot"
+  },
+  "music_tap_a_sound_card_to": {
+    "message": "Atinge un card de sunet ca să-l pornești sau să-l oprești, apoi folosește glisorul pentru volum."
+  },
+  "music_filter_sounds": {
+    "message": "Filtrează sunetele"
+  },
+  "music_quick_mixes": {
+    "message": "Mixuri rapide"
+  },
+  "sound_rain": {
+    "message": "Ploaie"
+  },
+  "sound_ocean_waves": {
+    "message": "Valuri"
+  },
+  "sound_thunderstorm": {
+    "message": "Furtună"
+  },
+  "sound_forest_birds": {
+    "message": "Păsări în pădure"
+  },
+  "sound_deep_forest": {
+    "message": "Pădure deasă"
+  },
+  "sound_forest_ambience": {
+    "message": "Atmosferă de pădure"
+  },
+  "sound_river_flow": {
+    "message": "Râu"
+  },
+  "sound_waterfall": {
+    "message": "Cascadă"
+  },
+  "sound_desert_wind": {
+    "message": "Vânt în deșert"
+  },
+  "sound_swamp_sounds": {
+    "message": "Sunete de mlaștină"
+  },
+  "sound_campfire": {
+    "message": "Foc de tabără"
+  },
+  "sound_city_ambience": {
+    "message": "Atmosferă de oraș"
+  },
+  "sound_city_night": {
+    "message": "Oraș noaptea"
+  },
+  "sound_airplane_cabin": {
+    "message": "Cabină de avion"
+  },
+  "sound_train_journey": {
+    "message": "Călătorie cu trenul"
+  },
+  "sound_submarine": {
+    "message": "Submarin"
+  },
+  "sound_playground": {
+    "message": "Loc de joacă"
+  },
+  "sound_vinyl_crackle": {
+    "message": "Pârâit de vinil"
+  },
+  "sound_night_sounds": {
+    "message": "Sunetele nopții"
+  },
+  "sound_wind_chimes": {
+    "message": "Clopoței de vânt"
+  },
+  "sound_temple_bells": {
+    "message": "Clopote de templu"
+  },
+  "sound_white_noise": {
+    "message": "Zgomot alb"
+  },
+  "sound_coffee_shop": {
+    "message": "Cafenea"
+  },
+  "sound_meditation_bell": {
+    "message": "Clopot de meditație"
+  },
+  "common_playlist": {
+    "message": "Playlist"
+  },
+  "music_relaxing_beats_for_focus": {
+    "message": "Ritmuri relaxante pentru concentrare"
+  },
+  "music_calming_rainy_day_vibes": {
+    "message": "Atmosferă calmă de zi ploioasă"
+  },
+  "music_festive_relaxing_music": {
+    "message": "Muzică festivă relaxantă"
+  },
+  "music_chill_gaming_songs": {
+    "message": "Melodii liniștite pentru gaming"
+  },
+  "music_1_paste_link": {
+    "message": "1. Lipește linkul"
+  },
+  "music_2_play_preview": {
+    "message": "2. Ascultă previzualizarea"
+  },
+  "music_3_save_to_library": {
+    "message": "3. Salvează în bibliotecă"
+  },
+  "music_my_library": {
+    "message": "Biblioteca mea"
+  },
+  "music_add": {
+    "message": "+ Adaugă"
+  },
+  "music_add_new_playlist": {
+    "message": "Adaugă un playlist nou"
+  },
+  "music_close_add_playlist_panel_aria": {
+    "message": "Închide panoul de adăugare a playlisturilor"
+  },
+  "music_paste_spotify_soundcloud_or_youtube_placeholder": {
+    "message": "Lipește URL-ul unui playlist sau al unei piese Spotify, SoundCloud sau YouTube..."
+  },
+  "music_paste": {
+    "message": "Lipește"
+  },
+  "music_paste_from_clipboard_aria": {
+    "message": "Lipește din clipboard"
+  },
+  "music_clear_music_link_aria": {
+    "message": "Șterge linkul muzical"
+  },
+  "music_tip_use_paste_preview_with": {
+    "message": "Sfat: folosește Lipește, ascultă cu Redă acum, apoi salvează în bibliotecă."
+  },
+  "music_preview": {
+    "message": "Previzualizare"
+  },
+  "music_waiting_for_a_link": {
+    "message": "Se așteaptă un link"
+  },
+  "music_paste_a_playlist_or_track": {
+    "message": "Lipește linkul unui playlist sau al unei piese ca să-l asculți"
+  },
+  "music_we_auto_detect_the_platform": {
+    "message": "Detectăm automat platforma și pregătim un card curat pentru redare și salvare rapidă."
+  },
+  "music_play_now": {
+    "message": "Redă acum"
+  },
+  "music_instant_preview": {
+    "message": "Previzualizare instantă"
+  },
+  "music_save_this_playlist_to_your_title": {
+    "message": "Salvează acest playlist în bibliotecă"
+  },
+  "music_add_to_library": {
+    "message": "Adaugă în bibliotecă"
+  },
+  "music_keep_it_for_later": {
+    "message": "Păstrează-l pentru mai târziu"
+  },
+  "music_your_library_is_empty": {
+    "message": "Biblioteca e goală"
+  },
+  "music_save_playlists_from_spotify_youtube": {
+    "message": "Salvează playlisturi din Spotify, YouTube sau SoundCloud ca să le ai la îndemână aici."
+  },
+  "music_add_your_first_playlist": {
+    "message": "Adaugă primul playlist"
+  },
+  "music_playback": {
+    "message": "Redare"
+  },
+  "common_no_playlist_playing": {
+    "message": "Niciun playlist nu se redă"
+  },
+  "music_playback_continues_while_you_browse": {
+    "message": "Redarea continuă cât navighezi. Folosește Oprește când vrei liniște."
+  },
+  "music_prev": {
+    "message": "Înapoi"
+  },
+  "common_previous_track_aria": {
+    "message": "Piesa anterioară din playlist"
+  },
+  "music_next": {
+    "message": "Înainte"
+  },
+  "common_next_track_aria": {
+    "message": "Piesa următoare din playlist"
+  },
+  "music_volume": {
+    "message": "Volum"
+  },
+  "common_youtube_volume_aria": {
+    "message": "Volum YouTube"
+  },
+  "common_mute": {
+    "message": "Fără sonor"
+  },
+  "common_pause": {
+    "message": "Pauză"
+  },
+  "common_stop": {
+    "message": "Oprește"
+  },
+  "greet_headline_evening": {
+    "message": "Bună seara"
+  },
+  "greet_hope_you_re_having_a": {
+    "message": "Să ai o zi minunată!"
+  },
+  "pomo_focus": {
+    "message": "Concentrare"
+  },
+  "pomo_start_title": {
+    "message": "Pornește"
+  },
+  "pomo_reset_title": {
+    "message": "Resetează"
+  },
+  "pomo_reset_timer_aria": {
+    "message": "Resetează cronometrul"
+  },
+  "pomo_skip_to_next_phase_title": {
+    "message": "Treci la faza următoare"
+  },
+  "pomo_yes": {
+    "message": "Da"
+  },
+  "pomo_not_yet": {
+    "message": "Încă nu"
+  },
+  "pomo_open_ambient_sounds_title": {
+    "message": "Deschide sunetele ambientale"
+  },
+  "pomo_sounds": {
+    "message": "Sunete"
+  },
+  "tasks_tasks_aria": {
+    "message": "Sarcini"
+  },
+  "tasks_add_a_task_placeholder": {
+    "message": "Adaugă o sarcină"
+  },
+  "pomo_sounds_ambient_sounds": {
+    "message": "Sunete ambientale"
+  },
+  "pomo_sounds_mute_all_title": {
+    "message": "Fără sonor"
+  },
+  "pomo_sounds_stop_all_title": {
+    "message": "Oprește tot"
+  },
+  "dock_idle": {
+    "message": "Inactiv"
+  },
+  "dock_playing_in_another_tab": {
+    "message": "Se redă în altă filă"
+  },
+  "dock_open_sounds_and_music_title": {
+    "message": "Deschide Sunete și muzică"
+  },
+  "dock_toggle_loop_title": {
+    "message": "Activează sau dezactivează repetarea"
+  },
+  "dock_pause_music_title": {
+    "message": "Pune muzica pe pauză"
+  },
+  "dock_stop_music_title": {
+    "message": "Oprește muzica"
+  },
+  "dock_live": {
+    "message": "LIVE"
+  },
+  "dock_now_playing": {
+    "message": "Se redă acum"
+  },
+  "shortcuts_add_shortcut": {
+    "message": "Adaugă o scurtătură"
+  },
+  "shortcuts_website_name": {
+    "message": "Numele site-ului"
+  },
+  "shortcuts_website_url": {
+    "message": "URL-ul site-ului"
+  },
+  "review_enjoying_wallsflow": {
+    "message": "Îți place Wallsflow?"
+  },
+  "review_a_quick_review_helps_improve": {
+    "message": "O recenzie rapidă ajută la îmbunătățirea extensiei."
+  },
+  "review_rate_this_extension_aria": {
+    "message": "Evaluează această extensie"
+  },
+  "review_rate_1_star_aria": {
+    "message": "Evaluează cu 1 stea"
+  },
+  "review_rate_2_stars_aria": {
+    "message": "Evaluează cu 2 stele"
+  },
+  "review_rate_3_stars_aria": {
+    "message": "Evaluează cu 3 stele"
+  },
+  "review_rate_4_stars_aria": {
+    "message": "Evaluează cu 4 stele"
+  },
+  "review_rate_5_stars_aria": {
+    "message": "Evaluează cu 5 stele"
+  },
+  "review_leave_a_review": {
+    "message": "Lasă o recenzie"
+  },
+  "review_maybe_later": {
+    "message": "Poate mai târziu"
+  },
+  "toast_tag_saved": {
+    "message": "Salvat"
+  },
+  "toast_tag_heads_up": {
+    "message": "Atenție"
+  },
+  "toast_tag_enabled": {
+    "message": "Activat"
+  },
+  "toast_tag_disabled": {
+    "message": "Dezactivat"
+  },
+  "toast_setting_saved_plain": {
+    "message": "Setare salvată"
+  },
+  "toast_setting_value": {
+    "message": "{subject}: {value}"
+  },
+  "toast_setting_saved": {
+    "message": "Salvat: {subject}"
+  },
+  "widgets_toast_options_tip": {
+    "message": "Sfat: dă clic pe un widget ca să-i deschizi opțiunile."
+  },
+  "tasks_confirm_delete_all": {
+    "message": "Ștergi toate sarcinile? Nu se poate anula."
+  },
+  "tasks_toast_all_deleted": {
+    "message": "Toate sarcinile au fost șterse"
+  },
+  "widget_weather_unknown_city": {
+    "message": "Necunoscut"
+  },
+  "widget_weather_clear_city_title": {
+    "message": "Șterge și folosește detectarea automată"
+  },
+  "widget_weather_no_cities": {
+    "message": "Nu s-a găsit niciun oraș."
+  },
+  "widget_weather_toast_location_set": {
+    "message": "Locația pentru vreme: {city}"
+  },
+  "settings_toast_nothing_to_export": {
+    "message": "Încă nu e nimic de exportat."
+  },
+  "settings_toast_exported_one": {
+    "message": "{count} setare exportată"
+  },
+  "settings_toast_exported_few": {
+    "message": "{count} setări exportate"
+  },
+  "settings_toast_exported_other": {
+    "message": "{count} de setări exportate"
+  },
+  "settings_toast_export_failed": {
+    "message": "Setările nu au putut fi exportate."
+  },
+  "settings_toast_import_too_large": {
+    "message": "Fișierul e prea mare pentru un backup de setări."
+  },
+  "settings_toast_import_not_json": {
+    "message": "Fișierul nu este JSON valid."
+  },
+  "settings_toast_import_not_backup": {
+    "message": "Nu pare un backup Wallsflow."
+  },
+  "settings_toast_import_nothing_applied": {
+    "message": "Nicio setare din fișier nu a putut fi aplicată."
+  },
+  "settings_toast_imported_one": {
+    "message": "{count} setare importată."
+  },
+  "settings_toast_imported_few": {
+    "message": "{count} setări importate."
+  },
+  "settings_toast_imported_other": {
+    "message": "{count} de setări importate."
+  },
+  "settings_toast_import_ignored_one": {
+    "message": "{count} intrare a fost ignorată."
+  },
+  "settings_toast_import_ignored_few": {
+    "message": "{count} intrări au fost ignorate."
+  },
+  "settings_toast_import_ignored_other": {
+    "message": "{count} de intrări au fost ignorate."
+  },
+  "common_reloading": {
+    "message": "Se reîncarcă…"
+  },
+  "settings_toast_reset_done": {
+    "message": "Setările au revenit la valorile implicite"
+  },
+  "modal_reset_confirm_fallback": {
+    "message": "Ștergi opțiunile tuturor widgeturilor și revii la valorile implicite?"
+  },
+  "widget_wallpaper_schedule_toast_enabled": {
+    "message": "Modul Zi/Noapte activat"
+  },
+  "widget_wallpaper_schedule_toast_disabled": {
+    "message": "Modul Zi/Noapte dezactivat"
+  },
+  "widget_background_toast_enabled": {
+    "message": "Efectele de fundal activate"
+  },
+  "widget_background_toast_disabled": {
+    "message": "Efectele de fundal dezactivate"
+  },
+  "widget_search_toast_enabled": {
+    "message": "Bara de căutare activată"
+  },
+  "widget_search_toast_disabled": {
+    "message": "Bara de căutare dezactivată"
+  },
+  "widget_shortcuts_toast_enabled": {
+    "message": "Scurtăturile activate"
+  },
+  "widget_shortcuts_toast_disabled": {
+    "message": "Scurtăturile dezactivate"
+  },
+  "widget_music_toast_enabled": {
+    "message": "Playerul muzical activat"
+  },
+  "widget_music_toast_disabled": {
+    "message": "Playerul muzical dezactivat"
+  },
+  "widget_greeting_toast_enabled": {
+    "message": "Mesajul zilei activat"
+  },
+  "widget_greeting_toast_disabled": {
+    "message": "Mesajul zilei dezactivat"
+  },
+  "widget_clock_toast_enabled": {
+    "message": "Ceasul activat"
+  },
+  "widget_clock_toast_disabled": {
+    "message": "Ceasul dezactivat"
+  },
+  "widget_weather_toast_enabled": {
+    "message": "Vremea activată"
+  },
+  "widget_weather_toast_disabled": {
+    "message": "Vremea dezactivată"
+  },
+  "widget_pomodoro_toast_enabled": {
+    "message": "Pomodoro activat"
+  },
+  "widget_pomodoro_toast_disabled": {
+    "message": "Pomodoro dezactivat"
+  },
+  "widget_bookmarks_toast_enabled": {
+    "message": "Marcajele activate"
+  },
+  "widget_bookmarks_toast_disabled": {
+    "message": "Marcajele dezactivate"
+  },
+  "modal_delete_wallpapers_text_count_one": {
+    "message": "Asta elimină definitiv fundalul încărcat de tine. Nu se poate anula și nu poate fi recuperat de aici."
+  },
+  "modal_delete_wallpapers_text_count_few": {
+    "message": "Asta elimină definitiv toate cele {count} fundaluri încărcate de tine. Nu se poate anula și nu pot fi recuperate de aici."
+  },
+  "modal_delete_wallpapers_text_count_other": {
+    "message": "Asta elimină definitiv toate cele {count} de fundaluri încărcate de tine. Nu se poate anula și nu pot fi recuperate de aici."
+  },
+  "modal_delete_wallpapers_confirm_fallback_one": {
+    "message": "Ștergi fundalul încărcat? Nu se poate anula."
+  },
+  "modal_delete_wallpapers_confirm_fallback_few": {
+    "message": "Ștergi toate cele {count} fundaluri încărcate? Nu se poate anula."
+  },
+  "modal_delete_wallpapers_confirm_fallback_other": {
+    "message": "Ștergi toate cele {count} de fundaluri încărcate? Nu se poate anula."
+  },
+  "wallpapers_toast_deleted_all_one": {
+    "message": "{count} fundal șters"
+  },
+  "wallpapers_toast_deleted_all_few": {
+    "message": "{count} fundaluri șterse"
+  },
+  "wallpapers_toast_deleted_all_other": {
+    "message": "{count} de fundaluri șterse"
+  },
+  "wallpapers_toast_delete_all_failed": {
+    "message": "Fundalurile nu au putut fi șterse."
+  },
+  "unit_size_b": {
+    "message": "{size} B"
+  },
+  "unit_size_kb": {
+    "message": "{size} KB"
+  },
+  "unit_size_mb": {
+    "message": "{size} MB"
+  },
+  "unit_size_gb": {
+    "message": "{size} GB"
+  },
+  "wallpapers_storage_none": {
+    "message": "Niciunul încă"
+  },
+  "wallpapers_storage_summary_one": {
+    "message": "{count} fișier · {size}"
+  },
+  "wallpapers_storage_summary_few": {
+    "message": "{count} fișiere · {size}"
+  },
+  "wallpapers_storage_summary_other": {
+    "message": "{count} de fișiere · {size}"
+  },
+  "wallpapers_storage_unavailable": {
+    "message": "Indisponibil"
+  },
+  "wallpapers_toast_missing_uploads": {
+    "message": "Fundalurile încărcate nu mai sunt disponibile. Probabil browserul le-a șters ca să elibereze spațiu. Încarcă-le din nou."
+  },
+  "wallpapers_toast_storage_nearly_full": {
+    "message": "Spațiul de stocare e aproape plin. Șterge câteva fundaluri ca să faci loc."
+  },
+  "wallpapers_toast_format_unsupported": {
+    "message": "{file}: format neacceptat."
+  },
+  "wallpapers_toast_duplicate": {
+    "message": "{file}: e deja în bibliotecă."
+  },
+  "wallpapers_toast_added": {
+    "message": "{file}: adăugat."
+  },
+  "wallpapers_toast_storage_full": {
+    "message": "Spațiul de stocare e plin. Șterge câteva fundaluri și încearcă din nou."
+  },
+  "wallpapers_toast_add_failed": {
+    "message": "Nu s-a putut adăuga {file}."
+  },
+  "wallpapers_toast_pinned_auto": {
+    "message": "Fundal fixat automat."
+  },
+  "wallpapers_toast_added_showing": {
+    "message": "Adăugat și afișat acum. Fundalurile continuă să se schimbe."
+  },
+  "wallpapers_toast_added_outside_rotation": {
+    "message": "Adăugat și afișat acum. Adaugă-l la rotație ca să-l vezi din nou."
+  },
+  "wallpapers_toast_wallpaper_deleted": {
+    "message": "Fundal șters"
+  },
+  "wallpapers_toast_delete_failed": {
+    "message": "Fundalul nu a putut fi șters. Încearcă din nou."
+  },
+  "wallpapers_unpin_title": {
+    "message": "Anulează fixarea și revino la modul Aleatoriu"
+  },
+  "wallpapers_pin_title": {
+    "message": "Fixează fundalul ca să rămână mereu vizibil"
+  },
+  "wallpapers_random_add_title": {
+    "message": "Adaugă la fundalurile aleatorii"
+  },
+  "wallpapers_random_remove_title": {
+    "message": "Scoate din fundalurile aleatorii"
+  },
+  "wallpapers_toast_random_unavailable_daynight": {
+    "message": "Aleatoriu nu e disponibil cât timp Zi/Noapte este activat."
+  },
+  "wallpapers_toast_random_blocked_default": {
+    "message": "Nu poți folosi fundaluri aleatorii cât timp fundalul implicit e fixat. Anulează mai întâi fixarea!"
+  },
+  "wallpapers_toast_random_blocked_pinned": {
+    "message": "Nu poți folosi fundaluri aleatorii cât timp un fundal e fixat. Anulează mai întâi fixarea!"
+  },
+  "wallpapers_toast_random_removed": {
+    "message": "Scos din fundalurile aleatorii"
+  },
+  "wallpapers_toast_random_added": {
+    "message": "Adăugat la fundalurile aleatorii"
+  },
+  "unit_hours_one": {
+    "message": "{count} h"
+  },
+  "unit_hours_few": {
+    "message": "{count} h"
+  },
+  "unit_hours_other": {
+    "message": "{count} h"
+  },
+  "unit_minutes_one": {
+    "message": "{count} min"
+  },
+  "unit_minutes_few": {
+    "message": "{count} min"
+  },
+  "unit_minutes_other": {
+    "message": "{count} min"
+  },
+  "unit_hours_compact_one": {
+    "message": "{count}h"
+  },
+  "unit_hours_compact_few": {
+    "message": "{count}h"
+  },
+  "unit_hours_compact_other": {
+    "message": "{count}h"
+  },
+  "unit_minutes_compact_one": {
+    "message": "{count}min"
+  },
+  "unit_minutes_compact_few": {
+    "message": "{count}min"
+  },
+  "unit_minutes_compact_other": {
+    "message": "{count}min"
+  },
+  "wallpapers_duration_chip_title": {
+    "message": "Cât timp rămâne acest fundal pe ecran. Urmează cronometrul, dacă nu alegi aici o durată."
+  },
+  "common_save_failed_retry": {
+    "message": "Nu s-a putut salva. Încearcă din nou."
+  },
+  "wallpapers_toast_duration_follows_timer": {
+    "message": "Urmează cronometrul"
+  },
+  "wallpapers_toast_duration_set": {
+    "message": "Se afișează {duration}"
+  },
+  "wallpapers_toast_default_restored": {
+    "message": "Fundalul implicit a fost restabilit"
+  },
+  "wallpapers_toast_pin_removed": {
+    "message": "Fixarea a fost anulată"
+  },
+  "wallpapers_toast_default_pinned": {
+    "message": "Fundalul implicit a fost fixat"
+  },
+  "wallpapers_default_hide_title": {
+    "message": "Ascunde fundalul implicit"
+  },
+  "wallpapers_confirm_hide_title": {
+    "message": "Îl ascunzi?"
+  },
+  "wallpapers_confirm_hide_subtitle": {
+    "message": "Îl poți restabili din josul acestei secțiuni."
+  },
+  "wallpapers_toast_default_hidden": {
+    "message": "Fundalul implicit a fost ascuns"
+  },
+  "wallpapers_toast_pin_removed_random_active": {
+    "message": "Fixarea a fost anulată. Fundalurile aleatorii sunt din nou active."
+  },
+  "wallpapers_toast_pinned": {
+    "message": "Fundal fixat"
+  },
+  "wallpapers_delete_title": {
+    "message": "Șterge acest fundal"
+  },
+  "wallpapers_delete_aria": {
+    "message": "Elimină fundalul"
+  },
+  "wallpapers_confirm_delete_title": {
+    "message": "Îl ștergi?"
+  },
+  "wallpapers_confirm_delete_subtitle": {
+    "message": "Nu se poate anula."
+  },
+  "wallpapers_confirm_delete_fallback": {
+    "message": "Sigur vrei să ștergi acest fundal?"
+  },
+  "wallpapers_toast_random_filter_unavailable": {
+    "message": "Filtrul Aleatoriu nu e disponibil cât timp Zi/Noapte este activat."
+  },
+  "wallpapers_toast_daynight_inactive": {
+    "message": "Widgetul Zi/Noapte nu este activ. Activează-l din Widgeturi."
+  },
+  "wallpapers_toast_rotation_every": {
+    "message": "Fundalul se schimbă la fiecare {duration}"
+  },
+  "wallpapers_toast_rotation_new_tab_only": {
+    "message": "Fundalul se schimbă doar la o filă nouă"
+  },
+  "wallpapers_help_pin": {
+    "message": "Fixează"
+  },
+  "wallpapers_help_pin_desc": {
+    "message": "Setează un fundal ca Principal (mereu vizibil)."
+  },
+  "wallpapers_help_random": {
+    "message": "Aleatoriu"
+  },
+  "wallpapers_help_random_desc": {
+    "message": "Include fundalul în rotația aleatorie."
+  },
+  "wallpapers_help_day": {
+    "message": "Zi"
+  },
+  "wallpapers_help_day_desc": {
+    "message": "Include fundaluri în rotația de Zi ({start}–{end})."
+  },
+  "wallpapers_help_night": {
+    "message": "Noapte"
+  },
+  "wallpapers_help_night_desc": {
+    "message": "Include fundaluri în rotația de Noapte ({start}–{end})."
+  },
+  "wallpapers_help_delete": {
+    "message": "Șterge"
+  },
+  "wallpapers_help_delete_desc": {
+    "message": "Elimină un fundal din bibliotecă."
+  },
+  "wallpapers_help_timer": {
+    "message": "Cronometru"
+  },
+  "wallpapers_help_timer_desc": {
+    "message": "Schimbă fundalul după un program. Dă clic pe durata unui card ca să-i dai o durată proprie. Rotirea fundalurilor video consumă mai multă baterie."
+  },
+  "wallpapers_help_row_html": {
+    "message": "<strong>{label}</strong>: {description}"
+  },
+  "wallpapers_help_note_daynight_html": {
+    "message": "Fundalurile se rotesc după selecțiile de Zi și Noapte.<br>Dacă nu e selectat niciunul, toate fundalurile se rotesc aleatoriu."
+  },
+  "wallpapers_help_note_random_html": {
+    "message": "Fundalurile se rotesc după selecția Aleatoriu.<br>Dacă niciun fundal nu e selectat pentru Aleatoriu, toate se rotesc aleatoriu."
+  },
+  "wallpapers_on_screen_now_title": {
+    "message": "Pe ecran acum"
+  },
+  "wallpapers_hint_primary_daynight_timer": {
+    "message": "Principal este activ, așa că regulile Zi/Noapte și cronometrul sunt în pauză."
+  },
+  "wallpapers_hint_primary_daynight": {
+    "message": "Principal este activ, așa că regulile Zi/Noapte sunt în pauză."
+  },
+  "wallpapers_hint_primary_random_timer": {
+    "message": "Principal este activ, așa că regulile Aleatoriu și cronometrul sunt în pauză."
+  },
+  "wallpapers_hint_primary_random": {
+    "message": "Principal este activ, așa că regulile Aleatoriu sunt în pauză."
+  },
+  "wallpapers_hint_add_second": {
+    "message": "Adaugă încă un fundal în listă ca să se poată roti."
+  },
+  "wallpapers_day_slot_aria": {
+    "message": "Arată acest fundal ziua"
+  },
+  "wallpapers_day_slot_title": {
+    "message": "Arată ziua"
+  },
+  "wallpapers_toast_day_save_failed": {
+    "message": "Eroare la salvarea fundalului de zi"
+  },
+  "wallpapers_night_slot_aria": {
+    "message": "Arată acest fundal noaptea"
+  },
+  "wallpapers_night_slot_title": {
+    "message": "Arată noaptea"
+  },
+  "wallpapers_toast_night_save_failed": {
+    "message": "Eroare la salvarea fundalului de noapte"
+  },
+  "wallpapers_toast_day_removed": {
+    "message": "Atribuirea de zi a fost eliminată"
+  },
+  "wallpapers_toast_day_saved": {
+    "message": "Fundalul de zi a fost salvat"
+  },
+  "wallpapers_toast_night_removed": {
+    "message": "Atribuirea de noapte a fost eliminată"
+  },
+  "wallpapers_toast_night_saved": {
+    "message": "Fundalul de noapte a fost salvat"
+  },
+  "widget_video_playback_toast_static": {
+    "message": "Fundalul actual este static, așa că animația nu are niciun efect."
+  },
+  "widget_video_playback_toast_enabled": {
+    "message": "Animația fundalului activată"
+  },
+  "widget_video_playback_toast_disabled": {
+    "message": "Animația fundalului dezactivată"
+  },
+  "music_title_spotify_playlist": {
+    "message": "Playlist Spotify"
+  },
+  "music_title_spotify_album": {
+    "message": "Album Spotify"
+  },
+  "music_title_spotify_track": {
+    "message": "Piesă Spotify"
+  },
+  "music_title_spotify_link": {
+    "message": "Link Spotify"
+  },
+  "music_title_soundcloud_mix": {
+    "message": "Mix SoundCloud"
+  },
+  "music_title_youtube_playlist_mix": {
+    "message": "Mix din playlist YouTube"
+  },
+  "music_title_youtube_playlist": {
+    "message": "Playlist YouTube"
+  },
+  "music_title_youtube_live": {
+    "message": "Transmisiune live YouTube"
+  },
+  "music_title_youtube_video": {
+    "message": "Videoclip YouTube"
+  },
+  "music_library_limit_title": {
+    "message": "Limita bibliotecii a fost atinsă ({max}/{max})"
+  },
+  "music_open_add_playlist_title": {
+    "message": "Deschide Adaugă un playlist nou"
+  },
+  "music_untitled_playlist": {
+    "message": "Playlist fără nume"
+  },
+  "music_untitled": {
+    "message": "Fără nume"
+  },
+  "music_source_platform": {
+    "message": "Platformă"
+  },
+  "music_type_playlist": {
+    "message": "Playlist"
+  },
+  "music_type_album": {
+    "message": "Album"
+  },
+  "music_type_track": {
+    "message": "Piesă"
+  },
+  "music_type_song": {
+    "message": "Melodie"
+  },
+  "music_type_video": {
+    "message": "Video"
+  },
+  "music_type_live": {
+    "message": "Live"
+  },
+  "music_type_link": {
+    "message": "Link"
+  },
+  "music_type_mix": {
+    "message": "Mix"
+  },
+  "music_type_unavailable": {
+    "message": "Indisponibil"
+  },
+  "music_more_options_aria": {
+    "message": "Mai multe opțiuni"
+  },
+  "music_rename": {
+    "message": "Redenumește"
+  },
+  "music_youtube_channel": {
+    "message": "Canal YouTube"
+  },
+  "music_ready_to_play": {
+    "message": "Gata de redare"
+  },
+  "music_saved_playlist_default": {
+    "message": "Playlist salvat"
+  },
+  "music_toast_player_not_ready": {
+    "message": "Playerul muzical nu este pregătit. Reîmprospătează pagina."
+  },
+  "music_toast_name_empty": {
+    "message": "Numele nu poate fi gol."
+  },
+  "music_toast_name_updated": {
+    "message": "Nume actualizat."
+  },
+  "modal_playlist_delete_text_named": {
+    "message": "Ștergi „{name}” din Biblioteca mea?"
+  },
+  "music_toast_source_deleted": {
+    "message": "Sursă ștearsă."
+  },
+  "modal_takeover_text_named": {
+    "message": "„{name}” se redă deja în altă filă. Dacă îl pornești aici, se va opri acolo."
+  },
+  "modal_takeover_text_source": {
+    "message": "{source} se redă deja în altă filă. Dacă îl pornești aici, se va opri acolo."
+  },
+  "music_source_generic": {
+    "message": "Muzică"
+  },
+  "music_play_named_aria": {
+    "message": "Redă {name}"
+  },
+  "music_play_saved_aria": {
+    "message": "Redă playlistul salvat"
+  },
+  "dock_resume_music_title": {
+    "message": "Reia muzica"
+  },
+  "common_resume": {
+    "message": "Reia"
+  },
+  "music_source_is_playing": {
+    "message": "{source} se redă"
+  },
+  "music_ambient_sounds_active": {
+    "message": "Sunete ambientale active"
+  },
+  "dock_loop_on_title": {
+    "message": "Repetare activată"
+  },
+  "dock_loop_off_title": {
+    "message": "Repetare dezactivată"
+  },
+  "music_toast_moved_here": {
+    "message": "Muzica s-a mutat în această filă."
+  },
+  "music_toast_moved_here_click": {
+    "message": "Muzica e acum aici. Dă clic oriunde ca să pornească."
+  },
+  "music_toast_ambient_moved_here": {
+    "message": "Sunetele ambientale s-au mutat în această filă."
+  },
+  "music_toast_ambient_moved_here_click": {
+    "message": "Sunetele ambientale sunt acum aici. Dă clic oriunde ca să pornească."
+  },
+  "music_playing": {
+    "message": "Se redă"
+  },
+  "dock_stop_music_other_tab_title": {
+    "message": "Oprește muzica din cealaltă filă"
+  },
+  "common_unmute": {
+    "message": "Pornește sonorul"
+  },
+  "music_youtube_mix": {
+    "message": "Mix YouTube"
+  },
+  "dock_open_author_page_aria": {
+    "message": "Deschide pagina autorului {author}"
+  },
+  "dock_author_page_unavailable_aria": {
+    "message": "Pagina autorului nu este disponibilă"
+  },
+  "music_stream_subtitle_youtube": {
+    "message": "Poți regla volumul YouTube direct aici. Redarea continuă fără întreruperi."
+  },
+  "music_stream_subtitle_generic": {
+    "message": "Muzica merge mai departe cât navighezi."
+  },
+  "music_source_ambient": {
+    "message": "Ambient"
+  },
+  "music_ready_to_save_or_play": {
+    "message": "Gata de salvat sau de redat"
+  },
+  "music_feedback_youtube_detected": {
+    "message": "Link YouTube detectat. Se afișează miniatura, titlul și autorul, iar sunetul se controlează din bara playerului."
+  },
+  "music_feedback_detected": {
+    "message": "Link {source} detectat. Ascultă previzualizarea, apoi salvează-l sau redă-l."
+  },
+  "music_feedback_invalid": {
+    "message": "Lipește un link valid către un playlist sau o piesă Spotify, SoundCloud sau YouTube."
+  },
+  "music_toast_dock_hint": {
+    "message": "Redarea continuă în bara de jos"
+  },
+  "music_toast_smart_resume": {
+    "message": "Reluare inteligentă activă"
+  },
+  "music_toast_paused_by_browser": {
+    "message": "Browserul a pus muzica pe pauză. Dă clic oriunde ca să continue."
+  },
+  "music_toast_remote_cannot_pause": {
+    "message": "{source} nu poate fi pus pe pauză din altă filă."
+  },
+  "music_toast_remote_stopped": {
+    "message": "Redarea a fost oprită în cealaltă filă."
+  },
+  "music_toast_paste_valid_link": {
+    "message": "Lipește un link către un playlist sau o piesă Spotify, SoundCloud sau YouTube"
+  },
+  "music_toast_clipboard_empty": {
+    "message": "Clipboardul este gol."
+  },
+  "music_toast_clipboard_blocked": {
+    "message": "Accesul la clipboard a fost blocat. Lipește manual."
+  },
+  "music_toast_paste_valid_first": {
+    "message": "Lipește mai întâi un link valid către un playlist sau o piesă"
+  },
+  "music_toast_library_full_one": {
+    "message": "Biblioteca e plină ({count} element). Elimină unul ca să adaugi altele."
+  },
+  "music_toast_library_full_few": {
+    "message": "Biblioteca e plină ({count} elemente). Elimină unul ca să adaugi altele."
+  },
+  "music_toast_library_full_other": {
+    "message": "Biblioteca e plină ({count} de elemente). Elimină unul ca să adaugi altele."
+  },
+  "music_toast_already_in_library": {
+    "message": "E deja în bibliotecă! Încearcă alt link."
+  },
+  "music_toast_save_failed": {
+    "message": "Nu s-a putut salva în Biblioteca mea. Spațiul de stocare al browserului poate fi plin."
+  },
+  "music_toast_saved": {
+    "message": "Salvat în Biblioteca mea."
+  },
+  "music_player_frame_title": {
+    "message": "Player muzical"
+  },
+  "music_toast_unsupported_url": {
+    "message": "Sunt acceptate doar linkuri Spotify, SoundCloud și YouTube"
+  },
+  "music_toast_invalid_spotify": {
+    "message": "Link Spotify invalid sau neacceptat"
+  },
+  "music_player_spotify_frame_title": {
+    "message": "Player Spotify"
+  },
+  "music_toast_spotify_loaded_panel": {
+    "message": "Playerul Spotify a fost încărcat în Sunete și muzică"
+  },
+  "music_toast_spotify_ready_dock": {
+    "message": "Playerul Spotify e gata în bară"
+  },
+  "music_player_soundcloud_frame_title": {
+    "message": "Player SoundCloud"
+  },
+  "music_toast_soundcloud_ready": {
+    "message": "Playerul SoundCloud e gata"
+  },
+  "music_toast_invalid_youtube": {
+    "message": "URL YouTube invalid"
+  },
+  "music_player_youtube_frame_title": {
+    "message": "Punte audio YouTube"
+  },
+  "music_toast_youtube_container_missing": {
+    "message": "Playerul YouTube nu este disponibil"
+  },
+  "music_toast_youtube_playlist_started": {
+    "message": "Playlistul YouTube a pornit"
+  },
+  "music_toast_youtube_started": {
+    "message": "YouTube a pornit"
+  },
+  "music_toast_youtube_direct_embed": {
+    "message": "YouTube a pornit în modul încorporat direct"
+  },
+  "music_category_all": {
+    "message": "Toate"
+  },
+  "music_category_nature": {
+    "message": "Natură"
+  },
+  "music_category_water": {
+    "message": "Apă"
+  },
+  "music_category_travel": {
+    "message": "Călătorii"
+  },
+  "music_category_city": {
+    "message": "Oraș"
+  },
+  "music_category_cozy": {
+    "message": "Tihnă"
+  },
+  "music_category_night": {
+    "message": "Noapte"
+  },
+  "music_category_focus": {
+    "message": "Concentrare"
+  },
+  "ambient_preset_deep_focus": {
+    "message": "Concentrare profundă"
+  },
+  "ambient_preset_night_lofi": {
+    "message": "Lo-fi de noapte"
+  },
+  "ambient_preset_cafe_study": {
+    "message": "Studiu la cafenea"
+  },
+  "ambient_preset_nature_calm": {
+    "message": "Liniștea naturii"
+  },
+  "music_toast_preset_active": {
+    "message": "Mix activ: {preset}"
+  },
+  "music_badge_starting": {
+    "message": "Pornește"
+  },
+  "music_badge_playing": {
+    "message": "Se redă"
+  },
+  "music_badge_muted": {
+    "message": "Fără sonor"
+  },
+  "music_badge_off": {
+    "message": "Oprit"
+  },
+  "music_toast_ambient_save_failed": {
+    "message": "Nu s-a putut salva mixul ambiental. Spațiul de stocare al browserului poate fi plin."
+  },
+  "music_toast_sound_stopped": {
+    "message": "Sunet oprit: {sound}"
+  },
+  "music_ambient_active_count_one": {
+    "message": "{count} sunet activ"
+  },
+  "music_ambient_active_count_few": {
+    "message": "{count} sunete active"
+  },
+  "music_ambient_active_count_other": {
+    "message": "{count} de sunete active"
+  },
+  "music_ambient_muted_subtitle": {
+    "message": "Mixul ambiental e fără sonor acum."
+  },
+  "music_ambient_tune_subtitle": {
+    "message": "Folosește cardurile de mai jos ca să reglezi fiecare strat."
+  },
+  "music_chip_stop_title": {
+    "message": "Oprește {sound}"
+  },
+  "music_toast_ambient_other_tab": {
+    "message": "Sunetele ambientale sunt deja active în altă filă."
+  },
+  "music_toast_audio_not_found": {
+    "message": "Fișierul audio nu a fost găsit"
+  },
+  "music_toast_sound_playing": {
+    "message": "{sound} se redă"
+  },
+  "music_toast_sound_load_failed": {
+    "message": "Nu s-a putut încărca {sound}"
+  },
+  "music_toast_sound_play_failed": {
+    "message": "Nu s-a putut reda {sound}"
+  },
+  "pomo_phase_short": {
+    "message": "Pauză scurtă"
+  },
+  "pomo_phase_long": {
+    "message": "Pauză lungă"
+  },
+  "pomo_title_focus": {
+    "message": "Concentrare"
+  },
+  "pomo_title_short": {
+    "message": "Pauză"
+  },
+  "pomo_title_long": {
+    "message": "Pauză lungă"
+  },
+  "pomo_toast_focus_done": {
+    "message": "Sesiunea de concentrare s-a încheiat!"
+  },
+  "pomo_toast_short_done": {
+    "message": "Pauza scurtă s-a încheiat!"
+  },
+  "pomo_toast_long_done": {
+    "message": "Pauza lungă s-a încheiat!"
+  },
+  "pomo_exit_focus_aria": {
+    "message": "Ieși din modul concentrare"
+  },
+  "pomo_exit_focus_title": {
+    "message": "Ieși din modul concentrare (Esc)"
+  },
+  "pomo_sounds_volume_aria": {
+    "message": "Volum {sound}"
+  },
+  "tasks_toast_save_failed": {
+    "message": "Sarcinile nu au putut fi salvate. Spațiul de stocare al browserului poate fi plin."
+  },
+  "tasks_announce_added": {
+    "message": "Adăugată"
+  },
+  "tasks_announce_moved_top": {
+    "message": "Mutată sus"
+  },
+  "tasks_announce_deleted": {
+    "message": "Ștearsă"
+  },
+  "tasks_announce_cleared_one": {
+    "message": "{count} sarcină terminată a fost eliminată"
+  },
+  "tasks_announce_cleared_few": {
+    "message": "{count} sarcini terminate au fost eliminate"
+  },
+  "tasks_announce_cleared_other": {
+    "message": "{count} de sarcini terminate au fost eliminate"
+  },
+  "tasks_ask_done": {
+    "message": "Ai terminat „{task}”?"
+  },
+  "tasks_now_aria": {
+    "message": "Marchează „{task}” ca terminată"
+  },
+  "tasks_now_title": {
+    "message": "Marchează ca terminată"
+  },
+  "tasks_announce_done": {
+    "message": "Terminată: {task}"
+  },
+  "tasks_row_current_aria": {
+    "message": "{task}, sarcina curentă"
+  },
+  "tasks_promote_title": {
+    "message": "Fă asta mai întâi"
+  },
+  "tasks_delete_aria": {
+    "message": "Șterge sarcina"
+  },
+  "tasks_empty": {
+    "message": "Adaugă la ce lucrezi"
+  },
+  "tasks_done_count_one": {
+    "message": "{count} terminată"
+  },
+  "tasks_done_count_few": {
+    "message": "{count} terminate"
+  },
+  "tasks_done_count_other": {
+    "message": "{count} terminate"
+  },
+  "tasks_list_full_placeholder_one": {
+    "message": "Lista e plină ({count} sarcină)"
+  },
+  "tasks_list_full_placeholder_few": {
+    "message": "Lista e plină ({count} sarcini)"
+  },
+  "tasks_list_full_placeholder_other": {
+    "message": "Lista e plină ({count} de sarcini)"
+  },
+  "tasks_edit_aria": {
+    "message": "Editează sarcina"
+  },
+  "bookmarks_api_unavailable": {
+    "message": "API-ul pentru marcaje nu este disponibil"
+  },
+  "bookmarks_unreadable": {
+    "message": "Marcajele nu pot fi citite"
+  },
+  "bookmarks_empty": {
+    "message": "Încă nu ai marcaje"
+  },
+  "bookmarks_no_match": {
+    "message": "Niciun marcaj nu corespunde"
+  },
+  "bookmarks_open_manager": {
+    "message": "Deschide managerul de marcaje Chrome"
+  },
+  "bookmarks_firefox_library_hint": {
+    "message": "Deschide biblioteca de marcaje din Firefox cu Ctrl+Shift+O (Cmd+Shift+O pe Mac)."
+  },
+  "bookmarks_untitled_folder": {
+    "message": "Dosar fără nume"
+  },
+  "search_empty_hint_placeholder": {
+    "message": "Scrie ceva de căutat"
+  },
+  "review_toast_thanks": {
+    "message": "Mulțumim pentru recenzie!"
+  },
+  "weather_windy": {
+    "message": "Vânt {speed}"
+  },
+  "weather_storm": {
+    "message": "Furtună"
+  },
+  "weather_snow": {
+    "message": "Ninsoare"
+  },
+  "weather_rain": {
+    "message": "Ploaie"
+  },
+  "weather_fog": {
+    "message": "Ceață"
+  },
+  "weather_cloudy": {
+    "message": "Înnorat"
+  },
+  "weather_partly_cloudy": {
+    "message": "Parțial înnorat"
+  },
+  "weather_clear": {
+    "message": "Senin"
+  },
+  "weather_mild": {
+    "message": "Blând"
+  },
+  "weather_unavailable": {
+    "message": "Indisponibil"
+  },
+  "shortcuts_toast_save_failed": {
+    "message": "Scurtăturile nu au putut fi salvate. Spațiul de stocare al browserului poate fi plin."
+  },
+  "shortcuts_options_aria": {
+    "message": "Opțiuni scurtătură"
+  },
+  "shortcuts_edit_shortcut": {
+    "message": "Editează scurtătura"
+  },
+  "shortcuts_invalid_url_placeholder": {
+    "message": "URL invalid! Exemplu: wallsflow.com"
+  },
+  "shortcuts_toast_duplicate_url": {
+    "message": "Acest URL este deja în scurtături."
+  },
+  "shortcuts_toast_reorder_tip": {
+    "message": "Sfat: trage și plasează ca să reordonezi scurtăturile."
+  },
+  "greet_headline_morning": {
+    "message": "Bună dimineața"
+  },
+  "greet_headline_afternoon": {
+    "message": "Bună ziua"
+  },
+  "greet_headline_night": {
+    "message": "Noapte bună"
+  },
+  "greet_with_name": {
+    "message": "{line}, {name}{end}"
+  },
+  "greet_with_name_default_end": {
+    "message": "."
+  },
+  "greet_morning_clear_1": {
+    "message": "Te așteaptă o dimineață luminoasă."
+  },
+  "greet_morning_clear_2": {
+    "message": "A răsărit soarele. Bucură-te de el."
+  },
+  "greet_morning_clear_3": {
+    "message": "Cafea și soare."
+  },
+  "greet_morning_partly_cloudy_1": {
+    "message": "Lumină blândă de dimineață."
+  },
+  "greet_morning_partly_cloudy_2": {
+    "message": "Un început de zi liniștit."
+  },
+  "greet_morning_cloudy_1": {
+    "message": "O dimineață ușor înnorată."
+  },
+  "greet_morning_cloudy_2": {
+    "message": "Un început de zi domol."
+  },
+  "greet_morning_rain_1": {
+    "message": "Dimineață ploioasă. Ia-o încet."
+  },
+  "greet_morning_rain_2": {
+    "message": "Vreme perfectă de ceai."
+  },
+  "greet_morning_rain_3": {
+    "message": "Ascultă ploaia."
+  },
+  "greet_morning_snow_1": {
+    "message": "Dimineață cu zăpadă. Îmbracă-te gros."
+  },
+  "greet_morning_snow_2": {
+    "message": "Ninge liniștit afară."
+  },
+  "greet_morning_storm_1": {
+    "message": "Vine furtuna. Stai la căldură."
+  },
+  "greet_morning_storm_2": {
+    "message": "Dimineață zgomotoasă. Stai la căldură."
+  },
+  "greet_morning_fog_1": {
+    "message": "Dimineață cețoasă, blândă și liniștită."
+  },
+  "greet_morning_fog_2": {
+    "message": "Ceață peste tot."
+  },
+  "greet_morning_windy_1": {
+    "message": "Dimineață cu vânt. Ține-te bine."
+  },
+  "greet_morning_windy_2": {
+    "message": "Un început răcoros."
+  },
+  "greet_morning_default_1": {
+    "message": "Ia-o ușor în dimineața asta."
+  },
+  "greet_morning_default_2": {
+    "message": "O dimineață frumoasă."
+  },
+  "greet_afternoon_clear_1": {
+    "message": "O după-amiază frumoasă."
+  },
+  "greet_afternoon_clear_2": {
+    "message": "Cer luminos. Bucură-te de el."
+  },
+  "greet_afternoon_partly_cloudy_1": {
+    "message": "Lumină blândă de după-amiază."
+  },
+  "greet_afternoon_partly_cloudy_2": {
+    "message": "Ritm lejer."
+  },
+  "greet_afternoon_cloudy_1": {
+    "message": "O după-amiază domoală."
+  },
+  "greet_afternoon_cloudy_2": {
+    "message": "Lumină blândă, ritm blând."
+  },
+  "greet_afternoon_rain_1": {
+    "message": "O după-amiază perfectă de stat în casă."
+  },
+  "greet_afternoon_rain_2": {
+    "message": "Ploaia are cuvântul."
+  },
+  "greet_afternoon_snow_1": {
+    "message": "Ninge în continuare."
+  },
+  "greet_afternoon_snow_2": {
+    "message": "Stai la căldură."
+  },
+  "greet_afternoon_storm_1": {
+    "message": "Furtuna e în toi."
+  },
+  "greet_afternoon_storm_2": {
+    "message": "Găsește-ți un colț călduros."
+  },
+  "greet_afternoon_fog_1": {
+    "message": "După-amiază cețoasă, ore liniștite."
+  },
+  "greet_afternoon_fog_2": {
+    "message": "Lumea pare mai mică în ceață."
+  },
+  "greet_afternoon_windy_1": {
+    "message": "Se pornește vântul."
+  },
+  "greet_afternoon_windy_2": {
+    "message": "O după-amiază cu vânt."
+  },
+  "greet_afternoon_default_1": {
+    "message": "Sper că ziua ta merge bine."
+  },
+  "greet_afternoon_default_2": {
+    "message": "O după-amiază minunată."
+  },
+  "greet_evening_clear_1": {
+    "message": "Te așteaptă o seară liniștită."
+  },
+  "greet_evening_clear_2": {
+    "message": "Cer senin. Relaxează-te."
+  },
+  "greet_evening_clear_3": {
+    "message": "Se apropie apusul."
+  },
+  "greet_evening_partly_cloudy_1": {
+    "message": "Seară liniștită."
+  },
+  "greet_evening_partly_cloudy_2": {
+    "message": "Cer blând."
+  },
+  "greet_evening_cloudy_1": {
+    "message": "Nori blânzi, ritm blând."
+  },
+  "greet_evening_cloudy_2": {
+    "message": "O seară domoală."
+  },
+  "greet_evening_rain_1": {
+    "message": "Seară tihnită, perfectă pentru un ceai."
+  },
+  "greet_evening_rain_2": {
+    "message": "Ploaia dă tonul."
+  },
+  "greet_evening_rain_3": {
+    "message": "Sunetul ploii face seara mai frumoasă."
+  },
+  "greet_evening_snow_1": {
+    "message": "Ninge. Pune-te comod."
+  },
+  "greet_evening_snow_2": {
+    "message": "Vreme de o pătură în plus."
+  },
+  "greet_evening_storm_1": {
+    "message": "Furtună diseară. Stai în casă."
+  },
+  "greet_evening_storm_2": {
+    "message": "Spectacol de fulgere pe cer."
+  },
+  "greet_evening_fog_1": {
+    "message": "Seară cețoasă, blândă și nemișcată."
+  },
+  "greet_evening_fog_2": {
+    "message": "Ceața îndulcește totul."
+  },
+  "greet_evening_windy_1": {
+    "message": "Seară cu vânt. Îmbracă-te gros."
+  },
+  "greet_evening_windy_2": {
+    "message": "Vântul urlă în seara asta."
+  },
+  "greet_evening_default_1": {
+    "message": "E timpul să te relaxezi."
+  },
+  "greet_evening_default_2": {
+    "message": "O seară frumoasă."
+  },
+  "greet_night_clear_1": {
+    "message": "Cer senin de noapte."
+  },
+  "greet_night_clear_2": {
+    "message": "Au ieșit stelele."
+  },
+  "greet_night_clear_3": {
+    "message": "Ore târzii liniștite."
+  },
+  "greet_night_partly_cloudy_1": {
+    "message": "Noapte liniștită."
+  },
+  "greet_night_partly_cloudy_2": {
+    "message": "Ore târzii și calme."
+  },
+  "greet_night_cloudy_1": {
+    "message": "Noapte înnorată."
+  },
+  "greet_night_cloudy_2": {
+    "message": "Cer ușor acoperit."
+  },
+  "greet_night_rain_1": {
+    "message": "Ploaia îți ține companie."
+  },
+  "greet_night_rain_2": {
+    "message": "Ploaie târzie, și mai tihnită."
+  },
+  "greet_night_snow_1": {
+    "message": "Ninge în întuneric."
+  },
+  "greet_night_snow_2": {
+    "message": "Noapte liniștită, cu zăpadă."
+  },
+  "greet_night_storm_1": {
+    "message": "Furtună în întuneric. Stai la căldură."
+  },
+  "greet_night_storm_2": {
+    "message": "Fulgerele luminează noaptea."
+  },
+  "greet_night_fog_1": {
+    "message": "Noapte cețoasă, lume tăcută."
+  },
+  "greet_night_fog_2": {
+    "message": "Ceață peste tot."
+  },
+  "greet_night_windy_1": {
+    "message": "Ore târzii cu vânt."
+  },
+  "greet_night_windy_2": {
+    "message": "Vântul urlă toată noaptea."
+  },
+  "greet_night_default_1": {
+    "message": "E târziu. Ia-o ușor."
+  },
+  "greet_night_default_2": {
+    "message": "Sper că te relaxezi."
+  },
+  "whatsnew_page_wallsflow_new_tab_what_s": {
+    "message": "Wallsflow Filă Nouă: ce e nou"
+  },
+  "whatsnew_hey_there": {
+    "message": "Salut 👋"
+  },
+  "whatsnew_wallsflow_new_tab_has_a": {
+    "message": "Wallsflow Filă Nouă s-a actualizat."
+  },
+  "whatsnew_the_four_biggest_changes_are": {
+    "message": "Mai jos sunt cele mai mari cinci schimbări, și le poți încerca pe fiecare chiar pe această pagină. Nimic din ce faci aici nu îți atinge setările."
+  },
+  "whatsnew_tasks_for_your_focus_sessions": {
+    "message": "Sarcini pentru sesiunile de concentrare"
+  },
+  "whatsnew_start_a_pomodoro_and_your": {
+    "message": "Pornește un Pomodoro și lista de sarcini se deschide lângă cronometru, ca să ai în față doar ce ți-ai propus să faci. Sarcina la care lucrezi e scrisă sub cronometru, iar dacă o bifezi acolo apare următoarea. Când sesiunea se termină, cronometrul te întreabă dacă ai terminat-o. Încearcă: bifează o sarcină sau adaugă una, apoi încheie sesiunea."
+  },
+  "whatsnew_demo_end_the_session": {
+    "message": "Încheie sesiunea"
+  },
+  "whatsnew_outside_a_focus_session_the_html": {
+    "message": "În afara unei sesiuni de concentrare, lista nu se vede. În extensie, un clic pe textul unei sarcini o editează, iar săgeata care apare când treci cu mouse-ul peste o sarcină o mută sus. Poți dezactiva lista sau șterge toate sarcinile din <strong>Widgeturi</strong>, la <strong>Pomodoro</strong>."
+  },
+  "whatsnew_your_wallpapers_can_change_while": {
+    "message": "Fundalurile se pot schimba cât lucrezi"
+  },
+  "whatsnew_until_now_an_uploaded_wallpaper": {
+    "message": "Până acum, un fundal încărcat se schimba doar când deschideai o filă nouă. Dacă țineai o filă deschisă toată ziua, nu se schimba deloc. Alege o durată și urmărește lista de mai jos."
+  },
+  "whatsnew_demo_how_often_the_wallpaper_changes_aria": {
+    "message": "Cât de des se schimbă fundalul"
+  },
+  "whatsnew_demo_forest": {
+    "message": "Pădure"
+  },
+  "whatsnew_demo_how_long_forest_stays_on_aria": {
+    "message": "Cât timp rămâne Pădure pe ecran"
+  },
+  "whatsnew_demo_harbour": {
+    "message": "Port"
+  },
+  "whatsnew_demo_how_long_harbour_stays_on_aria": {
+    "message": "Cât timp rămâne Port pe ecran"
+  },
+  "whatsnew_demo_dunes": {
+    "message": "Dune"
+  },
+  "whatsnew_demo_how_long_dunes_stays_on_aria": {
+    "message": "Cât timp rămâne Dune pe ecran"
+  },
+  "whatsnew_demo_pick_a_time_above_to": {
+    "message": "Alege o durată mai sus ca să începi."
+  },
+  "whatsnew_in_the_extension_this_control_html": {
+    "message": "În extensie, acest control se află în <strong>Widgeturi</strong>, la <strong>Fundal</strong>. Fundalurile între care se schimbă sunt cele marcate Aleatoriu sau seturile de Zi și Noapte, dacă le folosești. Un fundal fixat are mereu prioritate, deci nimic nu se schimbă cât timp unul e fixat."
+  },
+  "whatsnew_find_a_bookmark_by_typing": {
+    "message": "Găsește un marcaj scriind"
+  },
+  "whatsnew_the_bookmarks_panel_was_a_html": {
+    "message": "Panoul de marcaje era o listă prin care trebuia să derulezi. Acum se deschide cu cursorul deja într-o casetă de căutare și filtrează pe măsură ce scrii, după nume sau după adresă. Încearcă să scrii <strong>git</strong> sau <strong>mail</strong>."
+  },
+  "whatsnew_escape_clears_what_you_typed": {
+    "message": "Esc șterge ce ai scris, iar a doua apăsare închide panoul."
+  },
+  "whatsnew_wallpapers_change_without_a_flash": {
+    "message": "Fundalurile se schimbă fără ecran negru"
+  },
+  "whatsnew_swapping_a_wallpaper_used_to": {
+    "message": "La schimbarea fundalului, cel vechi dispărea înainte ca cel nou să fie gata, așa că prin gol se vedea pagina goală. Acum fundalul nou se încarcă în spatele celui vechi și îi ia locul doar când e gata. Apasă ambele butoane ca să compari."
+  },
+  "whatsnew_demo_how_it_used_to_look": {
+    "message": "Cum arăta înainte"
+  },
+  "whatsnew_demo_how_it_looks_now": {
+    "message": "Cum arată acum"
+  },
+  "whatsnew_everything_else_in_this_release": {
+    "message": "Tot restul din această versiune:"
+  },
+  "whatsnew_change_music_stopped_following_you_between_html": {
+    "message": "<b>Muzica nu te mai urmărește dintr-o filă în alta</b> Apăsarea pe Oprește putea porni din nou muzica în altă filă după vreo zece secunde, iar oprirea ultimului sunet ambiental îl putea muta în altă parte în loc să-l oprească. Preluarea redării dintr-o a doua filă putea șterge și ce tocmai alesesei. Felul în care filele stabilesc cine redă a fost refăcut, iar acum 21 de teste îl verifică."
+  },
+  "whatsnew_change_uploading_no_longer_stops_the_html": {
+    "message": "<b>Încărcarea nu mai oprește rotația</b> Fiecare fundal încărcat se fixa singur, iar un fundal fixat pune cronometrul pe pauză, așa că adăugarea unei imagini oprea pe tăcute schimbarea fundalurilor. Acum un fundal încărcat apare imediat fără să fie fixat, iar rotația continuă."
+  },
+  "whatsnew_change_day_and_night_now_switches_html": {
+    "message": "<b>Zi și Noapte se schimbă acum și într-o filă lăsată deschisă</b> Ora din zi era verificată doar la deschiderea unei file, așa că o filă lăsată deschisă după ora 19:00 își păstra fundalul de zi. Acum se schimbă singură."
+  },
+  "whatsnew_change_a_dropped_file_that_is_html": {
+    "message": "<b>Un fișier plasat care nu e imagine nu mai golește lista</b> Tragerea unui tip greșit de fișier ștergea toate cardurile de fundal până la următoarea reîncărcare. Acum doar anunță că formatul nu este acceptat."
+  },
+  "whatsnew_change_the_weather_stopped_refetching_on_html": {
+    "message": "<b>Vremea nu se mai descarcă din nou la fiecare filă nouă</b> Își ignora propriul cache, ceea ce anula pe tăcute o reparație din versiunea anterioară."
+  },
+  "whatsnew_change_a_focus_session_could_count_html": {
+    "message": "<b>O sesiune de concentrare putea fi numărată de două ori</b> Cu două file deschise, un Pomodoro putea adăuga două sesiuni la totalul zilei. Acum cealaltă filă doar urmărește, fără să numere din nou, inclusiv când pornești un cronometru în altă parte."
+  },
+  "whatsnew_change_the_wallpaper_list_is_quieter_html": {
+    "message": "<b>Lista de fundaluri e mai aerisită</b> Etichetele care repetau ce arătau deja butoanele au dispărut, iar peste imagini nu mai e scris nimic. Mărimea fișierului și durata apar când treci cu mouse-ul peste un card."
+  },
+  "whatsnew_change_bookmarks_open_where_you_tell_html": {
+    "message": "<b>Marcajele se deschid unde vrei tu</b> Marcajele au propria opțiune de deschidere, într-o filă nouă sau în aceeași, separat de scurtături. Până alegi ceva acolo, urmează setarea scurtăturilor."
+  },
+  "whatsnew_change_smaller_fixes_a_saved_playlist_html": {
+    "message": "<b>Reparații mai mici</b> Un playlist salvat putea apărea de două ori în bibliotecă. Oprirea ceasului nu mai ascunde și vremea. Culoarea și umbra textului se aplică acum și etichetelor Pomodoro. Mixurile rapide pot trece de 100%, cum au putut mereu glisoarele. Și tot ce afișează <strong>Salvat</strong> verifică acum că salvarea chiar a avut loc. Ceasul și salutul se estompează acum împreună cu restul paginii când tragi un fundal peste ea."
+  },
+  "whatsnew_sincerely": {
+    "message": "Cu drag,"
+  },
+  "whatsnew_love_using_wallsflow_new_tab_html": {
+    "message": "Îți place Wallsflow Filă Nouă?<br>O mică donație ajută la viitoarele actualizări și îmbunătățiri ✨"
+  },
+  "common_donate": {
+    "message": "Donează"
+  },
+  "popup_open_a_new_tab_to": {
+    "message": "Deschide o filă nouă ca să vezi fundalul animat, muzica de concentrare și widgeturile. Dă clic pe săgeata mică din colțul din dreapta jos al oricărei file noi ca să deschizi meniul."
+  },
+  "whatsnew_demo_task_1": {
+    "message": "Răspunde proprietarului"
+  },
+  "whatsnew_demo_task_2": {
+    "message": "Termină slide-urile pentru luni"
+  },
+  "whatsnew_demo_task_3": {
+    "message": "Fă o programare la dentist"
+  },
+  "whatsnew_demo_tasks_enough": {
+    "message": "Ajunge pentru un exemplu"
+  },
+  "whatsnew_demo_start_next_session": {
+    "message": "Pornește sesiunea următoare"
+  },
+  "whatsnew_demo_no_task": {
+    "message": "Nicio sarcină"
+  },
+  "duration_hours_one": {
+    "message": "o oră"
+  },
+  "duration_hours_few": {
+    "message": "{count} ore"
+  },
+  "duration_hours_other": {
+    "message": "{count} de ore"
+  },
+  "duration_minutes_one": {
+    "message": "{count} minut"
+  },
+  "duration_minutes_few": {
+    "message": "{count} minute"
+  },
+  "duration_minutes_other": {
+    "message": "{count} de minute"
+  },
+  "whatsnew_demo_hint_off": {
+    "message": "Fără cronometru nu se schimbă nimic: fundalul se schimbă doar când deschizi o filă nouă."
+  },
+  "whatsnew_demo_hint_own_html": {
+    "message": "<b>{name}</b> e pe ecran. I-ai dat o durată proprie ({duration}), așa că ignoră setarea de mai sus."
+  },
+  "whatsnew_demo_hint_timer_html": {
+    "message": "<b>{name}</b> e pe ecran. După {duration} îi ia locul următorul. Dă clic pe durata unui card ca să-i dai acelui fundal o durată proprie."
+  },
+  "settings_language_title": {
+    "message": "Limbă"
+  },
+  "settings_language_sub": {
+    "message": "Pornește în limba preferată a browserului"
+  },
+  "settings_language_label": {
+    "message": "Limba interfeței"
+  },
+  "settings_language_failed": {
+    "message": "Nu s-a putut schimba limba. Spațiul de stocare al browserului poate fi plin."
+  },
+  "whatsnew_your_language_title": {
+    "message": "Wallsflow Filă Nouă vorbește limba ta"
+  },
+  "whatsnew_your_language_text_html": {
+    "message": "Toată extensia e acum în engleză, germană, franceză, spaniolă și română. Pornește în prima dintre aceste limbi din lista de limbi preferate a browserului, iar din <strong>Setări</strong>, la <strong>Limbă</strong>, poți alege alta. Încearcă: alege o limbă mai jos."
+  },
+  "whatsnew_your_language_note_html": {
+    "message": "Ceasul pornește în formatul de ore al limbii tale, 24 sau 12, până alegi un format la <strong>Ceas</strong>. Backup-ul setărilor include acum și limba și sarcinile."
+  },
+  "whatsnew_demo_language_aria": {
+    "message": "Limba exemplului"
+  },
+  "whatsnew_change_city_list_html": {
+    "message": "<b>Lista de orașe de la Vreme merge din nou</b> La alegerea manuală a orașului apărea caseta de căutare, dar rezultatele de sub ea nu se vedeau și nu puteau fi apăsate. Acum se pot."
+  }
+}

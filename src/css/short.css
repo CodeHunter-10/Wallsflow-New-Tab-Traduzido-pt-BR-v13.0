@@ -1,0 +1,692 @@
+/* ========================SEARCH BAR =================== */
+
+/* Single rounded pill: ONE outer border on the parent and ONE internal
+   divider line (input's border-right) between the input and the lupa.
+   Input is `flex: 1 1 auto` so it grows to fill the parent — without
+   that, the input width was fixed at `calc(100% - 112px)` which left
+   ~28-50 px of invisible parent space on each side that still sat
+   inside #searchBar's hover hit-area, triggering the page blur overlay
+   for "phantom" hovers next to (but visually outside) the bar.
+   border-radius is `10px * scale` to match the original visible shape:
+   the legacy CSS used a 100 px (capsule) radius on the parent but the
+   visible corners came from the children's `border-radius: 10px`, so
+   the effective look was always a 10 px rounded rectangle, not a pill. */
+#searchBar {
+    align-items: stretch;
+    background: var(--bg);
+    backdrop-filter: blur(calc(4px * var(--scale)));
+    border: 2px solid var(--bg);
+    border-radius: calc(10px * var(--scale));
+    color: var(--text);
+    display: flex;
+    font-size: calc(17px * var(--scale));
+    height: calc(52px * var(--scale));
+    margin-inline: auto;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    transition: backdrop-filter 0.3s ease-in-out, border-color 0.2s ease;
+    width: calc(600px * var(--scale));
+    max-width: 90vw;
+    z-index: 10005; /* Sub sidenav */
+    /* Reveal on page load — slides up + un-blurs. Delay 0.35 s places it
+       between the clock (0.25 s) and the greeting (0.4 s) so the layout
+       cascades top-to-bottom. `backwards` fill keeps the bar invisible
+       during the delay so it doesn't pop in at full opacity for a
+       frame before sliding into place. */
+    animation: searchBarReveal 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.35s backwards;
+}
+
+@keyframes searchBarReveal {
+    0% {
+        opacity: 0;
+        filter: blur(8px);
+        transform: translateX(-50%) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+#searchInput {
+    background: transparent;
+    border: none;
+    border-right: 2px solid var(--bg);
+    color: var(--text);
+    flex: 1 1 auto;
+    font-size: calc(18px * var(--scale));
+    height: 100%;
+    margin: 0;
+    min-width: 0;
+    outline: none;
+    padding: 0 calc(24px * var(--scale));
+    /* Cancel the global `* { text-shadow: 1px 1px 1px rgba(0,0,0,0.3) }`
+       (style.css ~line 49) — that shadow is meant for text painted
+       directly over the wallpaper, not for an input where it makes the
+       typed text look slightly fuzzy on the glassy surface. */
+    text-shadow: none;
+    transition: border-color 0.2s ease;
+}
+
+#searchInput::placeholder {
+    color: var(--text);
+    opacity: 0.6;
+}
+
+/* Branded selection — default browser selection is system blue, which
+   clashes with the teal palette. Use a translucent brand tint instead. */
+#searchInput::selection {
+    background: var(--brand-30);
+    color: var(--text);
+}
+
+#searchTrigger {
+    align-items: center;
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    display: flex;
+    /* Inline SVG icon instead of the previous Material Symbols ligature
+       on a literal "search" text node. The font-loading window used to
+       leak fallback text ("earc" with the s/h clipped by overflow) when
+       the user focused or clicked the trigger. SVG always renders the
+       same regardless of font availability. */
+    flex: 0 0 calc(52px * var(--scale));
+    height: 100%;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+    border: none;
+    padding: 0;
+    /* Reset default <button> font inheritance so the surrounding
+       searchBar font-size doesn't push the SVG around. */
+    font: inherit;
+}
+
+#searchTrigger svg {
+    width: calc(20px * var(--scale));
+    height: calc(20px * var(--scale));
+    display: block;
+}
+
+#searchTrigger:hover {
+    opacity: 0.7;
+}
+
+/* Keyboard focus indicator on the lupa — needed because the global
+   `*:focus { outline: none }` (style.css ~line 41) strips default focus
+   rings everywhere. The `:focus-visible` pseudo only applies to keyboard
+   focus, so mouse clicks still feel clean while Tab users see a clear
+   rounded inset highlight that follows the lupa's clickable area. */
+#searchTrigger:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: -3px;
+    border-radius: calc(8px * var(--scale));
+}
+
+/* Hover/focus-within full-page blur overlay — UNCHANGED. Users
+   explicitly like this affordance: hovering the bar dims the rest of
+   the page and pulls focus to the search experience. */
+#blurOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(0);
+    background-color: rgba(0, 0, 0, 0);
+    transition: backdrop-filter 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    pointer-events: none;
+    z-index: 8;
+}
+
+#searchBar:hover ~ #blurOverlay,
+#searchBar:focus-within ~ #blurOverlay {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: all;
+}
+
+#searchBar:hover,
+#searchBar:focus-within {
+    z-index: 10;
+}
+
+/* Chrome autofill: keep the brand surface so saved-suggestion popups
+   don't flash white over the dark bar. */
+#searchInput:-webkit-autofill,
+#searchInput:-webkit-autofill:hover,
+#searchInput:-webkit-autofill:focus,
+#searchInput:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px var(--bg-elevated) inset !important;
+    -webkit-text-fill-color: var(--text) !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* ========================SHORTCUT=================== */
+
+/* Single source for the row container. Three near-duplicate declarations
+   used to live here with conflicting gap (15/20px) / padding / position;
+   the cascade resolved them to gap:20px + padding:20px anyway, but it was
+   noisy to read. Merged into one block. The position-override at the
+   bottom of this file (with !important) handles vertical placement once
+   #searchBar's actual top is known. */
+#shortcuts {
+    position: absolute;
+    /* Sit ~10 px below the search bar's bottom edge. Search bar is at
+       top: 50vh, height 52 px → bottom is at 50vh + 52. Add 10 px breathing
+       room → 50vh + 62 px. */
+    top: calc(50vh + 62px);
+    left: 50vw;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 20px;
+    z-index: 10005;
+    width: 90vw;
+    /* 9 × 76 + 8 × 14 = 796 px content. With 20 px side padding ×2 = 836,
+       rounded up to 840. Anything wider would let 10 tiles fit per row,
+       producing asymmetric 10 + 8 wraps for the 18-tile cap. */
+    max-width: 840px;
+    margin-top: 0;
+    transition: opacity var(--duration-normal), transform var(--duration-normal);
+    opacity: 1;
+    pointer-events: auto;
+    /* Reveal cascade — fires after the search bar (0.5 s vs 0.35 s) so
+       the layout cascades top-to-bottom: clock → search → shortcuts. */
+    animation: shortcutsReveal 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s backwards;
+}
+
+@keyframes shortcutsReveal {
+    0% {
+        opacity: 0;
+        filter: blur(6px);
+        transform: translateX(-50%) translateY(16px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Responsive position adjustments. */
+@media (max-width: 768px) {
+    #shortcuts {
+        top: calc(50vh + 70px);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #shortcuts {
+        flex-direction: column;
+        top: calc(50vh + 80px);
+        gap: 8px;
+    }
+}
+
+/* (Removed dead #shortcuts a:hover rule — tiles are <div role="button">,
+    not <a>; the selector matched nothing. Same for #shortcuts.hide — the
+    hide toggle is only ever applied to #shortcuts-container.) */
+
+/* Outer container (visibility wrapper around #shortcuts). */
+#shortcuts-container {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    /* Transition scoped to opacity/transform — the previous `transition: all`
+       triggered a paint cascade on every child property change. */
+    transition: opacity var(--duration-normal) cubic-bezier(0.4, 0, 0.2, 1),
+                transform var(--duration-normal) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#shortcuts-container.hide {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(20px) scale(0.95) !important;
+    pointer-events: none !important;
+}
+
+/* Shortcut tile.
+   - No `transform` on hover (per user preference — static interactions).
+   - Border declared transparent at rest so the hover border-color animates
+     into view without a layout shift.
+   - Hover uses brand-tinted bg so the row reads as on-brand. */
+.shortcut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 76px;
+    height: 76px;
+    /* Don't let flex squash tiles when the row is over budget — without
+       this, 9+ tiles in the container shrink each tile to fit a single
+       row instead of wrapping cleanly to the next row, producing a
+       9-on-row-1 / 7-on-row-2 asymmetric mess. With it, tiles stay
+       their declared size and wrap on overflow. */
+    flex-shrink: 0;
+    box-sizing: border-box;
+    background: var(--surface-hover);
+    padding: 11px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    transition: background-color var(--duration-normal),
+                border-color var(--duration-normal),
+                transform var(--duration-normal),
+                box-shadow var(--duration-normal);
+}
+
+.shortcut:hover {
+    background: var(--primary-20);
+    border-color: var(--primary-40);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .shortcut:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/* Drag-and-drop feedback. The tile being dragged fades to half-opacity and
+   shows a grabbing cursor; tiles being hovered as a drop target get a teal
+   border + brand-tinted background, signaling "drop here to insert". The
+   border was already declared transparent on the resting state so the
+   color flips in cleanly without a layout shift. */
+.shortcut.dragging {
+    opacity: 0.4;
+    cursor: grabbing;
+}
+
+.shortcut.drag-over {
+    background: var(--brand-15);
+    border-color: var(--brand);
+}
+
+/* Spacious mode — applied via JS on #shortcuts when the count is ≤ 8.
+   Tiles, icons, labels, gap and the "+" add tile all bump up so the row
+   doesn't feel cramped when there's room. From 9 onward the .spacious
+   class is removed and everything reverts to the compact base sizing
+   so 18 shortcuts can wrap to a clean 9+9 layout. */
+#shortcuts.spacious {
+    gap: 18px;
+}
+
+#shortcuts.spacious .shortcut,
+#shortcuts.spacious .add-shortcut {
+    width: 88px;
+    height: 88px;
+    padding: 14px;
+}
+
+#shortcuts.spacious .shortcut img {
+    width: 28px;
+    height: 28px;
+}
+
+#shortcuts.spacious .shortcut span {
+    font-size: 12px;
+}
+
+#shortcuts.spacious .add-shortcut {
+    font-size: 32px;
+}
+
+/* Keyboard focus ring — outline (not box-shadow) avoids competing with the
+   tile's own background animation; outline-offset pushes it outside the
+   border so both are visible together. */
+.shortcut:focus-visible,
+.add-shortcut:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+}
+
+/* Favicon image — 24 px keeps it crisp inside the 76 px tile while
+   leaving room for the label below. The s2 favicon source returns 32 px
+   native, so this is an 8 px downscale (no perceptible blur). */
+.shortcut img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+}
+
+/* Tile label — single line with ellipsis. Heavy double drop-shadow was a
+   carryover from when labels floated directly over the wallpaper; the tile
+   now has its own surface so the shadow is unnecessary paint. */
+.shortcut span {
+    font-size: 11px;
+    color: var(--text);
+    text-align: center;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+}
+
+/* 3-dot context-menu button. Positioned absolute top-right; hover bumps
+   surface only (no rotate/scale per user). */
+.shortcut .menu-button {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: background-color var(--duration-fast),
+                color var(--duration-fast);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shortcut .menu-button:hover {
+    color: var(--text);
+    background: var(--surface-3);
+}
+
+.shortcut .menu-button:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+}
+
+/* Add-shortcut tile. Brand-teal accent at low saturation so the tile
+   still reads as the "add" CTA (sets it apart from the user's saved
+   shortcuts) without dominating the grid. The previous `--brand-30`
+   fill was visually heavier than every other shortcut and broke the
+   row's color harmony. New resting state: a lower-alpha tint
+   (`--brand-15`) plus a defined border (`--brand-40`) and a teal "+"
+   glyph (`--brand`) — the card now reads as outlined-with-tint rather
+   than solid teal, but stays unambiguous as the add affordance. Hover
+   keeps the original fuller saturation so the interaction still pops. */
+.add-shortcut {
+    background: var(--brand-15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--brand);
+    border: 1px solid var(--brand-40);
+    border-radius: 8px;
+    width: 76px;
+    height: 76px;
+    box-sizing: border-box;
+    transition: background-color var(--duration-normal),
+                border-color var(--duration-normal),
+                color var(--duration-normal);
+    cursor: pointer;
+}
+
+.add-shortcut:hover {
+    background: var(--brand-50);
+    border-color: var(--brand-60);
+    color: var(--text);
+}
+
+/* Add/Edit shortcut modal — palette aligned with the side menu and music modal:
+   solid token surfaces, brand teal accents, no black radial gradients or
+   white-alpha decorations. */
+#shortcut-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.72);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 100010;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                backdrop-filter 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0s linear 0.5s;
+    pointer-events: none;
+}
+
+#shortcut-form-container.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                backdrop-filter 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0s linear 0s;
+    pointer-events: all;
+}
+
+#shortcut-form-wrapper {
+    position: relative;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-default);
+    padding: 32px;
+    border-radius: 24px;
+    box-shadow:
+        0 34px 68px -22px rgba(0, 0, 0, 0.9),
+        inset 0 1px 0 var(--surface-1);
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+    transform: translateY(-30px) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 100011;
+}
+
+#shortcut-form-container.visible #shortcut-form-wrapper {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    pointer-events: all;
+}
+
+#shortcut-form-wrapper h3 {
+    color: #fff;
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-subtle);
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 12px;
+    position: relative;
+}
+
+.form-header h3 {
+    flex: 1;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-subtle);
+    letter-spacing: 0.5px;
+}
+
+.close-button {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid var(--border-default);
+    background: var(--surface-2);
+    color: var(--text);
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.close-button:hover {
+    background: var(--surface-4);
+    border-color: var(--border-strong);
+    color: var(--text);
+}
+
+.close-button:active {
+    transform: scale(0.95);
+}
+
+#shortcut-form input {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    border: 1px solid var(--surface-2);
+    border-radius: 14px;
+    background: var(--surface-1);
+    color: var(--text);
+    font-size: 14px;
+    font-family: inherit;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Brand-teal focus ring instead of the previous white-alpha glow. */
+#shortcut-form input:focus {
+    outline: none;
+    border-color: var(--brand);
+    background: var(--surface-2);
+    box-shadow: 0 0 0 3px var(--brand-25);
+}
+
+#shortcut-form input::placeholder {
+    color: var(--text-muted);
+}
+
+/* Save button — solid brand-teal pill with white text. Reads unambiguously
+   as the primary action (the "Trimite/Submit" pattern the user pointed at).
+   Hover deepens to var(--brand-hover); button stays static — no translate.
+   The 14px margin-top on the form button row gives it breathing space below
+   the URL input so the CTA doesn't crowd the form. */
+#shortcut-form button {
+    margin-top: 14px;
+    padding: 11px 22px;
+    background: var(--brand);
+    color: #fff;
+    border: 1px solid var(--brand);
+    border-radius: 11px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    transition: background-color var(--duration-fast), border-color var(--duration-fast);
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#shortcut-form button:hover {
+    background: var(--brand-hover);
+    border-color: var(--brand-hover);
+}
+
+#shortcut-form button.danger {
+    background: rgba(255, 69, 58, 0.24);
+    color: var(--text);
+    border: 1px solid rgba(255, 69, 58, 0.29);
+    margin-right: 10px;
+}
+
+#shortcut-form button.danger:hover {
+    background: rgba(255, 69, 58, 0.34);
+    border-color: rgba(255, 69, 58, 0.4);
+}
+
+/* "X" close button — neutral on hover (was iOS error red, but closing isn't
+   destructive; the actual delete affordance is the .danger button below). */
+#close-shortcut {
+    position: absolute;
+    top: -6px;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    border: 1px solid var(--border-default);
+    background: var(--surface-2);
+    color: var(--text);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0;
+    line-height: 1;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#close-shortcut:hover {
+    background: var(--surface-4);
+    border-color: var(--border-strong);
+    color: var(--text);
+}
+
+input.error {
+    border: 1px solid #FF453A !important;
+    background: var(--error-10) !important;
+    color: #FF453A !important;
+}
+/* HIDDE SHORTCUT */
+
+/* Backdrop glow animation for shortcuts modal */
+  
+
+#searchBar {
+    top: 44vh !important;
+}
+
+#shortcuts {
+    top: calc(44vh + 62px) !important;
+}
+
+@media (max-width: 768px) {
+    #searchBar {
+        top: 45vh !important;
+    }
+    #shortcuts {
+        top: calc(45vh + 68px) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #searchBar {
+        top: 46vh !important;
+    }
+    #shortcuts {
+        top: calc(46vh + 74px) !important;
+    }
+}

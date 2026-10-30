@@ -1,0 +1,3058 @@
+{
+  "extname": {
+    "message": "Wallsflow New Tab: Live Wallpapers, Widgets & Focus Music",
+    "description": "Extension name in the Chrome Web Store and the browser. No hyphens. At most 75 characters."
+  },
+  "extdescription": {
+    "message": "Transform your New Tab into a calm, personalized space with live wallpapers, widgets, and ambient focus music.",
+    "description": "Short description in the Chrome Web Store. No hyphens. At most 132 characters."
+  },
+  "action_title": {
+    "message": "New Tab",
+    "description": "Tooltip on the extension's toolbar button."
+  },
+  "locale_code": {
+    "message": "en",
+    "description": "The code of this translation, like de or pt-BR. Add it only once every message is translated: it marks the language as finished."
+  },
+  "locale_native_name": {
+    "message": "English",
+    "description": "The language's name written in the language itself, shown in the language picker."
+  },
+  "page_new_tab": {
+    "message": "New Tab",
+    "description": "In the browser tab."
+  },
+  "brand_name": {
+    "message": "Wallsflow New Tab",
+    "description": "The extension's name where the page and the popup show it. Wallsflow is the brand and stays as it is; New Tab is translated the way the browser names a new tab, as in page_new_tab. Use the same name in the store name and the What's new page."
+  },
+  "drop_drop_to_add_wallpaper": {
+    "message": "Drop to add wallpaper",
+    "description": "In the overlay shown while a file is dragged onto the page."
+  },
+  "drop_videos_and_images_supported_drop": {
+    "message": "Videos and images supported · drop anywhere",
+    "description": "In the overlay shown while a file is dragged onto the page."
+  },
+  "toast_update": {
+    "message": "Update",
+    "description": "In the notification that appears in the corner."
+  },
+  "panel_manage_wallpapers_title": {
+    "message": "Manage Wallpapers",
+    "description": "In the side panel. A tooltip."
+  },
+  "panel_wallpapers": {
+    "message": "Wallpapers",
+    "description": "In the side panel. A tab at the top of the side panel. Keep it short."
+  },
+  "panel_widget_settings_title": {
+    "message": "Widget Settings",
+    "description": "In the side panel. A tooltip."
+  },
+  "panel_widgets": {
+    "message": "Widgets",
+    "description": "In the side panel. A tab at the top of the side panel. Keep it short."
+  },
+  "panel_backup_and_reset_title": {
+    "message": "Backup and reset",
+    "description": "In the side panel. A tooltip."
+  },
+  "panel_settings": {
+    "message": "Settings",
+    "description": "In the side panel. A tab at the top of the side panel. Keep it short."
+  },
+  "wallpapers_upload_wallpaper": {
+    "message": "Upload Wallpaper",
+    "description": "In the Wallpapers tab of the side panel."
+  },
+  "wallpapers_wallpaper_filter_aria": {
+    "message": "Wallpaper filter",
+    "description": "In the Wallpapers tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "wallpapers_all": {
+    "message": "All",
+    "description": "In the Wallpapers tab of the side panel. A filter chip in the side panel. Several share one line, so keep it very short."
+  },
+  "wallpapers_primary": {
+    "message": "Primary",
+    "description": "In the Wallpapers tab of the side panel. A filter chip in the side panel. Several share one line, so keep it very short."
+  },
+  "wallpapers_random": {
+    "message": "Random",
+    "description": "In the Wallpapers tab of the side panel. A filter chip in the side panel. Several share one line, so keep it very short."
+  },
+  "wallpapers_day": {
+    "message": "Day",
+    "description": "In the Wallpapers tab of the side panel. A filter chip in the side panel. Several share one line, so keep it very short."
+  },
+  "wallpapers_night": {
+    "message": "Night",
+    "description": "In the Wallpapers tab of the side panel. A filter chip in the side panel. Several share one line, so keep it very short."
+  },
+  "wallpapers_show_wallpaper_filter_help_aria": {
+    "message": "Show wallpaper filter help",
+    "description": "In the Wallpapers tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "wallpapers_random_wallpapers_are_paused_while": {
+    "message": "Random wallpapers are paused while a pinned wallpaper is active.",
+    "description": "In the Wallpapers tab of the side panel."
+  },
+  "wallpapers_no_wallpapers_in_this_filter": {
+    "message": "No wallpapers in this filter yet.",
+    "description": "In the Wallpapers tab of the side panel."
+  },
+  "wallpapers_wallpapers_stored": {
+    "message": "Wallpapers stored",
+    "description": "In the Wallpapers tab of the side panel."
+  },
+  "common_delete_all": {
+    "message": "Delete all",
+    "description": "Used in several places across the page."
+  },
+  "wallpapers_restore_default_wallpaper": {
+    "message": "Restore default wallpaper",
+    "description": "In the Wallpapers tab of the side panel. The label of a row in the side panel."
+  },
+  "wallpapers_restore": {
+    "message": "Restore",
+    "description": "In the Wallpapers tab of the side panel. A small button at the end of a row in the side panel. Keep it short."
+  },
+  "widgets_widget_filter_aria": {
+    "message": "Widget filter",
+    "description": "In the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widgets_all": {
+    "message": "All",
+    "description": "In the Widgets tab of the side panel. A filter chip in the side panel. Several share one line, so keep it very short."
+  },
+  "widgets_enabled": {
+    "message": "Enabled",
+    "description": "In the Widgets tab of the side panel. A filter chip in the side panel. Several share one line, so keep it very short."
+  },
+  "widgets_disabled": {
+    "message": "Disabled",
+    "description": "In the Widgets tab of the side panel. A filter chip in the side panel. Several share one line, so keep it very short."
+  },
+  "widgets_show_filter_help_aria": {
+    "message": "Show filter help",
+    "description": "In the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widgets_all_shows_every_widget_html": {
+    "message": "<strong>All</strong>: shows every widget.",
+    "description": "In the Widgets tab of the side panel."
+  },
+  "widgets_enabled_shows_only_widgets_that_html": {
+    "message": "<strong>Enabled</strong>: shows only widgets that are currently turned on.",
+    "description": "In the Widgets tab of the side panel."
+  },
+  "widgets_disabled_shows_only_widgets_that_html": {
+    "message": "<strong>Disabled</strong>: shows only widgets that are currently turned off.",
+    "description": "In the Widgets tab of the side panel."
+  },
+  "widgets_no_widgets_match_this_filter": {
+    "message": "No widgets match this filter.",
+    "description": "In the Widgets tab of the side panel."
+  },
+  "widgets_on_your_page": {
+    "message": "On your page",
+    "description": "In the Widgets tab of the side panel. A group heading in the side panel."
+  },
+  "widgets_shown_on_the_new_tab": {
+    "message": "Shown on the new tab itself",
+    "description": "In the Widgets tab of the side panel. The line under a group heading in the side panel."
+  },
+  "widget_search_search_bar": {
+    "message": "Search Bar",
+    "description": "In the search row in the Widgets tab of the side panel. The name of a widget in the side panel."
+  },
+  "widget_search_show_search_bar_options_aria": {
+    "message": "Show Search Bar options",
+    "description": "In the search row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_search_show_help_for_search_bar_aria": {
+    "message": "Show help for Search Bar",
+    "description": "In the search row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_search_displays_a_search_bar_for": {
+    "message": "Displays a search bar for quick web searches from your new tab.",
+    "description": "In the search row in the Widgets tab of the side panel. Help text that opens under a widget in the side panel."
+  },
+  "opt_open_by_default": {
+    "message": "Open by default",
+    "description": "Used in several places across the page."
+  },
+  "widget_search_search_default_open_mode_aria": {
+    "message": "Search default open mode",
+    "description": "In the search row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "opt_new_tab": {
+    "message": "New tab",
+    "description": "Used in several places across the page."
+  },
+  "opt_same_tab": {
+    "message": "Same tab",
+    "description": "Used in several places across the page."
+  },
+  "opt_while_music_plays": {
+    "message": "While music is playing",
+    "description": "Used in several places across the page."
+  },
+  "widget_search_search_open_mode_when_music_aria": {
+    "message": "Search open mode when music is playing",
+    "description": "In the search row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_shortcuts_shortcuts": {
+    "message": "Shortcuts",
+    "description": "In the shortcuts row in the Widgets tab of the side panel. The name of a widget in the side panel."
+  },
+  "widget_shortcuts_show_shortcuts_options_aria": {
+    "message": "Show Shortcuts options",
+    "description": "In the shortcuts row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_shortcuts_show_help_for_shortcuts_aria": {
+    "message": "Show help for Shortcuts",
+    "description": "In the shortcuts row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_shortcuts_displays_your_favorite_shortcuts_for": {
+    "message": "Displays your favorite shortcuts for quick access.",
+    "description": "In the shortcuts row in the Widgets tab of the side panel. Help text that opens under a widget in the side panel."
+  },
+  "widget_shortcuts_shortcuts_default_open_mode_aria": {
+    "message": "Shortcuts default open mode",
+    "description": "In the shortcuts row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_shortcuts_shortcuts_open_mode_when_music_aria": {
+    "message": "Shortcuts open mode when music is playing",
+    "description": "In the shortcuts row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_clock_clock": {
+    "message": "Clock",
+    "description": "In the clock row in the Widgets tab of the side panel. The name of a widget in the side panel."
+  },
+  "widget_clock_show_clock_options_aria": {
+    "message": "Show Clock options",
+    "description": "In the clock row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_clock_show_help_for_clock_aria": {
+    "message": "Show help for Clock",
+    "description": "In the clock row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_clock_displays_the_current_time_on": {
+    "message": "Displays the current time on your new tab.",
+    "description": "In the clock row in the Widgets tab of the side panel. Help text that opens under a widget in the side panel."
+  },
+  "widget_clock_format": {
+    "message": "Format",
+    "description": "In the clock row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_clock_clock_format_aria": {
+    "message": "Clock format",
+    "description": "In the clock row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_clock_12h": {
+    "message": "12h",
+    "description": "In the clock row in the Widgets tab of the side panel. A button in a segmented control in the 350px side panel. Keep it short, about 10 characters."
+  },
+  "widget_clock_24h": {
+    "message": "24h",
+    "description": "In the clock row in the Widgets tab of the side panel. A button in a segmented control in the 350px side panel. Keep it short, about 10 characters."
+  },
+  "widget_clock_show_seconds": {
+    "message": "Show seconds",
+    "description": "In the clock row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "opt_on": {
+    "message": "On",
+    "description": "Used in several places across the page."
+  },
+  "opt_off": {
+    "message": "Off",
+    "description": "Used in several places across the page."
+  },
+  "widget_clock_show_date": {
+    "message": "Show date",
+    "description": "In the clock row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_clock_size": {
+    "message": "Size",
+    "description": "In the clock row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_clock_clock_size_aria": {
+    "message": "Clock size",
+    "description": "In the clock row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_clock_font": {
+    "message": "Font",
+    "description": "In the clock row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_clock_clock_font_aria": {
+    "message": "Clock font",
+    "description": "In the clock row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_clock_modern": {
+    "message": "Modern",
+    "description": "In the clock row in the Widgets tab of the side panel. A button in a segmented control in the 350px side panel. Keep it short, about 10 characters."
+  },
+  "widget_clock_rounded": {
+    "message": "Rounded",
+    "description": "In the clock row in the Widgets tab of the side panel. A button in a segmented control in the 350px side panel. Keep it short, about 10 characters."
+  },
+  "widget_clock_hand": {
+    "message": "Hand",
+    "description": "In the clock row in the Widgets tab of the side panel. A button in a segmented control in the 350px side panel. Keep it short, about 10 characters."
+  },
+  "widget_weather_weather": {
+    "message": "Weather",
+    "description": "In the weather row in the Widgets tab of the side panel. The name of a widget in the side panel."
+  },
+  "widget_weather_show_weather_options_aria": {
+    "message": "Show Weather options",
+    "description": "In the weather row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_weather_show_help_for_weather_aria": {
+    "message": "Show help for Weather",
+    "description": "In the weather row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_weather_displays_the_current_weather_for": {
+    "message": "Displays the current weather for your location. Auto-detect uses your timezone, which a VPN can throw off; Manual lets you pick any city worldwide.",
+    "description": "In the weather row in the Widgets tab of the side panel. Help text that opens under a widget in the side panel."
+  },
+  "widget_weather_location": {
+    "message": "Location",
+    "description": "In the weather row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_weather_weather_location_mode_aria": {
+    "message": "Weather location mode",
+    "description": "In the weather row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "opt_auto": {
+    "message": "Auto",
+    "description": "Used in several places across the page."
+  },
+  "opt_manual": {
+    "message": "Manual",
+    "description": "Used in several places across the page."
+  },
+  "widget_weather_detected": {
+    "message": "Detected",
+    "description": "In the weather row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_weather_city": {
+    "message": "City",
+    "description": "In the weather row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_weather_search_a_city_placeholder": {
+    "message": "Search a city...",
+    "description": "In the weather row in the Widgets tab of the side panel. Placeholder text inside an empty input."
+  },
+  "widget_weather_units": {
+    "message": "Units",
+    "description": "In the weather row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_weather_temperature_units_aria": {
+    "message": "Temperature units",
+    "description": "In the weather row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_weather_show_city": {
+    "message": "Show city",
+    "description": "In the weather row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_weather_show_weather_city_aria": {
+    "message": "Show weather city",
+    "description": "In the weather row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_greeting_daily_message": {
+    "message": "Daily Message",
+    "description": "In the greeting row in the Widgets tab of the side panel. The name of a widget in the side panel."
+  },
+  "widget_greeting_show_daily_message_options_aria": {
+    "message": "Show Daily Message options",
+    "description": "In the greeting row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_greeting_show_help_for_daily_message_aria": {
+    "message": "Show help for Daily Message",
+    "description": "In the greeting row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_greeting_shows_a_greeting_message_based": {
+    "message": "Shows a greeting message based on the current time. Enter your name to personalize it, or leave it empty to keep the default.",
+    "description": "In the greeting row in the Widgets tab of the side panel. Help text that opens under a widget in the side panel."
+  },
+  "widget_greeting_name": {
+    "message": "Name",
+    "description": "In the greeting row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_greeting_enter_your_name_placeholder": {
+    "message": "Enter your name",
+    "description": "In the greeting row in the Widgets tab of the side panel. Placeholder text inside an empty input."
+  },
+  "common_bookmarks": {
+    "message": "Bookmarks",
+    "description": "Used in several places across the page."
+  },
+  "widget_bookmarks_show_bookmarks_options_aria": {
+    "message": "Show Bookmarks options",
+    "description": "In the bookmarks row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_bookmarks_show_help_for_bookmarks_aria": {
+    "message": "Show help for Bookmarks",
+    "description": "In the bookmarks row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_bookmarks_quick_access_to_your_chrome": {
+    "message": "Quick access to your Chrome bookmarks via a button in the top-right corner of the page.",
+    "description": "In the bookmarks row in the Widgets tab of the side panel. Help text that opens under a widget in the side panel."
+  },
+  "widget_bookmarks_bookmarks_default_open_mode_aria": {
+    "message": "Bookmarks default open mode",
+    "description": "In the bookmarks row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_bookmarks_bookmarks_open_mode_when_music_aria": {
+    "message": "Bookmarks open mode when music is playing",
+    "description": "In the bookmarks row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widgets_focus": {
+    "message": "Focus",
+    "description": "In the Widgets tab of the side panel. A group heading in the side panel."
+  },
+  "widgets_tools_you_open_and_use": {
+    "message": "Tools you open and use",
+    "description": "In the Widgets tab of the side panel. The line under a group heading in the side panel."
+  },
+  "common_sounds_and_music": {
+    "message": "Sounds & Music",
+    "description": "Used in several places across the page."
+  },
+  "widget_music_show_help_for_sounds_and_aria": {
+    "message": "Show help for Sounds & Music",
+    "description": "In the music row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_music_displays_ambient_sounds_and_music": {
+    "message": "Displays ambient sounds and music playlists to help you focus.",
+    "description": "In the music row in the Widgets tab of the side panel. Help text that opens under a widget in the side panel."
+  },
+  "widget_pomodoro_pomodoro": {
+    "message": "Pomodoro",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. The name of a widget in the side panel."
+  },
+  "widget_pomodoro_show_pomodoro_options_aria": {
+    "message": "Show Pomodoro options",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_pomodoro_show_help_for_pomodoro_aria": {
+    "message": "Show help for Pomodoro",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_pomodoro_a_focus_timer_with_work": {
+    "message": "A focus timer with work and break intervals that counts your sessions each day. In focus mode your task list opens beside the timer, and when a session ends the timer asks whether you finished the task you were on.",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. Help text that opens under a widget in the side panel."
+  },
+  "widget_pomodoro_focus_min": {
+    "message": "Focus (min)",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_pomodoro_focus_duration_aria": {
+    "message": "Focus duration",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_pomodoro_short_break_min": {
+    "message": "Short break (min)",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_pomodoro_short_break_duration_aria": {
+    "message": "Short break duration",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_pomodoro_long_break_min": {
+    "message": "Long break (min)",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_pomodoro_long_break_duration_aria": {
+    "message": "Long break duration",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_pomodoro_auto_start_next": {
+    "message": "Auto-start next",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_pomodoro_auto_start_next_phase_aria": {
+    "message": "Auto-start next phase",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_pomodoro_focus_mode": {
+    "message": "Focus mode",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_pomodoro_focus_mode_during_timer_aria": {
+    "message": "Focus mode during timer",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_pomodoro_tasks_in_focus": {
+    "message": "Tasks in focus",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_pomodoro_task_list_beside_the_focus_aria": {
+    "message": "Task list beside the focus timer",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_pomodoro_delete_all_tasks": {
+    "message": "Delete all tasks",
+    "description": "In the pomodoro row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "common_delete": {
+    "message": "Delete",
+    "description": "Used in several places across the page."
+  },
+  "widgets_wallpaper": {
+    "message": "Wallpaper",
+    "description": "In the Widgets tab of the side panel. A group heading in the side panel."
+  },
+  "widgets_how_the_background_looks_and": {
+    "message": "How the background looks and behaves",
+    "description": "In the Widgets tab of the side panel. The line under a group heading in the side panel."
+  },
+  "widget_video_playback_animations": {
+    "message": "Animations",
+    "description": "In the video-playback row in the Widgets tab of the side panel. The name of a widget in the side panel."
+  },
+  "widget_video_playback_show_help_for_animations_aria": {
+    "message": "Show help for Animations",
+    "description": "In the video-playback row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_video_playback_controls_live_wallpaper_animation_when": {
+    "message": "Controls live wallpaper animation. When disabled, the wallpaper becomes static.",
+    "description": "In the video-playback row in the Widgets tab of the side panel. Help text that opens under a widget in the side panel."
+  },
+  "widget_wallpaper_schedule_day_night": {
+    "message": "Day/Night",
+    "description": "In the wallpaper-schedule row in the Widgets tab of the side panel. The name of a widget in the side panel."
+  },
+  "widget_wallpaper_schedule_show_help_for_day_night_aria": {
+    "message": "Show help for Day/Night",
+    "description": "In the wallpaper-schedule row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_wallpaper_schedule_automatically_switches_wallpapers_based_on": {
+    "message": "Automatically switches wallpapers based on the time of day.",
+    "description": "In the wallpaper-schedule row in the Widgets tab of the side panel. Help text that opens under a widget in the side panel."
+  },
+  "widget_background_background": {
+    "message": "Background",
+    "description": "In the background row in the Widgets tab of the side panel. The name of a widget in the side panel."
+  },
+  "widget_background_show_background_options_aria": {
+    "message": "Show Background options",
+    "description": "In the background row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_background_show_help_for_background_aria": {
+    "message": "Show help for Background",
+    "description": "In the background row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_background_make_the_page_readable_over": {
+    "message": "Make the page readable over your own wallpaper. Soften or dim the image, or leave it alone and change the text instead. A bright photo can swallow white text, and a stronger shadow or a darker colour fixes it without touching the picture.",
+    "description": "In the background row in the Widgets tab of the side panel. Help text that opens under a widget in the side panel."
+  },
+  "widget_background_change_every": {
+    "message": "Change every",
+    "description": "In the background row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_background_5m": {
+    "message": "5m",
+    "description": "In the background row in the Widgets tab of the side panel. A button in a segmented control in the 350px side panel. Keep it short, about 10 characters."
+  },
+  "widget_background_15m": {
+    "message": "15m",
+    "description": "In the background row in the Widgets tab of the side panel. A button in a segmented control in the 350px side panel. Keep it short, about 10 characters."
+  },
+  "widget_background_30m": {
+    "message": "30m",
+    "description": "In the background row in the Widgets tab of the side panel. A button in a segmented control in the 350px side panel. Keep it short, about 10 characters."
+  },
+  "widget_background_1h": {
+    "message": "1h",
+    "description": "In the background row in the Widgets tab of the side panel. A button in a segmented control in the 350px side panel. Keep it short, about 10 characters."
+  },
+  "widget_background_blur_intensity": {
+    "message": "Blur intensity",
+    "description": "In the background row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_background_background_blur_aria": {
+    "message": "Background blur",
+    "description": "In the background row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_background_brightness": {
+    "message": "Brightness",
+    "description": "In the background row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_background_background_brightness_aria": {
+    "message": "Background brightness",
+    "description": "In the background row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_background_text_shadow": {
+    "message": "Text shadow",
+    "description": "In the background row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "widget_background_text_shadow_strength_aria": {
+    "message": "Text shadow strength",
+    "description": "In the background row in the Widgets tab of the side panel. Read aloud by screen readers; not shown on screen."
+  },
+  "widget_background_text_color": {
+    "message": "Text color",
+    "description": "In the background row in the Widgets tab of the side panel. The label of an option row in the narrow side panel. Keep it short."
+  },
+  "settings_backup": {
+    "message": "Backup",
+    "description": "In the Settings tab of the side panel. A group heading in the side panel."
+  },
+  "settings_your_settings_shortcuts_and_saved": {
+    "message": "Your settings, shortcuts and saved playlists. Not your wallpapers, which are too large to put in a file",
+    "description": "In the Settings tab of the side panel. The line under a group heading in the side panel."
+  },
+  "settings_save_a_copy_to_a": {
+    "message": "Save a copy to a file",
+    "description": "In the Settings tab of the side panel. The label of a row in the side panel."
+  },
+  "settings_export": {
+    "message": "Export",
+    "description": "In the Settings tab of the side panel. A small button at the end of a row in the side panel. Keep it short."
+  },
+  "settings_restore_from_a_file": {
+    "message": "Restore from a file",
+    "description": "In the Settings tab of the side panel. The label of a row in the side panel."
+  },
+  "settings_import": {
+    "message": "Import",
+    "description": "In the Settings tab of the side panel. A small button at the end of a row in the side panel. Keep it short."
+  },
+  "settings_reset": {
+    "message": "Reset",
+    "description": "In the Settings tab of the side panel. A group heading in the side panel."
+  },
+  "settings_clock_format_timer_lengths_location": {
+    "message": "Clock format, timer lengths, location and background filters",
+    "description": "In the Settings tab of the side panel. The line under a group heading in the side panel."
+  },
+  "settings_clear_every_widget_s_options": {
+    "message": "Clear every widget’s options",
+    "description": "In the Settings tab of the side panel. The label of a row in the side panel."
+  },
+  "common_clear": {
+    "message": "Clear",
+    "description": "Used in several places across the page."
+  },
+  "modal_delete_wallpapers_delete_all_wallpapers": {
+    "message": "Delete all wallpapers?",
+    "description": "In the dialog that deletes every wallpaper."
+  },
+  "modal_delete_wallpapers_this_permanently_removes_every_wallpaper": {
+    "message": "This permanently removes every wallpaper you uploaded. It cannot be undone, and the files are not recoverable from here.",
+    "description": "In the dialog that deletes every wallpaper."
+  },
+  "common_cancel": {
+    "message": "Cancel",
+    "description": "Used in several places across the page."
+  },
+  "modal_delete_tasks_delete_all_tasks": {
+    "message": "Delete all tasks?",
+    "description": "In the dialog that deletes every task."
+  },
+  "modal_delete_tasks_this_removes_every_task_in": {
+    "message": "This removes every task in the list, finished or not. It cannot be undone.",
+    "description": "In the dialog that deletes every task."
+  },
+  "modal_reset_clear_widget_options": {
+    "message": "Clear widget options?",
+    "description": "In the dialog that clears every widget option."
+  },
+  "modal_reset_clock_pomodoro_weather_background_search": {
+    "message": "Clock, Pomodoro, weather, background, search and shortcut options all go back to their defaults. Which widgets are shown is not affected.",
+    "description": "In the dialog that clears every widget option."
+  },
+  "panel_download_more_wallpapers": {
+    "message": "Download More Wallpapers",
+    "description": "In the side panel."
+  },
+  "modal_rename_rename_playlist": {
+    "message": "Rename Playlist",
+    "description": "In the dialog that renames a saved playlist."
+  },
+  "modal_rename_close_rename_modal_aria": {
+    "message": "Close rename modal",
+    "description": "In the dialog that renames a saved playlist. Read aloud by screen readers; not shown on screen."
+  },
+  "modal_rename_playlist_name_placeholder": {
+    "message": "Playlist name",
+    "description": "In the dialog that renames a saved playlist. Placeholder text inside an empty input."
+  },
+  "common_save": {
+    "message": "Save",
+    "description": "Used in several places across the page."
+  },
+  "modal_playlist_delete_delete_playlist": {
+    "message": "Delete Playlist",
+    "description": "In the dialog that deletes a saved playlist."
+  },
+  "modal_playlist_delete_close_delete_modal_aria": {
+    "message": "Close delete modal",
+    "description": "In the dialog that deletes a saved playlist. Read aloud by screen readers; not shown on screen."
+  },
+  "modal_playlist_delete_delete_this_playlist_from_my": {
+    "message": "Delete this playlist from My Library?",
+    "description": "In the dialog that deletes a saved playlist."
+  },
+  "modal_takeover_already_playing": {
+    "message": "Already playing",
+    "description": "In the dialog shown when music is already playing in another tab."
+  },
+  "common_close": {
+    "message": "Close",
+    "description": "Used in several places across the page."
+  },
+  "modal_takeover_music_is_already_playing_in": {
+    "message": "Music is already playing in another tab. Playing here will stop it.",
+    "description": "In the dialog shown when music is already playing in another tab."
+  },
+  "modal_takeover_keep_it_there": {
+    "message": "Keep it there",
+    "description": "In the dialog shown when music is already playing in another tab."
+  },
+  "modal_takeover_play_here": {
+    "message": "Play here",
+    "description": "In the dialog shown when music is already playing in another tab."
+  },
+  "search_search_the_web_placeholder": {
+    "message": "Search the Web",
+    "description": "In the search bar. Placeholder text inside an empty input."
+  },
+  "search_search_the_web_aria": {
+    "message": "Search the web",
+    "description": "In the search bar. Read aloud by screen readers; not shown on screen."
+  },
+  "search_search_aria": {
+    "message": "Search",
+    "description": "In the search bar. Read aloud by screen readers; not shown on screen."
+  },
+  "bookmarks_search_bookmarks_placeholder": {
+    "message": "Search bookmarks",
+    "description": "In the bookmarks button and its panel. Placeholder text inside an empty input."
+  },
+  "music_ambient_sounds_and_your_saved": {
+    "message": "Ambient sounds and your saved playlists, in one place.",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_close_sounds_and_music_aria": {
+    "message": "Close Sounds and Music",
+    "description": "In the Sounds & Music panel. Read aloud by screen readers; not shown on screen."
+  },
+  "music_music_sections_aria": {
+    "message": "Music sections",
+    "description": "In the Sounds & Music panel. Read aloud by screen readers; not shown on screen."
+  },
+  "music_sounds": {
+    "message": "Sounds",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_playlists": {
+    "message": "Playlists",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_no_sounds_active": {
+    "message": "No sounds active",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_start_a_sound_to_build": {
+    "message": "Start a sound to build your focus mix.",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_mute_all": {
+    "message": "Mute All",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_stop_all": {
+    "message": "Stop All",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_tap_a_sound_card_to": {
+    "message": "Tap a sound card to play or stop, then use the slider for volume.",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_filter_sounds": {
+    "message": "Filter sounds",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_quick_mixes": {
+    "message": "Quick mixes",
+    "description": "In the Sounds & Music panel."
+  },
+  "sound_rain": {
+    "message": "Rain",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_ocean_waves": {
+    "message": "Ocean Waves",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_thunderstorm": {
+    "message": "Thunderstorm",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_forest_birds": {
+    "message": "Forest Birds",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_deep_forest": {
+    "message": "Deep Forest",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_forest_ambience": {
+    "message": "Forest Ambience",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound on its card."
+  },
+  "sound_river_flow": {
+    "message": "River Flow",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_waterfall": {
+    "message": "Waterfall",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_desert_wind": {
+    "message": "Desert Wind",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_swamp_sounds": {
+    "message": "Swamp Sounds",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_campfire": {
+    "message": "Campfire",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_city_ambience": {
+    "message": "City Ambience",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_city_night": {
+    "message": "City Night",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_airplane_cabin": {
+    "message": "Airplane Cabin",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_train_journey": {
+    "message": "Train Journey",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_submarine": {
+    "message": "Submarine",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_playground": {
+    "message": "Playground",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_vinyl_crackle": {
+    "message": "Vinyl Crackle",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_night_sounds": {
+    "message": "Night Sounds",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_wind_chimes": {
+    "message": "Wind Chimes",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_temple_bells": {
+    "message": "Temple Bells",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_white_noise": {
+    "message": "White Noise",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_coffee_shop": {
+    "message": "Coffee Shop",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "sound_meditation_bell": {
+    "message": "Meditation Bell",
+    "description": "In an ambient sound card in the Sounds & Music panel. The name of an ambient sound, shown in notifications and in focus mode."
+  },
+  "common_playlist": {
+    "message": "Playlist",
+    "description": "Used in several places across the page."
+  },
+  "music_relaxing_beats_for_focus": {
+    "message": "Relaxing beats for focus",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_calming_rainy_day_vibes": {
+    "message": "Calming rainy day vibes",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_festive_relaxing_music": {
+    "message": "Festive relaxing music",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_chill_gaming_songs": {
+    "message": "Chill Gaming Songs",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_1_paste_link": {
+    "message": "1. Paste link",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_2_play_preview": {
+    "message": "2. Play preview",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_3_save_to_library": {
+    "message": "3. Save to library",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_my_library": {
+    "message": "My Library",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_add": {
+    "message": "+ Add",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_add_new_playlist": {
+    "message": "Add New Playlist",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_close_add_playlist_panel_aria": {
+    "message": "Close add playlist panel",
+    "description": "In the Sounds & Music panel. Read aloud by screen readers; not shown on screen."
+  },
+  "music_paste_spotify_soundcloud_or_youtube_placeholder": {
+    "message": "Paste Spotify, SoundCloud or YouTube playlist/track URL...",
+    "description": "In the Sounds & Music panel. Placeholder text inside an empty input."
+  },
+  "music_paste": {
+    "message": "Paste",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_paste_from_clipboard_aria": {
+    "message": "Paste from clipboard",
+    "description": "In the Sounds & Music panel. Read aloud by screen readers; not shown on screen."
+  },
+  "music_clear_music_link_aria": {
+    "message": "Clear music link",
+    "description": "In the Sounds & Music panel. Read aloud by screen readers; not shown on screen."
+  },
+  "music_tip_use_paste_preview_with": {
+    "message": "Tip: use Paste, preview with Play Now, then save to your library.",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_preview": {
+    "message": "Preview",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_waiting_for_a_link": {
+    "message": "Waiting for a link",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_paste_a_playlist_or_track": {
+    "message": "Paste a playlist or track link to preview",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_we_auto_detect_the_platform": {
+    "message": "We auto-detect the platform and prepare a clean card for quick play and save.",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_play_now": {
+    "message": "Play Now",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_instant_preview": {
+    "message": "Instant preview",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_save_this_playlist_to_your_title": {
+    "message": "Save this playlist to your library",
+    "description": "In the Sounds & Music panel. A tooltip."
+  },
+  "music_add_to_library": {
+    "message": "Add To Library",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_keep_it_for_later": {
+    "message": "Keep it for later",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_your_library_is_empty": {
+    "message": "Your library is empty",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_save_playlists_from_spotify_youtube": {
+    "message": "Save playlists from Spotify, YouTube, or SoundCloud to quickly access them here.",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_add_your_first_playlist": {
+    "message": "Add Your First Playlist",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_playback": {
+    "message": "Playback",
+    "description": "In the Sounds & Music panel."
+  },
+  "common_no_playlist_playing": {
+    "message": "No playlist playing",
+    "description": "Used in several places across the page."
+  },
+  "music_playback_continues_while_you_browse": {
+    "message": "Playback continues while you browse. Use Stop when you want silence.",
+    "description": "In the Sounds & Music panel."
+  },
+  "music_prev": {
+    "message": "Prev",
+    "description": "In the Sounds & Music panel."
+  },
+  "common_previous_track_aria": {
+    "message": "Previous track in playlist",
+    "description": "Used in several places across the page."
+  },
+  "music_next": {
+    "message": "Next",
+    "description": "In the Sounds & Music panel."
+  },
+  "common_next_track_aria": {
+    "message": "Next track in playlist",
+    "description": "Used in several places across the page."
+  },
+  "music_volume": {
+    "message": "Volume",
+    "description": "In the Sounds & Music panel."
+  },
+  "common_youtube_volume_aria": {
+    "message": "YouTube volume",
+    "description": "Used in several places across the page."
+  },
+  "common_mute": {
+    "message": "Mute",
+    "description": "Used in several places across the page."
+  },
+  "common_pause": {
+    "message": "Pause",
+    "description": "Used in several places across the page."
+  },
+  "common_stop": {
+    "message": "Stop",
+    "description": "Used in several places across the page."
+  },
+  "greet_headline_evening": {
+    "message": "Good Evening",
+    "description": "The large greeting under the clock from 17:00 to 22:00. It is typed out letter by letter."
+  },
+  "greet_hope_you_re_having_a": {
+    "message": "Hope you're having a great day!",
+    "description": "In the greeting under the clock."
+  },
+  "pomo_focus": {
+    "message": "Focus",
+    "description": "In the Pomodoro timer."
+  },
+  "pomo_start_title": {
+    "message": "Start",
+    "description": "In the Pomodoro timer. A tooltip."
+  },
+  "pomo_reset_title": {
+    "message": "Reset",
+    "description": "In the Pomodoro timer. A tooltip."
+  },
+  "pomo_reset_timer_aria": {
+    "message": "Reset timer",
+    "description": "In the Pomodoro timer. Read aloud by screen readers; not shown on screen."
+  },
+  "pomo_skip_to_next_phase_title": {
+    "message": "Skip to next phase",
+    "description": "In the Pomodoro timer. A tooltip."
+  },
+  "pomo_yes": {
+    "message": "Yes",
+    "description": "In the Pomodoro timer."
+  },
+  "pomo_not_yet": {
+    "message": "Not yet",
+    "description": "In the Pomodoro timer."
+  },
+  "pomo_open_ambient_sounds_title": {
+    "message": "Open ambient sounds",
+    "description": "In the Pomodoro timer. A tooltip."
+  },
+  "pomo_sounds": {
+    "message": "Sounds",
+    "description": "In the Pomodoro timer."
+  },
+  "tasks_tasks_aria": {
+    "message": "Tasks",
+    "description": "In the task list in focus mode. Read aloud by screen readers; not shown on screen."
+  },
+  "tasks_add_a_task_placeholder": {
+    "message": "Add a task",
+    "description": "In the task list in focus mode. Placeholder text inside an empty input."
+  },
+  "pomo_sounds_ambient_sounds": {
+    "message": "Ambient Sounds",
+    "description": "In the ambient sounds dialog opened from focus mode."
+  },
+  "pomo_sounds_mute_all_title": {
+    "message": "Mute all",
+    "description": "In the ambient sounds dialog opened from focus mode. A tooltip."
+  },
+  "pomo_sounds_stop_all_title": {
+    "message": "Stop all",
+    "description": "In the ambient sounds dialog opened from focus mode. A tooltip."
+  },
+  "dock_idle": {
+    "message": "Idle",
+    "description": "In the music player bar on the page."
+  },
+  "dock_playing_in_another_tab": {
+    "message": "Playing in another tab",
+    "description": "In the music player bar on the page."
+  },
+  "dock_open_sounds_and_music_title": {
+    "message": "Open Sounds & Music",
+    "description": "In the music player bar on the page. A tooltip."
+  },
+  "dock_toggle_loop_title": {
+    "message": "Toggle loop",
+    "description": "In the music player bar on the page. A tooltip."
+  },
+  "dock_pause_music_title": {
+    "message": "Pause music",
+    "description": "In the music player bar on the page. A tooltip."
+  },
+  "dock_stop_music_title": {
+    "message": "Stop music",
+    "description": "In the music player bar on the page. A tooltip."
+  },
+  "dock_live": {
+    "message": "LIVE",
+    "description": "In the music player bar on the page."
+  },
+  "dock_now_playing": {
+    "message": "Now playing",
+    "description": "In the music player bar on the page."
+  },
+  "shortcuts_add_shortcut": {
+    "message": "Add Shortcut",
+    "description": "In the dialog that adds or edits a shortcut."
+  },
+  "shortcuts_website_name": {
+    "message": "Website Name",
+    "description": "In the dialog that adds or edits a shortcut."
+  },
+  "shortcuts_website_url": {
+    "message": "Website URL",
+    "description": "In the dialog that adds or edits a shortcut."
+  },
+  "review_enjoying_wallsflow": {
+    "message": "Enjoying Wallsflow?",
+    "description": "In the dialog that asks for a review."
+  },
+  "review_a_quick_review_helps_improve": {
+    "message": "A quick review helps improve the extension.",
+    "description": "In the dialog that asks for a review."
+  },
+  "review_rate_this_extension_aria": {
+    "message": "Rate this extension",
+    "description": "In the dialog that asks for a review. Read aloud by screen readers; not shown on screen."
+  },
+  "review_rate_1_star_aria": {
+    "message": "Rate 1 star",
+    "description": "In the dialog that asks for a review. Read aloud by screen readers; not shown on screen."
+  },
+  "review_rate_2_stars_aria": {
+    "message": "Rate 2 stars",
+    "description": "In the dialog that asks for a review. Read aloud by screen readers; not shown on screen."
+  },
+  "review_rate_3_stars_aria": {
+    "message": "Rate 3 stars",
+    "description": "In the dialog that asks for a review. Read aloud by screen readers; not shown on screen."
+  },
+  "review_rate_4_stars_aria": {
+    "message": "Rate 4 stars",
+    "description": "In the dialog that asks for a review. Read aloud by screen readers; not shown on screen."
+  },
+  "review_rate_5_stars_aria": {
+    "message": "Rate 5 stars",
+    "description": "In the dialog that asks for a review. Read aloud by screen readers; not shown on screen."
+  },
+  "review_leave_a_review": {
+    "message": "Leave a Review",
+    "description": "In the dialog that asks for a review."
+  },
+  "review_maybe_later": {
+    "message": "Maybe Later",
+    "description": "In the dialog that asks for a review."
+  },
+  "toast_tag_saved": {
+    "message": "Saved",
+    "description": "The small tag on a notification that confirms a change was saved. Keep it to one short word."
+  },
+  "toast_tag_heads_up": {
+    "message": "Heads up",
+    "description": "The small tag on a warning notification. Keep it short."
+  },
+  "toast_tag_enabled": {
+    "message": "Enabled",
+    "description": "The small tag on a notification when something was turned on. Keep it short."
+  },
+  "toast_tag_disabled": {
+    "message": "Disabled",
+    "description": "The small tag on a notification when something was turned off. Keep it short."
+  },
+  "toast_setting_saved_plain": {
+    "message": "Setting saved",
+    "description": "Notification after a setting changed, when there is no name to show."
+  },
+  "toast_setting_value": {
+    "message": "{subject}: {value}",
+    "description": "Notification after a setting changed. {subject} is the widget and option, like \"Clock · Format\"; {value} is the new choice, like \"24h\"."
+  },
+  "toast_setting_saved": {
+    "message": "{subject} saved",
+    "description": "Notification after a setting changed. {subject} is the widget and option, like \"Daily Message · Name\". Word it so it works for any subject, for example \"Saved: {subject}\"."
+  },
+  "widgets_toast_options_tip": {
+    "message": "Tip: click a widget to open its options.",
+    "description": "Shown once, the first time the Widgets tab opens."
+  },
+  "tasks_confirm_delete_all": {
+    "message": "Delete every task? This cannot be undone.",
+    "description": "A browser confirmation, used only if the delete dialog cannot open."
+  },
+  "tasks_toast_all_deleted": {
+    "message": "All tasks deleted",
+    "description": "Notification after every task was deleted."
+  },
+  "widget_weather_unknown_city": {
+    "message": "Unknown",
+    "description": "Shown instead of a city name when the location cannot be worked out."
+  },
+  "widget_weather_clear_city_title": {
+    "message": "Clear and use auto-detect",
+    "description": "Tooltip on the button that removes the chosen city."
+  },
+  "widget_weather_no_cities": {
+    "message": "No cities found.",
+    "description": "Shown under the city search when nothing matches."
+  },
+  "widget_weather_toast_location_set": {
+    "message": "Weather location set to {city}",
+    "description": "Notification after picking a city. {city} is the city name."
+  },
+  "settings_toast_nothing_to_export": {
+    "message": "Nothing to export yet.",
+    "description": "Warning when there are no settings to put in a backup file."
+  },
+  "settings_toast_exported_one": {
+    "message": "Exported {count} setting",
+    "description": "Notification after saving a backup file."
+  },
+  "settings_toast_exported_other": {
+    "message": "Exported {count} settings",
+    "description": "Notification after saving a backup file."
+  },
+  "settings_toast_export_failed": {
+    "message": "Could not export your settings.",
+    "description": "Warning when the backup file could not be made."
+  },
+  "settings_toast_import_too_large": {
+    "message": "That file is too large to be a settings backup.",
+    "description": "Warning when importing a backup."
+  },
+  "settings_toast_import_not_json": {
+    "message": "That file is not valid JSON.",
+    "description": "Warning when importing a backup. JSON is a file format; leave the word as it is."
+  },
+  "settings_toast_import_not_backup": {
+    "message": "That does not look like a Wallsflow backup.",
+    "description": "Warning when importing a backup."
+  },
+  "settings_toast_import_nothing_applied": {
+    "message": "No settings in that file could be applied.",
+    "description": "Warning when importing a backup."
+  },
+  "settings_toast_imported_one": {
+    "message": "Imported {count} setting.",
+    "description": "First sentence of the notification after importing a backup."
+  },
+  "settings_toast_imported_other": {
+    "message": "Imported {count} settings.",
+    "description": "First sentence of the notification after importing a backup."
+  },
+  "settings_toast_import_ignored_one": {
+    "message": "{count} was ignored.",
+    "description": "Optional middle sentence of the notification after importing a backup: how many entries could not be used."
+  },
+  "settings_toast_import_ignored_other": {
+    "message": "{count} were ignored.",
+    "description": "Optional middle sentence of the notification after importing a backup: how many entries could not be used."
+  },
+  "common_reloading": {
+    "message": "Reloading…",
+    "description": "Last sentence of a notification, right before the page reloads."
+  },
+  "settings_toast_reset_done": {
+    "message": "Settings reset to defaults",
+    "description": "Notification after clearing every widget option."
+  },
+  "modal_reset_confirm_fallback": {
+    "message": "Clear every widget option and go back to defaults?",
+    "description": "A browser confirmation, used only if the reset dialog cannot open."
+  },
+  "widget_wallpaper_schedule_toast_enabled": {
+    "message": "Day/Night enabled",
+    "description": "Notification when the Day/Night wallpaper schedule is turned on."
+  },
+  "widget_wallpaper_schedule_toast_disabled": {
+    "message": "Day/Night disabled",
+    "description": "Notification when the Day/Night wallpaper schedule is turned off."
+  },
+  "widget_background_toast_enabled": {
+    "message": "Background effects enabled",
+    "description": "Notification when blur and brightness are turned on."
+  },
+  "widget_background_toast_disabled": {
+    "message": "Background effects disabled",
+    "description": "Notification when blur and brightness are turned off."
+  },
+  "widget_search_toast_enabled": {
+    "message": "Search bar enabled",
+    "description": "Notification when the Search bar widget is turned on."
+  },
+  "widget_search_toast_disabled": {
+    "message": "Search bar disabled",
+    "description": "Notification when the Search bar widget is turned off."
+  },
+  "widget_shortcuts_toast_enabled": {
+    "message": "Shortcuts enabled",
+    "description": "Notification when the Shortcuts widget is turned on."
+  },
+  "widget_shortcuts_toast_disabled": {
+    "message": "Shortcuts disabled",
+    "description": "Notification when the Shortcuts widget is turned off."
+  },
+  "widget_music_toast_enabled": {
+    "message": "Music player enabled",
+    "description": "Notification when the Music player widget is turned on."
+  },
+  "widget_music_toast_disabled": {
+    "message": "Music player disabled",
+    "description": "Notification when the Music player widget is turned off."
+  },
+  "widget_greeting_toast_enabled": {
+    "message": "Daily Message enabled",
+    "description": "Notification when the Daily Message widget is turned on."
+  },
+  "widget_greeting_toast_disabled": {
+    "message": "Daily Message disabled",
+    "description": "Notification when the Daily Message widget is turned off."
+  },
+  "widget_clock_toast_enabled": {
+    "message": "Clock enabled",
+    "description": "Notification when the Clock widget is turned on."
+  },
+  "widget_clock_toast_disabled": {
+    "message": "Clock disabled",
+    "description": "Notification when the Clock widget is turned off."
+  },
+  "widget_weather_toast_enabled": {
+    "message": "Weather enabled",
+    "description": "Notification when the Weather widget is turned on."
+  },
+  "widget_weather_toast_disabled": {
+    "message": "Weather disabled",
+    "description": "Notification when the Weather widget is turned off."
+  },
+  "widget_pomodoro_toast_enabled": {
+    "message": "Pomodoro enabled",
+    "description": "Notification when the Pomodoro widget is turned on."
+  },
+  "widget_pomodoro_toast_disabled": {
+    "message": "Pomodoro disabled",
+    "description": "Notification when the Pomodoro widget is turned off."
+  },
+  "widget_bookmarks_toast_enabled": {
+    "message": "Bookmarks enabled",
+    "description": "Notification when the Bookmarks widget is turned on."
+  },
+  "widget_bookmarks_toast_disabled": {
+    "message": "Bookmarks disabled",
+    "description": "Notification when the Bookmarks widget is turned off."
+  },
+  "modal_delete_wallpapers_text_count_one": {
+    "message": "This permanently removes the wallpaper you uploaded. It cannot be undone, and it is not recoverable from here.",
+    "description": "Text of the dialog that deletes every uploaded wallpaper, with the number of wallpapers."
+  },
+  "modal_delete_wallpapers_text_count_other": {
+    "message": "This permanently removes all {count} wallpapers you uploaded. It cannot be undone, and they are not recoverable from here.",
+    "description": "Text of the dialog that deletes every uploaded wallpaper, with the number of wallpapers."
+  },
+  "modal_delete_wallpapers_confirm_fallback_one": {
+    "message": "Delete the uploaded wallpaper? This cannot be undone.",
+    "description": "A browser confirmation, used only if the dialog cannot open."
+  },
+  "modal_delete_wallpapers_confirm_fallback_other": {
+    "message": "Delete all {count} uploaded wallpapers? This cannot be undone.",
+    "description": "A browser confirmation, used only if the dialog cannot open."
+  },
+  "wallpapers_toast_deleted_all_one": {
+    "message": "Deleted {count} wallpaper",
+    "description": "Notification after deleting every uploaded wallpaper."
+  },
+  "wallpapers_toast_deleted_all_other": {
+    "message": "Deleted {count} wallpapers",
+    "description": "Notification after deleting every uploaded wallpaper."
+  },
+  "wallpapers_toast_delete_all_failed": {
+    "message": "Could not delete the wallpapers.",
+    "description": "Warning when deleting every wallpaper failed."
+  },
+  "unit_size_b": {
+    "message": "{size} B",
+    "description": "A file size in bytes. {size} is a number."
+  },
+  "unit_size_kb": {
+    "message": "{size} KB",
+    "description": "A file size in kilobytes. {size} is a number. Use the local abbreviation, like Ko in French."
+  },
+  "unit_size_mb": {
+    "message": "{size} MB",
+    "description": "A file size in megabytes. {size} is a number. Use the local abbreviation, like Mo in French."
+  },
+  "unit_size_gb": {
+    "message": "{size} GB",
+    "description": "A file size in gigabytes. {size} is a number. Use the local abbreviation, like Go in French."
+  },
+  "wallpapers_storage_none": {
+    "message": "None yet",
+    "description": "In the Wallpapers tab of the side panel. Shown beside \"Wallpapers stored\" when nothing is uploaded."
+  },
+  "wallpapers_storage_summary_one": {
+    "message": "{count} file · {size}",
+    "description": "In the Wallpapers tab of the side panel. How many wallpapers are stored and their total size."
+  },
+  "wallpapers_storage_summary_other": {
+    "message": "{count} files · {size}",
+    "description": "In the Wallpapers tab of the side panel. How many wallpapers are stored and their total size."
+  },
+  "wallpapers_storage_unavailable": {
+    "message": "Unavailable",
+    "description": "In the Wallpapers tab of the side panel. Shown beside \"Wallpapers stored\" when the size cannot be read."
+  },
+  "wallpapers_toast_missing_uploads": {
+    "message": "Your uploaded wallpapers are no longer available. The browser may have cleared them to free up space. Please upload them again.",
+    "description": "Warning when stored wallpapers have disappeared."
+  },
+  "wallpapers_toast_storage_nearly_full": {
+    "message": "Storage is nearly full. Delete some wallpapers to make room.",
+    "description": "Warning before an upload."
+  },
+  "wallpapers_toast_format_unsupported": {
+    "message": "{file}: format unsupported.",
+    "description": "Warning when a dropped file is not a picture or video. {file} is the file name."
+  },
+  "wallpapers_toast_duplicate": {
+    "message": "{file}: already in your library.",
+    "description": "Warning when the same file is uploaded twice. {file} is the file name."
+  },
+  "wallpapers_toast_added": {
+    "message": "{file} added.",
+    "description": "Notification after a wallpaper was added. {file} is the file name."
+  },
+  "wallpapers_toast_storage_full": {
+    "message": "Storage full. Delete some wallpapers and try again.",
+    "description": "Warning when adding a wallpaper fails because the browser storage is full."
+  },
+  "wallpapers_toast_add_failed": {
+    "message": "Could not add {file}.",
+    "description": "Warning when a wallpaper could not be added. {file} is the file name."
+  },
+  "wallpapers_toast_pinned_auto": {
+    "message": "Wallpaper pinned automatically.",
+    "description": "Notification after adding a wallpaper, when it was pinned as the one always shown."
+  },
+  "wallpapers_toast_added_showing": {
+    "message": "Added and showing now. Your wallpapers keep changing.",
+    "description": "Notification after adding a wallpaper while the wallpaper timer is on: it shows now and the rotation continues."
+  },
+  "wallpapers_toast_added_outside_rotation": {
+    "message": "Added and showing now. Add it to your rotation to see it again.",
+    "description": "Notification after adding a wallpaper while the timer is on, when it is not in the list the timer rotates through."
+  },
+  "wallpapers_toast_wallpaper_deleted": {
+    "message": "Wallpaper deleted",
+    "description": "Notification after deleting one wallpaper."
+  },
+  "wallpapers_toast_delete_failed": {
+    "message": "Could not delete this wallpaper. Please try again.",
+    "description": "Warning when deleting one wallpaper failed."
+  },
+  "wallpapers_unpin_title": {
+    "message": "Unpin wallpaper and resume Random mode",
+    "description": "Tooltip on the pin button of a pinned wallpaper card."
+  },
+  "wallpapers_pin_title": {
+    "message": "Pin wallpaper to keep it always visible",
+    "description": "Tooltip on the pin button of a wallpaper card."
+  },
+  "wallpapers_random_add_title": {
+    "message": "Add to random wallpapers",
+    "description": "Tooltip on the shuffle button of a wallpaper card."
+  },
+  "wallpapers_random_remove_title": {
+    "message": "Remove from random wallpapers",
+    "description": "Tooltip on the shuffle button of a wallpaper card that is already in the rotation."
+  },
+  "wallpapers_toast_random_unavailable_daynight": {
+    "message": "Random is unavailable while Day/Night is enabled.",
+    "description": "Warning."
+  },
+  "wallpapers_toast_random_blocked_default": {
+    "message": "Cannot use random wallpapers while Default is pinned. Unpin it first!",
+    "description": "Warning. Default is the wallpaper that comes with the extension."
+  },
+  "wallpapers_toast_random_blocked_pinned": {
+    "message": "Cannot use random wallpapers while a wallpaper is pinned. Unpin it first!",
+    "description": "Warning."
+  },
+  "wallpapers_toast_random_removed": {
+    "message": "Removed from random wallpapers",
+    "description": "Notification."
+  },
+  "wallpapers_toast_random_added": {
+    "message": "Added to random wallpapers",
+    "description": "Notification."
+  },
+  "unit_hours_one": {
+    "message": "{count} h",
+    "description": "A duration in hours, as in \"Wallpaper changes every 1 h\"."
+  },
+  "unit_hours_other": {
+    "message": "{count} h",
+    "description": "A duration in hours, as in \"Wallpaper changes every 2 h\"."
+  },
+  "unit_minutes_one": {
+    "message": "{count} min",
+    "description": "A duration in minutes, as in \"Shows for 1 min\"."
+  },
+  "unit_minutes_other": {
+    "message": "{count} min",
+    "description": "A duration in minutes, as in \"Shows for 15 min\"."
+  },
+  "unit_hours_compact_one": {
+    "message": "{count}h",
+    "description": "A duration in hours on a tiny chip over a wallpaper thumbnail. As short as possible."
+  },
+  "unit_hours_compact_other": {
+    "message": "{count}h",
+    "description": "A duration in hours on a tiny chip over a wallpaper thumbnail. As short as possible."
+  },
+  "unit_minutes_compact_one": {
+    "message": "{count}m",
+    "description": "A duration in minutes on a tiny chip over a wallpaper thumbnail. As short as possible."
+  },
+  "unit_minutes_compact_other": {
+    "message": "{count}m",
+    "description": "A duration in minutes on a tiny chip over a wallpaper thumbnail. As short as possible."
+  },
+  "wallpapers_duration_chip_title": {
+    "message": "How long this wallpaper stays on screen. It follows the timer unless you pick a time here.",
+    "description": "Tooltip on the duration chip of a wallpaper card."
+  },
+  "common_save_failed_retry": {
+    "message": "Could not save that. Please try again.",
+    "description": "Warning when a change could not be stored."
+  },
+  "wallpapers_toast_duration_follows_timer": {
+    "message": "Follows the timer",
+    "description": "Notification after a wallpaper goes back to the shared timer."
+  },
+  "wallpapers_toast_duration_set": {
+    "message": "Shows for {duration}",
+    "description": "Notification after giving a wallpaper its own duration. {duration} is like \"15 min\"."
+  },
+  "wallpapers_toast_default_restored": {
+    "message": "Default wallpaper restored",
+    "description": "Notification. Default is the wallpaper that comes with the extension."
+  },
+  "wallpapers_toast_pin_removed": {
+    "message": "Pinned wallpaper removed",
+    "description": "Notification after unpinning."
+  },
+  "wallpapers_toast_default_pinned": {
+    "message": "Default wallpaper pinned",
+    "description": "Notification."
+  },
+  "wallpapers_default_hide_title": {
+    "message": "Hide the default wallpaper",
+    "description": "Tooltip on the delete button of the default wallpaper card, which hides it instead of deleting it."
+  },
+  "wallpapers_confirm_hide_title": {
+    "message": "Hide this?",
+    "description": "Short question over a wallpaper card, about 25 characters."
+  },
+  "wallpapers_confirm_hide_subtitle": {
+    "message": "Restore it at the bottom of this tab.",
+    "description": "Line under \"Hide this?\" on a wallpaper card."
+  },
+  "wallpapers_toast_default_hidden": {
+    "message": "Default wallpaper hidden",
+    "description": "Notification."
+  },
+  "wallpapers_toast_pin_removed_random_active": {
+    "message": "Pinned wallpaper removed. Random wallpapers are active again.",
+    "description": "Notification after unpinning."
+  },
+  "wallpapers_toast_pinned": {
+    "message": "Wallpaper pinned",
+    "description": "Notification."
+  },
+  "wallpapers_delete_title": {
+    "message": "Delete this wallpaper",
+    "description": "Tooltip on the delete button of a wallpaper card."
+  },
+  "wallpapers_delete_aria": {
+    "message": "Remove wallpaper",
+    "description": "Screen reader label of the delete button of a wallpaper card."
+  },
+  "wallpapers_confirm_delete_title": {
+    "message": "Delete this?",
+    "description": "Short question over a wallpaper card, about 25 characters."
+  },
+  "wallpapers_confirm_delete_subtitle": {
+    "message": "Cannot be undone.",
+    "description": "Line under \"Delete this?\" on a wallpaper card."
+  },
+  "wallpapers_confirm_delete_fallback": {
+    "message": "Are you sure you want to delete this wallpaper?",
+    "description": "A browser confirmation, used only if the card confirmation cannot show."
+  },
+  "wallpapers_toast_random_filter_unavailable": {
+    "message": "Random filter is unavailable while Day/Night is enabled.",
+    "description": "Warning."
+  },
+  "wallpapers_toast_daynight_inactive": {
+    "message": "Day/Night widget is not active. Please enable it from Widgets.",
+    "description": "Warning."
+  },
+  "wallpapers_toast_rotation_every": {
+    "message": "Wallpaper changes every {duration}",
+    "description": "Notification after picking a timer. {duration} is like \"15 min\" or \"1 h\"."
+  },
+  "wallpapers_toast_rotation_new_tab_only": {
+    "message": "Wallpaper changes only on a new tab",
+    "description": "Notification after turning the timer off."
+  },
+  "wallpapers_help_pin": {
+    "message": "Pin",
+    "description": "Bold label in the wallpaper help list."
+  },
+  "wallpapers_help_pin_desc": {
+    "message": "Set a wallpaper as Primary (always visible).",
+    "description": "Help text after \"Pin\"."
+  },
+  "wallpapers_help_random": {
+    "message": "Random",
+    "description": "Bold label in the wallpaper help list."
+  },
+  "wallpapers_help_random_desc": {
+    "message": "Include wallpaper in random rotation.",
+    "description": "Help text after \"Random\"."
+  },
+  "wallpapers_help_day": {
+    "message": "Day",
+    "description": "Bold label in the wallpaper help list."
+  },
+  "wallpapers_help_day_desc": {
+    "message": "Include wallpapers in Day rotation ({start}–{end}).",
+    "description": "Help text after \"Day\". {start} and {end} are times like 7:00 AM."
+  },
+  "wallpapers_help_night": {
+    "message": "Night",
+    "description": "Bold label in the wallpaper help list."
+  },
+  "wallpapers_help_night_desc": {
+    "message": "Include wallpapers in Night rotation ({start}–{end}).",
+    "description": "Help text after \"Night\". {start} and {end} are times like 7:00 PM."
+  },
+  "wallpapers_help_delete": {
+    "message": "Delete",
+    "description": "Bold label in the wallpaper help list."
+  },
+  "wallpapers_help_delete_desc": {
+    "message": "Remove a wallpaper from your library.",
+    "description": "Help text after \"Delete\"."
+  },
+  "wallpapers_help_timer": {
+    "message": "Timer",
+    "description": "Bold label in the wallpaper help list."
+  },
+  "wallpapers_help_timer_desc": {
+    "message": "Change the wallpaper on a schedule. Click the time on a card to give it its own duration. Rotating video wallpapers uses more battery.",
+    "description": "Help text after \"Timer\"."
+  },
+  "wallpapers_help_row_html": {
+    "message": "<strong>{label}</strong>: {description}",
+    "description": "One row of the wallpaper help list. Keep the <strong> tags around {label}."
+  },
+  "wallpapers_help_note_daynight_html": {
+    "message": "Wallpapers rotate based on your Day and Night selections.<br>If none are selected, all wallpapers rotate randomly.",
+    "description": "Note under the wallpaper help list. Keep the <br> line break."
+  },
+  "wallpapers_help_note_random_html": {
+    "message": "Wallpapers rotate based on your Random selection.<br>If no wallpapers are selected for Random, all wallpapers rotate randomly.",
+    "description": "Note under the wallpaper help list. Keep the <br> line break."
+  },
+  "wallpapers_on_screen_now_title": {
+    "message": "On screen now",
+    "description": "Tooltip on the thumbnail of the wallpaper being shown."
+  },
+  "wallpapers_hint_primary_daynight_timer": {
+    "message": "Primary is active, so Day/Night rules and the timer are paused.",
+    "description": "In the Wallpapers tab of the side panel. Hint above the list."
+  },
+  "wallpapers_hint_primary_daynight": {
+    "message": "Primary is active, so Day/Night rules are paused.",
+    "description": "In the Wallpapers tab of the side panel. Hint above the list."
+  },
+  "wallpapers_hint_primary_random_timer": {
+    "message": "Primary is active, so Random rules and the timer are paused.",
+    "description": "In the Wallpapers tab of the side panel. Hint above the list."
+  },
+  "wallpapers_hint_primary_random": {
+    "message": "Primary is active, so Random rules are paused.",
+    "description": "In the Wallpapers tab of the side panel. Hint above the list."
+  },
+  "wallpapers_hint_add_second": {
+    "message": "Add a second wallpaper to the list to rotate.",
+    "description": "In the Wallpapers tab of the side panel. Hint above the list."
+  },
+  "wallpapers_day_slot_aria": {
+    "message": "Show this wallpaper during daytime",
+    "description": "Screen reader label of the sun button on a wallpaper card."
+  },
+  "wallpapers_day_slot_title": {
+    "message": "Show during day",
+    "description": "Tooltip on the sun button of a wallpaper card."
+  },
+  "wallpapers_toast_day_save_failed": {
+    "message": "Error saving day wallpaper",
+    "description": "Warning."
+  },
+  "wallpapers_night_slot_aria": {
+    "message": "Show this wallpaper during nighttime",
+    "description": "Screen reader label of the moon button on a wallpaper card."
+  },
+  "wallpapers_night_slot_title": {
+    "message": "Show during night",
+    "description": "Tooltip on the moon button of a wallpaper card."
+  },
+  "wallpapers_toast_night_save_failed": {
+    "message": "Error saving night wallpaper",
+    "description": "Warning."
+  },
+  "wallpapers_toast_day_removed": {
+    "message": "Day assignment removed",
+    "description": "Notification."
+  },
+  "wallpapers_toast_day_saved": {
+    "message": "Day wallpaper saved",
+    "description": "Notification."
+  },
+  "wallpapers_toast_night_removed": {
+    "message": "Night assignment removed",
+    "description": "Notification."
+  },
+  "wallpapers_toast_night_saved": {
+    "message": "Night wallpaper saved",
+    "description": "Notification."
+  },
+  "widget_video_playback_toast_static": {
+    "message": "Current wallpaper is static, so the animation toggle has no effect.",
+    "description": "Warning when turning animations on or off with a still picture as wallpaper."
+  },
+  "widget_video_playback_toast_enabled": {
+    "message": "Live wallpaper animation enabled",
+    "description": "Notification."
+  },
+  "widget_video_playback_toast_disabled": {
+    "message": "Live wallpaper animation disabled",
+    "description": "Notification."
+  },
+  "music_title_spotify_playlist": {
+    "message": "Spotify Playlist",
+    "description": "Default name for a Spotify playlist link before its real title loads. Spotify is a brand."
+  },
+  "music_title_spotify_album": {
+    "message": "Spotify Album",
+    "description": "Default name for a Spotify album link."
+  },
+  "music_title_spotify_track": {
+    "message": "Spotify Track",
+    "description": "Default name for a Spotify track link."
+  },
+  "music_title_spotify_link": {
+    "message": "Spotify Link",
+    "description": "Default name for any other Spotify link."
+  },
+  "music_title_soundcloud_mix": {
+    "message": "SoundCloud Mix",
+    "description": "Default name for a SoundCloud link."
+  },
+  "music_title_youtube_playlist_mix": {
+    "message": "YouTube Playlist Mix",
+    "description": "Default name for a YouTube video inside a playlist."
+  },
+  "music_title_youtube_playlist": {
+    "message": "YouTube Playlist",
+    "description": "Default name for a YouTube playlist link."
+  },
+  "music_title_youtube_live": {
+    "message": "YouTube Live Stream",
+    "description": "Default name for a YouTube live stream link."
+  },
+  "music_title_youtube_video": {
+    "message": "YouTube Video",
+    "description": "Default name for a YouTube video link."
+  },
+  "music_library_limit_title": {
+    "message": "Library limit reached ({max}/{max})",
+    "description": "Tooltip on the Add button when the saved library is full. {max} is a number."
+  },
+  "music_open_add_playlist_title": {
+    "message": "Open Add New Playlist",
+    "description": "Tooltip on the Add button of the saved library."
+  },
+  "music_untitled_playlist": {
+    "message": "Untitled Playlist",
+    "description": "Name shown for a saved playlist without a name."
+  },
+  "music_untitled": {
+    "message": "Untitled",
+    "description": "Name shown for a saved item without a name."
+  },
+  "music_source_platform": {
+    "message": "Platform",
+    "description": "Shown instead of Spotify, SoundCloud or YouTube when the service is unknown."
+  },
+  "music_type_playlist": {
+    "message": "Playlist",
+    "description": "Small badge on a music card. Keep it short."
+  },
+  "music_type_album": {
+    "message": "Album",
+    "description": "Small badge on a music card. Keep it short."
+  },
+  "music_type_track": {
+    "message": "Track",
+    "description": "Small badge on a music card. Keep it short."
+  },
+  "music_type_song": {
+    "message": "Song",
+    "description": "Small badge on a music card. Keep it short."
+  },
+  "music_type_video": {
+    "message": "Video",
+    "description": "Small badge on a music card. Keep it short."
+  },
+  "music_type_live": {
+    "message": "Live",
+    "description": "Small badge on a music card for a live stream. Keep it short."
+  },
+  "music_type_link": {
+    "message": "Link",
+    "description": "Small badge on a music card. Keep it short."
+  },
+  "music_type_mix": {
+    "message": "Mix",
+    "description": "Small badge on a music card. Keep it short."
+  },
+  "music_type_unavailable": {
+    "message": "Unavailable",
+    "description": "Small badge on a saved playlist that no longer exists. Keep it short."
+  },
+  "music_more_options_aria": {
+    "message": "More options",
+    "description": "Screen reader label of the menu button on a saved playlist card."
+  },
+  "music_rename": {
+    "message": "Rename",
+    "description": "Menu item on a saved playlist card."
+  },
+  "music_youtube_channel": {
+    "message": "YouTube channel",
+    "description": "Shown under a YouTube playlist when the channel name is unknown."
+  },
+  "music_ready_to_play": {
+    "message": "Ready to play",
+    "description": "Shown under a saved playlist when there is nothing else to show."
+  },
+  "music_saved_playlist_default": {
+    "message": "Saved playlist",
+    "description": "Name used for a saved playlist that has no name."
+  },
+  "music_toast_player_not_ready": {
+    "message": "Music player not ready. Please refresh.",
+    "description": "Notification."
+  },
+  "music_toast_name_empty": {
+    "message": "Name cannot be empty.",
+    "description": "Notification in the rename dialog."
+  },
+  "music_toast_name_updated": {
+    "message": "Name updated.",
+    "description": "Notification after renaming a saved playlist."
+  },
+  "modal_playlist_delete_text_named": {
+    "message": "Delete “{name}” from My Library?",
+    "description": "Question in the dialog that deletes a saved playlist. {name} is its name. My Library is the saved list in the Sounds & Music panel."
+  },
+  "music_toast_source_deleted": {
+    "message": "Source deleted.",
+    "description": "Notification after deleting a saved playlist."
+  },
+  "modal_takeover_text_named": {
+    "message": "“{name}” is already playing in another tab. Playing here will stop it there.",
+    "description": "Dialog text. {name} is the name of what is playing."
+  },
+  "modal_takeover_text_source": {
+    "message": "{source} is already playing in another tab. Playing here will stop it there.",
+    "description": "Dialog text. {source} is Spotify, SoundCloud, YouTube or the word for music."
+  },
+  "music_source_generic": {
+    "message": "Music",
+    "description": "Shown where the name of the music service would be, when it is unknown."
+  },
+  "music_play_named_aria": {
+    "message": "Play {name}",
+    "description": "Screen reader label of a saved playlist card. {name} is its name."
+  },
+  "music_play_saved_aria": {
+    "message": "Play saved playlist",
+    "description": "Screen reader label of a saved playlist card without a name."
+  },
+  "dock_resume_music_title": {
+    "message": "Resume music",
+    "description": "On the music player bar at the bottom of the page. Tooltip."
+  },
+  "common_resume": {
+    "message": "Resume",
+    "description": "Button that continues paused music."
+  },
+  "music_source_is_playing": {
+    "message": "{source} is playing",
+    "description": "Shown when a service plays without a title. {source} is Spotify, SoundCloud, YouTube or the word for music."
+  },
+  "music_ambient_sounds_active": {
+    "message": "Ambient sounds active",
+    "description": "On the music player bar at the bottom of the page. Shown while only ambient sounds play."
+  },
+  "dock_loop_on_title": {
+    "message": "Loop on",
+    "description": "On the music player bar at the bottom of the page. Tooltip on the repeat button while repeat is on."
+  },
+  "dock_loop_off_title": {
+    "message": "Loop off",
+    "description": "On the music player bar at the bottom of the page. Tooltip on the repeat button while repeat is off."
+  },
+  "music_toast_moved_here": {
+    "message": "Music moved to this tab.",
+    "description": "Notification when this tab takes over music from a tab that closed."
+  },
+  "music_toast_moved_here_click": {
+    "message": "Music moved here. Click anywhere to start it.",
+    "description": "Notification on Firefox when this tab takes over music but the browser blocks sound until the first click."
+  },
+  "music_toast_ambient_moved_here": {
+    "message": "Ambient sounds moved to this tab.",
+    "description": "Notification when this tab takes over ambient sounds from a tab that closed."
+  },
+  "music_toast_ambient_moved_here_click": {
+    "message": "Ambient sounds moved here. Click anywhere to start them.",
+    "description": "Notification on Firefox when this tab takes over ambient sounds but the browser blocks sound until the first click."
+  },
+  "music_playing": {
+    "message": "Playing",
+    "description": "On the music player bar at the bottom of the page. Shown while something plays in another tab without a title."
+  },
+  "dock_stop_music_other_tab_title": {
+    "message": "Stop music in the other tab",
+    "description": "On the music player bar at the bottom of the page. Tooltip."
+  },
+  "common_unmute": {
+    "message": "Unmute",
+    "description": "Button that turns sound back on."
+  },
+  "music_youtube_mix": {
+    "message": "YouTube Mix",
+    "description": "Title used for YouTube audio when no title is known."
+  },
+  "dock_open_author_page_aria": {
+    "message": "Open author page for {author}",
+    "description": "On the music player bar at the bottom of the page. Screen reader label. {author} is a YouTube channel name."
+  },
+  "dock_author_page_unavailable_aria": {
+    "message": "Author page unavailable",
+    "description": "On the music player bar at the bottom of the page. Screen reader label."
+  },
+  "music_stream_subtitle_youtube": {
+    "message": "You can adjust YouTube volume directly in this modal. Playback stays seamless.",
+    "description": "In the Sounds & Music panel. Under what is playing."
+  },
+  "music_stream_subtitle_generic": {
+    "message": "Music keeps running while you browse.",
+    "description": "In the Sounds & Music panel. Under what is playing."
+  },
+  "music_source_ambient": {
+    "message": "Ambient",
+    "description": "On the music player bar at the bottom of the page. Small label where the music service name would be, while only ambient sounds play."
+  },
+  "music_ready_to_save_or_play": {
+    "message": "Ready to save or play",
+    "description": "In the Sounds & Music panel. Under the preview of a pasted link."
+  },
+  "music_feedback_youtube_detected": {
+    "message": "YouTube link detected. The thumbnail, title and author are shown, and the sound is controlled from the player bar.",
+    "description": "In the Sounds & Music panel. Under the link box."
+  },
+  "music_feedback_detected": {
+    "message": "{source} link detected. Preview it, then save or play it.",
+    "description": "In the Sounds & Music panel. Under the link box. {source} is Spotify or SoundCloud."
+  },
+  "music_feedback_invalid": {
+    "message": "Paste a valid Spotify, SoundCloud or YouTube playlist/track link.",
+    "description": "In the Sounds & Music panel. Under the link box."
+  },
+  "music_toast_dock_hint": {
+    "message": "Playback continues in the bottom dock",
+    "description": "Notification shown once. The dock is the music player bar at the bottom."
+  },
+  "music_toast_smart_resume": {
+    "message": "Smart Resume active",
+    "description": "Notification. Smart Resume is the feature that continues music in a new tab."
+  },
+  "music_toast_paused_by_browser": {
+    "message": "Music paused by the browser. Click anywhere to resume.",
+    "description": "Notification on Firefox when music would continue in a new tab but the browser blocks sound until the first click."
+  },
+  "music_toast_remote_cannot_pause": {
+    "message": "{source} can't be paused from another tab.",
+    "description": "Warning. {source} is Spotify or SoundCloud."
+  },
+  "music_toast_remote_stopped": {
+    "message": "Stopped playback in the other tab.",
+    "description": "Notification."
+  },
+  "music_toast_paste_valid_link": {
+    "message": "Please paste a Spotify, SoundCloud or YouTube playlist/track link",
+    "description": "Notification."
+  },
+  "music_toast_clipboard_empty": {
+    "message": "Clipboard is empty.",
+    "description": "Notification after pressing Paste."
+  },
+  "music_toast_clipboard_blocked": {
+    "message": "Clipboard access was blocked. Paste manually.",
+    "description": "Notification after pressing Paste."
+  },
+  "music_toast_paste_valid_first": {
+    "message": "Please paste a valid playlist or track link first",
+    "description": "Notification."
+  },
+  "music_toast_library_full_one": {
+    "message": "Library full ({count} item). Remove one to add more.",
+    "description": "Warning when the saved library is full."
+  },
+  "music_toast_library_full_other": {
+    "message": "Library full ({count} items). Remove one to add more.",
+    "description": "Warning when the saved library is full."
+  },
+  "music_toast_already_in_library": {
+    "message": "Already in your library! Try a different link.",
+    "description": "Warning."
+  },
+  "music_toast_save_failed": {
+    "message": "Could not save to My Library. The browser storage may be full.",
+    "description": "Warning."
+  },
+  "music_toast_saved": {
+    "message": "Saved to My Library.",
+    "description": "Notification."
+  },
+  "music_player_frame_title": {
+    "message": "Music player",
+    "description": "Accessible title of the embedded player."
+  },
+  "music_toast_unsupported_url": {
+    "message": "Only Spotify, SoundCloud and YouTube URLs are supported",
+    "description": "Notification."
+  },
+  "music_toast_invalid_spotify": {
+    "message": "Invalid or unsupported Spotify link",
+    "description": "Notification."
+  },
+  "music_player_spotify_frame_title": {
+    "message": "Spotify player",
+    "description": "Accessible title of the embedded Spotify player."
+  },
+  "music_toast_spotify_loaded_panel": {
+    "message": "Spotify player loaded in Sounds & Music",
+    "description": "Notification."
+  },
+  "music_toast_spotify_ready_dock": {
+    "message": "Spotify player ready in dock",
+    "description": "Notification. The dock is the music player bar at the bottom."
+  },
+  "music_player_soundcloud_frame_title": {
+    "message": "SoundCloud player",
+    "description": "Accessible title of the embedded SoundCloud player."
+  },
+  "music_toast_soundcloud_ready": {
+    "message": "SoundCloud player ready",
+    "description": "Notification."
+  },
+  "music_toast_invalid_youtube": {
+    "message": "Invalid YouTube URL",
+    "description": "Notification."
+  },
+  "music_player_youtube_frame_title": {
+    "message": "YouTube audio bridge",
+    "description": "Accessible title of the hidden YouTube player."
+  },
+  "music_toast_youtube_container_missing": {
+    "message": "YouTube player container is unavailable",
+    "description": "Notification."
+  },
+  "music_toast_youtube_playlist_started": {
+    "message": "YouTube playlist started",
+    "description": "Notification."
+  },
+  "music_toast_youtube_started": {
+    "message": "YouTube started",
+    "description": "Notification."
+  },
+  "music_toast_youtube_direct_embed": {
+    "message": "YouTube started in direct embed mode",
+    "description": "Notification."
+  },
+  "music_category_all": {
+    "message": "All",
+    "description": "In the Sounds & Music panel. Filter chip over the ambient sounds. Keep it short."
+  },
+  "music_category_nature": {
+    "message": "Nature",
+    "description": "In the Sounds & Music panel. Filter chip over the ambient sounds. Keep it short."
+  },
+  "music_category_water": {
+    "message": "Water",
+    "description": "In the Sounds & Music panel. Filter chip over the ambient sounds. Keep it short."
+  },
+  "music_category_travel": {
+    "message": "Travel",
+    "description": "In the Sounds & Music panel. Filter chip over the ambient sounds. Keep it short."
+  },
+  "music_category_city": {
+    "message": "City",
+    "description": "In the Sounds & Music panel. Filter chip over the ambient sounds. Keep it short."
+  },
+  "music_category_cozy": {
+    "message": "Cozy",
+    "description": "In the Sounds & Music panel. Filter chip over the ambient sounds. Keep it short."
+  },
+  "music_category_night": {
+    "message": "Night",
+    "description": "In the Sounds & Music panel. Filter chip over the ambient sounds. Keep it short."
+  },
+  "music_category_focus": {
+    "message": "Focus",
+    "description": "In the Sounds & Music panel. Filter chip over the ambient sounds. Keep it short."
+  },
+  "ambient_preset_deep_focus": {
+    "message": "Deep Focus",
+    "description": "In the Sounds & Music panel. Name of a ready-made mix of ambient sounds."
+  },
+  "ambient_preset_night_lofi": {
+    "message": "Night Lo-Fi",
+    "description": "In the Sounds & Music panel. Name of a ready-made mix of ambient sounds. Lo-Fi is a music style."
+  },
+  "ambient_preset_cafe_study": {
+    "message": "Cafe Study",
+    "description": "In the Sounds & Music panel. Name of a ready-made mix of ambient sounds."
+  },
+  "ambient_preset_nature_calm": {
+    "message": "Nature Calm",
+    "description": "In the Sounds & Music panel. Name of a ready-made mix of ambient sounds."
+  },
+  "music_toast_preset_active": {
+    "message": "Preset active: {preset}",
+    "description": "Notification. {preset} is the name of a ready-made mix."
+  },
+  "music_badge_starting": {
+    "message": "Starting",
+    "description": "In the Sounds & Music panel. Tiny badge on a sound card. Keep it very short."
+  },
+  "music_badge_playing": {
+    "message": "Playing",
+    "description": "In the Sounds & Music panel. Tiny badge on a sound card. Keep it very short."
+  },
+  "music_badge_muted": {
+    "message": "Muted",
+    "description": "In the Sounds & Music panel. Tiny badge on a sound card. Keep it very short."
+  },
+  "music_badge_off": {
+    "message": "Off",
+    "description": "In the Sounds & Music panel. Tiny badge on a sound card. Keep it very short."
+  },
+  "music_toast_ambient_save_failed": {
+    "message": "Could not save your ambient mix. The browser storage may be full.",
+    "description": "Warning."
+  },
+  "music_toast_sound_stopped": {
+    "message": "{sound} stopped",
+    "description": "Notification. {sound} is the name of an ambient sound, like Rain."
+  },
+  "music_ambient_active_count_one": {
+    "message": "{count} sound active",
+    "description": "In the Sounds & Music panel. Title over the ambient sounds."
+  },
+  "music_ambient_active_count_other": {
+    "message": "{count} sounds active",
+    "description": "In the Sounds & Music panel. Title over the ambient sounds."
+  },
+  "music_ambient_muted_subtitle": {
+    "message": "Your ambient mix is muted right now.",
+    "description": "In the Sounds & Music panel. Line under the count of active sounds."
+  },
+  "music_ambient_tune_subtitle": {
+    "message": "Use the cards below to fine tune each layer.",
+    "description": "In the Sounds & Music panel. Line under the count of active sounds."
+  },
+  "music_chip_stop_title": {
+    "message": "Stop {sound}",
+    "description": "In the Sounds & Music panel. Tooltip on the chip of an active sound. {sound} is its name."
+  },
+  "music_toast_ambient_other_tab": {
+    "message": "Ambient audio is already active in another tab.",
+    "description": "Notification."
+  },
+  "music_toast_audio_not_found": {
+    "message": "Audio file not found",
+    "description": "Notification."
+  },
+  "music_toast_sound_playing": {
+    "message": "{sound} playing",
+    "description": "Notification. {sound} is the name of an ambient sound, like Rain."
+  },
+  "music_toast_sound_load_failed": {
+    "message": "Could not load {sound}",
+    "description": "Notification. {sound} is the name of an ambient sound."
+  },
+  "music_toast_sound_play_failed": {
+    "message": "Could not play {sound}",
+    "description": "Notification. {sound} is the name of an ambient sound."
+  },
+  "pomo_phase_short": {
+    "message": "Short break",
+    "description": "The Pomodoro phase shown under the time. Keep it short."
+  },
+  "pomo_phase_long": {
+    "message": "Long break",
+    "description": "The Pomodoro phase shown under the time. Keep it short."
+  },
+  "pomo_title_focus": {
+    "message": "Focus",
+    "description": "In the browser tab title while the timer runs, after the time."
+  },
+  "pomo_title_short": {
+    "message": "Break",
+    "description": "In the browser tab title during a short break, after the time."
+  },
+  "pomo_title_long": {
+    "message": "Long break",
+    "description": "In the browser tab title during a long break, after the time."
+  },
+  "pomo_toast_focus_done": {
+    "message": "Focus session complete!",
+    "description": "Notification when a focus session ends."
+  },
+  "pomo_toast_short_done": {
+    "message": "Short break complete!",
+    "description": "Notification when a short break ends."
+  },
+  "pomo_toast_long_done": {
+    "message": "Long break complete!",
+    "description": "Notification when a long break ends."
+  },
+  "pomo_exit_focus_aria": {
+    "message": "Exit focus mode",
+    "description": "Screen reader label of the close button in focus mode."
+  },
+  "pomo_exit_focus_title": {
+    "message": "Exit focus mode (Esc)",
+    "description": "Tooltip on the close button in focus mode. Esc is the Escape key."
+  },
+  "pomo_sounds_volume_aria": {
+    "message": "{sound} volume",
+    "description": "Screen reader label of a volume slider. {sound} is the name of an ambient sound."
+  },
+  "tasks_toast_save_failed": {
+    "message": "Could not save your tasks. The browser storage may be full.",
+    "description": "Warning."
+  },
+  "tasks_announce_added": {
+    "message": "Added",
+    "description": "In the task list in focus mode. Read aloud by screen readers after a task is added."
+  },
+  "tasks_announce_moved_top": {
+    "message": "Moved to the top",
+    "description": "In the task list in focus mode. Read aloud by screen readers."
+  },
+  "tasks_announce_deleted": {
+    "message": "Deleted",
+    "description": "In the task list in focus mode. Read aloud by screen readers after a task is deleted."
+  },
+  "tasks_announce_cleared_one": {
+    "message": "{count} completed task removed",
+    "description": "In the task list in focus mode. Read aloud after Clear."
+  },
+  "tasks_announce_cleared_other": {
+    "message": "{count} completed tasks removed",
+    "description": "In the task list in focus mode. Read aloud after Clear."
+  },
+  "tasks_ask_done": {
+    "message": "Done with “{task}”?",
+    "description": "Asked under the Pomodoro timer when a focus session ends. {task} is the task text. Use the quotation marks of the language."
+  },
+  "tasks_now_aria": {
+    "message": "Mark “{task}” as done",
+    "description": "Screen reader label of the current task under the timer. {task} is the task text."
+  },
+  "tasks_now_title": {
+    "message": "Mark as done",
+    "description": "Tooltip on the current task under the timer."
+  },
+  "tasks_announce_done": {
+    "message": "Done: {task}",
+    "description": "Read aloud after the current task is ticked off. {task} is the task text."
+  },
+  "tasks_row_current_aria": {
+    "message": "{task}, current task",
+    "description": "In the task list in focus mode. Screen reader label of the task being worked on."
+  },
+  "tasks_promote_title": {
+    "message": "Work on this first",
+    "description": "In the task list in focus mode. Tooltip on the arrow that moves a task to the top."
+  },
+  "tasks_delete_aria": {
+    "message": "Delete task",
+    "description": "In the task list in focus mode. Screen reader label of the cross on a task."
+  },
+  "tasks_empty": {
+    "message": "Add what you are working on",
+    "description": "In the task list in focus mode. Shown while the list is empty."
+  },
+  "tasks_done_count_one": {
+    "message": "{count} done",
+    "description": "In the task list in focus mode. How many tasks are ticked off, beside Clear."
+  },
+  "tasks_done_count_other": {
+    "message": "{count} done",
+    "description": "In the task list in focus mode. How many tasks are ticked off, beside Clear."
+  },
+  "tasks_list_full_placeholder_one": {
+    "message": "List full ({count} task)",
+    "description": "In the task list in focus mode. Placeholder in the add box when no more tasks fit."
+  },
+  "tasks_list_full_placeholder_other": {
+    "message": "List full ({count} tasks)",
+    "description": "In the task list in focus mode. Placeholder in the add box when no more tasks fit."
+  },
+  "tasks_edit_aria": {
+    "message": "Edit task",
+    "description": "In the task list in focus mode. Screen reader label of the box that edits a task."
+  },
+  "bookmarks_api_unavailable": {
+    "message": "Bookmarks API unavailable",
+    "description": "In the bookmarks panel when the browser gives no access to bookmarks."
+  },
+  "bookmarks_unreadable": {
+    "message": "Unable to read bookmarks",
+    "description": "In the bookmarks panel."
+  },
+  "bookmarks_empty": {
+    "message": "No bookmarks yet",
+    "description": "In the bookmarks panel when there are none."
+  },
+  "bookmarks_no_match": {
+    "message": "No bookmarks match",
+    "description": "In the bookmarks panel when the search finds nothing."
+  },
+  "bookmarks_open_manager": {
+    "message": "Open Chrome Bookmark Manager",
+    "description": "Link in the bookmarks panel. Use the name of the browser's own bookmark manager in the language."
+  },
+  "bookmarks_firefox_library_hint": {
+    "message": "Open the Firefox bookmark library with Ctrl+Shift+O (Cmd+Shift+O on a Mac).",
+    "description": "In the bookmarks panel on Firefox, where there is no bookmark manager page to link to. Keep the shortcuts as they are."
+  },
+  "bookmarks_untitled_folder": {
+    "message": "Untitled folder",
+    "description": "In the bookmarks panel, for a folder without a name."
+  },
+  "search_empty_hint_placeholder": {
+    "message": "Enter something to search",
+    "description": "Placeholder shown for a moment after searching with an empty box."
+  },
+  "review_toast_thanks": {
+    "message": "Thank you for your review!",
+    "description": "Notification after opening the review page."
+  },
+  "weather_windy": {
+    "message": "Windy {speed}",
+    "description": "Weather under the clock. {speed} is like \"40 km/h\"."
+  },
+  "weather_storm": {
+    "message": "Storm",
+    "description": "Weather under the clock. One or two words."
+  },
+  "weather_snow": {
+    "message": "Snow",
+    "description": "Weather under the clock. One or two words."
+  },
+  "weather_rain": {
+    "message": "Rain",
+    "description": "Weather under the clock. One or two words."
+  },
+  "weather_fog": {
+    "message": "Fog",
+    "description": "Weather under the clock. One or two words."
+  },
+  "weather_cloudy": {
+    "message": "Cloudy",
+    "description": "Weather under the clock. One or two words."
+  },
+  "weather_partly_cloudy": {
+    "message": "Partly cloudy",
+    "description": "Weather under the clock. One or two words."
+  },
+  "weather_clear": {
+    "message": "Clear",
+    "description": "Weather under the clock, for a clear sky. One or two words."
+  },
+  "weather_mild": {
+    "message": "Mild",
+    "description": "Weather under the clock, when nothing more specific applies. One or two words."
+  },
+  "weather_unavailable": {
+    "message": "Unavailable",
+    "description": "Shown instead of the city under the clock when the weather cannot load."
+  },
+  "shortcuts_toast_save_failed": {
+    "message": "Could not save your shortcuts. The browser storage may be full.",
+    "description": "Warning."
+  },
+  "shortcuts_options_aria": {
+    "message": "Shortcut options",
+    "description": "Screen reader label of the menu button on a shortcut tile."
+  },
+  "shortcuts_edit_shortcut": {
+    "message": "Edit Shortcut",
+    "description": "Title of the dialog that edits a shortcut."
+  },
+  "shortcuts_invalid_url_placeholder": {
+    "message": "Invalid URL! Example: wallsflow.com",
+    "description": "Placeholder shown in the address box after an invalid address. Keep the example address as it is."
+  },
+  "shortcuts_toast_duplicate_url": {
+    "message": "That URL is already in your shortcuts.",
+    "description": "Warning."
+  },
+  "shortcuts_toast_reorder_tip": {
+    "message": "Tip: drag and drop to reorder shortcuts.",
+    "description": "Notification shown once."
+  },
+  "greet_headline_morning": {
+    "message": "Good Morning",
+    "description": "The large greeting under the clock from 05:00 to 12:00. It is typed out letter by letter."
+  },
+  "greet_headline_afternoon": {
+    "message": "Good Afternoon",
+    "description": "The large greeting under the clock from 12:00 to 17:00. It is typed out letter by letter."
+  },
+  "greet_headline_night": {
+    "message": "Good Night",
+    "description": "The large greeting under the clock from 22:00 to 05:00. It is typed out letter by letter."
+  },
+  "greet_with_name": {
+    "message": "{line}, {name}{end}",
+    "description": "Adds the name the user typed to a greeting line. {line} is the line without its closing punctuation, {name} is the name, {end} is that punctuation. Reorder or change the comma as the language needs."
+  },
+  "greet_with_name_default_end": {
+    "message": ".",
+    "description": "The punctuation put after the name when a greeting line has none."
+  },
+  "greet_morning_clear_1": {
+    "message": "Bright morning ahead.",
+    "description": "A greeting line under the clock in the morning, in clear weather. With a name it reads “Bright morning ahead, Name.”, so it has to work that way too."
+  },
+  "greet_morning_clear_2": {
+    "message": "The sun's up. Soak it in.",
+    "description": "A greeting line under the clock in the morning, in clear weather. With a name it reads “The sun's up. Soak it in, Name.”, so it has to work that way too."
+  },
+  "greet_morning_clear_3": {
+    "message": "Coffee and sunshine.",
+    "description": "A greeting line under the clock in the morning, in clear weather. With a name it reads “Coffee and sunshine, Name.”, so it has to work that way too."
+  },
+  "greet_morning_partly_cloudy_1": {
+    "message": "Soft morning light.",
+    "description": "A greeting line under the clock in the morning, in partly cloudy weather. With a name it reads “Soft morning light, Name.”, so it has to work that way too."
+  },
+  "greet_morning_partly_cloudy_2": {
+    "message": "Easy start to the day.",
+    "description": "A greeting line under the clock in the morning, in partly cloudy weather. With a name it reads “Easy start to the day, Name.”, so it has to work that way too."
+  },
+  "greet_morning_cloudy_1": {
+    "message": "Gentle overcast morning.",
+    "description": "A greeting line under the clock in the morning, in cloudy weather. With a name it reads “Gentle overcast morning, Name.”, so it has to work that way too."
+  },
+  "greet_morning_cloudy_2": {
+    "message": "Mellow start to the day.",
+    "description": "A greeting line under the clock in the morning, in cloudy weather. With a name it reads “Mellow start to the day, Name.”, so it has to work that way too."
+  },
+  "greet_morning_rain_1": {
+    "message": "Rainy morning. Take it slow.",
+    "description": "A greeting line under the clock in the morning, in rainy weather. With a name it reads “Rainy morning. Take it slow, Name.”, so it has to work that way too."
+  },
+  "greet_morning_rain_2": {
+    "message": "Perfect tea weather.",
+    "description": "A greeting line under the clock in the morning, in rainy weather. With a name it reads “Perfect tea weather, Name.”, so it has to work that way too."
+  },
+  "greet_morning_rain_3": {
+    "message": "Listen to the rain.",
+    "description": "A greeting line under the clock in the morning, in rainy weather. With a name it reads “Listen to the rain, Name.”, so it has to work that way too."
+  },
+  "greet_morning_snow_1": {
+    "message": "Snowy morning. Bundle up.",
+    "description": "A greeting line under the clock in the morning, in snowy weather. With a name it reads “Snowy morning. Bundle up, Name.”, so it has to work that way too."
+  },
+  "greet_morning_snow_2": {
+    "message": "Quiet snow outside.",
+    "description": "A greeting line under the clock in the morning, in snowy weather. With a name it reads “Quiet snow outside, Name.”, so it has to work that way too."
+  },
+  "greet_morning_storm_1": {
+    "message": "Storm rolling in. Stay cozy.",
+    "description": "A greeting line under the clock in the morning, in stormy weather. With a name it reads “Storm rolling in. Stay cozy, Name.”, so it has to work that way too."
+  },
+  "greet_morning_storm_2": {
+    "message": "Loud morning. Stay cozy.",
+    "description": "A greeting line under the clock in the morning, in stormy weather. With a name it reads “Loud morning. Stay cozy, Name.”, so it has to work that way too."
+  },
+  "greet_morning_fog_1": {
+    "message": "Foggy morning, soft and quiet.",
+    "description": "A greeting line under the clock in the morning, in foggy weather. With a name it reads “Foggy morning, soft and quiet, Name.”, so it has to work that way too."
+  },
+  "greet_morning_fog_2": {
+    "message": "Mist all around.",
+    "description": "A greeting line under the clock in the morning, in foggy weather. With a name it reads “Mist all around, Name.”, so it has to work that way too."
+  },
+  "greet_morning_windy_1": {
+    "message": "Windy morning. Hold on tight.",
+    "description": "A greeting line under the clock in the morning, in windy weather. With a name it reads “Windy morning. Hold on tight, Name.”, so it has to work that way too."
+  },
+  "greet_morning_windy_2": {
+    "message": "Brisk start.",
+    "description": "A greeting line under the clock in the morning, in windy weather. With a name it reads “Brisk start, Name.”, so it has to work that way too."
+  },
+  "greet_morning_default_1": {
+    "message": "Take it easy this morning.",
+    "description": "A greeting line under the clock in the morning, in any other weather. With a name it reads “Take it easy this morning, Name.”, so it has to work that way too."
+  },
+  "greet_morning_default_2": {
+    "message": "Have a lovely morning.",
+    "description": "A greeting line under the clock in the morning, in any other weather. With a name it reads “Have a lovely morning, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_clear_1": {
+    "message": "Lovely afternoon.",
+    "description": "A greeting line under the clock in the afternoon, in clear weather. With a name it reads “Lovely afternoon, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_clear_2": {
+    "message": "Bright skies. Soak it in.",
+    "description": "A greeting line under the clock in the afternoon, in clear weather. With a name it reads “Bright skies. Soak it in, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_partly_cloudy_1": {
+    "message": "Soft afternoon light.",
+    "description": "A greeting line under the clock in the afternoon, in partly cloudy weather. With a name it reads “Soft afternoon light, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_partly_cloudy_2": {
+    "message": "Easy pace.",
+    "description": "A greeting line under the clock in the afternoon, in partly cloudy weather. With a name it reads “Easy pace, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_cloudy_1": {
+    "message": "Mellow afternoon.",
+    "description": "A greeting line under the clock in the afternoon, in cloudy weather. With a name it reads “Mellow afternoon, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_cloudy_2": {
+    "message": "Soft light, soft pace.",
+    "description": "A greeting line under the clock in the afternoon, in cloudy weather. With a name it reads “Soft light, soft pace, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_rain_1": {
+    "message": "Perfect afternoon to stay in.",
+    "description": "A greeting line under the clock in the afternoon, in rainy weather. With a name it reads “Perfect afternoon to stay in, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_rain_2": {
+    "message": "Rain is doing the talking.",
+    "description": "A greeting line under the clock in the afternoon, in rainy weather. With a name it reads “Rain is doing the talking, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_snow_1": {
+    "message": "Snow keeps coming down.",
+    "description": "A greeting line under the clock in the afternoon, in snowy weather. With a name it reads “Snow keeps coming down, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_snow_2": {
+    "message": "Stay warm.",
+    "description": "A greeting line under the clock in the afternoon, in snowy weather. With a name it reads “Stay warm, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_storm_1": {
+    "message": "Storm in full swing.",
+    "description": "A greeting line under the clock in the afternoon, in stormy weather. With a name it reads “Storm in full swing, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_storm_2": {
+    "message": "Find a cozy spot.",
+    "description": "A greeting line under the clock in the afternoon, in stormy weather. With a name it reads “Find a cozy spot, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_fog_1": {
+    "message": "Foggy afternoon, quiet hours.",
+    "description": "A greeting line under the clock in the afternoon, in foggy weather. With a name it reads “Foggy afternoon, quiet hours, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_fog_2": {
+    "message": "World feels smaller in the mist.",
+    "description": "A greeting line under the clock in the afternoon, in foggy weather. With a name it reads “World feels smaller in the mist, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_windy_1": {
+    "message": "Wind is whipping up.",
+    "description": "A greeting line under the clock in the afternoon, in windy weather. With a name it reads “Wind is whipping up, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_windy_2": {
+    "message": "Breezy afternoon.",
+    "description": "A greeting line under the clock in the afternoon, in windy weather. With a name it reads “Breezy afternoon, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_default_1": {
+    "message": "Hope your day is going well.",
+    "description": "A greeting line under the clock in the afternoon, in any other weather. With a name it reads “Hope your day is going well, Name.”, so it has to work that way too."
+  },
+  "greet_afternoon_default_2": {
+    "message": "Have a great afternoon.",
+    "description": "A greeting line under the clock in the afternoon, in any other weather. With a name it reads “Have a great afternoon, Name.”, so it has to work that way too."
+  },
+  "greet_evening_clear_1": {
+    "message": "Calm evening ahead.",
+    "description": "A greeting line under the clock in the evening, in clear weather. With a name it reads “Calm evening ahead, Name.”, so it has to work that way too."
+  },
+  "greet_evening_clear_2": {
+    "message": "Clear skies. Wind down.",
+    "description": "A greeting line under the clock in the evening, in clear weather. With a name it reads “Clear skies. Wind down, Name.”, so it has to work that way too."
+  },
+  "greet_evening_clear_3": {
+    "message": "Sunset incoming.",
+    "description": "A greeting line under the clock in the evening, in clear weather. With a name it reads “Sunset incoming, Name.”, so it has to work that way too."
+  },
+  "greet_evening_partly_cloudy_1": {
+    "message": "Quiet evening.",
+    "description": "A greeting line under the clock in the evening, in partly cloudy weather. With a name it reads “Quiet evening, Name.”, so it has to work that way too."
+  },
+  "greet_evening_partly_cloudy_2": {
+    "message": "Soft skies.",
+    "description": "A greeting line under the clock in the evening, in partly cloudy weather. With a name it reads “Soft skies, Name.”, so it has to work that way too."
+  },
+  "greet_evening_cloudy_1": {
+    "message": "Soft clouds, soft pace.",
+    "description": "A greeting line under the clock in the evening, in cloudy weather. With a name it reads “Soft clouds, soft pace, Name.”, so it has to work that way too."
+  },
+  "greet_evening_cloudy_2": {
+    "message": "Mellow evening.",
+    "description": "A greeting line under the clock in the evening, in cloudy weather. With a name it reads “Mellow evening, Name.”, so it has to work that way too."
+  },
+  "greet_evening_rain_1": {
+    "message": "Cozy night, perfect for tea.",
+    "description": "A greeting line under the clock in the evening, in rainy weather. With a name it reads “Cozy night, perfect for tea, Name.”, so it has to work that way too."
+  },
+  "greet_evening_rain_2": {
+    "message": "Rain sets the mood.",
+    "description": "A greeting line under the clock in the evening, in rainy weather. With a name it reads “Rain sets the mood, Name.”, so it has to work that way too."
+  },
+  "greet_evening_rain_3": {
+    "message": "Sounds of rain make for a good evening.",
+    "description": "A greeting line under the clock in the evening, in rainy weather. With a name it reads “Sounds of rain make for a good evening, Name.”, so it has to work that way too."
+  },
+  "greet_evening_snow_1": {
+    "message": "Snow is falling. Settle in.",
+    "description": "A greeting line under the clock in the evening, in snowy weather. With a name it reads “Snow is falling. Settle in, Name.”, so it has to work that way too."
+  },
+  "greet_evening_snow_2": {
+    "message": "Extra-blanket weather.",
+    "description": "A greeting line under the clock in the evening, in snowy weather. With a name it reads “Extra-blanket weather, Name.”, so it has to work that way too."
+  },
+  "greet_evening_storm_1": {
+    "message": "Storm tonight. Stay in.",
+    "description": "A greeting line under the clock in the evening, in stormy weather. With a name it reads “Storm tonight. Stay in, Name.”, so it has to work that way too."
+  },
+  "greet_evening_storm_2": {
+    "message": "A lightning show overhead.",
+    "description": "A greeting line under the clock in the evening, in stormy weather. With a name it reads “A lightning show overhead, Name.”, so it has to work that way too."
+  },
+  "greet_evening_fog_1": {
+    "message": "Foggy evening, soft and still.",
+    "description": "A greeting line under the clock in the evening, in foggy weather. With a name it reads “Foggy evening, soft and still, Name.”, so it has to work that way too."
+  },
+  "greet_evening_fog_2": {
+    "message": "Mist makes everything softer.",
+    "description": "A greeting line under the clock in the evening, in foggy weather. With a name it reads “Mist makes everything softer, Name.”, so it has to work that way too."
+  },
+  "greet_evening_windy_1": {
+    "message": "Windy evening. Bundle up.",
+    "description": "A greeting line under the clock in the evening, in windy weather. With a name it reads “Windy evening. Bundle up, Name.”, so it has to work that way too."
+  },
+  "greet_evening_windy_2": {
+    "message": "Wind howls tonight.",
+    "description": "A greeting line under the clock in the evening, in windy weather. With a name it reads “Wind howls tonight, Name.”, so it has to work that way too."
+  },
+  "greet_evening_default_1": {
+    "message": "Time to relax and unwind.",
+    "description": "A greeting line under the clock in the evening, in any other weather. With a name it reads “Time to relax and unwind, Name.”, so it has to work that way too."
+  },
+  "greet_evening_default_2": {
+    "message": "Have a lovely evening.",
+    "description": "A greeting line under the clock in the evening, in any other weather. With a name it reads “Have a lovely evening, Name.”, so it has to work that way too."
+  },
+  "greet_night_clear_1": {
+    "message": "Clear night sky.",
+    "description": "A greeting line under the clock in the night, in clear weather. With a name it reads “Clear night sky, Name.”, so it has to work that way too."
+  },
+  "greet_night_clear_2": {
+    "message": "Stars are out.",
+    "description": "A greeting line under the clock in the night, in clear weather. With a name it reads “Stars are out, Name.”, so it has to work that way too."
+  },
+  "greet_night_clear_3": {
+    "message": "Peaceful late hours.",
+    "description": "A greeting line under the clock in the night, in clear weather. With a name it reads “Peaceful late hours, Name.”, so it has to work that way too."
+  },
+  "greet_night_partly_cloudy_1": {
+    "message": "Quiet night.",
+    "description": "A greeting line under the clock in the night, in partly cloudy weather. With a name it reads “Quiet night, Name.”, so it has to work that way too."
+  },
+  "greet_night_partly_cloudy_2": {
+    "message": "Quiet late hours.",
+    "description": "A greeting line under the clock in the night, in partly cloudy weather. With a name it reads “Quiet late hours, Name.”, so it has to work that way too."
+  },
+  "greet_night_cloudy_1": {
+    "message": "Cloudy night.",
+    "description": "A greeting line under the clock in the night, in cloudy weather. With a name it reads “Cloudy night, Name.”, so it has to work that way too."
+  },
+  "greet_night_cloudy_2": {
+    "message": "Softly overcast.",
+    "description": "A greeting line under the clock in the night, in cloudy weather. With a name it reads “Softly overcast, Name.”, so it has to work that way too."
+  },
+  "greet_night_rain_1": {
+    "message": "Rain keeping you company.",
+    "description": "A greeting line under the clock in the night, in rainy weather. With a name it reads “Rain keeping you company, Name.”, so it has to work that way too."
+  },
+  "greet_night_rain_2": {
+    "message": "Late night rain, extra cozy.",
+    "description": "A greeting line under the clock in the night, in rainy weather. With a name it reads “Late night rain, extra cozy, Name.”, so it has to work that way too."
+  },
+  "greet_night_snow_1": {
+    "message": "Snow falling in the dark.",
+    "description": "A greeting line under the clock in the night, in snowy weather. With a name it reads “Snow falling in the dark, Name.”, so it has to work that way too."
+  },
+  "greet_night_snow_2": {
+    "message": "Quiet snowy night.",
+    "description": "A greeting line under the clock in the night, in snowy weather. With a name it reads “Quiet snowy night, Name.”, so it has to work that way too."
+  },
+  "greet_night_storm_1": {
+    "message": "Storm in the dark. Stay warm.",
+    "description": "A greeting line under the clock in the night, in stormy weather. With a name it reads “Storm in the dark. Stay warm, Name.”, so it has to work that way too."
+  },
+  "greet_night_storm_2": {
+    "message": "Lightning lights up the night.",
+    "description": "A greeting line under the clock in the night, in stormy weather. With a name it reads “Lightning lights up the night, Name.”, so it has to work that way too."
+  },
+  "greet_night_fog_1": {
+    "message": "Foggy night, quiet world.",
+    "description": "A greeting line under the clock in the night, in foggy weather. With a name it reads “Foggy night, quiet world, Name.”, so it has to work that way too."
+  },
+  "greet_night_fog_2": {
+    "message": "Mist everywhere.",
+    "description": "A greeting line under the clock in the night, in foggy weather. With a name it reads “Mist everywhere, Name.”, so it has to work that way too."
+  },
+  "greet_night_windy_1": {
+    "message": "Windy late hours.",
+    "description": "A greeting line under the clock in the night, in windy weather. With a name it reads “Windy late hours, Name.”, so it has to work that way too."
+  },
+  "greet_night_windy_2": {
+    "message": "Wind howling through the night.",
+    "description": "A greeting line under the clock in the night, in windy weather. With a name it reads “Wind howling through the night, Name.”, so it has to work that way too."
+  },
+  "greet_night_default_1": {
+    "message": "Late hours. Take it easy.",
+    "description": "A greeting line under the clock in the night, in any other weather. With a name it reads “Late hours. Take it easy, Name.”, so it has to work that way too."
+  },
+  "greet_night_default_2": {
+    "message": "Hope you are winding down.",
+    "description": "A greeting line under the clock in the night, in any other weather. With a name it reads “Hope you are winding down, Name.”, so it has to work that way too."
+  },
+  "whatsnew_page_wallsflow_new_tab_what_s": {
+    "message": "Wallsflow New Tab: what's new",
+    "description": "In the browser tab of the page that opens after an update."
+  },
+  "whatsnew_hey_there": {
+    "message": "Hey there 👋",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_wallsflow_new_tab_has_a": {
+    "message": "Wallsflow New Tab has a new release.",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_the_four_biggest_changes_are": {
+    "message": "The five biggest changes are below, and you can try each one right here on this page. Nothing you do here touches your settings.",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_tasks_for_your_focus_sessions": {
+    "message": "Tasks for your focus sessions",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_start_a_pomodoro_and_your": {
+    "message": "Start a Pomodoro and your task list opens beside the timer, so what you set out to do stays in front of you and nothing else does. The task you are on is written under the timer, and ticking it there brings up the next one. When the session ends, the timer asks whether you finished it. Try it: tick a task or add one, then end the session.",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_demo_end_the_session": {
+    "message": "End the session",
+    "description": "In a live demo on the page that opens after an update."
+  },
+  "whatsnew_outside_a_focus_session_the_html": {
+    "message": "Outside a focus session the list stays out of sight. In the extension, clicking a task's text edits it, and the arrow that appears when you point at a task moves it to the top. You can turn the list off, or delete every task, in <strong>Widgets</strong>, under <strong>Pomodoro</strong>.",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_your_wallpapers_can_change_while": {
+    "message": "Your wallpapers can change while you work",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_until_now_an_uploaded_wallpaper": {
+    "message": "Until now an uploaded wallpaper only changed when you opened a new tab. If you keep one tab open all day, it never changed at all. Pick a time and watch the list below.",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_demo_how_often_the_wallpaper_changes_aria": {
+    "message": "How often the wallpaper changes",
+    "description": "In a live demo on the page that opens after an update. Read aloud by screen readers; not shown on screen."
+  },
+  "whatsnew_demo_forest": {
+    "message": "Forest",
+    "description": "In the timer demo on the page that opens after an update. The name of an example wallpaper, shown in bold in the hint under the demo."
+  },
+  "whatsnew_demo_how_long_forest_stays_on_aria": {
+    "message": "How long Forest stays on screen",
+    "description": "In a live demo on the page that opens after an update. Read aloud by screen readers; not shown on screen."
+  },
+  "whatsnew_demo_harbour": {
+    "message": "Harbour",
+    "description": "In the timer demo on the page that opens after an update. The name of an example wallpaper, shown in bold in the hint under the demo."
+  },
+  "whatsnew_demo_how_long_harbour_stays_on_aria": {
+    "message": "How long Harbour stays on screen",
+    "description": "In a live demo on the page that opens after an update. Read aloud by screen readers; not shown on screen."
+  },
+  "whatsnew_demo_dunes": {
+    "message": "Dunes",
+    "description": "In the timer demo on the page that opens after an update. The name of an example wallpaper, shown in bold in the hint under the demo."
+  },
+  "whatsnew_demo_how_long_dunes_stays_on_aria": {
+    "message": "How long Dunes stays on screen",
+    "description": "In a live demo on the page that opens after an update. Read aloud by screen readers; not shown on screen."
+  },
+  "whatsnew_demo_pick_a_time_above_to": {
+    "message": "Pick a time above to start.",
+    "description": "In a live demo on the page that opens after an update."
+  },
+  "whatsnew_in_the_extension_this_control_html": {
+    "message": "In the extension this control lives in <strong>Widgets</strong>, under <strong>Background</strong>. The wallpapers it moves between are the ones you marked as Random, or your Day and Night sets if you use those. A pinned wallpaper always wins, so nothing changes while one is pinned.",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_find_a_bookmark_by_typing": {
+    "message": "Find a bookmark by typing",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_the_bookmarks_panel_was_a_html": {
+    "message": "The bookmarks panel was a list you had to scroll. It now opens with the cursor already in a search box, and filters as you type on either the name or the address. Try typing <strong>git</strong>, or <strong>mail</strong>.",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_escape_clears_what_you_typed": {
+    "message": "Escape clears what you typed, and pressing it again closes the panel.",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_wallpapers_change_without_a_flash": {
+    "message": "Wallpapers change without a flash of black",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_swapping_a_wallpaper_used_to": {
+    "message": "Swapping a wallpaper used to fade the old one away before the new one was ready, so the empty page showed through the gap. The new wallpaper now loads behind the old one and only takes over once it is ready. Press both to compare.",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_demo_how_it_used_to_look": {
+    "message": "How it used to look",
+    "description": "In a live demo on the page that opens after an update."
+  },
+  "whatsnew_demo_how_it_looks_now": {
+    "message": "How it looks now",
+    "description": "In a live demo on the page that opens after an update."
+  },
+  "whatsnew_everything_else_in_this_release": {
+    "message": "Everything else in this release:",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_change_music_stopped_following_you_between_html": {
+    "message": "<b>Music stopped following you between tabs</b> Pressing Stop could start the music again in another tab about ten seconds later, and stopping the last ambient sound could move it somewhere else instead of ending it. Taking over playback from a second tab could also erase what you had just chosen to play. The way tabs agree on who is playing was rebuilt, and 21 tests now cover it.",
+    "description": "In the list of smaller changes on the page that opens after an update."
+  },
+  "whatsnew_change_uploading_no_longer_stops_the_html": {
+    "message": "<b>Uploading no longer stops the rotation</b> Every upload used to pin itself, and a pinned wallpaper pauses the timer, so adding a picture quietly stopped your wallpapers from changing. An upload now shows straight away without being pinned, and the rotation carries on.",
+    "description": "In the list of smaller changes on the page that opens after an update."
+  },
+  "whatsnew_change_day_and_night_now_switches_html": {
+    "message": "<b>Day and Night now switches in a tab you leave open</b> The time of day was only checked when a tab opened, so a tab left open past 7 PM kept its daytime wallpaper. It now changes over on its own.",
+    "description": "In the list of smaller changes on the page that opens after an update."
+  },
+  "whatsnew_change_a_dropped_file_that_is_html": {
+    "message": "<b>A dropped file that is not a picture no longer empties the list</b> Dragging in the wrong kind of file used to clear every wallpaper card until the next reload. It now just says the format is not supported.",
+    "description": "In the list of smaller changes on the page that opens after an update."
+  },
+  "whatsnew_change_the_weather_stopped_refetching_on_html": {
+    "message": "<b>The weather stopped refetching on every new tab</b> It was ignoring its own cache, which quietly undid a fix from the previous release.",
+    "description": "In the list of smaller changes on the page that opens after an update."
+  },
+  "whatsnew_change_a_focus_session_could_count_html": {
+    "message": "<b>A focus session could count twice</b> With two tabs open, one Pomodoro could add two sessions to the day's count. The other tab now follows along instead of counting again, including when you start a timer somewhere else.",
+    "description": "In the list of smaller changes on the page that opens after an update."
+  },
+  "whatsnew_change_the_wallpaper_list_is_quieter_html": {
+    "message": "<b>The wallpaper list is quieter</b> Labels that repeated what the buttons already showed are gone, and nothing is written over the artwork any more. The file size and the duration appear when you point at a card.",
+    "description": "In the list of smaller changes on the page that opens after an update."
+  },
+  "whatsnew_change_bookmarks_open_where_you_tell_html": {
+    "message": "<b>Bookmarks open where you tell them to</b> Bookmarks have their own choice of opening in a new tab or the same one, separate from your shortcuts. Until you pick something there, they keep following the shortcut setting.",
+    "description": "In the list of smaller changes on the page that opens after an update."
+  },
+  "whatsnew_change_smaller_fixes_a_saved_playlist_html": {
+    "message": "<b>Smaller fixes</b> A saved playlist could appear twice in your library. Turning the clock off no longer hides the weather with it. Text colour and shadow now reach the Pomodoro labels. Ambient presets can go above 100 percent like the sliders always could. And anything that says <strong>Saved</strong> now checks that it really was. The clock and the greeting now fade with the rest of the page while you drag a wallpaper onto it.",
+    "description": "In the list of smaller changes on the page that opens after an update."
+  },
+  "whatsnew_sincerely": {
+    "message": "Sincerely,",
+    "description": "In the page that opens after an update."
+  },
+  "whatsnew_love_using_wallsflow_new_tab_html": {
+    "message": "Love using Wallsflow New Tab?<br>A small donation helps support future updates and improvements ✨",
+    "description": "In the page that opens after an update."
+  },
+  "common_donate": {
+    "message": "Donate",
+    "description": "Used in several places across the page."
+  },
+  "popup_open_a_new_tab_to": {
+    "message": "Open a new tab to see your live wallpaper, focus music, and widgets. Click the small arrow in the bottom-right corner of any new tab to open the menu.",
+    "description": "In the small window that opens from the toolbar button."
+  },
+  "whatsnew_demo_task_1": {
+    "message": "Reply to the landlord",
+    "description": "In a live demo on the page that opens after an update. An example task, already ticked off."
+  },
+  "whatsnew_demo_task_2": {
+    "message": "Finish the slides for Monday",
+    "description": "In a live demo on the page that opens after an update. An example task."
+  },
+  "whatsnew_demo_task_3": {
+    "message": "Book the dentist",
+    "description": "In a live demo on the page that opens after an update. An example task."
+  },
+  "whatsnew_demo_tasks_enough": {
+    "message": "That is enough for an example",
+    "description": "In a live demo on the page that opens after an update. Placeholder once the example list is full."
+  },
+  "whatsnew_demo_start_next_session": {
+    "message": "Start the next session",
+    "description": "In a live demo on the page that opens after an update. Button that goes back to a focus session."
+  },
+  "whatsnew_demo_no_task": {
+    "message": "No task",
+    "description": "In a live demo on the page that opens after an update. Screen reader label when no task is shown under the timer."
+  },
+  "duration_hours_one": {
+    "message": "an hour",
+    "description": "A spoken duration inside a sentence, as in \"after an hour\"."
+  },
+  "duration_hours_other": {
+    "message": "{count} hours",
+    "description": "A spoken duration inside a sentence, as in \"after 2 hours\"."
+  },
+  "duration_minutes_one": {
+    "message": "{count} minute",
+    "description": "A spoken duration inside a sentence, as in \"after 1 minute\"."
+  },
+  "duration_minutes_other": {
+    "message": "{count} minutes",
+    "description": "A spoken duration inside a sentence, as in \"after 15 minutes\"."
+  },
+  "whatsnew_demo_hint_off": {
+    "message": "Off is how it has always worked: the wallpaper only changes when you open a new tab.",
+    "description": "In a live demo on the page that opens after an update. Shown while the timer is off."
+  },
+  "whatsnew_demo_hint_own_html": {
+    "message": "<b>{name}</b> is on screen. You gave it {duration} of its own, so it ignores the setting above.",
+    "description": "In a live demo on the page that opens after an update. {name} is an example wallpaper name, {duration} is like \"15 minutes\". Keep the <b> tags around {name}."
+  },
+  "whatsnew_demo_hint_timer_html": {
+    "message": "<b>{name}</b> is on screen. After {duration} the next one takes over. Click the time on a card to give that wallpaper its own.",
+    "description": "In a live demo on the page that opens after an update. {name} is an example wallpaper name, {duration} is like \"15 minutes\" or \"an hour\". Keep the <b> tags around {name}."
+  },
+  "settings_language_title": {
+    "message": "Language",
+    "description": "In the Settings tab of the side panel. A group heading."
+  },
+  "settings_language_sub": {
+    "message": "Starts in your browser's preferred language",
+    "description": "In the Settings tab of the side panel. The line under the Language heading."
+  },
+  "settings_language_label": {
+    "message": "Interface language",
+    "description": "In the Settings tab of the side panel. The label beside the language picker. Keep it short."
+  },
+  "settings_language_failed": {
+    "message": "Could not switch the language. The browser storage may be full.",
+    "description": "Warning when a picked language could not be stored."
+  },
+  "whatsnew_your_language_title": {
+    "message": "Wallsflow New Tab speaks your language",
+    "description": "On the page that opens after an update. The heading of the section about the interface languages."
+  },
+  "whatsnew_your_language_text_html": {
+    "message": "Everything in the extension is now in English, German, French, Spanish and Romanian. It starts in the first of these in your browser's list of preferred languages, and you can pick another in <strong>Settings</strong>, under <strong>Language</strong>. Try it: pick a language below.",
+    "description": "On the page that opens after an update. Name the Settings tab and the Language row exactly as the side panel does. Keep the <strong> tags."
+  },
+  "whatsnew_your_language_note_html": {
+    "message": "The clock starts in the hours your language uses, 24 or 12, until you pick a format under <strong>Clock</strong>. A settings backup now carries your language and your tasks too.",
+    "description": "On the page that opens after an update, under the language demo. Name the Clock widget exactly as the side panel does. Keep the <strong> tags."
+  },
+  "whatsnew_demo_language_aria": {
+    "message": "Language of the example",
+    "description": "On the page that opens after an update. Read aloud by screen readers for the row of language buttons in the demo; not shown on screen."
+  },
+  "whatsnew_change_city_list_html": {
+    "message": "<b>The city list in Weather works again</b> Picking a city by hand showed the search box, but the matches under it could not be seen or clicked. They can now.",
+    "description": "In the list of smaller changes on the page that opens after an update. Keep the <b> title first."
+  }
+}

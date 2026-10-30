@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="i18n-pending">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title data-i18n="page_new_tab">New Tab</title>
+    <!-- fonts.css is linked first so the .woff2 fetches start as early as possible
+         and the @font-face rules are registered before style.css references them. -->
+    <!-- Fonts are same-origin .woff2 files referenced from fonts.css, so the
+         browser only discovers them AFTER parsing ~200 KB of CSS. Preloading the
+         three faces that appear above the fold moves that discovery to the start
+         of the cascade. caveat-latin is the one that matters most: 73 KB, and it
+         renders the greeting.
+         Deliberately not preloaded: the -ext variants (they carry unicode-range,
+         so the browser fetches them only when needed), weights 600/700, and
+         material-symbols (35 KB of icons — a late icon is less jarring than late
+         text). The clock needs none of these: .clock-time uses system fonts.
+         `crossorigin` is required even same-origin, or the file is fetched twice. -->
+    <link rel="preload" href="../fonts/caveat-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/poppins-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/poppins-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/short.css">
+</head>
+<body>
+
+    <div id="background" class="bg"></div>
+
+    <!-- Drag-and-drop wallpaper overlay. Hidden by default; .show added by
+         wallpaper.js when an external file drag enters the page. -->
+    <div id="wallpaper-drop-overlay" class="wallpaper-drop-overlay" aria-hidden="true">
+        <div class="wallpaper-drop-card">
+            <div class="wallpaper-drop-icon" aria-hidden="true">
+                <span class="material-symbols-outlined">add_photo_alternate</span>
+            </div>
+            <div class="wallpaper-drop-title" data-i18n="drop_drop_to_add_wallpaper">Drop to add wallpaper</div>
+            <div class="wallpaper-drop-subtitle" data-i18n="drop_videos_and_images_supported_drop">Videos and images supported · drop anywhere</div>
+        </div>
+    </div>
+
+<!-- Push container - Notifications -->
+<div id="push-container" class="push hide" role="status" aria-live="polite">
+    <div class="push-accent" aria-hidden="true"></div>
+    <div class="push-body">
+        <div class="push-meta">
+            <span class="push-brand" data-i18n="brand_name">Wallsflow New Tab</span>
+            <span class="push-tag" data-i18n="toast_update">Update</span>
+        </div>
+        <span class="push-message"></span>
+    </div>
+</div>
+    
+    <div class="side-nav-container">
+        <div id="open_close" class="open-close">
+            <svg xmlns="http://www.w3.org/2000/svg" id="gear" class="icon icon-tabler icon-tabler-settings" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-bar-to-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12l10 0" /><path d="M10 12l4 4" /><path d="M10 12l4 -4" /><path d="M4 4l0 16" /></svg>
+            </svg>
+        </div>
+        <div id="mySidenav" class="sidenav" status="closed">
+            <div id="manage_video">
+                <div class="menu-brand-wrap">
+                    <img src="../images/logo.svg" alt="Wallsflow" class="menu-brand-image" />
+                    <div id="menu-brand-version" class="menu-brand-version" translate="no">v0.0.0</div>
+                </div>
+                <div class="menu-top-actions">
+                    <div class="management-buttons">
+                        <button id="wallpapers-btn" class="management-btn active" data-section="wallpapers" title="Manage Wallpapers" data-i18n-attr="title:panel_manage_wallpapers_title">
+                            <span class="btn-label" data-i18n="panel_wallpapers">Wallpapers</span>
+                        </button>
+                        <button id="widgets-btn" class="management-btn" data-section="widgets" title="Widget Settings" data-i18n-attr="title:panel_widget_settings_title">
+                            <span class="btn-label" data-i18n="panel_widgets">Widgets</span>
+                        </button>
+                        <button id="settings-btn" class="management-btn" data-section="settings" title="Backup and reset" data-i18n-attr="title:panel_backup_and_reset_title">
+                            <span class="btn-label" data-i18n="panel_settings">Settings</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Minimalist Favorite Wallpapers List -->
+            <div id="favorites-wallpapers" class="favorites-wallpapers">
+                <!-- Wallpapers Section -->
+                <div id="wallpapers-section" class="management-section active">
+                    <div class="wallpapers-upload-row">
+                        <button id="add_video_file" class="add_video_button menu-upload-btn" type="button" aria-label="Upload Wallpaper" data-i18n="wallpapers_upload_wallpaper" data-i18n-attr="aria-label:wallpapers_upload_wallpaper">Upload Wallpaper</button>
+                    </div>
+                    <div class="wallpapers-toolbar">
+                        <div class="wallpapers-filter-group" role="group" aria-label="Wallpaper filter" data-i18n-attr="aria-label:wallpapers_wallpaper_filter_aria">
+                            <button class="wallpapers-filter-btn active" type="button" data-filter="all" aria-pressed="true" data-i18n="wallpapers_all">All</button>
+                            <button class="wallpapers-filter-btn" type="button" data-filter="primary" aria-pressed="false" data-i18n="wallpapers_primary">Primary</button>
+                            <button class="wallpapers-filter-btn" type="button" data-filter="random" aria-pressed="false" data-i18n="wallpapers_random">Random</button>
+                            <button class="wallpapers-filter-btn" type="button" data-filter="day" aria-pressed="false" data-i18n="wallpapers_day">Day</button>
+                            <button class="wallpapers-filter-btn" type="button" data-filter="night" aria-pressed="false" data-i18n="wallpapers_night">Night</button>
+                        </div>
+                        <div class="wallpapers-filter-help" id="wallpapers-filter-help">
+                            <button class="wallpapers-filter-help-btn" type="button" aria-label="Show wallpaper filter help" aria-expanded="false" data-i18n-attr="aria-label:wallpapers_show_wallpaper_filter_help_aria">?</button>
+                            <div class="wallpapers-filter-help-dropdown"></div>
+                        </div>
+                    </div>
+                    <div id="wallpapers-mode-hint" class="wallpapers-mode-hint" data-i18n="wallpapers_random_wallpapers_are_paused_while">Random wallpapers are paused while a pinned wallpaper is active.</div>
+                    <div id="wallpapers-empty-state" class="wallpapers-empty-state" data-i18n="wallpapers_no_wallpapers_in_this_filter">No wallpapers in this filter yet.</div>
+                    <div id="wallpapers-list">
+                        <!-- Wallpapers will be injected here by JS -->
+                    </div>
+
+                    <!-- Caption for the list above, not a setting: it describes
+                         exactly what is rendered there. Filled by
+                         updateWallpaperStorageRow() (wallpaper.js) in the same
+                         render pass that builds the cards, so the total cannot
+                         drift from the sum of the sizes shown on them. -->
+                    <div id="wallpaper-storage-row" class="wallpapers-storage-footer">
+                        <span class="wallpapers-storage-label" data-i18n="wallpapers_wallpapers_stored">Wallpapers stored</span>
+                        <span id="wallpaper-storage-value" class="wallpapers-storage-value">…</span>
+                        <button id="delete-all-wallpapers-btn" class="wallpapers-storage-clear is-hidden" type="button" data-i18n="common_delete_all">Delete all</button>
+                    </div>
+
+                    <div id="restore-default-wallpaper-row" class="widgets-reset-row is-hidden">
+                        <span class="widgets-reset-label" data-i18n="wallpapers_restore_default_wallpaper">Restore default wallpaper</span>
+                        <button id="restore-default-wallpaper-btn" class="widgets-reset-btn" type="button" data-i18n="wallpapers_restore">Restore</button>
+                    </div>
+                </div>
+
+                <!-- Widgets Section -->
+                <div id="widgets-section" class="management-section">
+                    <div class="widgets-toolbar">
+                        <div class="widgets-filter-group" role="group" aria-label="Widget filter" data-i18n-attr="aria-label:widgets_widget_filter_aria">
+                            <button class="widgets-filter-btn active" type="button" data-filter="all" aria-pressed="true" data-i18n="widgets_all">All</button>
+                            <button class="widgets-filter-btn" type="button" data-filter="active" aria-pressed="false" data-i18n="widgets_enabled">Enabled</button>
+                            <button class="widgets-filter-btn" type="button" data-filter="hidden" aria-pressed="false" data-i18n="widgets_disabled">Disabled</button>
+                        </div>
+                        <div class="widgets-filter-help" id="widgets-filter-help">
+                            <button class="widgets-filter-help-btn" type="button" aria-label="Show filter help" aria-expanded="false" data-i18n-attr="aria-label:widgets_show_filter_help_aria">?</button>
+                            <div class="widgets-filter-help-dropdown">
+                                <div data-i18n-html="widgets_all_shows_every_widget_html"><strong>All</strong>: shows every widget.</div>
+                                <div data-i18n-html="widgets_enabled_shows_only_widgets_that_html"><strong>Enabled</strong>: shows only widgets that are currently turned on.</div>
+                                <div data-i18n-html="widgets_disabled_shows_only_widgets_that_html"><strong>Disabled</strong>: shows only widgets that are currently turned off.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="widgets-empty-state" class="widgets-empty-state" data-i18n="widgets_no_widgets_match_this_filter">No widgets match this filter.</div>
+                    <div class="widgets-group" data-group="on-your-page">
+                        <div class="widgets-group-head">
+                            <span class="widgets-group-title" data-i18n="widgets_on_your_page">On your page</span>
+                            <span class="widgets-group-sub" data-i18n="widgets_shown_on_the_new_tab">Shown on the new tab itself</span>
+                        </div>
+                        <div class="simple-widget-item active has-options" data-target="search">
+                            <div class="simple-widget-main">
+                                <span class="simple-widget-info">
+                                    <span class="simple-widget-name" data-i18n="widget_search_search_bar">Search Bar</span>
+                                </span>
+                                <div class="simple-widget-actions">
+                                    <button class="widget-expand-btn" type="button" aria-label="Show Search Bar options" aria-expanded="false" data-i18n-attr="aria-label:widget_search_show_search_bar_options_aria"></button>
+                                    <button class="widget-help-btn" type="button" aria-label="Show help for Search Bar" aria-expanded="false" data-i18n-attr="aria-label:widget_search_show_help_for_search_bar_aria">?</button>
+                                    <div class="simple-toggle-switch"></div>
+                                </div>
+                            </div>
+                            <div class="widget-help-dropdown" data-i18n="widget_search_displays_a_search_bar_for">Displays a search bar for quick web searches from your new tab.</div>
+                            <div class="widget-inline-options" data-widget-options="search">
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="opt_open_by_default">Open by default</span>
+                            <div class="widget-option-segment" role="group" aria-label="Search default open mode" data-i18n-attr="aria-label:widget_search_search_default_open_mode_aria">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="default" data-value="_blank" data-i18n="opt_new_tab">New tab</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="default" data-value="_self" data-i18n="opt_same_tab">Same tab</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="opt_while_music_plays">While music is playing</span>
+                            <div class="widget-option-segment" role="group" aria-label="Search open mode when music is playing" data-i18n-attr="aria-label:widget_search_search_open_mode_when_music_aria">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="music" data-value="_blank" data-i18n="opt_new_tab">New tab</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="music" data-value="_self" data-i18n="opt_same_tab">Same tab</button>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="simple-widget-item active has-options" data-target="shortcuts">
+                            <div class="simple-widget-main">
+                                <span class="simple-widget-info">
+                                    <span class="simple-widget-name" data-i18n="widget_shortcuts_shortcuts">Shortcuts</span>
+                                </span>
+                                <div class="simple-widget-actions">
+                                    <button class="widget-expand-btn" type="button" aria-label="Show Shortcuts options" aria-expanded="false" data-i18n-attr="aria-label:widget_shortcuts_show_shortcuts_options_aria"></button>
+                                    <button class="widget-help-btn" type="button" aria-label="Show help for Shortcuts" aria-expanded="false" data-i18n-attr="aria-label:widget_shortcuts_show_help_for_shortcuts_aria">?</button>
+                                    <div class="simple-toggle-switch"></div>
+                                </div>
+                            </div>
+                            <div class="widget-help-dropdown" data-i18n="widget_shortcuts_displays_your_favorite_shortcuts_for">Displays your favorite shortcuts for quick access.</div>
+                            <div class="widget-inline-options" data-widget-options="shortcuts">
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="opt_open_by_default">Open by default</span>
+                            <div class="widget-option-segment" role="group" aria-label="Shortcuts default open mode" data-i18n-attr="aria-label:widget_shortcuts_shortcuts_default_open_mode_aria">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="default" data-value="_blank" data-i18n="opt_new_tab">New tab</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="default" data-value="_self" data-i18n="opt_same_tab">Same tab</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="opt_while_music_plays">While music is playing</span>
+                            <div class="widget-option-segment" role="group" aria-label="Shortcuts open mode when music is playing" data-i18n-attr="aria-label:widget_shortcuts_shortcuts_open_mode_when_music_aria">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="music" data-value="_blank" data-i18n="opt_new_tab">New tab</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="music" data-value="_self" data-i18n="opt_same_tab">Same tab</button>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="simple-widget-item active has-options" data-target="clock">
+                            <div class="simple-widget-main">
+                                <span class="simple-widget-info">
+                                    <span class="simple-widget-name" data-i18n="widget_clock_clock">Clock</span>
+                                </span>
+                                <div class="simple-widget-actions">
+                                    <button class="widget-expand-btn" type="button" aria-label="Show Clock options" aria-expanded="false" data-i18n-attr="aria-label:widget_clock_show_clock_options_aria"></button>
+                                    <button class="widget-help-btn" type="button" aria-label="Show help for Clock" aria-expanded="false" data-i18n-attr="aria-label:widget_clock_show_help_for_clock_aria">?</button>
+                                    <div class="simple-toggle-switch"></div>
+                                </div>
+                            </div>
+                            <div class="widget-help-dropdown" data-i18n="widget_clock_displays_the_current_time_on">Displays the current time on your new tab.</div>
+                            <div class="widget-inline-options" data-widget-options="clock">
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_clock_format">Format</span>
+                            <div class="widget-option-segment" role="group" aria-label="Clock format" data-i18n-attr="aria-label:widget_clock_clock_format_aria">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="format" data-value="12h" data-i18n="widget_clock_12h">12h</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="format" data-value="24h" data-i18n="widget_clock_24h">24h</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_clock_show_seconds">Show seconds</span>
+                            <div class="widget-option-segment" role="group" aria-label="Show seconds" data-i18n-attr="aria-label:widget_clock_show_seconds">
+                            <button class="widget-open-mode-btn" type="button" data-setting="seconds" data-value="true" data-i18n="opt_on">On</button>
+                            <button class="widget-open-mode-btn active" type="button" data-setting="seconds" data-value="false" data-i18n="opt_off">Off</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_clock_show_date">Show date</span>
+                            <div class="widget-option-segment" role="group" aria-label="Show date" data-i18n-attr="aria-label:widget_clock_show_date">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="date" data-value="true" data-i18n="opt_on">On</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="date" data-value="false" data-i18n="opt_off">Off</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_clock_size">Size</span>
+                            <div class="widget-option-segment" role="group" aria-label="Clock size" data-i18n-attr="aria-label:widget_clock_clock_size_aria">
+                            <button class="widget-open-mode-btn" type="button" data-setting="size" data-value="S" translate="no">S</button>
+                            <button class="widget-open-mode-btn active" type="button" data-setting="size" data-value="M" translate="no">M</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="size" data-value="L" translate="no">L</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_clock_font">Font</span>
+                            <div class="widget-option-segment" role="group" aria-label="Clock font" data-i18n-attr="aria-label:widget_clock_clock_font_aria">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="font" data-value="default" data-i18n="widget_clock_modern">Modern</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="font" data-value="rounded" data-i18n="widget_clock_rounded">Rounded</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="font" data-value="handwrite" data-i18n="widget_clock_hand">Hand</button>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="simple-widget-item active has-options" data-target="weather">
+                            <div class="simple-widget-main">
+                                <span class="simple-widget-info">
+                                    <span class="simple-widget-name" data-i18n="widget_weather_weather">Weather</span>
+                                </span>
+                                <div class="simple-widget-actions">
+                                    <button class="widget-expand-btn" type="button" aria-label="Show Weather options" aria-expanded="false" data-i18n-attr="aria-label:widget_weather_show_weather_options_aria"></button>
+                                    <button class="widget-help-btn" type="button" aria-label="Show help for Weather" aria-expanded="false" data-i18n-attr="aria-label:widget_weather_show_help_for_weather_aria">?</button>
+                                    <div class="simple-toggle-switch"></div>
+                                </div>
+                            </div>
+                            <div class="widget-help-dropdown" data-i18n="widget_weather_displays_the_current_weather_for">Displays the current weather for your location. Auto-detect uses your timezone, which a VPN can throw off; Manual lets you pick any city worldwide.</div>
+                            <div class="widget-inline-options" data-widget-options="weather">
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_weather_location">Location</span>
+                            <div class="widget-option-segment" role="group" aria-label="Weather location mode" data-i18n-attr="aria-label:widget_weather_weather_location_mode_aria">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="weatherLocationMode" data-value="auto" data-i18n="opt_auto">Auto</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="weatherLocationMode" data-value="manual" data-i18n="opt_manual">Manual</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row weather-auto-row" id="weather-auto-row">
+                            <span class="widget-option-label" data-i18n="widget_weather_detected">Detected</span>
+                            <span id="weather-auto-detected" class="weather-auto-detected"></span>
+                            </div>
+                            <div class="widget-option-row weather-manual-row" id="weather-manual-row">
+                            <span class="widget-option-label" data-i18n="widget_weather_city">City</span>
+                            <div class="weather-city-search">
+                            <input id="weather-city-input" class="widget-inline-input" type="text" placeholder="Search a city..." autocomplete="off" data-i18n-attr="placeholder:widget_weather_search_a_city_placeholder" />
+                            <div id="weather-city-suggestions" class="weather-city-suggestions" hidden></div>
+                            <div id="weather-city-current" class="weather-city-current" hidden></div>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_weather_units">Units</span>
+                            <div class="widget-option-segment" role="group" aria-label="Temperature units" data-i18n-attr="aria-label:widget_weather_temperature_units_aria">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="weatherUnit" data-value="metric" translate="no">&deg;C</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="weatherUnit" data-value="imperial" translate="no">&deg;F</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_weather_show_city">Show city</span>
+                            <div class="widget-option-segment" role="group" aria-label="Show weather city" data-i18n-attr="aria-label:widget_weather_show_weather_city_aria">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="weatherShowCity" data-value="true" data-i18n="opt_on">On</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="weatherShowCity" data-value="false" data-i18n="opt_off">Off</button>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="simple-widget-item active has-options" data-target="greeting">
+                            <div class="simple-widget-main">
+                                <span class="simple-widget-info">
+                                    <span class="simple-widget-name" data-i18n="widget_greeting_daily_message">Daily Message</span>
+                                </span>
+                                <div class="simple-widget-actions">
+                                    <button class="widget-expand-btn" type="button" aria-label="Show Daily Message options" aria-expanded="false" data-i18n-attr="aria-label:widget_greeting_show_daily_message_options_aria"></button>
+                                    <button class="widget-help-btn" type="button" aria-label="Show help for Daily Message" aria-expanded="false" data-i18n-attr="aria-label:widget_greeting_show_help_for_daily_message_aria">?</button>
+                                    <div class="simple-toggle-switch"></div>
+                                </div>
+                            </div>
+                            <div class="widget-help-dropdown" data-i18n="widget_greeting_shows_a_greeting_message_based">Shows a greeting message based on the current time. Enter your name to personalize it, or leave it empty to keep the default.</div>
+                            <div class="widget-inline-options" data-widget-options="greeting">
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_greeting_name">Name</span>
+                            <input id="daily-message-name-input" class="widget-inline-input" type="text" maxlength="24" placeholder="Enter your name" autocomplete="name" data-i18n-attr="placeholder:widget_greeting_enter_your_name_placeholder" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="simple-widget-item active has-options" data-target="bookmarks">
+                            <div class="simple-widget-main">
+                                <span class="simple-widget-info">
+                                    <span class="simple-widget-name" data-i18n="common_bookmarks">Bookmarks</span>
+                                </span>
+                                <div class="simple-widget-actions">
+                                    <button class="widget-expand-btn" type="button" aria-label="Show Bookmarks options" aria-expanded="false" data-i18n-attr="aria-label:widget_bookmarks_show_bookmarks_options_aria"></button>
+                                    <button class="widget-help-btn" type="button" aria-label="Show help for Bookmarks" aria-expanded="false" data-i18n-attr="aria-label:widget_bookmarks_show_help_for_bookmarks_aria">?</button>
+                                    <div class="simple-toggle-switch"></div>
+                                </div>
+                            </div>
+                            <div class="widget-help-dropdown" data-i18n="widget_bookmarks_quick_access_to_your_chrome">Quick access to your Chrome bookmarks via a button in the top-right corner of the page.</div>
+                            <div class="widget-inline-options" data-widget-options="bookmarks">
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="opt_open_by_default">Open by default</span>
+                            <div class="widget-option-segment" role="group" aria-label="Bookmarks default open mode" data-i18n-attr="aria-label:widget_bookmarks_bookmarks_default_open_mode_aria">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="default" data-value="_blank" data-i18n="opt_new_tab">New tab</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="default" data-value="_self" data-i18n="opt_same_tab">Same tab</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="opt_while_music_plays">While music is playing</span>
+                            <div class="widget-option-segment" role="group" aria-label="Bookmarks open mode when music is playing" data-i18n-attr="aria-label:widget_bookmarks_bookmarks_open_mode_when_music_aria">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="music" data-value="_blank" data-i18n="opt_new_tab">New tab</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="music" data-value="_self" data-i18n="opt_same_tab">Same tab</button>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widgets-group" data-group="focus">
+                        <div class="widgets-group-head">
+                            <span class="widgets-group-title" data-i18n="widgets_focus">Focus</span>
+                            <span class="widgets-group-sub" data-i18n="widgets_tools_you_open_and_use">Tools you open and use</span>
+                        </div>
+                        <div class="simple-widget-item active" data-target="music">
+                            <div class="simple-widget-main">
+                                <span class="simple-widget-info">
+                                    <span class="simple-widget-name" data-i18n="common_sounds_and_music">Sounds & Music</span>
+                                </span>
+                                <div class="simple-widget-actions">
+                                    <button class="widget-help-btn" type="button" aria-label="Show help for Sounds & Music" aria-expanded="false" data-i18n-attr="aria-label:widget_music_show_help_for_sounds_and_aria">?</button>
+                                    <div class="simple-toggle-switch"></div>
+                                </div>
+                            </div>
+                            <div class="widget-help-dropdown" data-i18n="widget_music_displays_ambient_sounds_and_music">Displays ambient sounds and music playlists to help you focus.</div>
+                        </div>
+                        <div class="simple-widget-item active has-options" data-target="pomodoro">
+                            <div class="simple-widget-main">
+                                <span class="simple-widget-info">
+                                    <span class="simple-widget-name" data-i18n="widget_pomodoro_pomodoro">Pomodoro</span>
+                                </span>
+                                <div class="simple-widget-actions">
+                                    <button class="widget-expand-btn" type="button" aria-label="Show Pomodoro options" aria-expanded="false" data-i18n-attr="aria-label:widget_pomodoro_show_pomodoro_options_aria"></button>
+                                    <button class="widget-help-btn" type="button" aria-label="Show help for Pomodoro" aria-expanded="false" data-i18n-attr="aria-label:widget_pomodoro_show_help_for_pomodoro_aria">?</button>
+                                    <div class="simple-toggle-switch"></div>
+                                </div>
+                            </div>
+                            <div class="widget-help-dropdown" data-i18n="widget_pomodoro_a_focus_timer_with_work">A focus timer with work and break intervals that counts your sessions each day. In focus mode your task list opens beside the timer, and when a session ends the timer asks whether you finished the task you were on.</div>
+                            <div class="widget-inline-options" data-widget-options="pomodoro">
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_pomodoro_focus_min">Focus (min)</span>
+                            <div class="widget-option-segment" role="group" aria-label="Focus duration" data-i18n-attr="aria-label:widget_pomodoro_focus_duration_aria">
+                            <button class="widget-open-mode-btn" type="button" data-setting="focusDuration" data-value="15">15</button>
+                            <button class="widget-open-mode-btn active" type="button" data-setting="focusDuration" data-value="25">25</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="focusDuration" data-value="30">30</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="focusDuration" data-value="45">45</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="focusDuration" data-value="50">50</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_pomodoro_short_break_min">Short break (min)</span>
+                            <div class="widget-option-segment" role="group" aria-label="Short break duration" data-i18n-attr="aria-label:widget_pomodoro_short_break_duration_aria">
+                            <button class="widget-open-mode-btn" type="button" data-setting="shortBreak" data-value="3">3</button>
+                            <button class="widget-open-mode-btn active" type="button" data-setting="shortBreak" data-value="5">5</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="shortBreak" data-value="10">10</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_pomodoro_long_break_min">Long break (min)</span>
+                            <div class="widget-option-segment" role="group" aria-label="Long break duration" data-i18n-attr="aria-label:widget_pomodoro_long_break_duration_aria">
+                            <button class="widget-open-mode-btn" type="button" data-setting="longBreak" data-value="10">10</button>
+                            <button class="widget-open-mode-btn active" type="button" data-setting="longBreak" data-value="15">15</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="longBreak" data-value="20">20</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="longBreak" data-value="30">30</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_pomodoro_auto_start_next">Auto-start next</span>
+                            <div class="widget-option-segment" role="group" aria-label="Auto-start next phase" data-i18n-attr="aria-label:widget_pomodoro_auto_start_next_phase_aria">
+                            <button class="widget-open-mode-btn" type="button" data-setting="autoStart" data-value="true" data-i18n="opt_on">On</button>
+                            <button class="widget-open-mode-btn active" type="button" data-setting="autoStart" data-value="false" data-i18n="opt_off">Off</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_pomodoro_focus_mode">Focus mode</span>
+                            <div class="widget-option-segment" role="group" aria-label="Focus mode during timer" data-i18n-attr="aria-label:widget_pomodoro_focus_mode_during_timer_aria">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="focusMode" data-value="true" data-i18n="opt_on">On</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="focusMode" data-value="false" data-i18n="opt_off">Off</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_pomodoro_tasks_in_focus">Tasks in focus</span>
+                            <div class="widget-option-segment" role="group" aria-label="Task list beside the focus timer" data-i18n-attr="aria-label:widget_pomodoro_task_list_beside_the_focus_aria">
+                            <button class="widget-open-mode-btn active" type="button" data-setting="focusTasks" data-value="true" data-i18n="opt_on">On</button>
+                            <button class="widget-open-mode-btn" type="button" data-setting="focusTasks" data-value="false" data-i18n="opt_off">Off</button>
+                            </div>
+                            </div>
+                            <div class="widget-option-row">
+                            <span class="widget-option-label" data-i18n="widget_pomodoro_delete_all_tasks">Delete all tasks</span>
+                            <button id="tasks-clear-all-btn" class="widgets-reset-btn" type="button" data-i18n="common_delete">Delete</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widgets-group" data-group="wallpaper">
+                        <div class="widgets-group-head">
+                            <span class="widgets-group-title" data-i18n="widgets_wallpaper">Wallpaper</span>
+                            <span class="widgets-group-sub" data-i18n="widgets_how_the_background_looks_and">How the background looks and behaves</span>
+                        </div>
+                        <div class="simple-widget-item active" data-target="video-playback">
+                            <div class="simple-widget-main">
+                                <span class="simple-widget-info">
+                                    <span class="simple-widget-name" data-i18n="widget_video_playback_animations">Animations</span>
+                                </span>
+                                <div class="simple-widget-actions">
+                                    <button class="widget-help-btn" type="button" aria-label="Show help for Animations" aria-expanded="false" data-i18n-attr="aria-label:widget_video_playback_show_help_for_animations_aria">?</button>
+                                    <div class="simple-toggle-switch"></div>
+                                </div>
+                            </div>
+                            <div class="widget-help-dropdown" data-i18n="widget_video_playback_controls_live_wallpaper_animation_when">Controls live wallpaper animation. When disabled, the wallpaper becomes static.</div>
+                        </div>
+                        <div class="simple-widget-item active" data-target="wallpaper-schedule">
+                            <div class="simple-widget-main">
+                                <span class="simple-widget-info">
+                                    <span class="simple-widget-name" data-i18n="widget_wallpaper_schedule_day_night">Day/Night</span>
+                                </span>
+                                <div class="simple-widget-actions">
+                                    <button class="widget-help-btn" type="button" aria-label="Show help for Day/Night" aria-expanded="false" data-i18n-attr="aria-label:widget_wallpaper_schedule_show_help_for_day_night_aria">?</button>
+                                    <div class="simple-toggle-switch"></div>
+                                </div>
+                            </div>
+                            <div class="widget-help-dropdown" data-i18n="widget_wallpaper_schedule_automatically_switches_wallpapers_based_on">Automatically switches wallpapers based on the time of day.</div>
+                        </div>
+                        <div class="simple-widget-item active has-options" data-target="background">
+                            <div class="simple-widget-main">
+                                <span class="simple-widget-info">
+                                    <span class="simple-widget-name" data-i18n="widget_background_background">Background</span>
+                                </span>
+                                <div class="simple-widget-actions">
+                                    <button class="widget-expand-btn" type="button" aria-label="Show Background options" aria-expanded="false" data-i18n-attr="aria-label:widget_background_show_background_options_aria"></button>
+                                    <button class="widget-help-btn" type="button" aria-label="Show help for Background" aria-expanded="false" data-i18n-attr="aria-label:widget_background_show_help_for_background_aria">?</button>
+                                    <div class="simple-toggle-switch"></div>
+                                </div>
+                            </div>
+                            <div class="widget-help-dropdown" data-i18n="widget_background_make_the_page_readable_over">Make the page readable over your own wallpaper. Soften or dim the image, or leave it alone and change the text instead. A bright photo can swallow white text, and a stronger shadow or a darker colour fixes it without touching the picture.</div>
+                            <div class="widget-inline-options" data-widget-options="background">
+                                <div class="widget-option-row" id="wallpapers-rotation-row">
+                                    <span class="widget-option-label" id="wallpapers-rotation-label" data-i18n="widget_background_change_every">Change every</span>
+                                    <div class="widget-option-segment" role="group" aria-labelledby="wallpapers-rotation-label">
+                                        <button class="widget-open-mode-btn active" type="button" data-setting="wallpaperRotate" data-value="0" aria-pressed="true" data-i18n="opt_off">Off</button>
+                                        <button class="widget-open-mode-btn" type="button" data-setting="wallpaperRotate" data-value="5" aria-pressed="false" data-i18n="widget_background_5m">5m</button>
+                                        <button class="widget-open-mode-btn" type="button" data-setting="wallpaperRotate" data-value="15" aria-pressed="false" data-i18n="widget_background_15m">15m</button>
+                                        <button class="widget-open-mode-btn" type="button" data-setting="wallpaperRotate" data-value="30" aria-pressed="false" data-i18n="widget_background_30m">30m</button>
+                                        <button class="widget-open-mode-btn" type="button" data-setting="wallpaperRotate" data-value="60" aria-pressed="false" data-i18n="widget_background_1h">1h</button>
+                                    </div>
+                                </div>
+                                <div class="widget-option-row">
+                                    <span class="widget-option-label" data-i18n="widget_background_blur_intensity">Blur intensity</span>
+                                    <input id="bg-blur-slider" class="bg-slider" type="range" min="0" max="20" step="1" value="0" aria-label="Background blur" data-i18n-attr="aria-label:widget_background_background_blur_aria" />
+                                </div>
+                                <div class="widget-option-row">
+                                    <span class="widget-option-label" data-i18n="widget_background_brightness">Brightness</span>
+                                    <input id="bg-brightness-slider" class="bg-slider" type="range" min="40" max="100" step="1" value="100" aria-label="Background brightness" data-i18n-attr="aria-label:widget_background_background_brightness_aria" />
+                                </div>
+                                <div class="widget-option-row">
+                                    <span class="widget-option-label" data-i18n="widget_background_text_shadow">Text shadow</span>
+                                    <input id="text-shadow-slider" class="bg-slider" type="range" min="0" max="100" step="5" value="45" aria-label="Text shadow strength" data-i18n-attr="aria-label:widget_background_text_shadow_strength_aria" />
+                                </div>
+                                <div class="widget-option-row">
+                                    <span class="widget-option-label" data-i18n="widget_background_text_color">Text color</span>
+                                    <input id="text-color-input" class="widget-color-input" type="color" value="#ffffff" aria-label="Text color" data-i18n-attr="aria-label:widget_background_text_color" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- App-level operations, kept out of Widgets by the same rule that put
+                     widget options into it: a tab named Widgets should hold widgets. -->
+                <div id="settings-section" class="management-section">
+                        <!-- The interface language. Auto follows the browser; picking a
+                             language stores its catalogue and reloads the page. The options
+                             are built by widgets.js from the languages that are finished. -->
+                        <div class="widgets-group widgets-reset-group">
+                            <div class="widgets-group-head">
+                                <span class="widgets-group-title" data-i18n="settings_language_title">Language</span>
+                                <span class="widgets-group-sub" data-i18n="settings_language_sub">Starts in your browser's preferred language</span>
+                            </div>
+                            <div class="widgets-reset-row">
+                                <label class="widgets-reset-label" for="ui-language-select" data-i18n="settings_language_label">Interface language</label>
+                                <select id="ui-language-select" class="settings-language-select"></select>
+                            </div>
+                        </div>
+                        <!-- Settings backup. Deliberately a file rather than a sync service:
+                             the browser already syncs between a signed-in user's own installs,
+                             and a file is the only thing that moves settings from Chrome to
+                             Firefox — or survives losing the browser profile entirely. -->
+                        <div class="widgets-group widgets-reset-group">
+                            <div class="widgets-group-head">
+                                <span class="widgets-group-title" data-i18n="settings_backup">Backup</span>
+                                <span class="widgets-group-sub" data-i18n="settings_your_settings_shortcuts_and_saved">Your settings, shortcuts and saved playlists. Not your wallpapers, which are too large to put in a file</span>
+                            </div>
+                            <div class="widgets-reset-row">
+                                <span class="widgets-reset-label" data-i18n="settings_save_a_copy_to_a">Save a copy to a file</span>
+                                <button id="settings-export-btn" class="widgets-reset-btn" type="button" data-i18n="settings_export">Export</button>
+                            </div>
+                            <div class="widgets-reset-row">
+                                <span class="widgets-reset-label" data-i18n="settings_restore_from_a_file">Restore from a file</span>
+                                <button id="settings-import-btn" class="widgets-reset-btn" type="button" data-i18n="settings_import">Import</button>
+                                <input id="settings-import-input" class="is-hidden" type="file" accept="application/json,.json" />
+                            </div>
+                        </div>
+                        <!-- Both resets in one card, in the same language as the widget groups.
+                             Two buttons that both said "Reset" forced you to read the label on
+                             the left to know which one you were pressing, which is the wrong way
+                             round for an action you cannot undo. The verbs now differ because
+                             the outcomes do: one brings widgets back, the other clears how they
+                             are configured. They do not overlap — visibility and options are
+                             separate state, and neither reset touches the other. -->
+                        <div class="widgets-group widgets-reset-group">
+                            <div class="widgets-group-head">
+                                <span class="widgets-group-title" data-i18n="settings_reset">Reset</span>
+                                <span class="widgets-group-sub" data-i18n="settings_clock_format_timer_lengths_location">Clock format, timer lengths, location and background filters</span>
+                            </div>
+                            <div class="widgets-reset-row">
+                                <span class="widgets-reset-label" data-i18n="settings_clear_every_widget_s_options">Clear every widget&rsquo;s options</span>
+                                <button id="settings-reset-btn" class="widgets-reset-btn" type="button" data-i18n="common_clear">Clear</button>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+
+            <div id="delete-all-wallpapers-modal" class="widgets-reset-modal-backdrop" aria-hidden="true">
+                <div class="widgets-reset-modal-box" role="dialog" aria-modal="true" aria-labelledby="delete-all-wallpapers-title">
+                    <div class="widgets-reset-modal-title" id="delete-all-wallpapers-title" data-i18n="modal_delete_wallpapers_delete_all_wallpapers">Delete all wallpapers?</div>
+                    <div class="widgets-reset-modal-text" id="delete-all-wallpapers-text" data-i18n="modal_delete_wallpapers_this_permanently_removes_every_wallpaper">This permanently removes every wallpaper you uploaded. It cannot be undone, and the files are not recoverable from here.</div>
+                    <div class="widgets-reset-modal-actions">
+                        <button id="delete-all-wallpapers-cancel" class="widgets-reset-cancel-btn" type="button" data-i18n="common_cancel">Cancel</button>
+                        <button id="delete-all-wallpapers-confirm" class="widgets-reset-confirm-btn is-danger" type="button" data-i18n="common_delete_all">Delete all</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tasks-clear-all-modal" class="widgets-reset-modal-backdrop" aria-hidden="true">
+                <div class="widgets-reset-modal-box" role="dialog" aria-modal="true" aria-labelledby="tasks-clear-all-title">
+                    <div class="widgets-reset-modal-title" id="tasks-clear-all-title" data-i18n="modal_delete_tasks_delete_all_tasks">Delete all tasks?</div>
+                    <div class="widgets-reset-modal-text" data-i18n="modal_delete_tasks_this_removes_every_task_in">This removes every task in the list, finished or not. It cannot be undone.</div>
+                    <div class="widgets-reset-modal-actions">
+                        <button id="tasks-clear-all-cancel" class="widgets-reset-cancel-btn" type="button" data-i18n="common_cancel">Cancel</button>
+                        <button id="tasks-clear-all-confirm" class="widgets-reset-confirm-btn is-danger" type="button" data-i18n="common_delete_all">Delete all</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="settings-reset-modal" class="widgets-reset-modal-backdrop" aria-hidden="true">
+                <div class="widgets-reset-modal-box" role="dialog" aria-modal="true" aria-labelledby="settings-reset-modal-title">
+                    <div class="widgets-reset-modal-title" id="settings-reset-modal-title" data-i18n="modal_reset_clear_widget_options">Clear widget options?</div>
+                    <div class="widgets-reset-modal-text" data-i18n="modal_reset_clock_pomodoro_weather_background_search">Clock, Pomodoro, weather, background, search and shortcut options all go back to their defaults. Which widgets are shown is not affected.</div>
+                    <div class="widgets-reset-modal-actions">
+                        <button id="settings-reset-cancel" class="widgets-reset-cancel-btn" type="button" data-i18n="common_cancel">Cancel</button>
+                        <button id="settings-reset-confirm" class="widgets-reset-confirm-btn" type="button" data-i18n="common_clear">Clear</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Download Wallpapers Section -->
+            <div class="account-footer">
+                <button id="download-btn" class="download-wallpapers-btn" type="button" data-i18n="panel_download_more_wallpapers">
+                    Download More Wallpapers
+                </button>
+                <!-- The Donate button used to sit here. It was asking for money
+                     at the bottom of a settings panel, where nobody was giving
+                     any; the what's new page still asks, once, after an update
+                     that earned it. -->
+            </div>
+        </div>
+    </div>
+    <!-- Blur overlay shown when side menu is open -->
+    <div id="side-blur-overlay" class="side-blur-overlay"></div>
+    <!-- (Confirm delete modal removed — replaced by an inline overlay rendered
+         on the .fav-card itself. See confirmWallpaperDelete() in wallpaper.js
+         and the .fav-card-confirm-overlay rules in style.css.) -->
+    <div id="library-rename-backdrop" class="library-rename-backdrop" aria-hidden="true">
+            <div class="library-rename-modal" role="dialog" aria-modal="true" aria-labelledby="library-rename-title">
+                <div class="library-rename-head">
+                <div id="library-rename-title" class="library-rename-title" data-i18n="modal_rename_rename_playlist">Rename Playlist</div>
+                <button id="library-rename-close" class="library-rename-close" type="button" aria-label="Close rename modal" data-i18n-attr="aria-label:modal_rename_close_rename_modal_aria">×</button>
+            </div>
+            <input id="library-rename-input" class="library-rename-input" type="text" maxlength="80" placeholder="Playlist name" data-i18n-attr="placeholder:modal_rename_playlist_name_placeholder" />
+            <div class="library-rename-actions">
+                <button id="library-rename-cancel" class="library-rename-btn ghost" type="button" data-i18n="common_cancel">Cancel</button>
+                <button id="library-rename-save" class="library-rename-btn solid" type="button" data-i18n="common_save">Save</button>
+            </div>
+        </div>
+    </div>
+    <div id="library-delete-backdrop" class="library-rename-backdrop" aria-hidden="true">
+            <div class="library-rename-modal" role="dialog" aria-modal="true" aria-labelledby="library-delete-title">
+            <div class="library-rename-head">
+                <div id="library-delete-title" class="library-rename-title" data-i18n="modal_playlist_delete_delete_playlist">Delete Playlist</div>
+                <button id="library-delete-close" class="library-rename-close" type="button" aria-label="Close delete modal" data-i18n-attr="aria-label:modal_playlist_delete_close_delete_modal_aria">×</button>
+            </div>
+            <div id="library-delete-text" class="library-delete-text" data-i18n="modal_playlist_delete_delete_this_playlist_from_my">Delete this playlist from My Library?</div>
+            <div class="library-rename-actions">
+                <button id="library-delete-cancel" class="library-rename-btn ghost" type="button" data-i18n="common_cancel">Cancel</button>
+                <button id="library-delete-confirm" class="library-rename-btn danger" type="button" data-i18n="common_delete">Delete</button>
+            </div>
+        </div>
+    </div>
+    <!-- Shown when the user starts playback in a tab while another tab already
+         owns the session. Reuses the rename/delete modal styling. -->
+    <div id="music-takeover-backdrop" class="library-rename-backdrop" aria-hidden="true">
+        <div class="library-rename-modal" role="dialog" aria-modal="true" aria-labelledby="music-takeover-title">
+            <div class="library-rename-head">
+                <div id="music-takeover-title" class="library-rename-title" data-i18n="modal_takeover_already_playing">Already playing</div>
+                <button id="music-takeover-close" class="library-rename-close" type="button" aria-label="Close" data-i18n-attr="aria-label:common_close">×</button>
+            </div>
+            <div id="music-takeover-text" class="library-delete-text" data-i18n="modal_takeover_music_is_already_playing_in">Music is already playing in another tab. Playing here will stop it.</div>
+            <div class="library-rename-actions">
+                <button id="music-takeover-cancel" class="library-rename-btn ghost" type="button" data-i18n="modal_takeover_keep_it_there">Keep it there</button>
+                <button id="music-takeover-confirm" class="library-rename-btn danger" type="button" data-i18n="modal_takeover_play_here">Play here</button>
+            </div>
+        </div>
+    </div>
+
+<div class="tile-container">
+    <div id="searchBar">
+
+        <input type="text" id="searchInput" placeholder="Search the Web" autocomplete="off" spellcheck="false" aria-label="Search the web" data-i18n-attr="placeholder:search_search_the_web_placeholder;aria-label:search_search_the_web_aria">
+        <button id="searchTrigger" type="button" aria-label="Search" data-i18n-attr="aria-label:search_search_aria">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+        </button>
+    </div>
+
+    <div id="blurOverlay"></div>
+</div>
+
+<!-- Floating Music Widget -->
+<div id="music-widget" class="music-widget">
+    <button id="music-widget-btn" class="music-widget-btn" title="Sounds & Music" data-i18n-attr="title:common_sounds_and_music">
+        <svg class="music-icon-note" viewBox="0 0 24 24" width="32" height="32" fill="white">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+        </svg>
+    </button>
+</div>
+
+<!-- Floating Bookmarks Widget -->
+<div id="bookmarks-widget" class="bookmarks-widget">
+    <button id="bookmarks-widget-btn" class="bookmarks-widget-btn" type="button" title="Bookmarks" aria-haspopup="true" aria-expanded="false" data-i18n-attr="title:common_bookmarks">
+        <span class="material-symbols-outlined">bookmark</span>
+    </button>
+    <div id="bookmarks-dropdown" class="bookmarks-dropdown" role="menu" aria-hidden="true">
+        <div class="bookmarks-dropdown-head">
+            <span class="bookmarks-dropdown-title" data-i18n="common_bookmarks">Bookmarks</span>
+            <input id="bookmarks-search" class="bookmarks-search" type="text" placeholder="Search bookmarks" autocomplete="off" spellcheck="false" aria-label="Search bookmarks" hidden data-i18n-attr="placeholder:bookmarks_search_bookmarks_placeholder;aria-label:bookmarks_search_bookmarks_placeholder" />
+        </div>
+        <div id="bookmarks-dropdown-list" class="bookmarks-dropdown-list"></div>
+    </div>
+</div>
+
+<!-- Music Modal (Centered) -->
+<div id="music-modal-backdrop" class="music-modal-backdrop">
+    <div id="music-widget-panel" class="music-widget-panel">
+        <div class="music-panel-header">
+            <div class="music-panel-copy">
+                <span class="music-panel-title" data-i18n="common_sounds_and_music">Sounds & Music</span>
+                <span class="music-panel-subtitle" data-i18n="music_ambient_sounds_and_your_saved">Ambient sounds and your saved playlists, in one place.</span>
+            </div>
+            <button id="music-panel-close" class="music-panel-close" type="button" aria-label="Close Sounds and Music" data-i18n-attr="aria-label:music_close_sounds_and_music_aria">×</button>
+        </div>
+
+        <!-- Tab Navigation — iOS-style segmented control. Buttons live inside a
+             pill container so the active state slides between two matching
+             segments instead of looking like one floating pill on the left. -->
+        <div class="music-tab-navigation">
+            <div class="music-tab-segments" role="tablist" aria-label="Music sections" data-i18n-attr="aria-label:music_music_sections_aria">
+                <button class="music-tab-btn active" data-tab="sounds" role="tab" aria-selected="true">
+                    <span class="tab-label" data-i18n="music_sounds">Sounds</span>
+                </button>
+                <button class="music-tab-btn" data-tab="my-library" role="tab" aria-selected="false">
+                    <span class="tab-label" data-i18n="music_playlists">Playlists</span>
+                </button>
+            </div>
+        </div>
+        <div class="music-panel-content">
+            <!-- Sounds Tab -->
+            <div id="sounds-tab" class="music-tab-content active">
+                <div class="ambient-controls">
+                    <div id="ambient-mix-bar" class="ambient-mix-bar" aria-live="polite">
+                        <div class="ambient-mix-copy">
+                            <div id="ambient-mix-title" class="ambient-mix-title" data-i18n="music_no_sounds_active">No sounds active</div>
+                            <div id="ambient-mix-subtitle" class="ambient-mix-subtitle" data-i18n="music_start_a_sound_to_build">Start a sound to build your focus mix.</div>
+                        </div>
+                        <div id="ambient-mix-chips" class="ambient-mix-chips"></div>
+                        <div class="ambient-actions-row">
+                            <button id="ambient-mute-all-btn" class="ambient-mute-btn" type="button" data-i18n="music_mute_all">Mute All</button>
+                            <button id="ambient-stop-all-btn" class="ambient-stop-btn" type="button" data-i18n="music_stop_all">Stop All</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ambient-tools-panel">
+                    <div class="ambient-tools-note" data-i18n="music_tap_a_sound_card_to">Tap a sound card to play or stop, then use the slider for volume.</div>
+                    <div class="ambient-tools-group">
+                        <span class="ambient-tools-label" data-i18n="music_filter_sounds">Filter sounds</span>
+                        <div id="ambient-category-row" class="ambient-category-row"></div>
+                    </div>
+                    <div class="ambient-tools-group">
+                        <span class="ambient-tools-label" data-i18n="music_quick_mixes">Quick mixes</span>
+                        <div id="ambient-preset-row" class="ambient-preset-row"></div>
+                    </div>
+                </div>
+                <div class="sounds-grid sounds-grid-compact">
+                    <!-- Nature Sounds -->
+                    <div class="sound-card" data-sound="rain" data-file="rain.mp3" data-name="Rain" data-i18n-attr="data-name:sound_rain">
+                        <div class="sound-icon material-symbols-outlined">rainy</div>
+                        <div class="sound-name" data-i18n="sound_rain">Rain</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="beach" data-file="beach.mp3" data-name="Ocean Waves" data-i18n-attr="data-name:sound_ocean_waves">
+                        <div class="sound-icon material-symbols-outlined">waves</div>
+                        <div class="sound-name" data-i18n="sound_ocean_waves">Ocean Waves</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="storm" data-file="storm.mp3" data-name="Thunderstorm" data-i18n-attr="data-name:sound_thunderstorm">
+                        <div class="sound-icon material-symbols-outlined">thunderstorm</div>
+                        <div class="sound-name" data-i18n="sound_thunderstorm">Thunderstorm</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="birds" data-file="birds.mp3" data-name="Forest Birds" data-i18n-attr="data-name:sound_forest_birds">
+                        <div class="sound-icon material-symbols-outlined">flutter_dash</div>
+                        <div class="sound-name" data-i18n="sound_forest_birds">Forest Birds</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+
+                    <div class="sound-card" data-sound="forest" data-file="forest-ambience.mp3" data-name="Deep Forest" data-i18n-attr="data-name:sound_deep_forest">
+                        <div class="sound-icon material-symbols-outlined">forest</div>
+                        <div class="sound-name" data-i18n="sound_forest_ambience">Forest Ambience</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="river" data-file="river.mp3" data-name="River Flow" data-i18n-attr="data-name:sound_river_flow">
+                        <div class="sound-icon material-symbols-outlined">water</div>
+                        <div class="sound-name" data-i18n="sound_river_flow">River Flow</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="waterfall" data-file="waterfall.mp3" data-name="Waterfall" data-i18n-attr="data-name:sound_waterfall">
+                        <div class="sound-icon material-symbols-outlined">water_drop</div>
+                        <div class="sound-name" data-i18n="sound_waterfall">Waterfall</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="desert" data-file="desert.mp3" data-name="Desert Wind" data-i18n-attr="data-name:sound_desert_wind">
+                        <div class="sound-icon material-symbols-outlined">air</div>
+                        <div class="sound-name" data-i18n="sound_desert_wind">Desert Wind</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="swamp" data-file="swamp.mp3" data-name="Swamp Sounds" data-i18n-attr="data-name:sound_swamp_sounds">
+                        <div class="sound-icon material-symbols-outlined">eco</div>
+                        <div class="sound-name" data-i18n="sound_swamp_sounds">Swamp Sounds</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <!-- Fire & Warmth -->
+                    <div class="sound-card" data-sound="campfire" data-file="campfire.mp3" data-name="Campfire" data-i18n-attr="data-name:sound_campfire">
+                        <div class="sound-icon material-symbols-outlined">local_fire_department</div>
+                        <div class="sound-name" data-i18n="sound_campfire">Campfire</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <!-- Urban & Transport -->
+                    <div class="sound-card" data-sound="city" data-file="city.mp3" data-name="City Ambience" data-i18n-attr="data-name:sound_city_ambience">
+                        <div class="sound-icon material-symbols-outlined">location_city</div>
+                        <div class="sound-name" data-i18n="sound_city_ambience">City Ambience</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="city_night" data-file="city_night.mp3" data-name="City Night" data-i18n-attr="data-name:sound_city_night">
+                        <div class="sound-icon material-symbols-outlined">nights_stay</div>
+                        <div class="sound-name" data-i18n="sound_city_night">City Night</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="plane" data-file="plane.mp3" data-name="Airplane Cabin" data-i18n-attr="data-name:sound_airplane_cabin">
+                        <div class="sound-icon material-symbols-outlined">flight</div>
+                        <div class="sound-name" data-i18n="sound_airplane_cabin">Airplane Cabin</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="train" data-file="train.mp3" data-name="Train Journey" data-i18n-attr="data-name:sound_train_journey">
+                        <div class="sound-icon material-symbols-outlined">train</div>
+                        <div class="sound-name" data-i18n="sound_train_journey">Train Journey</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="submarine" data-file="submarine.mp3" data-name="Submarine" data-i18n-attr="data-name:sound_submarine">
+                        <div class="sound-icon material-symbols-outlined">sailing</div>
+                        <div class="sound-name" data-i18n="sound_submarine">Submarine</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <!-- Fun & Playful -->
+                    <div class="sound-card" data-sound="playground" data-file="playground.mp3" data-name="Playground" data-i18n-attr="data-name:sound_playground">
+                        <div class="sound-icon material-symbols-outlined">child_friendly</div>
+                        <div class="sound-name" data-i18n="sound_playground">Playground</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="vinyl" data-file="vinyl.mp3" data-name="Vinyl Crackle" data-i18n-attr="data-name:sound_vinyl_crackle">
+                        <div class="sound-icon material-symbols-outlined">album</div>
+                        <div class="sound-name" data-i18n="sound_vinyl_crackle">Vinyl Crackle</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <!-- Evening & Night -->
+                    <div class="sound-card" data-sound="night" data-file="night.mp3" data-name="Night Sounds" data-i18n-attr="data-name:sound_night_sounds">
+                        <div class="sound-icon material-symbols-outlined">bedtime</div>
+                        <div class="sound-name" data-i18n="sound_night_sounds">Night Sounds</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <!-- Peaceful & Meditative -->
+                    <div class="sound-card" data-sound="chimes" data-file="chimes.mp3" data-name="Wind Chimes" data-i18n-attr="data-name:sound_wind_chimes">
+                        <div class="sound-icon material-symbols-outlined">music_note</div>
+                        <div class="sound-name" data-i18n="sound_wind_chimes">Wind Chimes</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="chimes_wav" data-file="temple-bells.mp3" data-name="Temple Bells" data-i18n-attr="data-name:sound_temple_bells">
+                        <div class="sound-icon material-symbols-outlined">notifications</div>
+                        <div class="sound-name" data-i18n="sound_temple_bells">Temple Bells</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <!-- White Noise & Background -->
+                    <div class="sound-card" data-sound="white_noise" data-file="white_noise.mp3" data-name="White Noise" data-i18n-attr="data-name:sound_white_noise">
+                        <div class="sound-icon material-symbols-outlined">graphic_eq</div>
+                        <div class="sound-name" data-i18n="sound_white_noise">White Noise</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="bar" data-file="bar.mp3" data-name="Coffee Shop" data-i18n-attr="data-name:sound_coffee_shop">
+                        <div class="sound-icon material-symbols-outlined">local_cafe</div>
+                        <div class="sound-name" data-i18n="sound_coffee_shop">Coffee Shop</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                    
+                    <div class="sound-card" data-sound="end_sound_timer" data-file="end_sound_timer.mp3" data-name="Meditation Bell" data-i18n-attr="data-name:sound_meditation_bell">
+                        <div class="sound-icon material-symbols-outlined">self_improvement</div>
+                        <div class="sound-name" data-i18n="sound_meditation_bell">Meditation Bell</div>
+                        <div class="sound-volume-container">
+                            <input type="range" class="sound-volume" min="0" max="200" value="50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Unified Playlists Tab — built-in (Library) + user's saved (My Library) -->
+            <div id="my-library-tab" class="music-tab-content">
+                <!-- Built-in section (was the Library tab). JS targets #library-tab .playlist-grid
+                     to inject YouTube cards, so the wrapper id is preserved here as a child div. -->
+                <div id="library-tab" class="my-library-section">
+                    <div class="playlist-grid">
+                        <div class="playlist-card" data-url="https://open.spotify.com/playlist/0GYxQvYC9BOsL3Ce0QF9zK" data-name="Lofi Study & Chill" translate="no">
+                            <div class="playlist-cover">🎵</div>
+                            <div class="playlist-info">
+                                <div class="playlist-meta">
+                                    <span class="playlist-source">Spotify</span>
+                                    <span class="playlist-type type-playlist" data-i18n="common_playlist">Playlist</span>
+                                </div>
+                                <div class="playlist-name">Lofi Study & Chill</div>
+                                <div class="playlist-desc" data-i18n="music_relaxing_beats_for_focus">Relaxing beats for focus</div>
+                            </div>
+                        </div>
+                        <div class="playlist-card" data-url="https://open.spotify.com/playlist/1scHOA1iLHWUGBVB3i6DVL" data-name="Rainy Day Focus" translate="no">
+                            <div class="playlist-cover">🌧️</div>
+                            <div class="playlist-info">
+                                <div class="playlist-meta">
+                                    <span class="playlist-source">Spotify</span>
+                                    <span class="playlist-type type-playlist" data-i18n="common_playlist">Playlist</span>
+                                </div>
+                                <div class="playlist-name">Rainy Day Focus</div>
+                                <div class="playlist-desc" data-i18n="music_calming_rainy_day_vibes">Calming rainy day vibes</div>
+                            </div>
+                        </div>
+                        <div class="playlist-card" data-url="https://open.spotify.com/playlist/0hDnRafOHC0HVaSoNsyJe1" data-name="Holiday Lofi" translate="no">
+                            <div class="playlist-cover">🎄</div>
+                            <div class="playlist-info">
+                                <div class="playlist-meta">
+                                    <span class="playlist-source">Spotify</span>
+                                    <span class="playlist-type type-playlist" data-i18n="common_playlist">Playlist</span>
+                                </div>
+                                <div class="playlist-name">Holiday Lofi</div>
+                                <div class="playlist-desc" data-i18n="music_festive_relaxing_music">Festive relaxing music</div>
+                            </div>
+                        </div>
+                        <div class="playlist-card" data-url="https://open.spotify.com/playlist/7mU7XEz9615dBTFhtthmsS" data-name="Video Game Music" translate="no">
+                            <div class="playlist-cover">🎯</div>
+                            <div class="playlist-info">
+                                <div class="playlist-meta">
+                                    <span class="playlist-source">Spotify</span>
+                                    <span class="playlist-type type-playlist" data-i18n="common_playlist">Playlist</span>
+                                </div>
+                                <div class="playlist-name">Video Game Music</div>
+                                <div class="playlist-desc" data-i18n="music_chill_gaming_songs">Chill Gaming Songs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User's saved playlists section -->
+                <div class="my-library-section" id="custom-music-section">
+                    <div class="my-library-hint-row">
+                        <span class="my-library-hint-chip" data-i18n="music_1_paste_link">1. Paste link</span>
+                        <span class="my-library-hint-chip" data-i18n="music_2_play_preview">2. Play preview</span>
+                        <span class="my-library-hint-chip" data-i18n="music_3_save_to_library">3. Save to library</span>
+                    </div>
+                    <!-- User's saved playlists will be displayed here -->
+                    <div class="user-playlists">
+                        <div class="section-title" id="my-playlists-title">
+                            <span><span data-i18n="music_my_library">My Library</span> <span id="my-library-count" class="my-library-count">0 / 12</span></span>
+                            <button id="my-library-quick-add" class="my-library-quick-add" type="button" data-i18n="music_add">+ Add</button>
+                        </div>
+                        <div id="my-library-inline-add" class="my-library-inline-add hidden" aria-hidden="true">
+                            <div class="my-library-inline-head">
+                                <div class="my-library-inline-title" data-i18n="music_add_new_playlist">Add New Playlist</div>
+                                <button id="my-library-inline-close" class="my-library-inline-close" type="button" aria-label="Close add playlist panel" data-i18n-attr="aria-label:music_close_add_playlist_panel_aria">×</button>
+                            </div>
+                            <div class="music-add-source-body">
+                                <div class="music-source-pills" aria-hidden="true">
+                                    <span class="music-source-pill spotify" translate="no">Spotify</span>
+                                    <span class="music-source-pill soundcloud" translate="no">SoundCloud</span>
+                                    <span class="music-source-pill youtube" translate="no">YouTube</span>
+                                </div>
+                                <div class="music-input-shell">
+                                    <input type="text" id="music-url-input" class="music-url-input" placeholder="Paste Spotify, SoundCloud or YouTube playlist/track URL..." data-i18n-attr="placeholder:music_paste_spotify_soundcloud_or_youtube_placeholder">
+                                    <button id="music-url-paste" class="music-url-paste" type="button" aria-label="Paste from clipboard" data-i18n="music_paste" data-i18n-attr="aria-label:music_paste_from_clipboard_aria">Paste</button>
+                                    <button id="music-url-clear" class="music-url-clear" type="button" aria-label="Clear music link" data-i18n="common_clear" data-i18n-attr="aria-label:music_clear_music_link_aria">Clear</button>
+                                </div>
+                                <div id="music-link-feedback" class="music-link-feedback" data-i18n="music_tip_use_paste_preview_with">Tip: use Paste, preview with Play Now, then save to your library.</div>
+                                <div id="music-preview-card" class="music-preview-card empty">
+                                    <div id="music-preview-art" class="music-preview-art" translate="no">WF</div>
+                                    <div class="music-preview-copy">
+                                        <div class="music-preview-meta">
+                                            <span id="music-preview-source" class="music-preview-source neutral" data-i18n="music_preview">Preview</span>
+                                            <span id="music-preview-kind" class="music-preview-kind" data-i18n="music_waiting_for_a_link">Waiting for a link</span>
+                                        </div>
+                                        <div id="music-preview-title" class="music-preview-title" data-i18n="music_paste_a_playlist_or_track">Paste a playlist or track link to preview</div>
+                                        <div id="music-preview-subtitle" class="music-preview-subtitle" data-i18n="music_we_auto_detect_the_platform">We auto-detect the platform and prepare a clean card for quick play and save.</div>
+                                    </div>
+                                </div>
+                                <div class="music-panel-actions">
+                                    <button id="music-play-btn" class="music-action-btn music-play-btn">
+                                        <span class="music-action-icon">▶</span>
+                                        <span class="music-action-copy">
+                                            <span class="music-action-title" data-i18n="music_play_now">Play Now</span>
+                                            <span class="music-action-subtitle" data-i18n="music_instant_preview">Instant preview</span>
+                                        </span>
+                                    </button>
+                                    <button id="music-save-btn" class="music-action-btn music-save-btn" title="Save this playlist to your library" data-i18n-attr="title:music_save_this_playlist_to_your_title">
+                                        <span class="music-action-icon">+</span>
+                                        <span class="music-action-copy">
+                                            <span class="music-action-title" data-i18n="music_add_to_library">Add To Library</span>
+                                            <span class="music-action-subtitle" data-i18n="music_keep_it_for_later">Keep it for later</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="user-playlist-empty" class="user-playlist-empty">
+                            <div class="user-playlist-empty-icon">🎶</div>
+                            <div class="user-playlist-empty-title" data-i18n="music_your_library_is_empty">Your library is empty</div>
+                            <div class="user-playlist-empty-desc" data-i18n="music_save_playlists_from_spotify_youtube">Save playlists from Spotify, YouTube, or SoundCloud to quickly access them here.</div>
+                            <button class="user-playlist-empty-cta" type="button" id="user-playlist-empty-add" data-i18n="music_add_your_first_playlist">Add Your First Playlist</button>
+                        </div>
+                        <div id="user-playlist-grid" class="playlist-grid">
+                            <!-- User playlists will be dynamically added here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="music-modal-footer-stack">
+            <div id="music-modal-stream-stage" class="music-modal-stream-stage" aria-live="polite">
+                <div class="music-modal-stream-copy">
+                    <div class="music-modal-stream-meta">
+                        <div class="music-dock-eq music-modal-eq" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span id="music-modal-stream-source" class="music-modal-stream-source" data-i18n="music_playback">Playback</span>
+                    </div>
+                    <div id="music-modal-stream-title" class="music-modal-stream-title" data-i18n="common_no_playlist_playing">No playlist playing</div>
+                    <div class="music-modal-stream-subtitle" data-i18n="music_playback_continues_while_you_browse">Playback continues while you browse. Use Stop when you want silence.</div>
+                </div>
+                    <div class="music-modal-stream-controls">
+                    <div id="music-modal-youtube-controls" class="music-modal-youtube-controls" aria-hidden="true">
+                        <button id="music-modal-youtube-prev" class="music-modal-youtube-nav" type="button" aria-label="Previous track in playlist" data-i18n="music_prev" data-i18n-attr="aria-label:common_previous_track_aria">Prev</button>
+                        <button id="music-modal-youtube-next" class="music-modal-youtube-nav" type="button" aria-label="Next track in playlist" data-i18n="music_next" data-i18n-attr="aria-label:common_next_track_aria">Next</button>
+                        <span class="music-modal-volume-label" data-i18n="music_volume">Volume</span>
+                        <input id="music-modal-youtube-volume" class="music-modal-volume" type="range" min="0" max="100" value="55" aria-label="YouTube volume" data-i18n-attr="aria-label:common_youtube_volume_aria" />
+                        <button id="music-modal-youtube-mute" class="music-modal-youtube-mute" type="button" data-i18n="common_mute">Mute</button>
+                    </div>
+                    <div class="music-modal-stream-actions">
+                        <button id="music-modal-pause" class="music-modal-stream-btn is-hidden" type="button" data-i18n="common_pause">Pause</button>
+                        <button id="music-modal-stop" class="music-modal-stream-btn danger" type="button" data-i18n="common_stop">Stop</button>
+                    </div>
+                </div>
+            </div>
+            <div id="music-modal-player-container" class="music-modal-player-container" aria-live="polite"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Dynamic Greeting -->
+<div id="greeting-container" class="greeting-container">
+    <div id="greeting-text" class="greeting-text" data-i18n="greet_headline_evening">Good Evening</div>
+    <div id="greeting-subtitle" class="greeting-subtitle" data-i18n="greet_hope_you_re_having_a">
+        Hope you're having a great day!
+    </div>
+</div>
+
+<div id="pomodoro-widget" class="pomodoro-widget">
+    <div class="pomo-ring-wrap">
+        <svg class="pomo-ring" viewBox="0 0 120 120">
+            <circle class="pomo-ring-bg" cx="60" cy="60" r="54" />
+            <circle id="pomo-ring-progress" class="pomo-ring-fill" cx="60" cy="60" r="54"
+                    stroke-dasharray="339.292" stroke-dashoffset="0" />
+        </svg>
+        <div class="pomo-center" role="timer" aria-live="polite" aria-atomic="true">
+            <div id="pomo-time" class="pomo-time">25:00</div>
+            <div id="pomo-phase" class="pomo-phase" data-i18n="pomo_focus">Focus</div>
+        </div>
+    </div>
+    <div class="pomo-controls">
+        <button id="pomo-start" class="pomo-btn pomo-btn-start" type="button" title="Start" aria-label="Start" data-i18n-attr="title:pomo_start_title;aria-label:pomo_start_title">
+            <span class="material-symbols-outlined" aria-hidden="true">play_arrow</span>
+        </button>
+        <button id="pomo-reset" class="pomo-btn" type="button" title="Reset" aria-label="Reset timer" data-i18n-attr="title:pomo_reset_title;aria-label:pomo_reset_timer_aria">
+            <span class="material-symbols-outlined" aria-hidden="true">replay</span>
+        </button>
+        <button id="pomo-skip" class="pomo-btn" type="button" title="Skip to next phase" aria-label="Skip to next phase" data-i18n-attr="title:pomo_skip_to_next_phase_title;aria-label:pomo_skip_to_next_phase_title">
+            <span class="material-symbols-outlined" aria-hidden="true">skip_next</span>
+        </button>
+    </div>
+    <div id="pomo-sessions" class="pomo-sessions">0 / 4</div>
+
+    <!-- Asked once a focus session ends, about the task that was first on the
+         list. Filled in by tasks.js; hidden until then. -->
+    <div id="pomo-ask" class="pomo-ask" hidden>
+        <span id="pomo-ask-text" class="pomo-ask-text" aria-live="polite"></span>
+        <div class="pomo-ask-actions">
+            <button id="pomo-ask-yes" class="pomo-ask-btn is-yes" type="button" data-i18n="pomo_yes">Yes</button>
+            <button id="pomo-ask-no" class="pomo-ask-btn" type="button" data-i18n="pomo_not_yet">Not yet</button>
+        </div>
+    </div>
+
+    <!-- The task being worked on, written under the timer in focus mode.
+         Pressing it ticks the task off. Filled in by tasks.js. -->
+    <button id="pomo-now" class="pomo-now" type="button" hidden>
+        <span class="pomo-now-check" aria-hidden="true"></span>
+        <span id="pomo-now-text" class="pomo-now-text"></span>
+    </button>
+
+    <!-- Single "Sounds" button — only visible in Focus mode, opens the dedicated sounds modal -->
+    <button id="pomo-sounds-btn" class="pomo-sounds-btn" type="button" title="Open ambient sounds" aria-label="Open ambient sounds" data-i18n-attr="title:pomo_open_ambient_sounds_title;aria-label:pomo_open_ambient_sounds_title">
+        <span class="material-symbols-outlined">graphic_eq</span>
+        <span class="pomo-sounds-label" data-i18n="pomo_sounds">Sounds</span>
+    </button>
+</div>
+
+<!-- Tasks: shown only in Pomodoro focus mode, to the left of the timer.
+     Rows are drawn by tasks.js. -->
+<section id="tasks-widget" class="tasks-widget" aria-label="Tasks" data-i18n-attr="aria-label:tasks_tasks_aria">
+    <div class="tasks-title" id="tasks-title" data-i18n="tasks_tasks_aria">Tasks</div>
+    <ul class="tasks-list" id="tasks-list" aria-labelledby="tasks-title"></ul>
+    <input id="tasks-add" class="tasks-add" type="text" maxlength="120" placeholder="Add a task" aria-label="Add a task" autocomplete="off" spellcheck="false" data-i18n-attr="placeholder:tasks_add_a_task_placeholder;aria-label:tasks_add_a_task_placeholder" />
+    <div class="tasks-foot" id="tasks-foot" hidden>
+        <span id="tasks-done-count" class="tasks-done-count"></span>
+        <button id="tasks-clear-done" class="tasks-clear" type="button" data-i18n="common_clear">Clear</button>
+    </div>
+    <div id="tasks-status" class="tasks-status" role="status" aria-live="polite"></div>
+</section>
+
+<!-- Dedicated Sounds modal — only opened from Focus mode's Sounds button.
+     Lightweight grid of ambient sound chips, fully isolated from the main music panel. -->
+<div id="pomo-sounds-modal" role="dialog" aria-modal="true" aria-labelledby="pomo-sounds-modal-title" aria-hidden="true">
+    <div class="pomo-sounds-modal-backdrop"></div>
+    <div class="pomo-sounds-modal-panel">
+        <button class="pomo-sounds-modal-close" type="button" aria-label="Close" data-i18n-attr="aria-label:common_close">×</button>
+        <div class="pomo-sounds-modal-head">
+            <h3 id="pomo-sounds-modal-title" class="pomo-sounds-modal-title" data-i18n="pomo_sounds_ambient_sounds">Ambient Sounds</h3>
+            <div class="pomo-sounds-modal-actions">
+                <button id="pomo-sounds-mute-btn" class="pomo-sounds-action-btn" type="button" title="Mute all" data-i18n-attr="title:pomo_sounds_mute_all_title">
+                    <span class="material-symbols-outlined">volume_off</span>
+                    <span class="pomo-sounds-action-label" data-i18n="common_mute">Mute</span>
+                </button>
+                <button id="pomo-sounds-stop-btn" class="pomo-sounds-action-btn is-stop" type="button" title="Stop all" data-i18n-attr="title:pomo_sounds_stop_all_title">
+                    <span class="material-symbols-outlined">stop_circle</span>
+                    <span class="pomo-sounds-action-label" data-i18n="pomo_sounds_stop_all_title">Stop all</span>
+                </button>
+            </div>
+        </div>
+        <div id="pomo-sounds-grid" class="pomo-sounds-grid">
+            <!-- chips populated by pomodoro.js -->
+        </div>
+    </div>
+</div>
+
+<div id="clock-stack" class="clock-stack">
+    <div id="clock-widget" class="clock-widget">
+        <div id="clock-time" class="clock-time">--:--</div>
+        <div id="clock-date" class="clock-date">---</div>
+    </div>
+    <div id="weather-widget" class="weather-inline-widget" aria-live="polite">
+        <span id="weather-icon" class="weather-icon" aria-hidden="true"></span>
+        <div class="weather-text">
+            <span id="weather-temp" class="weather-inline-temp" translate="no">--°C</span>
+            <span class="weather-inline-meta">
+                <span id="weather-cond" class="weather-inline-cond"></span>
+                <span id="weather-city" class="weather-inline-city"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div id="music-player-dock" class="music-player-dock compact">
+    <div class="music-dock-bar">
+        <div class="music-dock-now">
+            <div class="music-dock-eq" aria-hidden="true">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="music-dock-copy">
+                <span id="music-dock-source" class="music-dock-source" data-i18n="dock_idle">Idle</span>
+                <span id="music-dock-label" class="music-dock-label" data-i18n="common_no_playlist_playing">No playlist playing</span>
+                <span id="music-dock-remote-note" class="music-dock-remote-note" hidden data-i18n="dock_playing_in_another_tab">Playing in another tab</span>
+            </div>
+        </div>
+        <div class="music-dock-actions">
+            <button id="music-dock-open" class="music-dock-icon-btn music-dock-open" type="button" title="Open Sounds &amp; Music" data-i18n-attr="title:dock_open_sounds_and_music_title"><span class="material-symbols-outlined">library_music</span></button>
+            <div id="music-dock-youtube-controls" class="music-dock-youtube-controls" aria-hidden="true">
+                <button id="music-dock-youtube-prev" class="music-dock-youtube-nav" type="button" aria-label="Previous track in playlist" data-i18n-attr="aria-label:common_previous_track_aria"><span class="material-symbols-outlined">skip_previous</span></button>
+                <button id="music-dock-youtube-next" class="music-dock-youtube-nav" type="button" aria-label="Next track in playlist" data-i18n-attr="aria-label:common_next_track_aria"><span class="material-symbols-outlined">skip_next</span></button>
+                <input id="music-dock-youtube-volume" class="music-dock-volume" type="range" min="0" max="100" value="55" aria-label="YouTube volume" data-i18n-attr="aria-label:common_youtube_volume_aria" />
+                <button id="music-dock-youtube-mute" class="music-dock-youtube-mute" type="button" title="Mute" data-i18n-attr="title:common_mute"><span class="material-symbols-outlined">volume_up</span></button>
+                <button id="music-dock-youtube-loop" class="music-dock-youtube-loop active" type="button" title="Toggle loop" data-i18n-attr="title:dock_toggle_loop_title"><span class="material-symbols-outlined">repeat</span></button>
+            </div>
+            <button id="music-dock-pause" class="music-dock-icon-btn music-dock-pause is-hidden" type="button" title="Pause music" data-i18n-attr="title:dock_pause_music_title"><span class="material-symbols-outlined">pause</span></button>
+            <button id="music-dock-stop" class="music-dock-icon-btn music-dock-stop" type="button" title="Stop music" data-i18n-attr="title:dock_stop_music_title"><span class="material-symbols-outlined">stop_circle</span></button>
+        </div>
+    </div>
+    <div id="music-dock-progress-row" class="music-dock-progress-row" aria-hidden="true">
+        <div class="music-dock-progress-track">
+            <div id="music-dock-progress-fill" class="music-dock-progress-fill"></div>
+        </div>
+        <div class="music-dock-time-row">
+            <span id="music-dock-time-current" class="music-dock-time">0:00</span>
+            <span id="music-dock-live-badge" class="music-dock-live-badge" data-i18n="dock_live">LIVE</span>
+            <span id="music-dock-time-duration" class="music-dock-time">0:00</span>
+        </div>
+    </div>
+        <div id="music-dock-youtube-meta" class="music-dock-youtube-meta" aria-hidden="true">
+        <div id="music-dock-youtube-thumb" class="music-dock-youtube-thumb" aria-hidden="true"></div>
+        <div class="music-dock-youtube-copy">
+            <div id="music-dock-youtube-title" class="music-dock-youtube-title" translate="no">YouTube</div>
+            <button id="music-dock-youtube-author" class="music-dock-youtube-author" type="button" data-i18n="dock_now_playing">Now playing</button>
+        </div>
+    </div>
+    <div id="music-player-container" class="music-player-container"></div>
+</div>
+<div id="music-visualizer-strip" class="music-visualizer-strip" aria-hidden="true"></div>
+
+
+  <div id="shortcuts-container">
+    <div id="shortcuts">
+        <!-- Shortcut-ul pentru adăugare -->
+        <div id="add-shortcut" class="shortcut add-shortcut">
+            <span>+</span>
+        </div>
+    </div>
+</div>
+
+<!-- Formular pentru adăugare/editare -->
+<div id="shortcut-form-container" class="hidden">
+    <div id="shortcut-form-wrapper">
+        <div class="form-header">
+            <h3 id="form-title" data-i18n="shortcuts_add_shortcut">Add Shortcut</h3>
+            <button type="button" id="close-shortcut" class="close-button">&times;</button>
+        </div>
+        <form id="shortcut-form">
+            <label for="shortcut-name" class="wf-hidden" data-i18n="shortcuts_website_name">Website Name</label>
+            <input type="text" id="shortcut-name" placeholder="Website Name" required data-i18n-attr="placeholder:shortcuts_website_name" />
+            <label for="shortcut-url" class="wf-hidden" data-i18n="shortcuts_website_url">Website URL</label>
+            <input type="text" id="shortcut-url" placeholder="Website URL" required data-i18n-attr="placeholder:shortcuts_website_url" />
+            <button type="submit" class="modern-button" data-i18n="common_save">Save</button>
+            <button type="button" id="delete-shortcut" class="modern-button danger is-hidden" data-i18n="common_delete">Delete</button>
+        </form>
+    </div>
+    </div>
+
+
+    <!-- Review Request Modal -->
+    <div id="review-modal-backdrop" class="review-modal-backdrop">
+        <div class="review-modal-wrapper">
+            <div class="review-modal-content">
+                <button type="button" id="review-modal-close" class="review-modal-close">×</button>
+                <h2 class="review-modal-title" data-i18n="review_enjoying_wallsflow">Enjoying Wallsflow?</h2>
+                <p class="review-modal-subtitle" data-i18n="review_a_quick_review_helps_improve">A quick review helps improve the extension.</p>
+
+                <div class="review-modal-stars" role="group" aria-label="Rate this extension" data-i18n-attr="aria-label:review_rate_this_extension_aria">
+                    <button type="button" class="review-star-btn" aria-label="Rate 1 star" data-i18n-attr="aria-label:review_rate_1_star_aria">⭐</button>
+                    <button type="button" class="review-star-btn" aria-label="Rate 2 stars" data-i18n-attr="aria-label:review_rate_2_stars_aria">⭐</button>
+                    <button type="button" class="review-star-btn" aria-label="Rate 3 stars" data-i18n-attr="aria-label:review_rate_3_stars_aria">⭐</button>
+                    <button type="button" class="review-star-btn" aria-label="Rate 4 stars" data-i18n-attr="aria-label:review_rate_4_stars_aria">⭐</button>
+                    <button type="button" class="review-star-btn" aria-label="Rate 5 stars" data-i18n-attr="aria-label:review_rate_5_stars_aria">⭐</button>
+                </div>
+                
+                <div class="review-modal-buttons">
+                    <button id="review-btn-leave" class="review-btn-primary" data-i18n="review_leave_a_review">Leave a Review</button>
+                    <button id="review-btn-later" class="review-btn-secondary" data-i18n="review_maybe_later">Maybe Later</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Consolidated modules (14 → 6 files). All deferred so they download in
+         parallel with HTML parse and execute, in source order, after DOMContentLoaded. -->
+    <!-- First: it translates the page before anything reads its text. -->
+    <script defer src="../js/i18n.js"></script>
+    <script defer src="../js/notifications.js"></script>
+    <script defer src="../js/widgets.js"></script>
+    <script defer src="../js/wallpaper-rotation.js"></script>
+    <script defer src="../js/wallpaper.js"></script>
+    <script defer src="../js/music.js"></script>
+    <script defer src="../js/utils.js"></script>
+    <script defer src="../js/pomodoro.js"></script>
+    <script defer src="../js/bookmarks.js"></script>
+    <script defer src="../js/tasks.js"></script>
+    <script defer src="../js/newtab.js"></script>
+</body>
+</html>
